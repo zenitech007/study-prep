@@ -2,11 +2,11 @@ import { NavLink } from 'react-router-dom';
 import { Layers, BookOpen, Brain, Target, BarChart3 } from 'lucide-react';
 
 const tabs = [
-  { to: '/', label: 'Courses', icon: Layers },
-  { to: '/learn', label: 'Learn', icon: BookOpen },
-  { to: '/concepts', label: 'Quick-Prep', icon: Brain },
-  { to: '/drill', label: 'Drill', icon: Target },
-  { to: '/tracker', label: 'Tracker', icon: BarChart3 },
+  { to: '/', label: '📚 Courses', icon: Layers },
+  { to: '/learn', label: '📖 Learn', icon: BookOpen },
+  { to: '/concepts', label: '⚡ Quick-Prep', icon: Brain },
+  { to: '/drill', label: '🎯 Drill', icon: Target },
+  { to: '/tracker', label: '📊 Tracker', icon: BarChart3 },
 ];
 
 export default function TabNav() {

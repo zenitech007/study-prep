@@ -32,24 +32,24 @@ export default function Header() {
 
   return (
     <header
-      className="sticky top-0 z-40 border-b bg-card no-print"
+      className="sticky top-0 z-40 border-b bg-card/90 backdrop-blur-md no-print transition-colors"
       style={{ borderColor: 'var(--color-border)' }}
     >
       <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2.5">
           <Link
             to="/"
-            className="flex items-center gap-2 hover:opacity-90 transition-opacity"
+            className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
             title="Go to Course Library"
           >
-            <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-sm">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white flex items-center justify-center font-black text-xs shadow-sm shadow-blue-500/20">
               UI
             </div>
             <div className="flex flex-col">
-              <span className="text-base font-bold leading-tight" style={{ color: 'var(--color-primary)' }}>
-                StudyPrep Hub
+              <span className="text-base font-extrabold leading-tight tracking-tight text-main">
+                StudyPrep <span className="text-cyan-500 dark:text-cyan-400">Hub</span>
               </span>
-              <span className="text-[10px] font-medium text-muted leading-tight">
+              <span className="text-[10px] font-semibold text-muted leading-tight">
                 Distance Learning
               </span>
             </div>
