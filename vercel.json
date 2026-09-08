@@ -1,4 +1,5 @@
 {
+  "installCommand": "npm install --include=optional",
   "buildCommand": "npm run build --workspace=nsg215-app",
   "outputDirectory": "nsg215-app/dist",
   "rewrites": [

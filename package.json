@@ -8,5 +8,8 @@
     "dev": "npm run dev --workspace=nsg215-app",
     "build": "npm run build --workspace=nsg215-app",
     "preview": "npm run preview --workspace=nsg215-app"
+  },
+  "optionalDependencies": {
+    "@rolldown/binding-linux-x64-gnu": "1.2.7"
   }
 }
