@@ -7,7 +7,6 @@ import {
   Lightbulb,
   List,
   CheckCircle2,
-  FileText,
   X,
   Eye,
   EyeOff,
@@ -56,9 +55,6 @@ export default function LearnPage() {
     const q = searchQuery.toLowerCase();
     return (
       session.title.toLowerCase().includes(q) ||
-      session.overview.toLowerCase().includes(q) ||
-      session.introduction?.toLowerCase().includes(q) ||
-      session.learningOutcomes?.some((lo) => lo.toLowerCase().includes(q)) ||
       session.content?.some(
         (c) => c.heading.toLowerCase().includes(q) || c.body.toLowerCase().includes(q)
       ) ||
@@ -227,7 +223,6 @@ function SessionCard({
   const toggleSessionCompleted = useAppStore((s) => s.toggleSessionCompleted);
 
   const isStudied = (progress.completedSessions || []).includes(session.sessionNumber);
-  const [showFullContent, setShowFullContent] = useState(true);
 
   const itqCount = session.inTextQuestions?.length || 0;
   const saqCount = session.saqs?.length || 0;
@@ -280,153 +275,67 @@ function SessionCard({
       {/* Content — collapsible */}
       {isExpanded && (
         <div className="border-t p-5 sm:p-6 space-y-6" style={{ borderColor: 'var(--color-border)' }}>
-          {/* Introduction & Overview */}
-          <div className="space-y-3">
-            {session.introduction && (
-              <div
-                className="p-4 rounded-xl border text-sm"
-                style={{
-                  backgroundColor: 'var(--color-bg-secondary)',
-                  borderColor: 'var(--color-border)',
-                }}
-              >
-                <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="font-bold text-main text-xs sm:text-sm">Session Introduction</span>
-                  <TTSButton
-                    id={`s${session.sessionNumber}-intro`}
-                    text={session.introduction}
-                    label="Listen"
-                    variant="compact"
-                  />
-                </div>
-                <p className="text-sub italic leading-relaxed text-xs sm:text-sm">
-                  "<HighlightText text={session.introduction} query={searchQuery} />"
-                </p>
-              </div>
-            )}
-            <div className="flex items-start justify-between gap-3 p-1">
-              <p className="text-xs sm:text-sm text-sub leading-relaxed flex-1 font-medium">
-                <HighlightText text={session.overview} query={searchQuery} />
-              </p>
-              <TTSButton
-                id={`s${session.sessionNumber}-overview`}
-                text={session.overview}
-                variant="icon"
-                size={14}
-              />
-            </div>
-          </div>
-
-          {/* Learning Outcomes */}
-          {session.learningOutcomes && session.learningOutcomes.length > 0 && (
-            <div>
-              <div className="flex items-center justify-between mb-2.5">
-                <h4 className="text-sm font-bold text-main flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-emerald-500" />
-                  <span>Learning Outcomes</span>
-                </h4>
-                <TTSButton
-                  id={`s${session.sessionNumber}-outcomes`}
-                  text={`Learning Outcomes: ${session.learningOutcomes.join('. ')}`}
-                  label="Listen"
-                  variant="compact"
-                />
-              </div>
-              <ul className="space-y-2">
-                {session.learningOutcomes.map((outcome, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-2.5 text-xs sm:text-sm text-sub p-2.5 rounded-xl border border-slate-200/60 dark:border-slate-800"
-                    style={{ backgroundColor: 'var(--color-bg-secondary)' }}
-                  >
-                    <span className="font-extrabold text-cyan-600 dark:text-cyan-400 shrink-0">✓</span>
-                    <span>
-                      <HighlightText text={outcome} query={searchQuery} />
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {/* Scannable Teaching Points (Reading Material) */}
+          {/* Core Content / Scannable Teaching Points */}
           {session.content && session.content.length > 0 && (
-            <div>
-              <div className="flex items-center justify-between mb-3">
-                <h4 className="text-sm font-bold text-main flex items-center gap-2">
-                  <FileText size={16} className="text-cyan-500" />
-                  <span>Course Manual Content ({session.content.length} Sections)</span>
-                </h4>
-                <button
-                  onClick={() => setShowFullContent(!showFullContent)}
-                  className="btn btn-secondary text-xs px-2.5 py-1 rounded-lg font-semibold"
-                >
-                  {showFullContent ? 'Collapse' : 'Expand'}
-                </button>
-              </div>
+            <div className="space-y-4">
+              {session.content.map((sec, idx) => {
+                const points = formatToTeachingPoints(sec.body);
+                return (
+                  <div
+                    key={idx}
+                    className="p-4 sm:p-5 rounded-2xl border text-sm card-glass"
+                    style={{ borderColor: 'var(--color-border)' }}
+                  >
+                    <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200/50 dark:border-slate-800">
+                      <h5 className="font-extrabold text-main text-sm sm:text-base">
+                        <HighlightText text={sec.heading} query={searchQuery} />
+                      </h5>
+                      <TTSButton
+                        id={`s${session.sessionNumber}-sec-${idx}`}
+                        text={`${sec.heading}. ${sec.body}`}
+                        label="Listen"
+                        variant="compact"
+                      />
+                    </div>
 
-              {showFullContent && (
-                <div className="space-y-4">
-                  {session.content.map((sec, idx) => {
-                    const points = formatToTeachingPoints(sec.body);
-                    return (
-                      <div
-                        key={idx}
-                        className="p-4 sm:p-5 rounded-2xl border text-sm card-glass"
-                        style={{ borderColor: 'var(--color-border)' }}
-                      >
-                        <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200/50 dark:border-slate-800">
-                          <h5 className="font-extrabold text-main text-sm sm:text-base">
-                            <HighlightText text={sec.heading} query={searchQuery} />
-                          </h5>
-                          <TTSButton
-                            id={`s${session.sessionNumber}-sec-${idx}`}
-                            text={`${sec.heading}. ${sec.body}`}
-                            label="Listen"
-                            variant="compact"
-                          />
-                        </div>
+                    {/* Scannable Bulleted Teaching Points */}
+                    <div className="space-y-2.5">
+                      {points.map((point, pIdx) => {
+                        // Check if point has a colon title like "Symptoms experience: could occur..."
+                        const colonIdx = point.indexOf(': ');
+                        const hasPrefix = colonIdx > 0 && colonIdx < 35;
 
-                        {/* Scannable Bulleted Teaching Points */}
-                        <div className="space-y-2.5">
-                          {points.map((point, pIdx) => {
-                            // Check if point has a colon title like "Symptoms experience: could occur..."
-                            const colonIdx = point.indexOf(': ');
-                            const hasPrefix = colonIdx > 0 && colonIdx < 35;
-
-                            return (
-                              <div
-                                key={pIdx}
-                                className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"
-                              >
-                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500 dark:bg-cyan-400" />
-                                <div className="flex-1">
-                                  {hasPrefix ? (
-                                    <>
-                                      <strong className="text-main font-bold">
-                                        <HighlightText
-                                          text={point.slice(0, colonIdx + 1)}
-                                          query={searchQuery}
-                                        />
-                                      </strong>{' '}
-                                      <HighlightText
-                                        text={point.slice(colonIdx + 2)}
-                                        query={searchQuery}
-                                      />
-                                    </>
-                                  ) : (
-                                    <HighlightText text={point} query={searchQuery} />
-                                  )}
-                                </div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
+                        return (
+                          <div
+                            key={pIdx}
+                            className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"
+                          >
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500 dark:bg-cyan-400" />
+                            <div className="flex-1">
+                              {hasPrefix ? (
+                                <>
+                                  <strong className="text-main font-bold">
+                                    <HighlightText
+                                      text={point.slice(0, colonIdx + 1)}
+                                      query={searchQuery}
+                                    />
+                                  </strong>{' '}
+                                  <HighlightText
+                                    text={point.slice(colonIdx + 2)}
+                                    query={searchQuery}
+                                  />
+                                </>
+                              ) : (
+                                <HighlightText text={point} query={searchQuery} />
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           )}
 
