@@ -240,70 +240,39 @@ function SessionCard({
           : 'border-slate-200 dark:border-slate-800'
       } hover:border-cyan-500 dark:hover:border-cyan-400 shadow-sm hover:shadow-md`}
     >
-      {/* Header — always visible */}
+      {/* Header — always visible: ultra-minimalist 3 elements perfectly aligned */}
       <button
         onClick={onToggle}
-        className="flex w-full items-center justify-between p-4 sm:p-5 text-left cursor-pointer transition-colors duration-200"
-        style={{ backgroundColor: isExpanded ? 'var(--color-bg-secondary)' : undefined }}
+        className={`flex w-full items-center justify-between p-4 sm:p-5 text-left cursor-pointer transition-all duration-200 hover:bg-slate-100/70 dark:hover:bg-slate-800/50 ${
+          isExpanded ? 'bg-slate-100/50 dark:bg-slate-800/30' : ''
+        }`}
         aria-expanded={isExpanded}
         aria-label={`Study Session ${session.sessionNumber}: ${session.title}`}
       >
-        <div className="flex items-start sm:items-center gap-3.5 min-w-0 flex-1 pr-3">
-          {/* Circular number badge with completed indicator */}
-          <div className="relative shrink-0 mt-0.5 sm:mt-0">
-            <span
-              className={`flex h-10 w-10 items-center justify-center rounded-2xl text-sm font-black text-white shadow-sm transition-colors ${
-                isStudied
-                  ? 'bg-emerald-600 shadow-emerald-500/30'
-                  : 'bg-gradient-to-br from-blue-600 to-cyan-500 shadow-blue-500/20'
-              }`}
-            >
-              {isStudied ? <Check size={18} className="stroke-[3]" /> : session.sessionNumber}
-            </span>
-          </div>
+        <div className="flex items-center gap-3.5 min-w-0 flex-1 pr-4">
+          {/* 1. Circular Session Number badge on the far left */}
+          <span
+            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-black text-white shadow-sm transition-all ${
+              isStudied
+                ? 'bg-emerald-600 shadow-emerald-500/30'
+                : 'bg-gradient-to-br from-blue-600 to-cyan-500 shadow-blue-500/20'
+            }`}
+          >
+            {isStudied ? <Check size={18} className="stroke-[3]" /> : session.sessionNumber}
+          </span>
 
-          <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2 flex-wrap">
-              <h3 className="text-base sm:text-lg font-bold text-main leading-snug break-words">
-                {session.title}
-              </h3>
-              {isStudied && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300/50 dark:border-emerald-700/50">
-                  <span>✓</span> Studied
-                </span>
-              )}
-            </div>
-
-            {/* Badges in flex-wrap container */}
-            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-2">
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/60">
-                {session.sourceTag === 'slide' ? 'Core Material' : 'Extension'}
-              </span>
-              {session.content && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60">
-                  {session.content.length} Sections
-                </span>
-              )}
-              {itqCount > 0 && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60">
-                  {itqCount} ITQs
-                </span>
-              )}
-              {saqCount > 0 && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-amber-50 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200/60 dark:border-amber-800/60">
-                  {saqCount} SAQs
-                </span>
-              )}
-            </div>
-          </div>
+          {/* 2. The Session Title */}
+          <h3 className="text-base sm:text-lg font-bold text-main leading-snug break-words flex-1">
+            {session.title}
+          </h3>
         </div>
 
-        {/* Chevron icon */}
-        <div className="ml-auto shrink-0 p-1 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+        {/* 3. The expand/collapse chevron icon on the far right */}
+        <div className="shrink-0 p-1.5 rounded-xl text-slate-400 dark:text-slate-400 transition-colors">
           {isExpanded ? (
-            <ChevronUp size={20} className="text-slate-400 dark:text-slate-400" />
+            <ChevronUp size={20} className="stroke-[2.5]" />
           ) : (
-            <ChevronDown size={20} className="text-slate-400 dark:text-slate-400" />
+            <ChevronDown size={20} className="stroke-[2.5]" />
           )}
         </div>
       </button>
