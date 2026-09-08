@@ -3,7 +3,6 @@ import {
   Search,
   ChevronDown,
   ChevronUp,
-  BookOpen,
   Lightbulb,
   List,
   CheckCircle2,
@@ -39,14 +38,6 @@ export default function LearnPage() {
       }
       return next;
     });
-  };
-
-  const expandAll = () => {
-    setExpandedSessions(new Set(studySessions.map((s) => s.sessionNumber)));
-  };
-
-  const collapseAll = () => {
-    setExpandedSessions(new Set());
   };
 
   // Filter sessions by search query
@@ -86,48 +77,31 @@ export default function LearnPage() {
 
   return (
     <div className="space-y-6 animate-fade-in pb-10">
-      {/* Page Title & Intro */}
-      <div className="pt-1">
-        <h1 className="text-2xl sm:text-3xl font-black text-main flex items-center gap-2.5">
-          <BookOpen size={26} className="text-cyan-500 dark:text-cyan-400" />
-          <span>Study Sessions Manual</span>
-        </h1>
-        <p className="text-sm sm:text-base text-sub mt-1 max-w-2xl font-normal">
-          Bite-sized teaching points, clinical models, and exam concepts for all 8 sessions of NSG 215.
-        </p>
-      </div>
-
       {/* Elevated Sticky Search Bar */}
-      <div className="sticky top-[3.75rem] md:top-[4.25rem] z-30 bg-app/90 backdrop-blur-md py-3 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200/60 dark:border-slate-800/80 transition-all">
-        <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
-          <div className="relative flex-1">
-            <Search
-              size={16}
-              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500"
-            />
-            <input
-              type="text"
-              className="search-input w-full pl-9 pr-4 py-2 text-sm rounded-xl"
-              placeholder="Search concepts, teaching points, ITQs, SAQs..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              aria-label="Search study content"
-            />
-          </div>
-          <div className="flex items-center gap-2 shrink-0">
+      <div className="sticky top-[3.75rem] md:top-[4.25rem] z-30 bg-app/90 backdrop-blur-md pt-1 sm:pt-2 pb-3 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200/60 dark:border-slate-800/80 transition-all">
+        <div className="relative w-full">
+          <Search
+            size={16}
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500"
+          />
+          <input
+            type="text"
+            className="search-input w-full pl-9 pr-9 py-2.5 text-sm rounded-xl"
+            placeholder="Search concepts, teaching points, ITQs, SAQs..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label="Search study content"
+          />
+          {searchQuery && (
             <button
-              onClick={expandAll}
-              className="btn btn-secondary text-xs px-3 py-2 rounded-xl font-bold"
+              type="button"
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+              aria-label="Clear search"
             >
-              Expand All
+              <X size={16} />
             </button>
-            <button
-              onClick={collapseAll}
-              className="btn btn-secondary text-xs px-3 py-2 rounded-xl font-bold"
-            >
-              Collapse All
-            </button>
-          </div>
+          )}
         </div>
       </div>
 
