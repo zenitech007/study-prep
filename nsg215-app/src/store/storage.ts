@@ -18,6 +18,7 @@ export const DEFAULT_PROGRESS: ProgressData = {
   missedQuestionIds: [],
   bookmarkedQuestionIds: [],
   questionHistory: {},
+  completedSessions: [],
 };
 
 /**

@@ -6,21 +6,29 @@ import {
   BookOpen,
   Lightbulb,
   List,
-  GraduationCap,
-  HelpCircle,
-  FileQuestion,
-  Eye,
-  EyeOff,
   CheckCircle2,
   FileText,
+  X,
+  Eye,
+  EyeOff,
+  Check,
+  HelpCircle,
+  FileQuestion,
 } from 'lucide-react';
-import { studySessions, courseInfo } from '../data/learnContent';
-import type { StudySessionContent } from '../types';
+import { studySessions } from '../data/learnContent';
+import type { StudySessionContent, InTextQuestion, SAQuestion } from '../types';
 import TTSButton from '../components/common/TTSButton';
+import { useAppStore } from '../store/useAppStore';
 
 export default function LearnPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedSessions, setExpandedSessions] = useState<Set<number>>(new Set([1]));
+
+  // Active Practice Modal state
+  const [activeModal, setActiveModal] = useState<{
+    type: 'itq' | 'saq';
+    session: StudySessionContent;
+  } | null>(null);
 
   const toggleSession = (num: number) => {
     setExpandedSessions((prev) => {
@@ -81,123 +89,157 @@ export default function LearnPage() {
   });
 
   return (
-    <div className="space-y-6 animate-fade-in">
-      {/* Page Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-main flex items-center gap-2">
-            <BookOpen size={24} style={{ color: 'var(--color-primary)' }} />
-            Learn
-          </h1>
-          <p className="text-sm text-sub mt-1">
-            Review all 8 study sessions from the official {courseInfo.code} course manual.
-          </p>
-        </div>
-      </div>
-
-      {/* Course Info Banner */}
-      <div
-        className="card p-5 border-l-4"
-        style={{
-          borderLeftColor: 'var(--color-primary)',
-          backgroundColor: 'var(--color-bg-card)',
-        }}
-      >
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-          <div className="flex items-center gap-2">
-            <GraduationCap size={20} style={{ color: 'var(--color-primary)' }} />
-            <h2 className="text-base font-bold text-main">
-              {courseInfo.code} — {courseInfo.title}
-            </h2>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="badge badge-primary text-xs">{courseInfo.credits}</span>
-            <span className="badge badge-accent text-xs">{courseInfo.level}</span>
-          </div>
-        </div>
-        <p className="text-xs text-sub leading-relaxed">
-          <strong className="text-main">Course Aim: </strong>
-          {courseInfo.aim}
+    <div className="space-y-6 animate-fade-in pb-10">
+      {/* Page Title & Intro */}
+      <div className="pt-1">
+        <h1 className="text-2xl sm:text-3xl font-black text-main flex items-center gap-2.5">
+          <BookOpen size={26} className="text-cyan-500 dark:text-cyan-400" />
+          <span>Study Sessions Manual</span>
+        </h1>
+        <p className="text-sm sm:text-base text-sub mt-1 max-w-2xl font-normal">
+          Bite-sized teaching points, clinical models, and exam concepts for all 8 sessions of NSG 215.
         </p>
       </div>
 
-      {/* Search + Controls */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="relative flex-1">
-          <Search
-            size={16}
-            className="absolute left-3 top-1/2 -translate-y-1/2"
-            style={{ color: 'var(--color-text-muted)' }}
-          />
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search concepts, outcomes, ITQs, SAQs..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            aria-label="Search study content"
-          />
-        </div>
-        <div className="flex gap-2">
-          <button onClick={expandAll} className="btn btn-secondary text-xs px-3 py-1.5">
-            Expand All
-          </button>
-          <button onClick={collapseAll} className="btn btn-secondary text-xs px-3 py-1.5">
-            Collapse All
-          </button>
+      {/* Elevated Sticky Search Bar */}
+      <div className="sticky top-[3.75rem] md:top-[4.25rem] z-30 bg-app/90 backdrop-blur-md py-3 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-slate-200/60 dark:border-slate-800/80 transition-all">
+        <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
+          <div className="relative flex-1">
+            <Search
+              size={16}
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500"
+            />
+            <input
+              type="text"
+              className="search-input w-full pl-9 pr-4 py-2 text-sm rounded-xl"
+              placeholder="Search concepts, teaching points, ITQs, SAQs..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              aria-label="Search study content"
+            />
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              onClick={expandAll}
+              className="btn btn-secondary text-xs px-3 py-2 rounded-xl font-bold"
+            >
+              Expand All
+            </button>
+            <button
+              onClick={collapseAll}
+              className="btn btn-secondary text-xs px-3 py-2 rounded-xl font-bold"
+            >
+              Collapse All
+            </button>
+          </div>
         </div>
       </div>
 
       {/* No Results */}
       {filteredSessions.length === 0 && (
-        <div className="card p-8 text-center">
-          <Search size={32} className="mx-auto mb-3" style={{ color: 'var(--color-text-muted)' }} />
-          <p className="text-sub">No matching content found for "{searchQuery}"</p>
+        <div className="card p-8 text-center rounded-2xl">
+          <Search size={32} className="mx-auto mb-3 text-slate-400" />
+          <p className="text-sub font-medium">No matching content found for "{searchQuery}"</p>
         </div>
       )}
 
       {/* Study Session Cards */}
-      <div className="space-y-4">
+      <div className="space-y-5">
         {filteredSessions.map((session) => (
           <SessionCard
             key={session.sessionNumber}
             session={session}
             isExpanded={expandedSessions.has(session.sessionNumber)}
             onToggle={() => toggleSession(session.sessionNumber)}
+            onOpenPractice={(type) => setActiveModal({ type, session })}
             searchQuery={searchQuery}
           />
         ))}
       </div>
+
+      {/* Interactive Practice Modal for ITQs & SAQs */}
+      {activeModal && (
+        <PracticeModal
+          type={activeModal.type}
+          session={activeModal.session}
+          searchQuery={searchQuery}
+          onClose={() => setActiveModal(null)}
+        />
+      )}
     </div>
   );
 }
+
+// ── Helpers ─────────────────────────────────────────────────────────
+
+/**
+ * Splits body text into bite-sized, scannable teaching points.
+ */
+function formatToTeachingPoints(text: string): string[] {
+  if (!text) return [];
+
+  // Normalize numbered items like "1. ", "2. " to newlines
+  const normalized = text
+    .replace(/(?<!\d)(?<![A-Za-z])(\d+)\.\s+/g, '\n$1. ')
+    .trim();
+
+  const paragraphs = normalized.split(/\r?\n+/).map((p) => p.trim()).filter(Boolean);
+  const points: string[] = [];
+
+  for (const para of paragraphs) {
+    if (/^\d+\.\s+/.test(para)) {
+      points.push(para.replace(/^\d+\.\s+/, ''));
+      continue;
+    }
+
+    // Split sentences if paragraph contains multiple statements
+    const sentences = para
+      .split(/(?<=[.?!])\s+(?=[A-Z])/g)
+      .map((s) => s.trim())
+      .filter(Boolean);
+
+    if (sentences.length > 1) {
+      points.push(...sentences);
+    } else {
+      points.push(para);
+    }
+  }
+
+  return points.filter((p) => p.length > 0);
+}
+
+// ── Session Card Component ──────────────────────────────────────────
 
 function SessionCard({
   session,
   isExpanded,
   onToggle,
+  onOpenPractice,
   searchQuery,
 }: {
   session: StudySessionContent;
   isExpanded: boolean;
   onToggle: () => void;
+  onOpenPractice: (type: 'itq' | 'saq') => void;
   searchQuery: string;
 }) {
-  const [revealedITQs, setRevealedITQs] = useState<Record<number, boolean>>({});
-  const [revealedSAQs, setRevealedSAQs] = useState<Record<string, boolean>>({});
+  const progress = useAppStore((s) => s.progress);
+  const toggleSessionCompleted = useAppStore((s) => s.toggleSessionCompleted);
 
-  const toggleITQ = (idx: number) => {
-    setRevealedITQs((prev) => ({ ...prev, [idx]: !prev[idx] }));
-  };
-
+  const isStudied = (progress.completedSessions || []).includes(session.sessionNumber);
   const [showFullContent, setShowFullContent] = useState(true);
 
-  const toggleSAQ = (id: string) => {
-    setRevealedSAQs((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
+  const itqCount = session.inTextQuestions?.length || 0;
+  const saqCount = session.saqs?.length || 0;
 
   return (
-    <div className="card overflow-hidden animate-slide-up border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500 transition-colors duration-200">
+    <div
+      className={`card overflow-hidden transition-all duration-200 border rounded-2xl ${
+        isStudied
+          ? 'border-emerald-500/40 dark:border-emerald-500/30'
+          : 'border-slate-200 dark:border-slate-800'
+      } hover:border-cyan-500 dark:hover:border-cyan-400 shadow-sm hover:shadow-md`}
+    >
       {/* Header — always visible */}
       <button
         onClick={onToggle}
@@ -207,45 +249,56 @@ function SessionCard({
         aria-label={`Study Session ${session.sessionNumber}: ${session.title}`}
       >
         <div className="flex items-start sm:items-center gap-3.5 min-w-0 flex-1 pr-3">
-          {/* Circular number badge nicely aligned */}
-          <span
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white shadow-sm mt-0.5 sm:mt-0"
-            style={{ backgroundColor: 'var(--color-primary)' }}
-          >
-            {session.sessionNumber}
-          </span>
+          {/* Circular number badge with completed indicator */}
+          <div className="relative shrink-0 mt-0.5 sm:mt-0">
+            <span
+              className={`flex h-10 w-10 items-center justify-center rounded-2xl text-sm font-black text-white shadow-sm transition-colors ${
+                isStudied
+                  ? 'bg-emerald-600 shadow-emerald-500/30'
+                  : 'bg-gradient-to-br from-blue-600 to-cyan-500 shadow-blue-500/20'
+              }`}
+            >
+              {isStudied ? <Check size={18} className="stroke-[3]" /> : session.sessionNumber}
+            </span>
+          </div>
+
           <div className="min-w-0 flex-1">
-            <h3 className="text-base font-semibold text-main leading-snug break-words">{session.title}</h3>
-            {/* Badges in flex-wrap container with gap-2, whitespace-nowrap, and soft legible styling */}
-            <div className="flex flex-wrap items-center gap-2 mt-2">
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 border border-blue-200/50 dark:border-blue-700/40">
-                {session.sourceTag === 'slide' ? 'Core Material' : 'Extension'}
-              </span>
-              {session.learningOutcomes && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300 border border-purple-200/50 dark:border-purple-700/40">
-                  {session.learningOutcomes.length} Outcomes
+            <div className="flex items-center gap-2 flex-wrap">
+              <h3 className="text-base sm:text-lg font-bold text-main leading-snug break-words">
+                {session.title}
+              </h3>
+              {isStudied && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300/50 dark:border-emerald-700/50">
+                  <span>✓</span> Studied
                 </span>
               )}
+            </div>
+
+            {/* Badges in flex-wrap container */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-2">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/60">
+                {session.sourceTag === 'slide' ? 'Core Material' : 'Extension'}
+              </span>
               {session.content && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300 border border-emerald-200/50 dark:border-emerald-700/40">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60">
                   {session.content.length} Sections
                 </span>
               )}
-              {session.saqs && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 border border-amber-200/50 dark:border-amber-700/40">
-                  {session.saqs.length} SAQs
+              {itqCount > 0 && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-indigo-50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300 border border-indigo-200/60 dark:border-indigo-800/60">
+                  {itqCount} ITQs
                 </span>
               )}
-              {session.inTextQuestions && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300 border border-indigo-200/50 dark:border-indigo-700/40">
-                  {session.inTextQuestions.length} ITQs
+              {saqCount > 0 && (
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-lg text-xs font-semibold whitespace-nowrap bg-amber-50 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200/60 dark:border-amber-800/60">
+                  {saqCount} SAQs
                 </span>
               )}
             </div>
           </div>
         </div>
 
-        {/* Chevron icon pushed cleanly to the far right with ml-auto */}
+        {/* Chevron icon */}
         <div className="ml-auto shrink-0 p-1 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
           {isExpanded ? (
             <ChevronUp size={20} className="text-slate-400 dark:text-slate-400" />
@@ -257,19 +310,19 @@ function SessionCard({
 
       {/* Content — collapsible */}
       {isExpanded && (
-        <div className="border-t p-5 space-y-6" style={{ borderColor: 'var(--color-border)' }}>
+        <div className="border-t p-5 sm:p-6 space-y-6" style={{ borderColor: 'var(--color-border)' }}>
           {/* Introduction & Overview */}
           <div className="space-y-3">
             {session.introduction && (
               <div
-                className="p-3.5 rounded-lg border text-sm"
+                className="p-4 rounded-xl border text-sm"
                 style={{
                   backgroundColor: 'var(--color-bg-secondary)',
                   borderColor: 'var(--color-border)',
                 }}
               >
-                <div className="flex items-center justify-between gap-2 mb-1.5">
-                  <span className="font-semibold text-main text-xs sm:text-sm">Session Introduction:</span>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="font-bold text-main text-xs sm:text-sm">Session Introduction</span>
                   <TTSButton
                     id={`s${session.sessionNumber}-intro`}
                     text={session.introduction}
@@ -277,13 +330,13 @@ function SessionCard({
                     variant="compact"
                   />
                 </div>
-                <p className="text-sub italic leading-relaxed">
+                <p className="text-sub italic leading-relaxed text-xs sm:text-sm">
                   "<HighlightText text={session.introduction} query={searchQuery} />"
                 </p>
               </div>
             )}
-            <div className="flex items-start justify-between gap-3">
-              <p className="text-sm text-sub leading-relaxed flex-1">
+            <div className="flex items-start justify-between gap-3 p-1">
+              <p className="text-xs sm:text-sm text-sub leading-relaxed flex-1 font-medium">
                 <HighlightText text={session.overview} query={searchQuery} />
               </p>
               <TTSButton
@@ -298,10 +351,10 @@ function SessionCard({
           {/* Learning Outcomes */}
           {session.learningOutcomes && session.learningOutcomes.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-sm font-semibold text-main flex items-center gap-2">
-                  <CheckCircle2 size={16} style={{ color: 'var(--color-success)' }} />
-                  Learning Outcomes
+              <div className="flex items-center justify-between mb-2.5">
+                <h4 className="text-sm font-bold text-main flex items-center gap-2">
+                  <CheckCircle2 size={16} className="text-emerald-500" />
+                  <span>Learning Outcomes</span>
                 </h4>
                 <TTSButton
                   id={`s${session.sessionNumber}-outcomes`}
@@ -310,14 +363,14 @@ function SessionCard({
                   variant="compact"
                 />
               </div>
-              <ul className="space-y-1.5">
+              <ul className="space-y-2">
                 {session.learningOutcomes.map((outcome, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-xs text-sub p-2 rounded-md"
+                    className="flex items-start gap-2.5 text-xs sm:text-sm text-sub p-2.5 rounded-xl border border-slate-200/60 dark:border-slate-800"
                     style={{ backgroundColor: 'var(--color-bg-secondary)' }}
                   >
-                    <span className="font-bold text-primary-color shrink-0">✓</span>
+                    <span className="font-extrabold text-cyan-600 dark:text-cyan-400 shrink-0">✓</span>
                     <span>
                       <HighlightText text={outcome} query={searchQuery} />
                     </span>
@@ -327,48 +380,82 @@ function SessionCard({
             </div>
           )}
 
-          {/* Reading Material / Content Sections */}
+          {/* Scannable Teaching Points (Reading Material) */}
           {session.content && session.content.length > 0 && (
             <div>
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-sm font-semibold text-main flex items-center gap-2">
-                  <FileText size={16} style={{ color: 'var(--color-primary)' }} />
-                  Course Manual Reading Material ({session.content.length} Sections)
+              <div className="flex items-center justify-between mb-3">
+                <h4 className="text-sm font-bold text-main flex items-center gap-2">
+                  <FileText size={16} className="text-cyan-500" />
+                  <span>Course Manual Content ({session.content.length} Sections)</span>
                 </h4>
                 <button
                   onClick={() => setShowFullContent(!showFullContent)}
-                  className="btn btn-secondary text-xs px-2.5 py-1"
+                  className="btn btn-secondary text-xs px-2.5 py-1 rounded-lg font-semibold"
                 >
-                  {showFullContent ? 'Collapse Reading' : 'Expand Reading'}
+                  {showFullContent ? 'Collapse' : 'Expand'}
                 </button>
               </div>
+
               {showFullContent && (
-                <div className="space-y-3 mt-2">
-                  {session.content.map((sec, idx) => (
-                    <div
-                      key={idx}
-                      className="p-4 rounded-lg border text-sm"
-                      style={{
-                        backgroundColor: 'var(--color-bg-secondary)',
-                        borderColor: 'var(--color-border)',
-                      }}
-                    >
-                      <div className="flex items-center justify-between gap-2 mb-2">
-                        <h5 className="font-bold text-main text-sm">
-                          <HighlightText text={sec.heading} query={searchQuery} />
-                        </h5>
-                        <TTSButton
-                          id={`s${session.sessionNumber}-sec-${idx}`}
-                          text={`${sec.heading}. ${sec.body}`}
-                          label="Listen"
-                          variant="compact"
-                        />
+                <div className="space-y-4">
+                  {session.content.map((sec, idx) => {
+                    const points = formatToTeachingPoints(sec.body);
+                    return (
+                      <div
+                        key={idx}
+                        className="p-4 sm:p-5 rounded-2xl border text-sm card-glass"
+                        style={{ borderColor: 'var(--color-border)' }}
+                      >
+                        <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200/50 dark:border-slate-800">
+                          <h5 className="font-extrabold text-main text-sm sm:text-base">
+                            <HighlightText text={sec.heading} query={searchQuery} />
+                          </h5>
+                          <TTSButton
+                            id={`s${session.sessionNumber}-sec-${idx}`}
+                            text={`${sec.heading}. ${sec.body}`}
+                            label="Listen"
+                            variant="compact"
+                          />
+                        </div>
+
+                        {/* Scannable Bulleted Teaching Points */}
+                        <div className="space-y-2.5">
+                          {points.map((point, pIdx) => {
+                            // Check if point has a colon title like "Symptoms experience: could occur..."
+                            const colonIdx = point.indexOf(': ');
+                            const hasPrefix = colonIdx > 0 && colonIdx < 35;
+
+                            return (
+                              <div
+                                key={pIdx}
+                                className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed"
+                              >
+                                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-500 dark:bg-cyan-400" />
+                                <div className="flex-1">
+                                  {hasPrefix ? (
+                                    <>
+                                      <strong className="text-main font-bold">
+                                        <HighlightText
+                                          text={point.slice(0, colonIdx + 1)}
+                                          query={searchQuery}
+                                        />
+                                      </strong>{' '}
+                                      <HighlightText
+                                        text={point.slice(colonIdx + 2)}
+                                        query={searchQuery}
+                                      />
+                                    </>
+                                  ) : (
+                                    <HighlightText text={point} query={searchQuery} />
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
-                      <p className="text-sub text-xs leading-relaxed whitespace-pre-line">
-                        <HighlightText text={sec.body} query={searchQuery} />
-                      </p>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
             </div>
@@ -376,17 +463,14 @@ function SessionCard({
 
           {/* Key Points */}
           <div>
-            <h4 className="text-sm font-semibold text-main flex items-center gap-2 mb-2">
-              <Lightbulb size={16} style={{ color: 'var(--color-warning)' }} />
-              Key Points
+            <h4 className="text-sm font-bold text-main flex items-center gap-2 mb-2">
+              <Lightbulb size={16} className="text-amber-500" />
+              <span>Key Points to Remember</span>
             </h4>
             <ul className="space-y-2">
               {session.keyPoints.map((point, i) => (
-                <li key={i} className="flex gap-2 text-sm text-sub">
-                  <span
-                    className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
-                    style={{ backgroundColor: 'var(--color-primary)' }}
-                  />
+                <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-sub">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
                   <span>
                     <HighlightText text={point} query={searchQuery} />
                   </span>
@@ -398,21 +482,21 @@ function SessionCard({
           {/* Models */}
           {session.models && session.models.length > 0 && (
             <div>
-              <h4 className="text-sm font-semibold text-main flex items-center gap-2 mb-2">
-                <List size={16} style={{ color: 'var(--color-accent)' }} />
-                Models & Frameworks
+              <h4 className="text-sm font-bold text-main flex items-center gap-2 mb-2">
+                <List size={16} className="text-purple-500" />
+                <span>Models & Frameworks</span>
               </h4>
               <div className="space-y-3">
                 {session.models.map((model) => (
                   <div
                     key={model.name}
-                    className="rounded-lg p-4"
+                    className="rounded-xl p-4 border"
                     style={{
                       backgroundColor: 'var(--color-bg-secondary)',
-                      border: '1px solid var(--color-border)',
+                      borderColor: 'var(--color-border)',
                     }}
                   >
-                    <h5 className="font-medium text-sm" style={{ color: 'var(--color-accent)' }}>
+                    <h5 className="font-bold text-sm text-purple-600 dark:text-purple-400">
                       <HighlightText text={model.name} query={searchQuery} />
                     </h5>
                     <p className="text-xs text-sub mt-1 mb-2">
@@ -435,18 +519,18 @@ function SessionCard({
           {/* Definitions */}
           {session.definitions && session.definitions.length > 0 && (
             <div>
-              <h4 className="text-sm font-semibold text-main mb-2">Key Definitions</h4>
+              <h4 className="text-sm font-bold text-main mb-2">Key Definitions</h4>
               <div className="grid gap-2 sm:grid-cols-2">
                 {session.definitions.map((def) => (
                   <div
                     key={def.term}
-                    className="rounded-lg p-3"
-                    style={{ backgroundColor: 'var(--color-bg-secondary)' }}
+                    className="rounded-xl p-3 border"
+                    style={{
+                      backgroundColor: 'var(--color-bg-secondary)',
+                      borderColor: 'var(--color-border)',
+                    }}
                   >
-                    <span
-                      className="text-xs font-semibold"
-                      style={{ color: 'var(--color-primary)' }}
-                    >
+                    <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400">
                       <HighlightText text={def.term} query={searchQuery} />
                     </span>
                     <p className="text-xs text-sub mt-1">
@@ -458,131 +542,233 @@ function SessionCard({
             </div>
           )}
 
-          {/* In-Text Questions (Self-Check) */}
-          {session.inTextQuestions && session.inTextQuestions.length > 0 && (
+          {/* ── Dedicated Action Zone Footer ──────────────────────── */}
+          <div className="mt-8 pt-5 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3.5 bg-slate-100/60 dark:bg-slate-900/60 p-4 sm:p-5 rounded-2xl border border-slate-200/60 dark:border-slate-800">
+            {/* Mark as Studied Toggle Button */}
             <div>
-              <h4 className="text-sm font-semibold text-main flex items-center gap-2 mb-2">
-                <HelpCircle size={16} style={{ color: 'var(--color-primary)' }} />
-                In-Text Questions (Self-Check)
-              </h4>
-              <div className="space-y-2.5">
-                {session.inTextQuestions.map((itq, idx) => {
-                  const isRevealed = !!revealedITQs[idx];
-                  return (
-                    <div
-                      key={idx}
-                      className="p-3 rounded-lg border transition-all"
-                      style={{
-                        backgroundColor: 'var(--color-bg-secondary)',
-                        borderColor: 'var(--color-border)',
-                      }}
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <p className="text-xs font-medium text-main flex-1">
-                          <span className="font-bold text-primary-color mr-1">Q{idx + 1}:</span>
-                          <HighlightText text={itq.question} query={searchQuery} />
-                        </p>
-                        <div className="flex items-center gap-1 shrink-0">
-                          <TTSButton
-                            id={`s${session.sessionNumber}-itq-${idx}`}
-                            text={`In-Text Question ${idx + 1}: ${itq.question}. ${isRevealed ? `Answer: ${itq.answer}` : ''}`}
-                            variant="icon"
-                            size={13}
-                          />
-                          <button
-                            onClick={() => toggleITQ(idx)}
-                            className="btn btn-secondary text-xs px-2 py-1 shrink-0 flex items-center gap-1 cursor-pointer"
-                          >
-                            {isRevealed ? <EyeOff size={12} /> : <Eye size={12} />}
-                            {isRevealed ? 'Hide' : 'Reveal'}
-                          </button>
-                        </div>
-                      </div>
-                      {isRevealed && (
-                        <div
-                          className="mt-2 pt-2 border-t text-xs font-semibold animate-fade-in flex items-center gap-1.5"
-                          style={{
-                            borderColor: 'var(--color-border)',
-                            color: 'var(--color-success)',
-                          }}
-                        >
-                          <span>Answer:</span>
-                          <span className="text-main font-normal">
-                            <HighlightText text={itq.answer} query={searchQuery} />
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+              <button
+                type="button"
+                onClick={() => toggleSessionCompleted(session.sessionNumber)}
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+                  isStudied
+                    ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-600/30'
+                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500'
+                }`}
+              >
+                <CheckCircle2
+                  size={16}
+                  className={isStudied ? 'text-white' : 'text-slate-400'}
+                />
+                <span>{isStudied ? 'Session Studied ✓' : 'Mark as Studied'}</span>
+              </button>
             </div>
-          )}
 
-          {/* Self-Assessment Questions (SAQs) */}
-          {session.saqs && session.saqs.length > 0 && (
-            <div>
-              <h4 className="text-sm font-semibold text-main flex items-center gap-2 mb-2">
-                <FileQuestion size={16} style={{ color: 'var(--color-warning)' }} />
-                Self-Assessment Questions (Official Manual SAQs)
-              </h4>
-              <div className="space-y-3">
-                {session.saqs.map((saq) => {
-                  const isRevealed = !!revealedSAQs[saq.id];
-                  return (
-                    <div
-                      key={saq.id}
-                      className="p-3.5 rounded-lg border"
-                      style={{
-                        backgroundColor: 'var(--color-bg-card)',
-                        borderColor: 'var(--color-border)',
-                      }}
-                    >
-                      <div className="flex items-start justify-between gap-3">
-                        <div className="flex-1">
-                          <span className="badge badge-warning text-[10px] mb-1">
-                            SAQ {saq.id}
-                          </span>
-                          <p className="text-xs font-semibold text-main mt-0.5">
-                            <HighlightText text={saq.question} query={searchQuery} />
-                          </p>
-                        </div>
-                        <div className="flex items-center gap-1.5 shrink-0">
-                          <TTSButton
-                            id={`s${session.sessionNumber}-saq-${saq.id}`}
-                            text={`Short Answer Question ${saq.id}: ${saq.question}. ${isRevealed ? `Model Answer: ${saq.answer}` : ''}`}
-                            variant="icon"
-                            size={14}
-                          />
-                          <button
-                            onClick={() => toggleSAQ(saq.id)}
-                            className="btn btn-secondary text-xs px-2.5 py-1 shrink-0 flex items-center gap-1 cursor-pointer"
-                          >
-                            {isRevealed ? <EyeOff size={12} /> : <Eye size={12} />}
-                            {isRevealed ? 'Hide Model Answer' : 'Model Answer'}
-                          </button>
-                        </div>
-                      </div>
-                      {isRevealed && (
-                        <div
-                          className="mt-3 p-2.5 rounded-md border text-xs text-sub leading-relaxed animate-fade-in"
-                          style={{
-                            backgroundColor: 'var(--color-bg-secondary)',
-                            borderColor: 'var(--color-border)',
-                          }}
-                        >
-                          <strong className="text-main block mb-1">Official Model Answer:</strong>
-                          <HighlightText text={saq.answer} query={searchQuery} />
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+            {/* Interactive Drill Modals Launchers */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+              {itqCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => onOpenPractice('itq')}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-indigo-50 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 hover:-translate-y-0.5 transition-all cursor-pointer shadow-2xs"
+                >
+                  <HelpCircle size={15} />
+                  <span>Practice ITQs ({itqCount})</span>
+                </button>
+              )}
+
+              {saqCount > 0 && (
+                <button
+                  type="button"
+                  onClick={() => onOpenPractice('saq')}
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 hover:-translate-y-0.5 transition-all cursor-pointer shadow-2xs"
+                >
+                  <FileQuestion size={15} />
+                  <span>Drill SAQs ({saqCount})</span>
+                </button>
+              )}
             </div>
-          )}
+          </div>
         </div>
       )}
+    </div>
+  );
+}
+
+// ── Interactive Practice Modal (ITQs & SAQs) ────────────────────────
+
+function PracticeModal({
+  type,
+  session,
+  searchQuery,
+  onClose,
+}: {
+  type: 'itq' | 'saq';
+  session: StudySessionContent;
+  searchQuery: string;
+  onClose: () => void;
+}) {
+  const [revealed, setRevealed] = useState<Record<string | number, boolean>>({});
+
+  const toggleReveal = (key: string | number) => {
+    setRevealed((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const isITQ = type === 'itq';
+  const title = isITQ
+    ? `Session ${session.sessionNumber}: In-Text Self-Check Questions`
+    : `Session ${session.sessionNumber}: Self-Assessment Questions (SAQs)`;
+
+  const itqs: InTextQuestion[] = session.inTextQuestions || [];
+  const saqs: SAQuestion[] = session.saqs || [];
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-fade-in"
+      role="dialog"
+      aria-modal="true"
+      aria-label={title}
+    >
+      <div className="relative w-full max-w-2xl max-h-[85vh] flex flex-col rounded-3xl bg-card border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+        {/* Modal Header */}
+        <div className="flex items-center justify-between p-4 sm:p-5 border-b border-slate-200/80 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/70">
+          <div className="flex items-center gap-2.5">
+            <span
+              className={`p-2 rounded-xl text-white ${
+                isITQ ? 'bg-indigo-600' : 'bg-amber-600'
+              }`}
+            >
+              {isITQ ? <HelpCircle size={18} /> : <FileQuestion size={18} />}
+            </span>
+            <div>
+              <h3 className="text-base sm:text-lg font-black text-main leading-tight">
+                {title}
+              </h3>
+              <p className="text-xs text-sub mt-0.5">
+                {isITQ
+                  ? `${itqs.length} in-text question items from course manual`
+                  : `${saqs.length} official short answer questions`}
+              </p>
+            </div>
+          </div>
+
+          <button
+            onClick={onClose}
+            className="p-1.5 rounded-xl hover:bg-slate-200/60 dark:hover:bg-slate-800 text-sub hover:text-main transition-colors cursor-pointer"
+            aria-label="Close modal"
+          >
+            <X size={20} />
+          </button>
+        </div>
+
+        {/* Modal Scrollable Questions Content */}
+        <div className="p-4 sm:p-6 overflow-y-auto space-y-4 flex-1">
+          {isITQ ? (
+            itqs.map((itq, idx) => {
+              const isRevealed = !!revealed[idx];
+              return (
+                <div
+                  key={idx}
+                  className="p-4 rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 transition-all"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <p className="text-xs sm:text-sm font-semibold text-main flex-1">
+                      <span className="font-extrabold text-indigo-600 dark:text-indigo-400 mr-1.5">
+                        Q{idx + 1}:
+                      </span>
+                      <HighlightText text={itq.question} query={searchQuery} />
+                    </p>
+
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <TTSButton
+                        id={`modal-itq-${session.sessionNumber}-${idx}`}
+                        text={`Question ${idx + 1}: ${itq.question}. ${
+                          isRevealed ? `Answer: ${itq.answer}` : ''
+                        }`}
+                        variant="icon"
+                        size={14}
+                      />
+                      <button
+                        onClick={() => toggleReveal(idx)}
+                        className="btn btn-secondary text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1 cursor-pointer font-bold"
+                      >
+                        {isRevealed ? <EyeOff size={13} /> : <Eye size={13} />}
+                        <span>{isRevealed ? 'Hide' : 'Reveal'}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {isRevealed && (
+                    <div className="mt-3 pt-3 border-t border-slate-200/60 dark:border-slate-800 text-xs sm:text-sm font-medium animate-fade-in flex items-start gap-2 bg-emerald-50/50 dark:bg-emerald-950/30 p-2.5 rounded-xl text-emerald-800 dark:text-emerald-300">
+                      <strong className="font-extrabold shrink-0">Answer:</strong>
+                      <span className="text-main font-normal">
+                        <HighlightText text={itq.answer} query={searchQuery} />
+                      </span>
+                    </div>
+                  )}
+                </div>
+              );
+            })
+          ) : (
+            saqs.map((saq) => {
+              const isRevealed = !!revealed[saq.id];
+              return (
+                <div
+                  key={saq.id}
+                  className="p-4 sm:p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 transition-all"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1">
+                      <span className="badge badge-warning text-[11px] font-bold mb-1.5">
+                        SAQ {saq.id}
+                      </span>
+                      <p className="text-xs sm:text-sm font-extrabold text-main mt-1 leading-snug">
+                        <HighlightText text={saq.question} query={searchQuery} />
+                      </p>
+                    </div>
+
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <TTSButton
+                        id={`modal-saq-${session.sessionNumber}-${saq.id}`}
+                        text={`Question ${saq.id}: ${saq.question}. ${
+                          isRevealed ? `Model Answer: ${saq.answer}` : ''
+                        }`}
+                        variant="icon"
+                        size={14}
+                      />
+                      <button
+                        onClick={() => toggleReveal(saq.id)}
+                        className="btn btn-secondary text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5 cursor-pointer font-bold"
+                      >
+                        {isRevealed ? <EyeOff size={13} /> : <Eye size={13} />}
+                        <span>{isRevealed ? 'Hide' : 'Model Answer'}</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  {isRevealed && (
+                    <div className="mt-3.5 p-3.5 rounded-xl border border-amber-300/40 dark:border-amber-700/40 text-xs sm:text-sm leading-relaxed animate-fade-in bg-amber-50/60 dark:bg-amber-950/40 text-slate-800 dark:text-slate-200">
+                      <strong className="text-amber-800 dark:text-amber-300 block mb-1 font-bold">
+                        Official Model Answer:
+                      </strong>
+                      <HighlightText text={saq.answer} query={searchQuery} />
+                    </div>
+                  )}
+                </div>
+              );
+            })
+          )}
+        </div>
+
+        {/* Modal Footer */}
+        <div className="p-3.5 sm:p-4 border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/70 flex justify-end">
+          <button
+            onClick={onClose}
+            className="btn btn-primary text-xs sm:text-sm font-extrabold px-5 py-2 rounded-xl"
+          >
+            Done Practicing
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

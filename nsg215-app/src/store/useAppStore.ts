@@ -35,6 +35,7 @@ const DEFAULT_PROGRESS: ProgressData = {
   missedQuestionIds: [],
   bookmarkedQuestionIds: [],
   questionHistory: {},
+  completedSessions: [],
 };
 
 export const useAppStore = create<AppState>((set, get) => ({
@@ -219,6 +220,23 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   resetQuiz: () => {
     set({ activeQuiz: null });
+  },
+
+  // ── Session Completion Tracking ─────────────────────────────
+  toggleSessionCompleted: (sessionNum: number) => {
+    const currentProgress = get().progress;
+    const existing = currentProgress.completedSessions || [];
+    const updatedSessions = existing.includes(sessionNum)
+      ? existing.filter((n) => n !== sessionNum)
+      : [...existing, sessionNum];
+
+    const updatedProgress: ProgressData = {
+      ...currentProgress,
+      completedSessions: updatedSessions,
+    };
+
+    storage.saveProgress(updatedProgress);
+    set({ progress: updatedProgress });
   },
 
   // ── Data Portability ────────────────────────────────────────

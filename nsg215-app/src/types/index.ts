@@ -87,6 +87,7 @@ export interface ProgressData {
   bookmarkedQuestionIds: string[];
   questionHistory: Record<string, QuestionHistory>;
   srsData?: Record<string, SRSItem>;
+  completedSessions?: number[];
 }
 
 export interface QuestionHistory {
@@ -193,6 +194,7 @@ export interface AppState {
 
   // Progress
   progress: ProgressData;
+  toggleSessionCompleted: (sessionNum: number) => void;
   resetProgress: (courseId?: string) => void;
   exportProgress: (courseId?: string) => string;
   importProgress: (jsonData: string, courseId?: string) => boolean;
