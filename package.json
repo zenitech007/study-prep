@@ -1,0 +1,12 @@
+{
+  "name": "study-prep",
+  "private": true,
+  "workspaces": [
+    "nsg215-app"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=nsg215-app",
+    "build": "npm run build --workspace=nsg215-app",
+    "preview": "npm run preview --workspace=nsg215-app"
+  }
+}
