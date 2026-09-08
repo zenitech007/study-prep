@@ -1,14 +1,24 @@
 import { useState, useMemo } from 'react';
 import { useAppStore } from '../../store/useAppStore';
+import { storage } from '../../store/storage';
 import { getUniqueTopics } from '../../utils/quiz';
 import { getDueSRSQuestions } from '../../utils/srs';
-import type { QuizConfig, Difficulty } from '../../types';
+import type { QuizConfig, Difficulty, QuizSession } from '../../types';
 import { Settings, Play, ChevronDown, RotateCcw } from 'lucide-react';
 
-export default function DrillConfig() {
+interface DrillConfigProps {
+  onResumeQuiz?: () => void;
+  onStartQuiz?: () => void;
+}
+
+export default function DrillConfig({ onResumeQuiz, onStartQuiz }: DrillConfigProps) {
   const questions = useAppStore((s) => s.questions);
   const progress = useAppStore((s) => s.progress);
   const startQuiz = useAppStore((s) => s.startQuiz);
+  const resumeSavedQuiz = useAppStore((s) => s.resumeSavedQuiz);
+  const discardSavedQuiz = useAppStore((s) => s.discardSavedQuiz);
+
+  const [savedQuiz, setSavedQuiz] = useState<QuizSession | null>(() => storage.getActiveQuiz());
 
   const uniqueTopics = useMemo(() => getUniqueTopics(questions), [questions]);
   const dueSRSQuestions = useMemo(
@@ -36,6 +46,7 @@ export default function DrillConfig() {
   const handleStart = () => {
     if (matchingCount === 0) return;
     startQuiz(config);
+    if (onStartQuiz) onStartQuiz();
   };
 
   const handleStartSRS = () => {
@@ -47,10 +58,69 @@ export default function DrillConfig() {
       smartDrill: false,
       srsOnly: true,
     });
+    if (onStartQuiz) onStartQuiz();
+  };
+
+  const handleResumeSavedQuiz = () => {
+    resumeSavedQuiz();
+    if (onResumeQuiz) onResumeQuiz();
+  };
+
+  const handleDiscardSavedQuiz = () => {
+    discardSavedQuiz();
+    setSavedQuiz(null);
   };
 
   return (
-    <div className="max-w-4xl mx-auto animate-fade-in space-y-4">
+    <div className="max-w-4xl mx-auto animate-fade-in space-y-5">
+      {/* Active Drill In-Progress Prompt */}
+      {savedQuiz && (
+        <div className="p-4 sm:p-5 rounded-2xl border-2 border-cyan-500/50 bg-gradient-to-r from-blue-600/10 via-cyan-500/10 to-teal-500/10 shadow-lg shadow-cyan-500/5 animate-fade-in">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-start sm:items-center gap-3.5">
+              <div className="p-2.5 rounded-xl bg-cyan-500 text-slate-950 shrink-0 font-bold shadow-sm">
+                <Play size={20} className="fill-current" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <h3 className="text-base sm:text-lg font-black text-main">
+                    You have an active drill in progress.
+                  </h3>
+                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-600 dark:text-cyan-300">
+                    {savedQuiz.config.mode === 'exam' ? 'Exam Mode' : 'Practice Mode'}
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-sub mt-1">
+                  Question <strong className="text-main">{savedQuiz.currentIndex + 1}</strong> of{' '}
+                  <strong className="text-main">{savedQuiz.questionIds.length}</strong> •{' '}
+                  {savedQuiz.answers.filter((a) => a.selectedIndex !== null).length} answered (
+                  {savedQuiz.answers.filter((a) => a.isCorrect).length} correct)
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2.5 shrink-0 self-stretch sm:self-auto">
+              <button
+                type="button"
+                onClick={handleDiscardSavedQuiz}
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-bold text-xs transition-colors cursor-pointer"
+              >
+                <RotateCcw size={14} />
+                <span>Start Over</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleResumeSavedQuiz}
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs shadow-md shadow-cyan-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
+              >
+                <Play size={14} className="fill-current" />
+                <span>Resume Drill</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Spaced Repetition (SRS) Due Notice (if any) */}
       {dueSRSQuestions.length > 0 && (
         <div className="p-3.5 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-purple-500/10 border border-purple-500/30 text-xs">

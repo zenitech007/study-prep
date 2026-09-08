@@ -3,7 +3,11 @@ import { useAppStore } from '../../store/useAppStore';
 import { ChevronLeft, ChevronRight, Bookmark, BookmarkCheck } from 'lucide-react';
 import QuestionCard from './QuestionCard';
 
-export default function QuizRunner() {
+interface QuizRunnerProps {
+  onExit?: () => void;
+}
+
+export default function QuizRunner({ onExit }: QuizRunnerProps) {
   const activeQuiz = useAppStore((s) => s.activeQuiz);
   const questions = useAppStore((s) => s.questions);
   const progress = useAppStore((s) => s.progress);
@@ -41,7 +45,13 @@ export default function QuizRunner() {
   const isBookmarked = progress.bookmarkedQuestionIds.includes(currentQuestionId);
   const isLastQuestion = activeQuiz.currentIndex === activeQuiz.questionIds.length - 1;
 
-  if (!currentQuestion) return null;
+  if (!currentQuestion) {
+    return (
+      <div className="max-w-3xl mx-auto text-center py-12 card p-8 rounded-2xl">
+        <p className="text-sub font-medium">Loading question details...</p>
+      </div>
+    );
+  }
 
   const getTimerDisplay = () => {
     const mins = Math.floor(elapsed / 60);
@@ -53,14 +63,25 @@ export default function QuizRunner() {
     <div className="max-w-3xl mx-auto animate-slide-up">
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
-        <span className="text-sm font-semibold text-main">
-          Question {activeQuiz.currentIndex + 1} of {activeQuiz.questionIds.length}
-        </span>
+        <div className="flex items-center gap-2.5">
+          {onExit && (
+            <button
+              type="button"
+              onClick={onExit}
+              className="text-xs font-bold text-sub hover:text-main px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+            >
+              ← Pause & Exit
+            </button>
+          )}
+          <span className="text-sm font-bold text-main">
+            Question {activeQuiz.currentIndex + 1} of {activeQuiz.questionIds.length}
+          </span>
+        </div>
         <div className="flex items-center gap-3">
           <span className="text-xs text-muted font-mono">{getTimerDisplay()}</span>
           <button
             onClick={() => toggleBookmark(currentQuestionId)}
-            className="p-1.5 rounded-lg transition-colors"
+            className="p-1.5 rounded-lg transition-colors cursor-pointer"
             style={{ color: isBookmarked ? 'var(--color-primary)' : 'var(--color-text-muted)' }}
             aria-label={isBookmarked ? 'Remove bookmark' : 'Bookmark question'}
           >

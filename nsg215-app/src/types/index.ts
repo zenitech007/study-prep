@@ -190,6 +190,8 @@ export interface AppState {
   goToQuestion: (index: number) => void;
   submitQuiz: () => void;
   resetQuiz: () => void;
+  resumeSavedQuiz: () => void;
+  discardSavedQuiz: () => void;
   toggleBookmark: (questionId: string) => void;
 
   // Progress

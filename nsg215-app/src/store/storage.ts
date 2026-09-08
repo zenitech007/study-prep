@@ -1,7 +1,8 @@
-import type { ProgressData } from '../types';
+import type { ProgressData, QuizSession } from '../types';
 
 const STORAGE_KEYS = {
   progress: 'nsg215-progress',
+  activeQuiz: 'nsg215-active-drill',
   theme: 'nsg215-theme',
   fontSize: 'nsg215-fontSize',
 } as const;
@@ -33,7 +34,12 @@ export const storage = {
       const courseKey = courseId === 'nsg215' ? STORAGE_KEYS.progress : `studyprep-progress-${courseId}`;
       const raw = localStorage.getItem(courseKey) || (courseId === 'nsg215' ? localStorage.getItem('studyprep-progress-nsg215') : null);
       if (!raw) return { ...DEFAULT_PROGRESS };
-      return JSON.parse(raw) as ProgressData;
+      const parsed = JSON.parse(raw) as ProgressData;
+      return {
+        ...DEFAULT_PROGRESS,
+        ...parsed,
+        completedSessions: Array.isArray(parsed.completedSessions) ? parsed.completedSessions : [],
+      };
     } catch {
       return { ...DEFAULT_PROGRESS };
     }
@@ -43,8 +49,52 @@ export const storage = {
     try {
       const courseKey = courseId === 'nsg215' ? STORAGE_KEYS.progress : `studyprep-progress-${courseId}`;
       localStorage.setItem(courseKey, JSON.stringify(progress));
+      if (courseId === 'nsg215') {
+        localStorage.setItem('studyprep-progress-nsg215', JSON.stringify(progress));
+      }
     } catch (e) {
       console.error('Failed to save progress to localStorage:', e);
+    }
+  },
+
+  // ── Active Drill Session ──────────────────────────────────
+  getActiveQuiz(): QuizSession | null {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEYS.activeQuiz);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw) as QuizSession;
+      if (
+        !parsed ||
+        !parsed.id ||
+        !Array.isArray(parsed.questionIds) ||
+        parsed.questionIds.length === 0 ||
+        parsed.completedAt !== null // Completed quizzes shouldn't be resumed
+      ) {
+        return null;
+      }
+      return parsed;
+    } catch {
+      return null;
+    }
+  },
+
+  saveActiveQuiz(quiz: QuizSession | null): void {
+    try {
+      if (!quiz || quiz.completedAt !== null) {
+        localStorage.removeItem(STORAGE_KEYS.activeQuiz);
+      } else {
+        localStorage.setItem(STORAGE_KEYS.activeQuiz, JSON.stringify(quiz));
+      }
+    } catch (e) {
+      console.error('Failed to save active quiz to localStorage:', e);
+    }
+  },
+
+  clearActiveQuiz(): void {
+    try {
+      localStorage.removeItem(STORAGE_KEYS.activeQuiz);
+    } catch (e) {
+      console.error('Failed to clear active quiz from localStorage:', e);
     }
   },
 

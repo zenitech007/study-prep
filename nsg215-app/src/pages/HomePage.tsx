@@ -22,7 +22,7 @@ export default function HomePage() {
         
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4 leading-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-500 to-cyan-400 dark:from-blue-400 dark:via-cyan-300 dark:to-teal-200">
-            NSG 215: Master Human Behavior
+            StudyPrep Hub
           </span>
         </h1>
         

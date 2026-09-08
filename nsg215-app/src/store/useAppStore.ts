@@ -90,6 +90,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       bookmarkedIds: [],
     };
 
+    storage.saveActiveQuiz(quiz);
     set({ activeQuiz: quiz });
   },
 
@@ -108,9 +109,9 @@ export const useAppStore = create<AppState>((set, get) => ({
         : a
     );
 
-    set({
-      activeQuiz: { ...activeQuiz, answers: updatedAnswers },
-    });
+    const updatedQuiz = { ...activeQuiz, answers: updatedAnswers };
+    storage.saveActiveQuiz(updatedQuiz);
+    set({ activeQuiz: updatedQuiz });
   },
 
   navigateQuiz: (direction: 'next' | 'prev') => {
@@ -122,14 +123,19 @@ export const useAppStore = create<AppState>((set, get) => ({
         ? Math.min(activeQuiz.currentIndex + 1, activeQuiz.questionIds.length - 1)
         : Math.max(activeQuiz.currentIndex - 1, 0);
 
-    set({ activeQuiz: { ...activeQuiz, currentIndex: newIndex } });
+    const updatedQuiz = { ...activeQuiz, currentIndex: newIndex };
+    storage.saveActiveQuiz(updatedQuiz);
+    set({ activeQuiz: updatedQuiz });
   },
 
   goToQuestion: (index: number) => {
     const { activeQuiz } = get();
     if (!activeQuiz) return;
     if (index < 0 || index >= activeQuiz.questionIds.length) return;
-    set({ activeQuiz: { ...activeQuiz, currentIndex: index } });
+
+    const updatedQuiz = { ...activeQuiz, currentIndex: index };
+    storage.saveActiveQuiz(updatedQuiz);
+    set({ activeQuiz: updatedQuiz });
   },
 
   submitQuiz: () => {
@@ -154,6 +160,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     const uniqueTopics = [...new Set(questions.map((q) => q.topic))].length;
 
     const updatedProgress: ProgressData = {
+      ...progress,
       totalAttempted,
       totalCorrect,
       accuracy: calcAccuracy(totalCorrect, totalAttempted),
@@ -165,6 +172,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       missedQuestionIds: newMissed,
       bookmarkedQuestionIds: progress.bookmarkedQuestionIds,
       questionHistory: newQuestionHistory,
+      completedSessions: progress.completedSessions || [],
     };
 
     updatedProgress.preparedness = calcPreparedness(
@@ -174,6 +182,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     );
 
     storage.saveProgress(updatedProgress);
+    storage.clearActiveQuiz();
 
     set({
       activeQuiz: {
@@ -209,9 +218,11 @@ export const useAppStore = create<AppState>((set, get) => ({
       } else {
         quizBookmarks.add(questionId);
       }
+      const updatedQuiz = { ...activeQuiz, bookmarkedIds: Array.from(quizBookmarks) };
+      storage.saveActiveQuiz(updatedQuiz);
       set({
         progress: updatedProgress,
-        activeQuiz: { ...activeQuiz, bookmarkedIds: Array.from(quizBookmarks) },
+        activeQuiz: updatedQuiz,
       });
     } else {
       set({ progress: updatedProgress });
@@ -219,6 +230,19 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   resetQuiz: () => {
+    storage.clearActiveQuiz();
+    set({ activeQuiz: null });
+  },
+
+  resumeSavedQuiz: () => {
+    const saved = storage.getActiveQuiz();
+    if (saved) {
+      set({ activeQuiz: saved });
+    }
+  },
+
+  discardSavedQuiz: () => {
+    storage.clearActiveQuiz();
     set({ activeQuiz: null });
   },
 
@@ -258,6 +282,12 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   resetProgress: (courseId?: string) => {
     storage.resetProgress(courseId);
+    storage.clearActiveQuiz();
     set({ progress: { ...DEFAULT_PROGRESS }, activeQuiz: null });
   },
 }));
+
+// Continuous state persistence subscription
+useAppStore.subscribe((state) => {
+  storage.saveProgress(state.progress);
+});

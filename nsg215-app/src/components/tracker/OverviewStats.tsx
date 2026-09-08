@@ -1,11 +1,12 @@
 import { useAppStore } from '../../store/useAppStore';
-import { Brain, Target, Flame, Award, Activity } from 'lucide-react';
+import { Brain, Target, Flame, Award, Activity, CheckCircle2 } from 'lucide-react';
 
 export default function OverviewStats() {
   const progress = useAppStore((s) => s.progress);
+  const completedCount = (progress.completedSessions || []).length;
 
   const getMessage = () => {
-    if (progress.totalAttempted === 0) return "Ready to start your NSG 215 journey?";
+    if (progress.totalAttempted === 0 && completedCount === 0) return "Ready to start your NSG 215 journey?";
     if (progress.preparedness >= 80) return "You're doing fantastic! Keep up the great work.";
     if (progress.preparedness >= 50) return "Solid progress! Keep practicing to boost that score.";
     return "Every question is a learning opportunity. Keep going!";
@@ -34,11 +35,11 @@ export default function OverviewStats() {
       bgColor: 'var(--color-accent-light)',
     },
     {
-      label: 'Current Streak',
-      value: progress.currentStreak,
-      icon: Flame,
-      color: 'var(--color-warning)',
-      bgColor: 'var(--color-warning-light)',
+      label: 'Sessions Studied',
+      value: `${completedCount} / 8`,
+      icon: CheckCircle2,
+      color: 'var(--color-primary)',
+      bgColor: 'var(--color-primary-light)',
     },
   ];
 
@@ -71,19 +72,26 @@ export default function OverviewStats() {
       </div>
 
       {/* Additional stats row */}
-      {progress.totalAttempted > 0 && (
-        <div className="grid grid-cols-3 gap-3">
+      {(progress.totalAttempted > 0 || completedCount > 0) && (
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div className="card p-3 text-center">
-            <p className="text-lg font-bold text-main">{progress.sessionCount}</p>
-            <p className="text-[10px] text-muted uppercase">Sessions</p>
+            <p className="text-lg font-bold text-main flex items-center justify-center gap-1">
+              <Flame size={16} className="text-amber-500 fill-amber-500/20" />
+              <span>{progress.currentStreak}</span>
+            </p>
+            <p className="text-[10px] text-muted uppercase">Current Streak</p>
           </div>
           <div className="card p-3 text-center">
             <p className="text-lg font-bold text-main">{progress.bestStreak}</p>
             <p className="text-[10px] text-muted uppercase">Best Streak</p>
           </div>
           <div className="card p-3 text-center">
+            <p className="text-lg font-bold text-main">{progress.sessionCount}</p>
+            <p className="text-[10px] text-muted uppercase">Quizzes Completed</p>
+          </div>
+          <div className="card p-3 text-center">
             <p className="text-lg font-bold text-main">{Object.keys(progress.questionHistory).length}</p>
-            <p className="text-[10px] text-muted uppercase">Unique Seen</p>
+            <p className="text-[10px] text-muted uppercase">Unique Questions</p>
           </div>
         </div>
       )}
