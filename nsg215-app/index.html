@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Study & quiz app for NSG 215 – Human Behavior in Illness" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>NSG 215 – Exam Prep</title>
+    <!-- Safeguard against browser extensions / performance profilers accessing undefined timing/event.startTime -->
+    <script>
+      (function() {
+        if (typeof window !== 'undefined') {
+          // Guard PerformanceEntry / PerformanceObserver and custom timing callers
+          var origGetEntries = window.performance && window.performance.getEntries;
+          if (origGetEntries) {
+            window.performance.getEntries = function() {
+              var entries = origGetEntries.apply(this, arguments) || [];
+              return entries.filter(function(e) { return e && typeof e.startTime !== 'undefined'; });
+            };
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

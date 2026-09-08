@@ -1,0 +1,75 @@
+{
+  "id": 4,
+  "title": "Illness Cognition",
+  "introduction": "Health they say is wealth. The desire to live healthy is one of the goals of the average man. However the wellbeing of man is threatened by illness. Most patients are mainly familiar with common sense knowledge of illness called cognition. It has become important to learn about illness. In this study session you will learn about illness cognition, illness and health, the concept of disease causation, models of disease causation and patterns of illness.",
+  "learningOutcomes": [
+    "4.1 Define illness and health",
+    "4.2 Explain illness cognition",
+    "4.3 Discuss the concept of disease causation",
+    "4.4 Discuss the models of disease causation",
+    "4.5 Explain the patterns of illness"
+  ],
+  "content": [
+    {
+      "heading": "4.1 Illness and healthiness",
+      "body": "The World Health Assembly in 1974 coined a universally acceptable definition of health as a state of complete physical, mental and social well-being and not merely the absence of diseases or infirmity. The term 'Illness' also has several definitions ranging from not feeling normal/right, presence of physical/psychological symptoms, having a specific illness to standard definitions like 'Individual's perception and labeling of a set of physical and emotional experience, which highlights the role of cognition on illness perception."
+    },
+    {
+      "heading": "4.2 Illness Cognition",
+      "body": "Illness Cognition is defined as a patient's common sense beliefs about their illness. Leventhal attempted to list the factors that make up an individual's illness perceptions and they are in five dimensions: Identity (the label a patient gives his condition in terms of diagnosis and symptoms), Perceived cause of illness (factors causing or contributing to the illness), Time line (beliefs about how long the illness will last), Consequences (perceptions of the possible effects of the illness on their life), and Cure & control (beliefs that the illness can be treated and cured)."
+    },
+    {
+      "heading": "4.3 Concept of disease causation",
+      "body": "There are several concepts regarding disease causation. 1. Germ theory of disease: states the one to one relationship between causal agent and disease. 2. Epidemiological triad: reveals that disease is caused by interactions between agent, host and environment. 3. Multifactorial Causation: talks about array of interactions between the host and environment. 4. Web of causation: meant for chronic disease where disease agent is not known and it is the outcome of interaction of multiple factors."
+    },
+    {
+      "heading": "4.4 Models of disease causation",
+      "body": "The Biological Model of disease causation: The biomedical model, which dominates medicine, is a reductionist, single-factor model of illness that regards the mind and the body as separate entities and emphasizes illness concerns over health. The Bio psychosocial Model: fundamental assumption is that health and illness are consequences of the interplay of biological, psychological, and social factors. It maintains that health and illness are caused by multiple factors and produce multiple effects."
+    },
+    {
+      "heading": "4.5 Patterns of Illness",
+      "body": "Illness could exist in these patterns: Acute and Chronic. Acute illness is a self-limiting disease which is mostly characterized by the symptoms having a rapid onset. These symptoms are fairly intense and resolve in short period of time. Chronic illness are those that occur across the whole range of illness, complex in how they are caused, are often long-lasting and persistent in their effects and can produce a range of complications."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "________ is the individual's perception and labeling of a set of physical and emotional experience which highlights the role of cognition on illness and perception.",
+      "answer": "Illness"
+    },
+    {
+      "question": "________ refers to a patient's beliefs about how long the illness will last.",
+      "answer": "Timeline"
+    },
+    {
+      "question": "________ states the one to one relationship between causal agent and disease.",
+      "answer": "Germ theory of disease"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Define illness and healthiness",
+      "answer": "Healthiness is ability to maintain a good psychological well-being or the absence of illness/symptoms. Illness is the individual's perception and labeling of a set of physical and emotional experience."
+    },
+    {
+      "id": "4.2",
+      "question": "Explain illness cognition and state the illness perception dimensions according to Leventhal.",
+      "answer": "Illness Cognition is defined as a patient's common sense beliefs about their illness. Illness perceptions dimensions are the following: Perceived cause of illness, Time line, Consequences, Cure & control, Identity."
+    },
+    {
+      "id": "4.3",
+      "question": "Discuss the concept of disease causation using the Epidemiological triad.",
+      "answer": "Epidemiological triad reveals that disease is caused by interactions between agent, host and environment. Agent is an organism/substance which may cause the disease to continue e.g. organisms, chemicals, radiation, etc. Similarly host is defined as man or an animal that gives existence to infections agents in the environment."
+    },
+    {
+      "id": "4.4",
+      "question": "Discuss the Biological Model of disease causation",
+      "answer": "The Biological Model of disease causation is a reductionist, single-factor model of illness that regards the mind and the body as separate entities and emphasizes illness concerns over health."
+    },
+    {
+      "id": "4.5",
+      "question": "Highlight the differences between acute and chronic illness",
+      "answer": "Acute illness: abrupt onset, limited duration, single cause, usually accurate diagnosis and prognosis, usually effective intervention, outcome is cure. Chronic illness: usually graduated onset, lengthy/indefinite duration, multiple/changing causes, often uncertain diagnosis and prognosis, often indecisive intervention, outcome is no cure."
+    }
+  ]
+}

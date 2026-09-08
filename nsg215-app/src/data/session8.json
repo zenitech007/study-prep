@@ -1,0 +1,79 @@
+{
+  "id": 8,
+  "title": "Influences on the sick",
+  "introduction": "The problems associated with chronic illness will ultimately affect the various domains (aspects) of not only the patient's life but also that of the significant others like the family etc. The physical, psychological, economic, and social dimensions are affected. Therefore in this study you will learn about the domains of the patient's life affected by chronic illness, the impact of chronic illness on families, the factors influencing how families react to chronic illness, reactions to hospitalization across ages and the role of the nurse in hospitalization.",
+  "learningOutcomes": [
+    "8.1 Explain the domains of the patient's life affected by chronic illness",
+    "8.2 Discuss the impact of chronic illness on families",
+    "8.3 Highlight the factors influencing how families will react to chronic illness",
+    "8.4 Discuss the reactions to hospitalization across ages",
+    "8.5 Highlight the role of the nurse during and at the end of hospitalization"
+  ],
+  "content": [
+    {
+      "heading": "8.1 Domains of the patient's life affected by chronic illness",
+      "body": "There are several domains (fields) of the patient's life affected by chronic illness. They are: Physical domain, Psychological Domain, Economic Domain, and Social Domain. The physical domain can be assessed by taking into consideration his Functional Status and Physical Symptoms. The psychological domain includes Grief and Sorrow, and Fears. Irene Pollin highlighted eight fears that a patient with chronic illness experiences: Loss of control, Loss of self-image, Loss of independence, Stigma, Abandonment, Expression of anger, Isolation, and Death. Economic Domain involves loss of income due to incapacitating effects. Social Domain involves decreased participation in social activities."
+    },
+    {
+      "heading": "8.2 Impact of chronic illness on families",
+      "body": "Families living with chronic illness confront a new set of demands related to that illness. Some of such demands include: Financial Stressors and Strains, Social Demands, and Psychological Demands. Financial demands include medical visits, therapy, special equipment, and medicines. Social demands can strain marital relationships and sibling adjustments. Psychological demands involve mourning over the loss of what could have been the hopes, dreams, and possibilities of the family member that is ill."
+    },
+    {
+      "heading": "8.3 Factors influencing how families will respond to chronic illness",
+      "body": "Variations exist in how families respond to the consequences of chronic illness. These variations are influenced by the following: Nature and characteristics of the condition, Resources (Personal, Social/Familial, Community), Illness phases (Crisis Phase, Chronic Phase, Terminal Phase), Family life stage, and Gender. The term 'feminization of care' refers to the notion that most women are caregivers and expected to provide caregiving duties."
+    },
+    {
+      "heading": "8.4 Reactions to Hospitalization across ages",
+      "body": "Age affects individual reactions to hospitalization. The categories are: Infancy to 5 years (preschool) characterized by helplessness and passivity. Six to 11 years (school age) characterized by feelings of responsibility, guilt, and anger. 10 to 12 years (preadolescent) characterized by disturbance, anger, and fear of death. 13 to 18 years (adolescent) show self-consciousness, rebellion, and may act out defiance. 19 to 45 years (young adulthood) where cultural and religious beliefs influence attitudes. 45 to 65 years (middle adulthood) accepts mortality as inevitable. 65 years and older (older adulthood) are afraid of prolonged health problems and see death as inevitable."
+    },
+    {
+      "heading": "8.5 Role of the nurse during and at the end of hospitalization",
+      "body": "The nurse and the client work together to assist the client to grow and solve his problems in a therapeutic relationship. The phases in the nurse-patient relationship include: Orientation Phase (establishes a therapeutic environment and trust), Identification / working phase (client's problems are identified and solutions are explored), and Termination/ resolution phase (when mutually agreed goals are met and the patient is discharged, which may cause normal separation anxiety)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "The domains (fields) of the patient's life affected by chronic illness are the following except. (a) Physical domain (b) Psychological Domain (c) Scientific domain (d) Economic Domain",
+      "answer": "(c) Scientific domain"
+    },
+    {
+      "question": "How a family responds to chronic illness is also a function of the phases of the illnesses. True or False",
+      "answer": "True"
+    },
+    {
+      "question": "The ------------------------is characterized by helplessness, passivity, and generalized fear",
+      "answer": "Infancy to 5 years (preschool)"
+    },
+    {
+      "question": "The phases in the nurse- patient relationship include the following except (a) Orientation Phase (b) Termination/ resolution phase (c) Determination Phase",
+      "answer": "(c) Determination Phase"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "8.1",
+      "question": "Explain the economic domain of patients in relation to chronic illnesses",
+      "answer": "Chronic illness is emotionally and financially draining. Due to the incapacitating effects of the illness, patients may find themselves giving up their jobs. The patient's family may also experience loss of income, particularly those family members who have to forfeit their jobs to assist with caregiving activities."
+    },
+    {
+      "id": "8.2",
+      "question": "Mention the new set of demands that families living with chronic illness confront",
+      "answer": "• Financial Stressors and Strains • Social Demands • Psychological Demands"
+    },
+    {
+      "id": "8.3",
+      "question": "Discuss one of the factors influencing how families will respond to chronic illness",
+      "answer": "Family Life Stage: Families who have a family member with a chronic illness have different needs, strengths, and resources at various points in the family life cycle. In a family with young children, for example, when one of the parental figures is diagnosed with a devastating disease, the impact on child-rearing tasks can be affected in several ways."
+    },
+    {
+      "id": "8.4",
+      "question": "How does 10 to 12 years (preadolescent) age group respond to hospitalization?",
+      "answer": "10 to 12 years (preadolescent): It is characterized by disturbance, anger/aggression, change in behavior, mood, personality, somatic symptoms, fear and anxiety and fear of death fear."
+    },
+    {
+      "id": "8.5",
+      "question": "Explain the termination phase of the nurse-patient relationship",
+      "answer": "Preparation of the termination phase begins at the orientation phase, when the duration and length of the nurse-client relationship was established. The nurse terminates the relationship when the mutually agreed goals are met, the patient is discharged. The focus of this stage is the growth that has occurred in the client and how the nurse has helped the patient to become independent and responsible in making his own decisions."
+    }
+  ]
+}
