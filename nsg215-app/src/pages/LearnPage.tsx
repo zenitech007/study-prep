@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import {
   Search,
   ChevronDown,
@@ -13,12 +14,28 @@ import {
   HelpCircle,
   FileQuestion,
 } from 'lucide-react';
-import { studySessions } from '../data/learnContent';
+import { studySessions as nsg215Sessions } from '../data/learnContent';
+import { ana213Sessions } from '../data/ana213Content';
 import type { StudySessionContent, InTextQuestion, SAQuestion } from '../types';
 import TTSButton from '../components/common/TTSButton';
 import { useAppStore } from '../store/useAppStore';
 
 export default function LearnPage() {
+  const { courseId: paramCourseId } = useParams<{ courseId?: string }>();
+  const currentCourseId = useAppStore((s) => s.currentCourseId);
+  const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
+
+  const activeCourseId = (paramCourseId || currentCourseId || 'nsg215').toLowerCase();
+
+  // Sync active course if navigated via route
+  useEffect(() => {
+    if (paramCourseId && paramCourseId.toLowerCase() !== currentCourseId) {
+      setCurrentCourse(paramCourseId.toLowerCase());
+    }
+  }, [paramCourseId, currentCourseId, setCurrentCourse]);
+
+  const activeSessions = activeCourseId === 'ana213' ? ana213Sessions : nsg215Sessions;
+
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedSessions, setExpandedSessions] = useState<Set<number>>(new Set([1]));
 
@@ -41,7 +58,7 @@ export default function LearnPage() {
   };
 
   // Filter sessions by search query
-  const filteredSessions = studySessions.filter((session) => {
+  const filteredSessions = activeSessions.filter((session) => {
     if (!searchQuery.trim()) return true;
     const q = searchQuery.toLowerCase();
     return (

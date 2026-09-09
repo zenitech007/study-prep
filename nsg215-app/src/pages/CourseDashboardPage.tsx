@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import { BookOpen, Target, Brain, TrendingUp, AlertTriangle, Zap, Award, RotateCcw, Sparkles, ArrowLeft } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
@@ -10,11 +11,18 @@ export default function CourseDashboardPage() {
   const questions = useAppStore((s) => s.questions);
   const progress = useAppStore((s) => s.progress);
   const questionsLoaded = useAppStore((s) => s.questionsLoaded);
+  const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
 
   const course = getCourse(courseId || 'nsg215') || COURSES[0];
   const isAvailable = course.status === 'active';
 
-  const topicCount = [...new Set(questions.map((q) => q.topic))].length;
+  // Sync active course on load
+  useEffect(() => {
+    if (course && course.id) {
+      setCurrentCourse(course.id);
+    }
+  }, [course, setCurrentCourse]);
+
   const dueSRSQuestions = getDueSRSQuestions(questions, progress.questionHistory);
 
   // Find the weakest topics (lowest accuracy with at least some attempts)
@@ -109,7 +117,7 @@ export default function CourseDashboardPage() {
             </div>
           </div>
           <button
-            onClick={() => navigate('/drill')}
+            onClick={() => navigate(`/course/${course.id}/drill`)}
             className="btn text-xs font-semibold shrink-0 py-2 px-3 text-white"
             style={{ backgroundColor: 'var(--color-accent)' }}
           >
@@ -128,9 +136,9 @@ export default function CourseDashboardPage() {
         </div>
         <div className="card p-4 text-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--color-accent)' }}>
-            {topicCount}
+            {course.sessionCount}
           </div>
-          <div className="text-xs text-muted mt-1">Study Sessions</div>
+          <div className="text-xs text-muted mt-1">{course.id === 'ana213' ? 'Modules' : 'Study Sessions'}</div>
         </div>
         <div className="card p-4 text-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--color-success)' }}>
@@ -149,21 +157,21 @@ export default function CourseDashboardPage() {
       {/* CTA Drill & Learn Buttons */}
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <button
-          onClick={() => navigate('/learn')}
+          onClick={() => navigate(`/course/${course.id}/learn`)}
           className="card p-5 text-left transition-all hover:scale-[1.02] cursor-pointer"
-          style={{ borderLeft: '4px solid var(--color-primary)' }}
+          style={{ borderLeft: course.accentColor === 'emerald' ? '4px solid #10b981' : '4px solid var(--color-primary)' }}
         >
           <div className="flex items-center gap-3 mb-2">
-            <BookOpen size={22} style={{ color: 'var(--color-primary)' }} />
+            <BookOpen size={22} className={course.accentColor === 'emerald' ? 'text-emerald-500' : 'text-blue-500'} />
             <h3 className="text-base font-semibold text-main">Study Manual</h3>
           </div>
           <p className="text-xs text-sub leading-relaxed">
-            Read all 8 sessions with learning outcomes, section summaries, ITQs, and official SAQs.
+            Read all {course.sessionCount} {course.id === 'ana213' ? 'modules' : 'sessions'} with learning outcomes, section summaries, ITQs, and official SAQs.
           </p>
         </button>
 
         <button
-          onClick={() => navigate('/concepts')}
+          onClick={() => navigate(`/course/${course.id}/concepts`)}
           className="card p-5 text-left transition-all hover:scale-[1.02] cursor-pointer"
           style={{ borderLeft: '4px solid var(--color-accent)' }}
         >
@@ -177,7 +185,7 @@ export default function CourseDashboardPage() {
         </button>
 
         <button
-          onClick={() => navigate('/drill')}
+          onClick={() => navigate(`/course/${course.id}/drill`)}
           className="card p-5 text-left transition-all hover:scale-[1.02] cursor-pointer"
           style={{ borderLeft: '4px solid var(--color-success)' }}
         >
@@ -271,7 +279,7 @@ export default function CourseDashboardPage() {
             ))}
           </div>
           <button
-            onClick={() => navigate('/drill')}
+            onClick={() => navigate(`/course/${course.id}/drill`)}
             className="btn btn-primary mt-4 w-full text-sm"
           >
             <Target size={16} />
@@ -289,11 +297,11 @@ export default function CourseDashboardPage() {
             Start with a quick 10-question practice drill or review the official study session manual.
           </p>
           <div className="flex flex-col gap-2 sm:flex-row sm:justify-center">
-            <button onClick={() => navigate('/learn')} className="btn btn-secondary text-sm">
+            <button onClick={() => navigate(`/course/${course.id}/learn`)} className="btn btn-secondary text-sm">
               <BookOpen size={16} />
               Open Manual
             </button>
-            <button onClick={() => navigate('/drill')} className="btn btn-primary text-sm">
+            <button onClick={() => navigate(`/course/${course.id}/drill`)} className="btn btn-primary text-sm">
               <Target size={16} />
               Quick Drill
             </button>

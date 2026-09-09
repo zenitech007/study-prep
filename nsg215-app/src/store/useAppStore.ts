@@ -40,12 +40,43 @@ const DEFAULT_PROGRESS: ProgressData = {
 
 export const useAppStore = create<AppState>((set, get) => ({
   // ── Initial state ───────────────────────────────────────────
+  currentCourseId: 'nsg215',
   theme: storage.getTheme(),
   fontSize: storage.getFontSize(),
   questions: [],
   questionsLoaded: false,
   activeQuiz: null,
-  progress: storage.getProgress(),
+  progress: storage.getProgress('nsg215'),
+
+  // ── Course Management ───────────────────────────────────────
+  setCurrentCourse: (courseId: string) => {
+    const normalized = courseId.toLowerCase();
+    if (get().currentCourseId === normalized) return;
+    const newProgress = storage.getProgress(normalized);
+    const newActiveQuiz = storage.getActiveQuiz(normalized);
+    set({
+      currentCourseId: normalized,
+      progress: newProgress,
+      activeQuiz: newActiveQuiz,
+    });
+    get().loadCourseQuestions(normalized);
+  },
+
+  loadCourseQuestions: async (courseId: string) => {
+    const normalized = courseId.toLowerCase();
+    const url =
+      normalized === 'ana213'
+        ? '/data/ANA213-question-bank.json'
+        : '/data/NSG215-question-bank-starter.json';
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data: Question[] = await res.json();
+      set({ questions: data, questionsLoaded: true });
+    } catch (err) {
+      console.error(`Failed to load question bank for ${normalized}:`, err);
+    }
+  },
 
   // ── Theme & Accessibility ───────────────────────────────────
   setTheme: (theme: ThemeMode, saveManual: boolean = true) => {
@@ -90,7 +121,8 @@ export const useAppStore = create<AppState>((set, get) => ({
       bookmarkedIds: [],
     };
 
-    storage.saveActiveQuiz(quiz);
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.saveActiveQuiz(quiz, courseId);
     set({ activeQuiz: quiz });
   },
 
@@ -110,7 +142,8 @@ export const useAppStore = create<AppState>((set, get) => ({
     );
 
     const updatedQuiz = { ...activeQuiz, answers: updatedAnswers };
-    storage.saveActiveQuiz(updatedQuiz);
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.saveActiveQuiz(updatedQuiz, courseId);
     set({ activeQuiz: updatedQuiz });
   },
 
@@ -124,7 +157,8 @@ export const useAppStore = create<AppState>((set, get) => ({
         : Math.max(activeQuiz.currentIndex - 1, 0);
 
     const updatedQuiz = { ...activeQuiz, currentIndex: newIndex };
-    storage.saveActiveQuiz(updatedQuiz);
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.saveActiveQuiz(updatedQuiz, courseId);
     set({ activeQuiz: updatedQuiz });
   },
 
@@ -134,7 +168,8 @@ export const useAppStore = create<AppState>((set, get) => ({
     if (index < 0 || index >= activeQuiz.questionIds.length) return;
 
     const updatedQuiz = { ...activeQuiz, currentIndex: index };
-    storage.saveActiveQuiz(updatedQuiz);
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.saveActiveQuiz(updatedQuiz, courseId);
     set({ activeQuiz: updatedQuiz });
   },
 
@@ -181,8 +216,9 @@ export const useAppStore = create<AppState>((set, get) => ({
       questions.length
     );
 
-    storage.saveProgress(updatedProgress);
-    storage.clearActiveQuiz();
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.saveProgress(updatedProgress, courseId);
+    storage.clearActiveQuiz(courseId);
 
     set({
       activeQuiz: {
@@ -195,6 +231,7 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   toggleBookmark: (questionId: string) => {
     const { progress, activeQuiz } = get();
+    const courseId = get().currentCourseId || 'nsg215';
     const bookmarks = new Set(progress.bookmarkedQuestionIds);
 
     if (bookmarks.has(questionId)) {
@@ -208,7 +245,7 @@ export const useAppStore = create<AppState>((set, get) => ({
       bookmarkedQuestionIds: Array.from(bookmarks),
     };
 
-    storage.saveProgress(updatedProgress);
+    storage.saveProgress(updatedProgress, courseId);
 
     // Also update the active quiz's bookmark list
     if (activeQuiz) {
@@ -219,7 +256,7 @@ export const useAppStore = create<AppState>((set, get) => ({
         quizBookmarks.add(questionId);
       }
       const updatedQuiz = { ...activeQuiz, bookmarkedIds: Array.from(quizBookmarks) };
-      storage.saveActiveQuiz(updatedQuiz);
+      storage.saveActiveQuiz(updatedQuiz, courseId);
       set({
         progress: updatedProgress,
         activeQuiz: updatedQuiz,
@@ -230,25 +267,29 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   resetQuiz: () => {
-    storage.clearActiveQuiz();
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.clearActiveQuiz(courseId);
     set({ activeQuiz: null });
   },
 
   resumeSavedQuiz: () => {
-    const saved = storage.getActiveQuiz();
+    const courseId = get().currentCourseId || 'nsg215';
+    const saved = storage.getActiveQuiz(courseId);
     if (saved) {
       set({ activeQuiz: saved });
     }
   },
 
   discardSavedQuiz: () => {
-    storage.clearActiveQuiz();
+    const courseId = get().currentCourseId || 'nsg215';
+    storage.clearActiveQuiz(courseId);
     set({ activeQuiz: null });
   },
 
   // ── Session Completion Tracking ─────────────────────────────
   toggleSessionCompleted: (sessionNum: number) => {
     const currentProgress = get().progress;
+    const courseId = get().currentCourseId || 'nsg215';
     const existing = currentProgress.completedSessions || [];
     const updatedSessions = existing.includes(sessionNum)
       ? existing.filter((n) => n !== sessionNum)
@@ -259,20 +300,22 @@ export const useAppStore = create<AppState>((set, get) => ({
       completedSessions: updatedSessions,
     };
 
-    storage.saveProgress(updatedProgress);
+    storage.saveProgress(updatedProgress, courseId);
     set({ progress: updatedProgress });
   },
 
   // ── Data Portability ────────────────────────────────────────
   exportProgress: (courseId?: string): string => {
-    return storage.exportAll(courseId);
+    const targetCourse = courseId || get().currentCourseId || 'nsg215';
+    return storage.exportAll(targetCourse);
   },
 
   importProgress: (json: string, courseId?: string): boolean => {
-    const success = storage.importAll(json, courseId);
+    const targetCourse = courseId || get().currentCourseId || 'nsg215';
+    const success = storage.importAll(json, targetCourse);
     if (success) {
       set({
-        progress: storage.getProgress(courseId),
+        progress: storage.getProgress(targetCourse),
         theme: storage.getTheme(),
         fontSize: storage.getFontSize(),
       });
@@ -281,13 +324,14 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   resetProgress: (courseId?: string) => {
-    storage.resetProgress(courseId);
-    storage.clearActiveQuiz();
+    const targetCourse = courseId || get().currentCourseId || 'nsg215';
+    storage.resetProgress(targetCourse);
+    storage.clearActiveQuiz(targetCourse);
     set({ progress: { ...DEFAULT_PROGRESS }, activeQuiz: null });
   },
 }));
 
 // Continuous state persistence subscription
 useAppStore.subscribe((state) => {
-  storage.saveProgress(state.progress);
+  storage.saveProgress(state.progress, state.currentCourseId || 'nsg215');
 });

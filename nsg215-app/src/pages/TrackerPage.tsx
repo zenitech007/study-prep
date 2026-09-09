@@ -1,9 +1,21 @@
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useAppStore } from '../store/useAppStore';
 import OverviewStats from '../components/tracker/OverviewStats';
 import TopicBreakdown from '../components/tracker/TopicBreakdown';
 import MissedQuestions from '../components/tracker/MissedQuestions';
 import DataPortability from '../components/tracker/DataPortability';
 
 export default function TrackerPage() {
+  const { courseId: paramCourseId } = useParams<{ courseId?: string }>();
+  const currentCourseId = useAppStore((s) => s.currentCourseId);
+  const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
+
+  useEffect(() => {
+    if (paramCourseId && paramCourseId.toLowerCase() !== currentCourseId) {
+      setCurrentCourse(paramCourseId.toLowerCase());
+    }
+  }, [paramCourseId, currentCourseId, setCurrentCourse]);
   return (
     <div className="space-y-6 animate-fade-in">
       <div>

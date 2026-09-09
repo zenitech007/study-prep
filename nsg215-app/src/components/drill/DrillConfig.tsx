@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useAppStore } from '../../store/useAppStore';
 import { storage } from '../../store/storage';
 import { getUniqueTopics } from '../../utils/quiz';
@@ -12,13 +12,20 @@ interface DrillConfigProps {
 }
 
 export default function DrillConfig({ onResumeQuiz, onStartQuiz }: DrillConfigProps) {
+  const currentCourseId = useAppStore((s) => s.currentCourseId);
   const questions = useAppStore((s) => s.questions);
   const progress = useAppStore((s) => s.progress);
   const startQuiz = useAppStore((s) => s.startQuiz);
   const resumeSavedQuiz = useAppStore((s) => s.resumeSavedQuiz);
   const discardSavedQuiz = useAppStore((s) => s.discardSavedQuiz);
 
-  const [savedQuiz, setSavedQuiz] = useState<QuizSession | null>(() => storage.getActiveQuiz());
+  const [savedQuiz, setSavedQuiz] = useState<QuizSession | null>(() =>
+    storage.getActiveQuiz(currentCourseId || 'nsg215')
+  );
+
+  useEffect(() => {
+    setSavedQuiz(storage.getActiveQuiz(currentCourseId || 'nsg215'));
+  }, [currentCourseId]);
 
   const uniqueTopics = useMemo(() => getUniqueTopics(questions), [questions]);
   const dueSRSQuestions = useMemo(
@@ -177,7 +184,8 @@ export default function DrillConfig({ onResumeQuiz, onStartQuiz }: DrillConfigPr
                 <option value="20">20</option>
                 <option value="50">50</option>
                 <option value="100">100</option>
-                <option value="all">All (300)</option>
+                <option value="300">300</option>
+                <option value="all">All ({questions.length > 0 ? questions.length : 300})</option>
               </select>
               <ChevronDown
                 size={16}

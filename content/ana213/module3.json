@@ -1,0 +1,85 @@
+{
+  "sessionNumber": 3,
+  "title": "Module 3: Musculoskeletal System & Neuroanatomy Fundamentals",
+  "overview": "Comprehensive introduction to osteology, arthrology, muscle architecture, central and peripheral nervous systems, and reflex arcs.",
+  "content": [
+    {
+      "heading": "3.1 Skeletal System: Bone Classification and Osteology",
+      "body": "The human adult skeleton comprises 206 distinct bones divided into two major functional sections: the axial skeleton (80 bones: skull, vertebral column, ribs, and sternum providing central support and organ protection) and the appendicular skeleton (126 bones: pectoral and pelvic girdles and upper and lower limb bones facilitating locomotion and manipulation). Morphologically, bones are classified into: Long bones (e.g., femur, humerus, possessing a diaphysis shaft and epiphyses ends), Short bones (e.g., carpals, tarsals, roughly cuboidal), Flat bones (e.g., parietal bone, sternum, scapula, thin parallel compact plates enclosing cancellous diploë), Irregular bones (e.g., vertebrae, sphenoid), and Sesamoid bones (e.g., patella, embedded within tendons to modify tendon pull). Histologically, bone tissue presents dense compact cortical bone organized into osteons (Haversian systems) and inner trabecular spongy bone housing red bone marrow."
+    },
+    {
+      "heading": "3.2 Arthrology: Classification and Mechanics of Joints",
+      "body": "Joints (articulations) occur where two or more skeletal elements meet. Structurally and functionally, joints are categorized into three classes: (1) Fibrous joints (synarthroses): bones united by fibrous connective tissue allowing negligible movement (sutures of cranial vault, syndesmoses like inferior tibiofibular joint, gomphoses anchor teeth into alveolar sockets). (2) Cartilaginous joints (amphiarthroses): bones joined by cartilage; primary cartilaginous joints (synchondroses) utilize hyaline cartilage (epiphyseal growth plates), while secondary cartilaginous joints (symphyses) utilize fibrocartilage (pubic symphysis, intervertebral discs). (3) Synovial joints (diarthroses): freely movable articulations featuring a joint cavity containing synovial fluid enclosed by a fibrous capsule, lined by synovial membrane, with articular ends capped by frictionless hyaline cartilage. Subtypes include planar, hinge, pivot, condyloid, saddle, and ball-and-socket joints."
+    },
+    {
+      "heading": "3.3 Muscular Architecture and Functional Roles",
+      "body": "Muscular tissue is categorized into skeletal, cardiac, and smooth muscle types. Skeletal muscles represent voluntary, striated contractile organs anchored to bones via collagenous tendons or broad aponeuroses. Muscle fascicle architectural arrangements dictate range of motion and force production: parallel, convergent (fan-shaped), pennate (unipennate, bipennate, multipennate providing high force), circular (sphincters), and fusiform. During movement execution, muscles act cooperatively: the Agonist (prime mover) contracts to produce the designated primary movement; the Antagonist stretches and yields to counteract the agonist; Synergists steady the joint or assist prime movement; and Fixators stabilize the proximal skeletal origin."
+    },
+    {
+      "heading": "3.4 Neuroanatomy: Central vs. Peripheral Nervous System",
+      "body": "The nervous system is organized anatomically into the Central Nervous System (CNS: brain and spinal cord enclosed in the dorsal cavity) and Peripheral Nervous System (PNS: 12 pairs of cranial nerves and 31 pairs of spinal nerves with associated ganglia). Functionally, the PNS divides into the Sensory (afferent) division transmitting somatosensory and visceral input toward the CNS, and the Motor (efferent) division conducting impulses outward. The motor division comprises the Somatic Nervous System (voluntary control of skeletal musculature) and the Autonomic Nervous System (ANS: involuntary control of cardiac muscle, smooth muscle, and glands). The ANS further divides into the sympathetic division ('fight or flight', thoracolumbar outflow) and the parasympathetic division ('rest and digest', craniosacral outflow). A basic reflex arc consists of a sensory receptor, afferent neuron, integrating center within CNS gray matter, efferent neuron, and effector organ."
+    }
+  ],
+  "keyPoints": [
+    "The 206 bones of the human skeleton divide into axial (80) and appendicular (126) skeletons.",
+    "Synovial joints are characterized by a fibrous capsule, synovial cavity, synovial fluid, and articular hyaline cartilage.",
+    "Muscles work in functional teams: agonist (prime mover), antagonist, synergist, and fixator.",
+    "The nervous system comprises the CNS (brain and spinal cord) and PNS (12 cranial nerve pairs, 31 spinal nerve pairs).",
+    "The autonomic nervous system is divided into sympathetic (thoracolumbar) and parasympathetic (craniosacral) divisions."
+  ],
+  "models": [
+    {
+      "name": "Synovial Joint Classification Model",
+      "description": "Morphological classification of diarthrodial joints and their degrees of operational freedom.",
+      "components": [
+        "Hinge (Ginglymus): Uniaxial flexion/extension (e.g., elbow, interphalangeal joints)",
+        "Pivot (Trochoid): Uniaxial rotation around central axis (e.g., atlantoaxial, proximal radioulnar joint)",
+        "Condyloid (Ellipsoid): Biaxial flexion/extension and abduction/adduction (e.g., radiocarpal wrist joint)",
+        "Saddle (Sellar): Biaxial reciprocal concavoconvex surfaces (e.g., 1st carpometacarpal joint of thumb)",
+        "Ball and Socket (Spheroid): Multiaxial all planes + circumduction (e.g., glenohumeral shoulder, hip joint)",
+        "Plane (Gliding): Nonaxial gliding translation (e.g., acromioclavicular, intercarpal joints)"
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Haversian System (Osteon)",
+      "definition": "The structural and functional microscopic cylindrical unit of compact cortical bone, consisting of concentric lamellae surrounding a central neurovascular canal."
+    },
+    {
+      "term": "Synarthrosis",
+      "definition": "An immovable fibrous articulation providing maximum mechanical stability (such as cranial sutures)."
+    },
+    {
+      "term": "Autonomic Nervous System",
+      "definition": "The visceral efferent division of the peripheral nervous system regulating involuntary vegetative functions of cardiac muscle, smooth muscle, and glandular tissue."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What type of cartilage coats the articular ends of bones in a typical synovial joint?",
+      "answer": "Hyaline articular cartilage."
+    },
+    {
+      "question": "How many pairs of spinal nerves originate from the human spinal cord?",
+      "answer": "31 pairs: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal."
+    },
+    {
+      "question": "Which division of the autonomic nervous system originates from the thoracolumbar spinal cord segments?",
+      "answer": "The sympathetic nervous system (T1 to L2/L3 lateral horn neurons)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "List the five structural components essential to every synovial joint.",
+      "answer": "(1) Articular cartilage (hyaline cartilage covering bone ends), (2) Joint (synovial) cavity filled with synovial fluid, (3) Fibrous articular capsule enclosing the joint, (4) Synovial membrane lining internal capsule surfaces, and (5) Reinforcing ligaments (extrinsic or intrinsic)."
+    },
+    {
+      "id": "3.2",
+      "question": "Outline the five anatomical anatomical components of a typical somatic reflex arc.",
+      "answer": "(1) Sensory receptor (detects noxious or sensory stimulus), (2) Afferent / Sensory neuron (transmits impulse into the CNS), (3) Integrating center (one or more synapses within CNS gray matter, often involving interneurons), (4) Efferent / Motor neuron (transmits nerve impulse from CNS to periphery), and (5) Effector organ (skeletal muscle contracting in response)."
+    }
+  ],
+  "sourceTag": "manual"
+}

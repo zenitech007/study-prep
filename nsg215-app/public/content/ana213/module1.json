@@ -1,0 +1,89 @@
+{
+  "sessionNumber": 1,
+  "title": "Module 1: General Anatomy, Organization of Human Body & Anatomical Terminology",
+  "overview": "Introduction to human gross anatomy, anatomical terminology, anatomical planes, positions, cavities, and body organization.",
+  "content": [
+    {
+      "heading": "1.1 The Anatomical Position and Directional Terminology",
+      "body": "The anatomical position is the standardized reference posture adopted internationally for anatomical descriptions. In this position, the human body stands upright, feet slightly separated with toes directed forward, eyes looking horizontally forward, upper limbs resting beside the torso, and the palms of the hands facing anteriorly with thumbs pointed away from the body. All directional descriptions assume this position regardless of patient orientation. Key terms: Superior (cranial) denotes toward the head or upper part of a structure; Inferior (caudal) denotes away from the head or toward the lower body; Anterior (ventral) is toward the front; Posterior (dorsal) is toward the back; Medial is nearer to the midline; Lateral is further from the midline; Proximal is closer to the limb origin; Distal is further from the limb origin; Superficial is nearer the surface; Deep is farther from the body surface."
+    },
+    {
+      "heading": "1.2 Cardinal Anatomical Planes and Sections",
+      "body": "Sectional anatomy relies on three fundamental mutually perpendicular cardinal planes: (1) The Sagittal plane passes vertically through the body, dividing it into right and left portions. When passing precisely through the midline, it is termed the median sagittal plane (mid-sagittal) dividing the body into equal symmetrical halves; planes parallel to it are parasagittal planes. (2) The Coronal (frontal) plane passes vertically at right angles to the sagittal plane, dividing the body into anterior (front) and posterior (back) parts. (3) The Transverse (horizontal or axial) plane cuts horizontally across the longitudinal axis, dividing the body into superior (upper) and inferior (lower) portions."
+    },
+    {
+      "heading": "1.3 Human Body Cavities and Serous Membranes",
+      "body": "Body cavities are internal fluid-filled spaces that shield, support, and accommodate internal organs. The dorsal body cavity contains the cranial cavity (housing the brain and meninges) and the vertebral canal (housing the spinal cord). The ventral body cavity is subdivided by the dome-shaped diaphragm into the superior thoracic cavity and the inferior abdominopelvic cavity. The thoracic cavity contains the paired pleural cavities (lungs), the pericardial cavity (heart), and the central mediastinum. The abdominopelvic cavity is lined by the peritoneum, the thoracic cavity by the pleura, and the pericardial space by the pericardium. Serous membranes consist of a parietal layer lining cavity walls and an inner visceral layer covering organ surfaces, lubricated by slippery serous fluid."
+    },
+    {
+      "heading": "1.4 Structural Levels of Biological Organization",
+      "body": "The human body is structured in a hierarchical continuum: Chemical level (atoms bonding into macromolecular compounds such as DNA, carbohydrates, proteins, and lipids), Cellular level (specialized functional units of life), Tissue level (groups of similar cells with specialized extracellular matrices classified into epithelial, connective, muscle, and nervous tissue), Organ level (distinct structures formed from two or more primary tissue types executing specialized physiological roles), System level (integrated organs functioning harmoniously), and Organismal level (the complete living biological being)."
+    }
+  ],
+  "keyPoints": [
+    "Standard anatomical position assumes an erect posture, eyes forward, arms at sides, palms facing forward with thumbs lateral, and feet flat.",
+    "Sagittal, coronal, and transverse planes are the three cardinal orthogonal reference planes used in clinical imaging and gross anatomy.",
+    "The diaphragm is the primary anatomical muscular partition separating the thoracic cavity from the abdominopelvic cavity.",
+    "Serous membranes feature double layers: the parietal layer lines the body cavity wall, while the visceral layer directly envelops organs.",
+    "Biological structural hierarchy ascends from chemical to cellular, tissue, organ, organ-system, and organismal levels."
+  ],
+  "models": [
+    {
+      "name": "Hierarchy of Anatomical Organization",
+      "description": "Six ascending hierarchical levels of structure and function in the human organism.",
+      "components": [
+        "Chemical Level: Atoms, molecules, and biological macromolecules",
+        "Cellular Level: Basic structural and functional units (e.g., osteocytes, neurons, myocytes)",
+        "Tissue Level: Epithelial, Connective, Muscular, and Nervous tissues",
+        "Organ Level: Discrete anatomical organs composed of two or more tissues",
+        "Organ System Level: Eleven integrated physiological organ systems",
+        "Organismal Level: Complete, coordinated living human entity"
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Anatomical Position",
+      "definition": "Universal standard anatomical reference posture: erect body, gaze forward, upper limbs by sides, palms facing forward with thumbs pointing laterally, feet together."
+    },
+    {
+      "term": "Coronal (Frontal) Plane",
+      "definition": "A vertical plane dividing the human body or organ into anterior (front) and posterior (back) portions."
+    },
+    {
+      "term": "Sagittal Plane",
+      "definition": "A vertical longitudinal plane that divides the body into right and left sections; mid-sagittal yields symmetrical equal halves."
+    },
+    {
+      "term": "Visceral Serosa",
+      "definition": "The inner layer of a serous membrane that adheres directly to the outer surface of visceral organs."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Why is the anatomical position universally utilized as the benchmark for anatomical and clinical descriptions?",
+      "answer": "It provides a fixed, unambiguous frame of reference regardless of the actual position (supine, prone, lateral) the patient or specimen assumes during examination, imaging, or surgical procedures."
+    },
+    {
+      "question": "Which anatomical plane would divide the brain into anterior and posterior segments?",
+      "answer": "The coronal (or frontal) plane."
+    },
+    {
+      "question": "What anatomical structure separates the thoracic cavity from the abdominal cavity?",
+      "answer": "The muscular thoracic diaphragm."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "Define the standard anatomical position and state four reciprocal directional pairs used in clinical anatomy.",
+      "answer": "The standard anatomical position is the reference posture wherein the subject stands erect, face oriented forward, upper extremities alongside the trunk, palms facing anteriorly with thumbs directed outward, and lower extremities parallel with feet flat on the floor. Reciprocal directional pairs: (1) Superior (cranial) and Inferior (caudal), (2) Anterior (ventral) and Posterior (dorsal), (3) Medial and Lateral, (4) Proximal and Distal."
+    },
+    {
+      "id": "1.2",
+      "question": "Differentiate between the parietal and visceral layers of serous membranes, providing two clinical anatomical examples.",
+      "answer": "The parietal layer lines the internal walls of closed body cavities, while the visceral layer directly envelops the outer adventitia/surface of organs within that cavity. Between them lies a serous fluid-filled potential space. Examples: (1) Parietal pleura lining the thoracic cage vs. visceral pleura covering lung parenchyma; (2) Parietal peritoneum lining abdominal walls vs. visceral peritoneum investing gastrointestinal viscera."
+    }
+  ],
+  "sourceTag": "manual"
+}

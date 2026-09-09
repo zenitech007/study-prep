@@ -11,19 +11,20 @@ const fontSizeLabels: Record<FontSize, string> = {
 
 const fontSizeCycle: FontSize[] = ['small', 'medium', 'large'];
 
-const navLinks = [
-  { to: '/', label: 'Courses', icon: '📚' },
-  { to: '/learn', label: 'Learn', icon: '📖' },
-  { to: '/concepts', label: 'Quick-Prep', icon: '⚡' },
-  { to: '/drill', label: 'Drill', icon: '🎯' },
-  { to: '/tracker', label: 'Tracker', icon: '📊' },
-];
-
 export default function Header() {
+  const currentCourseId = useAppStore((s) => s.currentCourseId || 'nsg215');
   const theme = useAppStore((s) => s.theme);
   const fontSize = useAppStore((s) => s.fontSize);
   const setTheme = useAppStore((s) => s.setTheme);
   const setFontSize = useAppStore((s) => s.setFontSize);
+
+  const navLinks = [
+    { to: '/', label: 'Courses', icon: '📚' },
+    { to: currentCourseId === 'nsg215' ? '/learn' : `/course/${currentCourseId}/learn`, label: 'Learn', icon: '📖' },
+    { to: currentCourseId === 'nsg215' ? '/concepts' : `/course/${currentCourseId}/concepts`, label: 'Quick-Prep', icon: '⚡' },
+    { to: currentCourseId === 'nsg215' ? '/drill' : `/course/${currentCourseId}/drill`, label: 'Drill', icon: '🎯' },
+    { to: currentCourseId === 'nsg215' ? '/tracker' : `/course/${currentCourseId}/tracker`, label: 'Tracker', icon: '📊' },
+  ];
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light', true /* save manual override */);

@@ -1,0 +1,82 @@
+{
+  "sessionNumber": 2,
+  "title": "Module 2: General Embryology, Gametogenesis & Early Human Development",
+  "overview": "Overview of gametogenesis, fertilization, cleavage, blastocyst formation, implantation, gastrulation, and germ layer derivatives.",
+  "content": [
+    {
+      "heading": "2.1 Gametogenesis: Spermatogenesis and Oogenesis",
+      "body": "Gametogenesis is the specialized biological process through which primordial germ cells undergo meiosis and cytodifferentiation to produce mature haploid gametes (spermatozoa and ova). Spermatogenesis begins at puberty within the seminiferous tubules of the testes, continuously generating four functional spermatozoa from each primary spermatocyte over approximately 64 to 74 days under FSH, LH, and testosterone regulation. In contrast, oogenesis begins during prenatal embryonic development: oogonia undergo mitosis and enter meiosis I to form primary oocytes, which remain arrested in prophase I (diplotene stage) until puberty. At ovulation, the secondary oocyte completes meiosis I and arrests in metaphase II, which is only completed upon successful fertilization by a spermatozoon."
+    },
+    {
+      "heading": "2.2 Fertilization, Cleavage, and Blastocyst Formation",
+      "body": "Fertilization normally occurs in the ampulla of the uterine (fallopian) tube. It comprises sperm capacitation, the acrosome reaction (penetration of corona radiata and zona pellucida), fusion of plasma membranes, the cortical reaction to prevent polyspermy, and fusion of male and female pronuclei restoring diploidy (46 chromosomes). Following fertilization, the zygote undergoes rapid mitotic divisions called cleavage without net cell growth, creating individual cells termed blastomeres. By day 3–4, a solid ball of 16–32 blastomeres forms the morula. Fluid accumulates within the morula to form a blastocyst cavity (blastocoele), demarcating two distinct cell lineages: the outer trophoblast (which gives rise to embryonic placenta and extraembryonic membranes) and the inner cell mass or embryoblast (which forms the embryo proper)."
+    },
+    {
+      "heading": "2.3 Implantation and the Bilaminar Germ Disc",
+      "body": "Implantation of the blastocyst commences around day 6 post-fertilization in the endometrium of the superior posterior uterine wall. The trophoblast differentiates into an inner cellular cytotrophoblast and an outer invasive, multinucleated syncytiotrophoblast, which secretes human chorionic gonadotropin (hCG). Concurrently, during the second week (the 'week of twos'), the embryoblast differentiates into a bilaminar embryonic disc comprising two layers: the dorsal epiblast (columnar cells giving rise to the amniotic cavity) and the ventral hypoblast (cuboidal cells lining the exocoelomic cavity / primary yolk sac)."
+    },
+    {
+      "heading": "2.4 Gastrulation and the Trilaminar Embryonic Disc",
+      "body": "Gastrulation is the defining developmental event of the third week (the 'week of threes'), transforming the bilaminar disc into a trilaminar embryo with three primary germ layers. Gastrulation is initiated by the formation of the primitive streak on the caudal dorsal surface of the epiblast. Epiblast cells invaginate through the primitive streak via epithelial-to-mesenchymal transition: displacing hypoblast cells to form the Endoderm, migrating laterally between layers to form the intraembryonic Mesoderm, and remaining dorsal epiblast cells become the Ectoderm. The primitive node and notochord establish embryonic axial orientation and induce neurulation."
+    }
+  ],
+  "keyPoints": [
+    "Spermatogenesis produces four viable spermatozoa per primary spermatocyte; oogenesis produces one mature ovum and polar bodies.",
+    "Oocytes are arrested in prophase I from fetal life until ovulation, and in metaphase II until fertilization.",
+    "Fertilization restores diploid chromosome count (2n = 46), determines chromosomal sex (XX or XY), and triggers cleavage.",
+    "Week 2 is characterized by bilaminar disc formation (epiblast + hypoblast) and trophoblast differentiation (cytotrophoblast + syncytiotrophoblast).",
+    "Gastrulation in week 3 produces the three definitive germ layers: Ectoderm, Mesoderm, and Endoderm."
+  ],
+  "models": [
+    {
+      "name": "Germ Layer Fate Mapping",
+      "description": "The three primary germ layers established during gastrulation and their adult anatomical tissue derivatives.",
+      "components": [
+        "Ectoderm: Central and peripheral nervous systems, epidermis of skin, hair, nails, lens of eye, adrenal medulla",
+        "Mesoderm: Musculoskeletal system, cardiovascular system, kidneys and gonads, adrenal cortex, connective tissues",
+        "Endoderm: Epithelial lining of gastrointestinal tract, respiratory system, liver parenchyma, pancreas, urinary bladder"
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Gastrulation",
+      "definition": "The formative morphogenetic process in the third embryonic week that establishes the three primary germ layers (ectoderm, mesoderm, endoderm) from the epiblast."
+    },
+    {
+      "term": "Syncytiotrophoblast",
+      "definition": "The outer multinucleated syncytial layer of the trophoblast that invades maternal uterine endometrium and produces hCG."
+    },
+    {
+      "term": "Notochord",
+      "definition": "A cellular rod developed along the longitudinal embryonic axis that serves as the primitive axial skeleton and induces neural tube formation."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "At what stage of meiosis is the primary oocyte arrested prior to ovulation?",
+      "answer": "The primary oocyte is arrested in prophase I (specifically the diplotene stage) from embryonic life until puberty."
+    },
+    {
+      "question": "Where does physiological fertilization typically take place in the female reproductive tract?",
+      "answer": "In the ampulla of the uterine (fallopian) tube."
+    },
+    {
+      "question": "Which specific embryonic layer gives rise to the central nervous system?",
+      "answer": "The neuroectoderm (specialized surface ectoderm induced by the underlying notochord)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Outline the fundamental cytological differences between spermatogenesis and oogenesis.",
+      "answer": "Spermatogenesis: Commences at puberty, continuous process without major meiotic arrest, produces 4 functional spermatozoa per primary spermatocyte, motile gametes, millions produced daily. Oogenesis: Commences in prenatal fetal life, contains two prolonged meiotic arrests (prophase I until puberty, metaphase II until fertilization), yields only 1 mature ovum and 2-3 non-functional polar bodies per primary oocyte, non-motile gamete with abundant cytoplasm, cyclical release (typically one per month)."
+    },
+    {
+      "id": "2.2",
+      "question": "Define gastrulation and enumerate the three primary germ layers with two tissue derivatives of each.",
+      "answer": "Gastrulation is the embryonic process occurring in week 3 that converts the bilaminar embryonic disc into a trilaminar disc composed of three primary germ layers: (1) Ectoderm derivatives: Epidermis of skin and Central Nervous System (brain and spinal cord). (2) Mesoderm derivatives: Skeletal muscle and cardiovascular system (heart, blood vessels). (3) Endoderm derivatives: Epithelial lining of the digestive tract and epithelial lining of the respiratory tree."
+    }
+  ],
+  "sourceTag": "manual"
+}

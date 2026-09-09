@@ -9,11 +9,8 @@ import DrillPage from './pages/DrillPage';
 import TrackerPage from './pages/TrackerPage';
 import { useAppStore } from './store/useAppStore';
 import { storage } from './store/storage';
-import type { Question } from './types';
 
 function App() {
-  const loadQuestions = useAppStore((s) => s.loadQuestions);
-  const questionsLoaded = useAppStore((s) => s.questionsLoaded);
   const theme = useAppStore((s) => s.theme);
   const setTheme = useAppStore((s) => s.setTheme);
   const fontSize = useAppStore((s) => s.fontSize);
@@ -41,19 +38,13 @@ function App() {
     return () => mediaQuery.removeEventListener('change', handleSystemThemeChange);
   }, [setTheme]);
 
-  // Load question bank
+  const currentCourseId = useAppStore((s) => s.currentCourseId);
+  const loadCourseQuestions = useAppStore((s) => s.loadCourseQuestions);
+
+  // Load question bank for current course
   useEffect(() => {
-    if (!questionsLoaded) {
-      fetch('/data/NSG215-question-bank-starter.json')
-        .then((res) => res.json())
-        .then((data: Question[]) => {
-          loadQuestions(data);
-        })
-        .catch((err) => {
-          console.error('Failed to load question bank:', err);
-        });
-    }
-  }, [questionsLoaded, loadQuestions]);
+    loadCourseQuestions(currentCourseId || 'nsg215');
+  }, [currentCourseId, loadCourseQuestions]);
 
   return (
     <BrowserRouter>
@@ -61,6 +52,10 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="course/:courseId" element={<CourseDashboardPage />} />
+          <Route path="course/:courseId/learn" element={<LearnPage />} />
+          <Route path="course/:courseId/concepts" element={<ConceptsPage />} />
+          <Route path="course/:courseId/drill" element={<DrillPage />} />
+          <Route path="course/:courseId/tracker" element={<TrackerPage />} />
           <Route path="learn" element={<LearnPage />} />
           <Route path="concepts" element={<ConceptsPage />} />
           <Route path="drill" element={<DrillPage />} />

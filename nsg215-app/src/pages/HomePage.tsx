@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { Sparkles, ChevronRight, Clock } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { storage } from '../store/storage';
 import { getAllCourses } from '../data/courses';
 import type { Course } from '../data/courses';
 
 export default function HomePage() {
   const navigate = useNavigate();
-  const progress = useAppStore((s) => s.progress);
   const questionsLoaded = useAppStore((s) => s.questionsLoaded);
 
   const courses = getAllCourses();
@@ -49,20 +49,23 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 gap-6">
-          {courses.map((course) => (
-            <CourseCard
-              key={course.id}
-              course={course}
-              onSelect={() => navigate(course.route)}
-              onQuickDrill={() => navigate('/drill')}
-              onQuickLearn={() => navigate('/learn')}
-              onQuickPrep={() => navigate('/concepts')}
-              readiness={progress.preparedness}
-              accuracy={progress.accuracy}
-              attemptedCount={progress.totalAttempted}
-              isLoaded={questionsLoaded}
-            />
-          ))}
+          {courses.map((course) => {
+            const courseProgress = storage.getProgress(course.id);
+            return (
+              <CourseCard
+                key={course.id}
+                course={course}
+                onSelect={() => navigate(course.route)}
+                onQuickDrill={() => navigate(`/course/${course.id}/drill`)}
+                onQuickLearn={() => navigate(`/course/${course.id}/learn`)}
+                onQuickPrep={() => navigate(`/course/${course.id}/concepts`)}
+                readiness={courseProgress.preparedness}
+                accuracy={courseProgress.accuracy}
+                attemptedCount={courseProgress.totalAttempted}
+                isLoaded={questionsLoaded}
+              />
+            );
+          })}
         </div>
       </section>
     </div>
@@ -92,6 +95,7 @@ function CourseCard({
   attemptedCount,
 }: CourseCardProps) {
   const isActive = course.status === 'active';
+  const isEmerald = course.accentColor === 'emerald';
 
   if (!isActive) {
     return (
@@ -127,12 +131,39 @@ function CourseCard({
     );
   }
 
+  // Accent styles based on course accentColor
+  const badgeGradient = isEmerald
+    ? 'bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-md shadow-emerald-500/25'
+    : 'bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-md shadow-blue-500/25';
+
+  const cardBorderHover = isEmerald
+    ? 'hover:border-emerald-500/40 dark:hover:border-emerald-400/40'
+    : 'hover:border-cyan-500/40 dark:hover:border-cyan-400/40';
+
+  const enterButtonClass = isEmerald
+    ? 'bg-emerald-400 hover:bg-emerald-300 text-slate-950 shadow-md shadow-emerald-400/20 hover:shadow-lg hover:shadow-emerald-400/35'
+    : 'bg-cyan-400 hover:bg-cyan-300 text-slate-950 shadow-md shadow-cyan-400/20 hover:shadow-lg hover:shadow-cyan-400/35';
+
+  const readinessTextColor = isEmerald
+    ? 'text-emerald-600 dark:text-emerald-400'
+    : 'text-cyan-600 dark:text-cyan-400';
+
+  const progressBarGradient = isEmerald
+    ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
+    : 'bg-gradient-to-r from-blue-500 to-cyan-400';
+
+  const drillButtonClass = isEmerald
+    ? 'bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-700/60'
+    : 'bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-700/60';
+
+  const moduleMetricText = course.id === 'ana213' ? '3 Modules' : `${course.sessionCount} Sessions`;
+
   return (
-    <div className="card-glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-white/10 shadow-xl dark:shadow-2xl dark:shadow-black/60 hover:border-cyan-500/40 dark:hover:border-cyan-400/40 transition-all duration-300">
+    <div className={`card-glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-white/10 shadow-xl dark:shadow-2xl dark:shadow-black/60 ${cardBorderHover} transition-all duration-300`}>
       {/* Top row: Badges, Title & Primary Action */}
       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4">
         <div className="flex items-start gap-3.5">
-          <div className="w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shrink-0 bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-md shadow-blue-500/25">
+          <div className={`w-14 h-14 rounded-2xl flex items-center justify-center font-black text-xl shrink-0 ${badgeGradient}`}>
             {course.code.split(' ')[1]}
           </div>
           <div>
@@ -154,7 +185,7 @@ function CourseCard({
         {/* Vibrant Primary Action Button with Hover Lift Effect */}
         <button
           onClick={onSelect}
-          className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-extrabold bg-cyan-400 hover:bg-cyan-300 text-slate-950 shadow-md shadow-cyan-400/20 hover:shadow-lg hover:shadow-cyan-400/35 hover:-translate-y-1 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0 self-start sm:self-center"
+          className={`inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-extrabold ${enterButtonClass} hover:-translate-y-1 active:translate-y-0 transition-all duration-200 cursor-pointer shrink-0 self-start sm:self-center`}
         >
           <span>🚀 Enter Course</span>
           <ChevronRight size={18} className="stroke-[2.5]" />
@@ -169,7 +200,7 @@ function CourseCard({
       <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 my-5">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-slate-800 dark:text-slate-200 backdrop-blur-sm shadow-2xs">
           <span className="text-sm">📝</span>
-          <span>100 Questions</span>
+          <span>{course.questionCount} Questions</span>
         </div>
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-slate-800 dark:text-slate-200 backdrop-blur-sm shadow-2xs">
           <span className="text-sm">🧠</span>
@@ -177,7 +208,7 @@ function CourseCard({
         </div>
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100/90 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-slate-800 dark:text-slate-200 backdrop-blur-sm shadow-2xs">
           <span className="text-sm">📚</span>
-          <span>8 Sessions</span>
+          <span>{moduleMetricText}</span>
         </div>
       </div>
 
@@ -188,11 +219,11 @@ function CourseCard({
             <span className="text-main flex items-center gap-1.5">
               <span>🎯</span> Exam Readiness
             </span>
-            <span className="text-cyan-600 dark:text-cyan-400 font-extrabold text-sm">{readiness}%</span>
+            <span className={`${readinessTextColor} font-extrabold text-sm`}>{readiness}%</span>
           </div>
           <div className="h-2.5 w-full bg-slate-100 dark:bg-slate-800/80 rounded-full overflow-hidden p-0.5 border border-slate-200/50 dark:border-slate-700/50">
             <div
-              className="h-full rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-500"
+              className={`h-full rounded-full ${progressBarGradient} transition-all duration-500`}
               style={{ width: `${readiness}%` }}
             />
           </div>
@@ -221,8 +252,8 @@ function CourseCard({
           </button>
           <button
             onClick={onQuickDrill}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/60 hover:-translate-y-0.5 transition-all duration-150 cursor-pointer shadow-2xs"
-            title="Start Clinical Practice Drill"
+            className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold ${drillButtonClass} hover:-translate-y-0.5 transition-all duration-150 cursor-pointer shadow-2xs`}
+            title="Start Practice Drill"
           >
             <span>🎯</span>
             <span>Start Drill</span>

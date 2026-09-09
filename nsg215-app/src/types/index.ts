@@ -177,10 +177,15 @@ export interface AppState {
   setTheme: (theme: ThemeMode, saveManual?: boolean) => void;
   setFontSize: (fontSize: FontSize) => void;
 
+  // Course Context
+  currentCourseId: string;
+  setCurrentCourse: (courseId: string) => void;
+
   // Questions
   questions: Question[];
   questionsLoaded: boolean;
   loadQuestions: (questions: Question[]) => void;
+  loadCourseQuestions: (courseId: string) => Promise<void>;
 
   // Active Quiz
   activeQuiz: QuizSession | null;

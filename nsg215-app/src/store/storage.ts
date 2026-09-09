@@ -31,8 +31,13 @@ export const storage = {
   // ── Progress ──────────────────────────────────────────────
   getProgress(courseId: string = 'nsg215'): ProgressData {
     try {
-      const courseKey = courseId === 'nsg215' ? STORAGE_KEYS.progress : `studyprep-progress-${courseId}`;
-      const raw = localStorage.getItem(courseKey) || (courseId === 'nsg215' ? localStorage.getItem('studyprep-progress-nsg215') : null);
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_progress`;
+      const raw =
+        localStorage.getItem(primaryKey) ||
+        (courseId.toLowerCase() === 'nsg215'
+          ? localStorage.getItem('nsg215-progress') ||
+            localStorage.getItem('studyprep-progress-nsg215')
+          : null);
       if (!raw) return { ...DEFAULT_PROGRESS };
       const parsed = JSON.parse(raw) as ProgressData;
       return {
@@ -47,10 +52,10 @@ export const storage = {
 
   saveProgress(progress: ProgressData, courseId: string = 'nsg215'): void {
     try {
-      const courseKey = courseId === 'nsg215' ? STORAGE_KEYS.progress : `studyprep-progress-${courseId}`;
-      localStorage.setItem(courseKey, JSON.stringify(progress));
-      if (courseId === 'nsg215') {
-        localStorage.setItem('studyprep-progress-nsg215', JSON.stringify(progress));
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_progress`;
+      localStorage.setItem(primaryKey, JSON.stringify(progress));
+      if (courseId.toLowerCase() === 'nsg215') {
+        localStorage.setItem('nsg215-progress', JSON.stringify(progress));
       }
     } catch (e) {
       console.error('Failed to save progress to localStorage:', e);
@@ -58,9 +63,14 @@ export const storage = {
   },
 
   // ── Active Drill Session ──────────────────────────────────
-  getActiveQuiz(): QuizSession | null {
+  getActiveQuiz(courseId: string = 'nsg215'): QuizSession | null {
     try {
-      const raw = localStorage.getItem(STORAGE_KEYS.activeQuiz);
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_active_drill`;
+      const raw =
+        localStorage.getItem(primaryKey) ||
+        (courseId.toLowerCase() === 'nsg215'
+          ? localStorage.getItem('nsg215-active-drill')
+          : null);
       if (!raw) return null;
       const parsed = JSON.parse(raw) as QuizSession;
       if (
@@ -78,21 +88,32 @@ export const storage = {
     }
   },
 
-  saveActiveQuiz(quiz: QuizSession | null): void {
+  saveActiveQuiz(quiz: QuizSession | null, courseId: string = 'nsg215'): void {
     try {
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_active_drill`;
       if (!quiz || quiz.completedAt !== null) {
-        localStorage.removeItem(STORAGE_KEYS.activeQuiz);
+        localStorage.removeItem(primaryKey);
+        if (courseId.toLowerCase() === 'nsg215') {
+          localStorage.removeItem('nsg215-active-drill');
+        }
       } else {
-        localStorage.setItem(STORAGE_KEYS.activeQuiz, JSON.stringify(quiz));
+        localStorage.setItem(primaryKey, JSON.stringify(quiz));
+        if (courseId.toLowerCase() === 'nsg215') {
+          localStorage.setItem('nsg215-active-drill', JSON.stringify(quiz));
+        }
       }
     } catch (e) {
       console.error('Failed to save active quiz to localStorage:', e);
     }
   },
 
-  clearActiveQuiz(): void {
+  clearActiveQuiz(courseId: string = 'nsg215'): void {
     try {
-      localStorage.removeItem(STORAGE_KEYS.activeQuiz);
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_active_drill`;
+      localStorage.removeItem(primaryKey);
+      if (courseId.toLowerCase() === 'nsg215') {
+        localStorage.removeItem('nsg215-active-drill');
+      }
     } catch (e) {
       console.error('Failed to clear active quiz from localStorage:', e);
     }
@@ -188,9 +209,10 @@ export const storage = {
   // ── Reset Course Progress ─────────────────────────────────
   resetProgress(courseId: string = 'nsg215'): void {
     try {
-      const courseKey = courseId === 'nsg215' ? STORAGE_KEYS.progress : `studyprep-progress-${courseId}`;
-      localStorage.removeItem(courseKey);
-      if (courseId === 'nsg215') {
+      const primaryKey = `studyprep_${courseId.toLowerCase()}_progress`;
+      localStorage.removeItem(primaryKey);
+      if (courseId.toLowerCase() === 'nsg215') {
+        localStorage.removeItem(STORAGE_KEYS.progress);
         localStorage.removeItem('studyprep-progress-nsg215');
       }
       this.saveProgress({ ...DEFAULT_PROGRESS }, courseId);

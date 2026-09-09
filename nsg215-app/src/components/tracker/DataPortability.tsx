@@ -4,6 +4,7 @@ import { Download, Upload, Trash2, AlertTriangle, FileJson, CheckCircle, X } fro
 
 export default function DataPortability() {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const currentCourseId = useAppStore((s) => s.currentCourseId || 'nsg215');
   const exportProgress = useAppStore((s) => s.exportProgress);
   const importProgress = useAppStore((s) => s.importProgress);
   const resetProgress = useAppStore((s) => s.resetProgress);
@@ -12,12 +13,12 @@ export default function DataPortability() {
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleExport = () => {
-    const data = exportProgress('nsg215');
+    const data = exportProgress(currentCourseId);
     const blob = new Blob([data], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `nsg215-progress-${new Date().toISOString().split('T')[0]}.json`;
+    a.download = `${currentCourseId}-progress-${new Date().toISOString().split('T')[0]}.json`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -31,7 +32,7 @@ export default function DataPortability() {
     const reader = new FileReader();
     reader.onload = (event) => {
       const json = event.target?.result as string;
-      const success = importProgress(json, 'nsg215');
+      const success = importProgress(json, currentCourseId);
       setImportStatus(success ? 'success' : 'error');
       setTimeout(() => setImportStatus('idle'), 3000);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -40,7 +41,7 @@ export default function DataPortability() {
   };
 
   const confirmReset = () => {
-    resetProgress('nsg215');
+    resetProgress(currentCourseId);
     setShowModal(false);
     setResetSuccessMessage(true);
     setTimeout(() => setResetSuccessMessage(false), 4000);
