@@ -156,7 +156,7 @@ function CourseCard({
     ? 'bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-700/60'
     : 'bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-700/60';
 
-  const moduleMetricText = course.id === 'ana213' ? '3 Modules' : `${course.sessionCount} Sessions`;
+  const moduleMetricText = course.id === 'ana213' ? `${course.sessionCount} Modules` : `${course.sessionCount} Sessions`;
 
   return (
     <div className={`card-glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-white/10 shadow-xl dark:shadow-2xl dark:shadow-black/60 ${cardBorderHover} transition-all duration-300`}>

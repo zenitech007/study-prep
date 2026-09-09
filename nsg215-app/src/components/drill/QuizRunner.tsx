@@ -37,6 +37,18 @@ export default function QuizRunner({ onExit }: QuizRunnerProps) {
     };
   }, [activeQuiz?.currentIndex]);
 
+  // Warn user if navigating away from browser window mid-quiz
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (activeQuiz && !activeQuiz.completedAt) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [activeQuiz]);
+
   if (!activeQuiz) return null;
 
   const currentQuestionId = activeQuiz.questionIds[activeQuiz.currentIndex];

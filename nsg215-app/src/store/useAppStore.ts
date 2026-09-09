@@ -22,6 +22,9 @@ import {
   updateStreak,
   getTopicAccuracyMap,
 } from '../utils/analytics';
+import { studySessions as nsg215Sessions } from '../data/learnContent';
+import { ana213Sessions } from '../data/ana213Content';
+import { aggregateSessionQuestions, mergeQuestionBanks } from '../utils/questionAggregation';
 
 const DEFAULT_PROGRESS: ProgressData = {
   totalAttempted: 0,
@@ -72,7 +75,10 @@ export const useAppStore = create<AppState>((set, get) => ({
       const res = await fetch(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data: Question[] = await res.json();
-      set({ questions: data, questionsLoaded: true });
+      const sessions = normalized === 'ana213' ? ana213Sessions : nsg215Sessions;
+      const aggregated = aggregateSessionQuestions(sessions, normalized);
+      const combined = mergeQuestionBanks(data, aggregated);
+      set({ questions: combined, questionsLoaded: true });
     } catch (err) {
       console.error(`Failed to load question bank for ${normalized}:`, err);
     }

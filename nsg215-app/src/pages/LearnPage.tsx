@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import {
   Search,
   ChevronDown,
@@ -13,6 +13,9 @@ import {
   Check,
   HelpCircle,
   FileQuestion,
+  Play,
+  BookOpen,
+  Target,
 } from 'lucide-react';
 import { studySessions as nsg215Sessions } from '../data/learnContent';
 import { ana213Sessions } from '../data/ana213Content';
@@ -22,6 +25,7 @@ import { useAppStore } from '../store/useAppStore';
 
 export default function LearnPage() {
   const { courseId: paramCourseId } = useParams<{ courseId?: string }>();
+  const navigate = useNavigate();
   const currentCourseId = useAppStore((s) => s.currentCourseId);
   const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
 
@@ -45,6 +49,11 @@ export default function LearnPage() {
     session: StudySessionContent;
   } | null>(null);
 
+  const handleDrillTopic = (topic: string) => {
+    const routeCourse = activeCourseId === 'nsg215' ? '/drill' : `/course/${activeCourseId}/drill`;
+    navigate(`${routeCourse}?topic=${encodeURIComponent(cleanText(topic))}&autoStart=true`);
+  };
+
   const toggleSession = (num: number) => {
     setExpandedSessions((prev) => {
       const next = new Set(prev);
@@ -66,7 +75,7 @@ export default function LearnPage() {
       session.content?.some(
         (c) => c.heading.toLowerCase().includes(q) || c.body.toLowerCase().includes(q)
       ) ||
-      session.keyPoints.some((kp) => kp.toLowerCase().includes(q)) ||
+      session.keyPoints?.some((kp) => kp.toLowerCase().includes(q)) ||
       session.models?.some(
         (m) =>
           m.name.toLowerCase().includes(q) ||
@@ -132,16 +141,20 @@ export default function LearnPage() {
 
       {/* Study Session Cards */}
       <div className="space-y-5">
-        {filteredSessions.map((session) => (
-          <SessionCard
-            key={session.sessionNumber}
-            session={session}
-            isExpanded={expandedSessions.has(session.sessionNumber)}
-            onToggle={() => toggleSession(session.sessionNumber)}
-            onOpenPractice={(type) => setActiveModal({ type, session })}
-            searchQuery={searchQuery}
-          />
-        ))}
+        {filteredSessions.map((session) => {
+          const num = session.sessionNumber ?? session.id ?? 1;
+          return (
+            <SessionCard
+              key={`${activeCourseId}-${num}`}
+              session={session}
+              isExpanded={expandedSessions.has(num)}
+              onToggle={() => toggleSession(num)}
+              onOpenPractice={(type) => setActiveModal({ type, session })}
+              onDrillTopic={handleDrillTopic}
+              searchQuery={searchQuery}
+            />
+          );
+        })}
       </div>
 
       {/* Interactive Practice Modal for ITQs & SAQs */}
@@ -150,6 +163,7 @@ export default function LearnPage() {
           type={activeModal.type}
           session={activeModal.session}
           searchQuery={searchQuery}
+          onDrillTopic={handleDrillTopic}
           onClose={() => setActiveModal(null)}
         />
       )}
@@ -160,13 +174,23 @@ export default function LearnPage() {
 // ── Helpers ─────────────────────────────────────────────────────────
 
 /**
+ * Removes citation brackets like [cite: 4] and cleans extra whitespace.
+ */
+function cleanText(text?: string): string {
+  if (!text) return '';
+  return text.replace(/\[cite:\s*\d+\]/g, '').replace(/\s{2,}/g, ' ').trim();
+}
+
+/**
  * Splits body text into bite-sized, scannable teaching points.
  */
 function formatToTeachingPoints(text: string): string[] {
   if (!text) return [];
 
+  const cleaned = cleanText(text);
+
   // Normalize numbered items like "1. ", "2. " to newlines
-  const normalized = text
+  const normalized = cleaned
     .replace(/(?<!\d)(?<![A-Za-z])(\d+)\.\s+/g, '\n$1. ')
     .trim();
 
@@ -202,18 +226,21 @@ function SessionCard({
   isExpanded,
   onToggle,
   onOpenPractice,
+  onDrillTopic,
   searchQuery,
 }: {
   session: StudySessionContent;
   isExpanded: boolean;
   onToggle: () => void;
   onOpenPractice: (type: 'itq' | 'saq') => void;
+  onDrillTopic: (topic: string) => void;
   searchQuery: string;
 }) {
   const progress = useAppStore((s) => s.progress);
   const toggleSessionCompleted = useAppStore((s) => s.toggleSessionCompleted);
 
-  const isStudied = (progress.completedSessions || []).includes(session.sessionNumber);
+  const sessionNum = session.sessionNumber ?? session.id ?? 1;
+  const isStudied = (progress.completedSessions || []).includes(sessionNum);
 
   const itqCount = session.inTextQuestions?.length || 0;
   const saqCount = session.saqs?.length || 0;
@@ -233,7 +260,7 @@ function SessionCard({
           isExpanded ? 'bg-slate-100/50 dark:bg-slate-800/30' : ''
         }`}
         aria-expanded={isExpanded}
-        aria-label={`Study Session ${session.sessionNumber}: ${session.title}`}
+        aria-label={`Study Session ${sessionNum}: ${cleanText(session.title)}`}
       >
         <div className="flex items-center gap-3.5 min-w-0 flex-1 pr-4">
           {/* 1. Circular Session Number badge on the far left */}
@@ -244,12 +271,12 @@ function SessionCard({
                 : 'bg-gradient-to-br from-blue-600 to-cyan-500 shadow-blue-500/20'
             }`}
           >
-            {isStudied ? <Check size={18} className="stroke-[3]" /> : session.sessionNumber}
+            {isStudied ? <Check size={18} className="stroke-[3]" /> : sessionNum}
           </span>
 
           {/* 2. The Session Title */}
           <h3 className="text-base sm:text-lg font-bold text-main leading-snug break-words flex-1">
-            {session.title}
+            {cleanText(session.title)}
           </h3>
         </div>
 
@@ -266,11 +293,56 @@ function SessionCard({
       {/* Content — collapsible */}
       {isExpanded && (
         <div className="border-t p-5 sm:p-6 space-y-6" style={{ borderColor: 'var(--color-border)' }}>
+          {/* Module Introduction / Overview */}
+          {session.introduction && (
+            <div className="p-4 sm:p-5 rounded-2xl bg-cyan-500/5 dark:bg-cyan-500/10 border border-cyan-500/20 text-sm">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex items-center gap-2">
+                  <BookOpen size={16} className="text-cyan-600 dark:text-cyan-400" />
+                  <h4 className="font-extrabold text-main text-xs sm:text-sm uppercase tracking-wider text-cyan-700 dark:text-cyan-300">
+                    Module Overview & Introduction
+                  </h4>
+                </div>
+                <TTSButton
+                  id={`s${sessionNum}-intro`}
+                  text={cleanText(session.introduction)}
+                  label="Listen"
+                  variant="compact"
+                />
+              </div>
+              <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                <HighlightText text={cleanText(session.introduction)} query={searchQuery} />
+              </p>
+            </div>
+          )}
+
+          {/* Learning Outcomes */}
+          {session.learningOutcomes && session.learningOutcomes.length > 0 && (
+            <div className="p-4 sm:p-5 rounded-2xl bg-slate-50/80 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-xs sm:text-sm">
+              <h4 className="font-bold text-main flex items-center gap-2 mb-2.5">
+                <Target size={15} className="text-indigo-500" />
+                <span>Key Learning Objectives</span>
+              </h4>
+              <ul className="space-y-1.5">
+                {session.learningOutcomes.map((lo, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sub">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                    <span>
+                      <HighlightText text={cleanText(lo)} query={searchQuery} />
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Core Content / Scannable Teaching Points */}
           {session.content && session.content.length > 0 && (
             <div className="space-y-4">
               {session.content.map((sec, idx) => {
-                const points = formatToTeachingPoints(sec.body);
+                const headingClean = cleanText(sec.heading);
+                const bodyClean = cleanText(sec.body);
+                const points = formatToTeachingPoints(bodyClean);
                 return (
                   <div
                     key={idx}
@@ -279,11 +351,11 @@ function SessionCard({
                   >
                     <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-slate-200/50 dark:border-slate-800">
                       <h5 className="font-extrabold text-main text-sm sm:text-base">
-                        <HighlightText text={sec.heading} query={searchQuery} />
+                        <HighlightText text={headingClean} query={searchQuery} />
                       </h5>
                       <TTSButton
-                        id={`s${session.sessionNumber}-sec-${idx}`}
-                        text={`${sec.heading}. ${sec.body}`}
+                        id={`s${sessionNum}-sec-${idx}`}
+                        text={`${headingClean}. ${bodyClean}`}
                         label="Listen"
                         variant="compact"
                       />
@@ -331,22 +403,24 @@ function SessionCard({
           )}
 
           {/* Key Points */}
-          <div>
-            <h4 className="text-sm font-bold text-main flex items-center gap-2 mb-2">
-              <Lightbulb size={16} className="text-amber-500" />
-              <span>Key Points to Remember</span>
-            </h4>
-            <ul className="space-y-2">
-              {session.keyPoints.map((point, i) => (
-                <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-sub">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
-                  <span>
-                    <HighlightText text={point} query={searchQuery} />
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {session.keyPoints && session.keyPoints.length > 0 && (
+            <div>
+              <h4 className="text-sm font-bold text-main flex items-center gap-2 mb-2">
+                <Lightbulb size={16} className="text-amber-500" />
+                <span>Key Points to Remember</span>
+              </h4>
+              <ul className="space-y-2">
+                {session.keyPoints.map((point, i) => (
+                  <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-sub">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+                    <span>
+                      <HighlightText text={cleanText(point)} query={searchQuery} />
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Models */}
           {session.models && session.models.length > 0 && (
@@ -366,16 +440,16 @@ function SessionCard({
                     }}
                   >
                     <h5 className="font-bold text-sm text-purple-600 dark:text-purple-400">
-                      <HighlightText text={model.name} query={searchQuery} />
+                      <HighlightText text={cleanText(model.name)} query={searchQuery} />
                     </h5>
                     <p className="text-xs text-sub mt-1 mb-2">
-                      <HighlightText text={model.description} query={searchQuery} />
+                      <HighlightText text={cleanText(model.description)} query={searchQuery} />
                     </p>
                     <ul className="space-y-1">
                       {model.components.map((comp, i) => (
                         <li key={i} className="text-xs text-sub flex gap-2">
                           <span className="text-muted">•</span>
-                          <HighlightText text={comp} query={searchQuery} />
+                          <HighlightText text={cleanText(comp)} query={searchQuery} />
                         </li>
                       ))}
                     </ul>
@@ -400,10 +474,10 @@ function SessionCard({
                     }}
                   >
                     <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400">
-                      <HighlightText text={def.term} query={searchQuery} />
+                      <HighlightText text={cleanText(def.term)} query={searchQuery} />
                     </span>
                     <p className="text-xs text-sub mt-1">
-                      <HighlightText text={def.definition} query={searchQuery} />
+                      <HighlightText text={cleanText(def.definition)} query={searchQuery} />
                     </p>
                   </div>
                 ))}
@@ -417,7 +491,7 @@ function SessionCard({
             <div>
               <button
                 type="button"
-                onClick={() => toggleSessionCompleted(session.sessionNumber)}
+                onClick={() => toggleSessionCompleted(sessionNum)}
                 className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
                   isStudied
                     ? 'bg-emerald-600 text-white shadow-sm shadow-emerald-600/30'
@@ -455,6 +529,16 @@ function SessionCard({
                   <span>Drill SAQs ({saqCount})</span>
                 </button>
               )}
+
+              {/* Direct Quiz Runner Button for this Session */}
+              <button
+                type="button"
+                onClick={() => onDrillTopic(session.title)}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-cyan-50 hover:bg-cyan-100 dark:bg-cyan-950/60 dark:hover:bg-cyan-900/60 text-cyan-800 dark:text-cyan-300 border border-cyan-200/80 dark:border-cyan-800/60 hover:-translate-y-0.5 transition-all cursor-pointer shadow-2xs"
+              >
+                <Play size={14} className="fill-current text-cyan-600 dark:text-cyan-400" />
+                <span>Drill Module Quiz →</span>
+              </button>
             </div>
           </div>
         </div>
@@ -469,11 +553,13 @@ function PracticeModal({
   type,
   session,
   searchQuery,
+  onDrillTopic,
   onClose,
 }: {
   type: 'itq' | 'saq';
   session: StudySessionContent;
   searchQuery: string;
+  onDrillTopic: (topic: string) => void;
   onClose: () => void;
 }) {
   const [revealed, setRevealed] = useState<Record<string | number, boolean>>({});
@@ -482,10 +568,11 @@ function PracticeModal({
     setRevealed((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
+  const sessionNum = session.sessionNumber ?? session.id ?? 1;
   const isITQ = type === 'itq';
   const title = isITQ
-    ? `Session ${session.sessionNumber}: In-Text Self-Check Questions`
-    : `Session ${session.sessionNumber}: Self-Assessment Questions (SAQs)`;
+    ? `Session ${sessionNum}: In-Text Self-Check Questions`
+    : `Session ${sessionNum}: Self-Assessment Questions (SAQs)`;
 
   const itqs: InTextQuestion[] = session.inTextQuestions || [];
   const saqs: SAQuestion[] = session.saqs || [];
@@ -534,6 +621,8 @@ function PracticeModal({
           {isITQ ? (
             itqs.map((itq, idx) => {
               const isRevealed = !!revealed[idx];
+              const qText = cleanText(itq.question);
+              const aText = cleanText(itq.answer);
               return (
                 <div
                   key={idx}
@@ -544,14 +633,14 @@ function PracticeModal({
                       <span className="font-extrabold text-indigo-600 dark:text-indigo-400 mr-1.5">
                         Q{idx + 1}:
                       </span>
-                      <HighlightText text={itq.question} query={searchQuery} />
+                      <HighlightText text={qText} query={searchQuery} />
                     </p>
 
                     <div className="flex items-center gap-1.5 shrink-0">
                       <TTSButton
-                        id={`modal-itq-${session.sessionNumber}-${idx}`}
-                        text={`Question ${idx + 1}: ${itq.question}. ${
-                          isRevealed ? `Answer: ${itq.answer}` : ''
+                        id={`modal-itq-${sessionNum}-${idx}`}
+                        text={`Question ${idx + 1}: ${qText}. ${
+                          isRevealed ? `Answer: ${aText}` : ''
                         }`}
                         variant="icon"
                         size={14}
@@ -570,7 +659,7 @@ function PracticeModal({
                     <div className="mt-3 pt-3 border-t border-slate-200/60 dark:border-slate-800 text-xs sm:text-sm font-medium animate-fade-in flex items-start gap-2 bg-emerald-50/50 dark:bg-emerald-950/30 p-2.5 rounded-xl text-emerald-800 dark:text-emerald-300">
                       <strong className="font-extrabold shrink-0">Answer:</strong>
                       <span className="text-main font-normal">
-                        <HighlightText text={itq.answer} query={searchQuery} />
+                        <HighlightText text={aText} query={searchQuery} />
                       </span>
                     </div>
                   )}
@@ -580,6 +669,8 @@ function PracticeModal({
           ) : (
             saqs.map((saq) => {
               const isRevealed = !!revealed[saq.id];
+              const qText = cleanText(saq.question);
+              const aText = cleanText(saq.answer);
               return (
                 <div
                   key={saq.id}
@@ -591,15 +682,15 @@ function PracticeModal({
                         SAQ {saq.id}
                       </span>
                       <p className="text-xs sm:text-sm font-extrabold text-main mt-1 leading-snug">
-                        <HighlightText text={saq.question} query={searchQuery} />
+                        <HighlightText text={qText} query={searchQuery} />
                       </p>
                     </div>
 
                     <div className="flex items-center gap-1.5 shrink-0">
                       <TTSButton
-                        id={`modal-saq-${session.sessionNumber}-${saq.id}`}
-                        text={`Question ${saq.id}: ${saq.question}. ${
-                          isRevealed ? `Model Answer: ${saq.answer}` : ''
+                        id={`modal-saq-${sessionNum}-${saq.id}`}
+                        text={`Question ${saq.id}: ${qText}. ${
+                          isRevealed ? `Model Answer: ${aText}` : ''
                         }`}
                         variant="icon"
                         size={14}
@@ -619,7 +710,7 @@ function PracticeModal({
                       <strong className="text-amber-800 dark:text-amber-300 block mb-1 font-bold">
                         Official Model Answer:
                       </strong>
-                      <HighlightText text={saq.answer} query={searchQuery} />
+                      <HighlightText text={aText} query={searchQuery} />
                     </div>
                   )}
                 </div>
@@ -629,10 +720,22 @@ function PracticeModal({
         </div>
 
         {/* Modal Footer */}
-        <div className="p-3.5 sm:p-4 border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/70 flex justify-end">
+        <div className="p-3.5 sm:p-4 border-t border-slate-200/80 dark:border-slate-800/80 bg-slate-50/70 dark:bg-slate-900/70 flex flex-col-reverse sm:flex-row sm:items-center justify-between gap-3">
+          <button
+            type="button"
+            onClick={() => {
+              onClose();
+              onDrillTopic(session.title);
+            }}
+            className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-md shadow-cyan-500/25 transition-all cursor-pointer"
+          >
+            <Play size={14} className="fill-current" />
+            <span>Launch Quiz Runner for this Module</span>
+          </button>
+
           <button
             onClick={onClose}
-            className="btn btn-primary text-xs sm:text-sm font-extrabold px-5 py-2 rounded-xl"
+            className="btn btn-secondary text-xs sm:text-sm font-extrabold px-5 py-2 rounded-xl"
           >
             Done Practicing
           </button>

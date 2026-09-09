@@ -1,0 +1,61 @@
+{
+  "id": 7,
+  "title": "Development of the Skeletal and Urogenital Systems",
+  "introduction": "The skeletal system develops from paraxial and lateral plate mesoderm and neural crest cells, while the urogenital system develops from the intermediate mesenchyme derived from the dorsal body wall of the embryo. During folding of the embryo, the urogenital ridge forms, subdividing into the nephrogenic cord (urinary system) and the gonadal ridge (genital system)[cite: 4].",
+  "learningOutcomes": [
+    "7.1 Describe the development of the skeletal system, including intramembranous and endochondral ossification[cite: 4].",
+    "7.2 Explain the formation of the skull and the embryological rotation of the upper and lower limbs[cite: 4].",
+    "7.3 Outline the development of the urinary system, tracing the pronephroi, mesonephroi, and metanephroi[cite: 4].",
+    "7.4 Detail the development of the male and female genital systems, including gonads, ducts, and external genitalia[cite: 4].",
+    "7.5 Identify clinical correlates associated with skeletal and urogenital development[cite: 4]."
+  ],
+  "content": [
+    {
+      "heading": "Skeletal System Origins & Ossification",
+      "body": "The paraxial mesoderm forms somites, which differentiate into the sclerotome (forms bones), myotome (forms muscles), and dermatome (forms skin)[cite: 4]. Bones develop through two methods: Intramembranous ossification (direct laying down of bone into the primitive connective tissue or mesenchyme) and Endochondral ossification (development of long bones from a hyaline cartilage model precursor)[cite: 4]."
+    },
+    {
+      "heading": "Skull and Limb Development",
+      "body": "The skull is divided into the Neurocranium (protective case around the brain) and Viscerocranium (skeleton of the face)[cite: 4]. At birth, flat bones of the skull are separated by connective tissue seams called sutures and wide spots called fontanelles, which allow for molding during birth[cite: 4]. Limb buds become visible at the end of the 4th week; in the 7th week, upper limbs rotate 90 degrees laterally while lower limbs rotate 90 degrees medially[cite: 4]."
+    },
+    {
+      "heading": "Development of the Urinary System",
+      "body": "Three sets of kidneys develop in human embryos: the Pronephroi (never functional), the Mesonephroi (functions briefly during intrauterine life), and the Metanephroi (the permanent kidneys)[cite: 4]. The permanent kidneys develop from the ureteric bud and the metanephric mass[cite: 4]. Initially located in the pelvis, the kidneys gradually ascend into the abdomen by the ninth week[cite: 4]. The urinary bladder develops from the vesical part of the urogenital sinus[cite: 4]."
+    },
+    {
+      "heading": "Development of Gonads and Genital Ducts",
+      "body": "The SRY gene on the Y chromosome produces testis-determining factor (TDF), inducing the medullary cords to develop into seminiferous tubules and rete testis[cite: 4]. Interstitial cells of Leydig secrete testosterone to induce masculine differentiation[cite: 4]. In females, the absence of TDF allows cortical cords to incorporate primordial germ cells, forming primary oocytes[cite: 4]. The paramesonephric (Mullerian) ducts develop in females to form the uterine tubes, uterus, and upper vagina, while the mesonephric (Wolffian) ducts form the male ductus deferens and ejaculatory duct[cite: 4]."
+    },
+    {
+      "heading": "External Genitalia and Clinical Correlates",
+      "body": "External genitalia develop from identical primordia in both sexes[cite: 4]. The genital tubercle forms the glans penis in males or the clitoris in females[cite: 4]. Urethral folds form the penile urethra or the labia minora, while genital swellings form the scrotum or labia majora[cite: 4]. Clinical correlates include Craniosyntocis (premature suture closure), Horseshoe kidney (inferior poles fused), and Hypospadias[cite: 4]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Which of the three kidney systems in the human embryo becomes the permanent kidneys?[cite: 4]",
+      "answer": "The metanephroi (third set) becomes the permanent kidneys[cite: 4]."
+    },
+    {
+      "question": "What is the function of sutures and fontanelles in a newborn's skull?[cite: 4]",
+      "answer": "These sutures and fontanelles allow for molding (overlapping) during birth[cite: 4]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "7.1",
+      "question": "Differentiate between intramembranous and endochondral ossification.[cite: 4]",
+      "answer": "Intramembranous ossification is the direct laying down of bone into the primitive connective tissue (mesenchyme)[cite: 4]. Endochondral ossification is the process of development of long bones from a hyaline cartilage model precursor where cartilage is replaced by bone[cite: 4]."
+    },
+    {
+      "id": "7.2",
+      "question": "Describe the embryological origins of the uterus and uterine tubes.[cite: 4]",
+      "answer": "The uterine tubes develop from the unfused cranial and horizontal parts of the paramesonephric ducts[cite: 4]. The caudal fused portions of these ducts form the uterovaginal primordium which becomes the uterus and the superior part of the vagina[cite: 4]."
+    },
+    {
+      "id": "7.3",
+      "question": "Identify the adult derivatives of the embryonic genital tubercle, urethral folds, and genital swellings in both males and females.[cite: 4]",
+      "answer": "In males, the genital tubercle forms the glans penis, urethral folds form the penile urethra, and genital swellings form the scrotum[cite: 4]. In females, the genital tubercle forms the clitoris, urethral folds form the labia minora, and genital swellings form the labia majora[cite: 4]."
+    }
+  ]
+}

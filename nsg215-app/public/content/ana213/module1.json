@@ -1,89 +1,66 @@
 {
-  "sessionNumber": 1,
-  "title": "Module 1: General Anatomy, Organization of Human Body & Anatomical Terminology",
-  "overview": "Introduction to human gross anatomy, anatomical terminology, anatomical planes, positions, cavities, and body organization.",
+  "id": 1,
+  "title": "Introduction to Anatomy and General Histology",
+  "introduction": "The word anatomy is derived from a Greek word 'Anatome' meaning to cut up[cite: 4]. It is the study of structures that make up the body and how those structures relate with each other[cite: 4]. For nurses, it helps in understanding how the human body is organized and functions, and assists in understanding what happens and what to do when the body is injured or diseased[cite: 4].",
+  "learningOutcomes": [
+    "1. Understand and use anatomical terms[cite: 4].",
+    "2. Understand the function of the various organs and their relations with one another[cite: 4].",
+    "3. Know the location of each organ and the important anatomical land marks[cite: 4].",
+    "4. Know the normal structure of the human body in general[cite: 4].",
+    "5. Use the knowledge of anatomy in nursing practice and for teaching[cite: 4]."
+  ],
   "content": [
     {
-      "heading": "1.1 The Anatomical Position and Directional Terminology",
-      "body": "The anatomical position is the standardized reference posture adopted internationally for anatomical descriptions. In this position, the human body stands upright, feet slightly separated with toes directed forward, eyes looking horizontally forward, upper limbs resting beside the torso, and the palms of the hands facing anteriorly with thumbs pointed away from the body. All directional descriptions assume this position regardless of patient orientation. Key terms: Superior (cranial) denotes toward the head or upper part of a structure; Inferior (caudal) denotes away from the head or toward the lower body; Anterior (ventral) is toward the front; Posterior (dorsal) is toward the back; Medial is nearer to the midline; Lateral is further from the midline; Proximal is closer to the limb origin; Distal is further from the limb origin; Superficial is nearer the surface; Deep is farther from the body surface."
+      "heading": "Sub-specialties of Anatomy",
+      "body": "Anatomy includes several sub-specialties[cite: 4]. Gross anatomy studies body structure that can be seen with the naked eyes[cite: 4]. Systemic anatomy studies relationships of organs within a system, whereas Regional anatomy studies body parts regionally[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs[cite: 4]. Developmental anatomy studies the changes in cells, tissues, organs, and the entire body that occurs as the cells of each parent combine to form a baby[cite: 4]."
     },
     {
-      "heading": "1.2 Cardinal Anatomical Planes and Sections",
-      "body": "Sectional anatomy relies on three fundamental mutually perpendicular cardinal planes: (1) The Sagittal plane passes vertically through the body, dividing it into right and left portions. When passing precisely through the midline, it is termed the median sagittal plane (mid-sagittal) dividing the body into equal symmetrical halves; planes parallel to it are parasagittal planes. (2) The Coronal (frontal) plane passes vertically at right angles to the sagittal plane, dividing the body into anterior (front) and posterior (back) parts. (3) The Transverse (horizontal or axial) plane cuts horizontally across the longitudinal axis, dividing the body into superior (upper) and inferior (lower) portions."
+      "heading": "Level of Structural Organization",
+      "body": "The body is organized into several levels[cite: 4]. A Cell is the smallest independent unit of life[cite: 4]. A Tissue is made up of many similar cells that perform a specific function (divided into Epithelial, Connective, Muscle, and Nerve tissue)[cite: 4]. An Organ is an integrated collection of two or more kinds of tissue that works together to perform a specific function[cite: 4]. A System is a group of organs that work together to perform major functions[cite: 4]."
     },
     {
-      "heading": "1.3 Human Body Cavities and Serous Membranes",
-      "body": "Body cavities are internal fluid-filled spaces that shield, support, and accommodate internal organs. The dorsal body cavity contains the cranial cavity (housing the brain and meninges) and the vertebral canal (housing the spinal cord). The ventral body cavity is subdivided by the dome-shaped diaphragm into the superior thoracic cavity and the inferior abdominopelvic cavity. The thoracic cavity contains the paired pleural cavities (lungs), the pericardial cavity (heart), and the central mediastinum. The abdominopelvic cavity is lined by the peritoneum, the thoracic cavity by the pleura, and the pericardial space by the pericardium. Serous membranes consist of a parietal layer lining cavity walls and an inner visceral layer covering organ surfaces, lubricated by slippery serous fluid."
+      "heading": "Anatomical Position and Body Planes",
+      "body": "The Anatomical Position is universally accepted as the starting point for positional references[cite: 4]. The subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4]. Body planes are imaginary surfaces that divide the body[cite: 4]. The Sagittal plane divides the body into right and left halves (Mid-sagittal divides into equal halves, Para-sagittal into unequal halves)[cite: 4]. The Frontal/coronal plane divides the body into asymmetrical anterior and posterior sections[cite: 4]. The Transverse plane divides the body into upper and lower sections[cite: 4]."
     },
     {
-      "heading": "1.4 Structural Levels of Biological Organization",
-      "body": "The human body is structured in a hierarchical continuum: Chemical level (atoms bonding into macromolecular compounds such as DNA, carbohydrates, proteins, and lipids), Cellular level (specialized functional units of life), Tissue level (groups of similar cells with specialized extracellular matrices classified into epithelial, connective, muscle, and nervous tissue), Organ level (distinct structures formed from two or more primary tissue types executing specialized physiological roles), System level (integrated organs functioning harmoniously), and Organismal level (the complete living biological being)."
-    }
-  ],
-  "keyPoints": [
-    "Standard anatomical position assumes an erect posture, eyes forward, arms at sides, palms facing forward with thumbs lateral, and feet flat.",
-    "Sagittal, coronal, and transverse planes are the three cardinal orthogonal reference planes used in clinical imaging and gross anatomy.",
-    "The diaphragm is the primary anatomical muscular partition separating the thoracic cavity from the abdominopelvic cavity.",
-    "Serous membranes feature double layers: the parietal layer lines the body cavity wall, while the visceral layer directly envelops organs.",
-    "Biological structural hierarchy ascends from chemical to cellular, tissue, organ, organ-system, and organismal levels."
-  ],
-  "models": [
-    {
-      "name": "Hierarchy of Anatomical Organization",
-      "description": "Six ascending hierarchical levels of structure and function in the human organism.",
-      "components": [
-        "Chemical Level: Atoms, molecules, and biological macromolecules",
-        "Cellular Level: Basic structural and functional units (e.g., osteocytes, neurons, myocytes)",
-        "Tissue Level: Epithelial, Connective, Muscular, and Nervous tissues",
-        "Organ Level: Discrete anatomical organs composed of two or more tissues",
-        "Organ System Level: Eleven integrated physiological organ systems",
-        "Organismal Level: Complete, coordinated living human entity"
-      ]
-    }
-  ],
-  "definitions": [
-    {
-      "term": "Anatomical Position",
-      "definition": "Universal standard anatomical reference posture: erect body, gaze forward, upper limbs by sides, palms facing forward with thumbs pointing laterally, feet together."
+      "heading": "Body Cavities",
+      "body": "There are two sets of internal body cavities[cite: 4]. The Dorsal cavity protects the fragile nervous system and has two subdivisions: the cranial cavity (encases the brain) and the vertebral/spinal cavity (encloses the spinal cord)[cite: 4]. The Ventral body cavity is larger and houses internal organs[cite: 4]. It is subdivided into the thoracic and abdominopelvic cavities, which are separated by the diaphragm, a dome-shaped muscle important in breathing[cite: 4]."
     },
     {
-      "term": "Coronal (Frontal) Plane",
-      "definition": "A vertical plane dividing the human body or organ into anterior (front) and posterior (back) portions."
-    },
-    {
-      "term": "Sagittal Plane",
-      "definition": "A vertical longitudinal plane that divides the body into right and left sections; mid-sagittal yields symmetrical equal halves."
-    },
-    {
-      "term": "Visceral Serosa",
-      "definition": "The inner layer of a serous membrane that adheres directly to the outer surface of visceral organs."
+      "heading": "Microscopy",
+      "body": "Histology is the study of tissues and how they are arranged to form organs[cite: 4]. Magnification is the increase of an object's apparent size, while Resolution is the capacity of the optical system to show details clearly[cite: 4]. The Compound Light Microscope has several major parts: Eyepiece (contains ocular lens), Nose-piece (holds objective lens), Arm, Stage (holds the specimen), Light source, Coarse and fine adjustment knobs, and the Base[cite: 4]."
     }
   ],
   "inTextQuestions": [
     {
-      "question": "Why is the anatomical position universally utilized as the benchmark for anatomical and clinical descriptions?",
-      "answer": "It provides a fixed, unambiguous frame of reference regardless of the actual position (supine, prone, lateral) the patient or specimen assumes during examination, imaging, or surgical procedures."
+      "question": "Which plane divides the body into equal left and right halves?[cite: 4]",
+      "answer": "The Mid-sagittal (or median) plane[cite: 4]."
     },
     {
-      "question": "Which anatomical plane would divide the brain into anterior and posterior segments?",
-      "answer": "The coronal (or frontal) plane."
-    },
-    {
-      "question": "What anatomical structure separates the thoracic cavity from the abdominal cavity?",
-      "answer": "The muscular thoracic diaphragm."
+      "question": "Which muscle separates the thoracic cavity from the abdominopelvic cavity?[cite: 4]",
+      "answer": "The diaphragm[cite: 4]."
     }
   ],
   "saqs": [
     {
       "id": "1.1",
-      "question": "Define the standard anatomical position and state four reciprocal directional pairs used in clinical anatomy.",
-      "answer": "The standard anatomical position is the reference posture wherein the subject stands erect, face oriented forward, upper extremities alongside the trunk, palms facing anteriorly with thumbs directed outward, and lower extremities parallel with feet flat on the floor. Reciprocal directional pairs: (1) Superior (cranial) and Inferior (caudal), (2) Anterior (ventral) and Posterior (dorsal), (3) Medial and Lateral, (4) Proximal and Distal."
+      "question": "Why is it important for nurses to study anatomy?[cite: 4]",
+      "answer": "It helps in understanding how the human body is organized and function[cite: 4]. It assists the student in understanding what happens and what to do when the body is injured or diseased[cite: 4]."
     },
     {
       "id": "1.2",
-      "question": "Differentiate between the parietal and visceral layers of serous membranes, providing two clinical anatomical examples.",
-      "answer": "The parietal layer lines the internal walls of closed body cavities, while the visceral layer directly envelops the outer adventitia/surface of organs within that cavity. Between them lies a serous fluid-filled potential space. Examples: (1) Parietal pleura lining the thoracic cage vs. visceral pleura covering lung parenchyma; (2) Parietal peritoneum lining abdominal walls vs. visceral peritoneum investing gastrointestinal viscera."
+      "question": "Describe the standard Anatomical Position.[cite: 4]",
+      "answer": "In anatomical position, the subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4]."
+    },
+    {
+      "id": "1.3",
+      "question": "Name the four primary groups of tissues in the body.[cite: 4]",
+      "answer": "The four groups are: 1) Epithelial tissue, 2) Connective tissue, 3) Muscle tissue, and 4) Nerve tissue[cite: 4]."
+    },
+    {
+      "id": "1.4",
+      "question": "Differentiate between Gross Anatomy and Microscopic Anatomy.[cite: 4]",
+      "answer": "Gross anatomy studies body structures that can be seen with the naked eyes[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs of the body[cite: 4]."
     }
-  ],
-  "sourceTag": "manual"
+  ]
 }

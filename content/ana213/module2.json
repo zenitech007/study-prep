@@ -1,82 +1,61 @@
 {
-  "sessionNumber": 2,
-  "title": "Module 2: General Embryology, Gametogenesis & Early Human Development",
-  "overview": "Overview of gametogenesis, fertilization, cleavage, blastocyst formation, implantation, gastrulation, and germ layer derivatives.",
+  "id": 2,
+  "title": "Cell Structure and Function",
+  "introduction": "Principles of Cell Theory: All living things are made of cells[cite: 4]. The smallest living unit of structure and function of all organisms is the cell[cite: 4]. All cells arise from pre-existing cells[cite: 4].",
+  "learningOutcomes": [
+    "2.1 Understand the Principles of Cell Theory and characteristics of all cells[cite: 4].",
+    "2.2 Describe the plasma membrane and its functions in enclosing the cell[cite: 4].",
+    "2.3 Identify the membranous organelles inside the cell and their respective functions[cite: 4].",
+    "2.4 Explain the role of the extracellular matrix outside the cell[cite: 4].",
+    "2.5 Discuss the cell cycle, including interphase and the stages of mitosis[cite: 4]."
+  ],
   "content": [
     {
-      "heading": "2.1 Gametogenesis: Spermatogenesis and Oogenesis",
-      "body": "Gametogenesis is the specialized biological process through which primordial germ cells undergo meiosis and cytodifferentiation to produce mature haploid gametes (spermatozoa and ova). Spermatogenesis begins at puberty within the seminiferous tubules of the testes, continuously generating four functional spermatozoa from each primary spermatocyte over approximately 64 to 74 days under FSH, LH, and testosterone regulation. In contrast, oogenesis begins during prenatal embryonic development: oogonia undergo mitosis and enter meiosis I to form primary oocytes, which remain arrested in prophase I (diplotene stage) until puberty. At ovulation, the secondary oocyte completes meiosis I and arrests in metaphase II, which is only completed upon successful fertilization by a spermatozoon."
+      "heading": "Characteristics and Enclosing the Cell",
+      "body": "All cells have a surrounding membrane, cytoplasm, organelles, and a control center with DNA[cite: 4]. The plasma membrane contains cell contents and is made up of a double layer of phospholipids, cholesterol, glycolipid, and carbohydrate[cite: 4]. Its functions include separating the cytoplasm from extracellular fluid, separating cells from one another, providing a surface for chemical reactions, and regulating the passage of materials through selective permeability[cite: 4]. Membrane proteins include channels/transporters and receptors[cite: 4]."
     },
     {
-      "heading": "2.2 Fertilization, Cleavage, and Blastocyst Formation",
-      "body": "Fertilization normally occurs in the ampulla of the uterine (fallopian) tube. It comprises sperm capacitation, the acrosome reaction (penetration of corona radiata and zona pellucida), fusion of plasma membranes, the cortical reaction to prevent polyspermy, and fusion of male and female pronuclei restoring diploidy (46 chromosomes). Following fertilization, the zygote undergoes rapid mitotic divisions called cleavage without net cell growth, creating individual cells termed blastomeres. By day 3–4, a solid ball of 16–32 blastomeres forms the morula. Fluid accumulates within the morula to form a blastocyst cavity (blastocoele), demarcating two distinct cell lineages: the outer trophoblast (which gives rise to embryonic placenta and extraembryonic membranes) and the inner cell mass or embryoblast (which forms the embryo proper)."
+      "heading": "Inside the Cell: Organelles",
+      "body": "The nucleus contains hereditary factors and controls cell activity and structure[cite: 4]. The Rough Endoplasmic Reticulum has attached ribosomes and helps manufacture and modify proteins[cite: 4]. The Smooth Endoplasmic Reticulum lacks ribosomes and is responsible for lipid biosynthesis, membrane synthesis, and repair[cite: 4]. Ribosomes are the site of protein synthesis[cite: 4]. Golgi bodies package proteins and move materials within and out of the cell[cite: 4]. Lysosomes contain digestive enzymes to break down old cell parts and foreign bodies, while vacuoles are membrane-bound storage sacs[cite: 4]. Mitochondria contain DNA and release energy as ATP through cellular respiration[cite: 4]."
     },
     {
-      "heading": "2.3 Implantation and the Bilaminar Germ Disc",
-      "body": "Implantation of the blastocyst commences around day 6 post-fertilization in the endometrium of the superior posterior uterine wall. The trophoblast differentiates into an inner cellular cytotrophoblast and an outer invasive, multinucleated syncytiotrophoblast, which secretes human chorionic gonadotropin (hCG). Concurrently, during the second week (the 'week of twos'), the embryoblast differentiates into a bilaminar embryonic disc comprising two layers: the dorsal epiblast (columnar cells giving rise to the amniotic cavity) and the ventral hypoblast (cuboidal cells lining the exocoelomic cavity / primary yolk sac)."
+      "heading": "Outside the Cell: Extracellular Matrix",
+      "body": "The extracellular matrix consists of materials secreted by cells that provide structural and biochemical support[cite: 4]. It provides mechanical support to the cell, transports nutrients and other materials to the cell, and carries away metabolites and secretory products[cite: 4]."
     },
     {
-      "heading": "2.4 Gastrulation and the Trilaminar Embryonic Disc",
-      "body": "Gastrulation is the defining developmental event of the third week (the 'week of threes'), transforming the bilaminar disc into a trilaminar embryo with three primary germ layers. Gastrulation is initiated by the formation of the primitive streak on the caudal dorsal surface of the epiblast. Epiblast cells invaginate through the primitive streak via epithelial-to-mesenchymal transition: displacing hypoblast cells to form the Endoderm, migrating laterally between layers to form the intraembryonic Mesoderm, and remaining dorsal epiblast cells become the Ectoderm. The primitive node and notochord establish embryonic axial orientation and induce neurulation."
-    }
-  ],
-  "keyPoints": [
-    "Spermatogenesis produces four viable spermatozoa per primary spermatocyte; oogenesis produces one mature ovum and polar bodies.",
-    "Oocytes are arrested in prophase I from fetal life until ovulation, and in metaphase II until fertilization.",
-    "Fertilization restores diploid chromosome count (2n = 46), determines chromosomal sex (XX or XY), and triggers cleavage.",
-    "Week 2 is characterized by bilaminar disc formation (epiblast + hypoblast) and trophoblast differentiation (cytotrophoblast + syncytiotrophoblast).",
-    "Gastrulation in week 3 produces the three definitive germ layers: Ectoderm, Mesoderm, and Endoderm."
-  ],
-  "models": [
-    {
-      "name": "Germ Layer Fate Mapping",
-      "description": "The three primary germ layers established during gastrulation and their adult anatomical tissue derivatives.",
-      "components": [
-        "Ectoderm: Central and peripheral nervous systems, epidermis of skin, hair, nails, lens of eye, adrenal medulla",
-        "Mesoderm: Musculoskeletal system, cardiovascular system, kidneys and gonads, adrenal cortex, connective tissues",
-        "Endoderm: Epithelial lining of gastrointestinal tract, respiratory system, liver parenchyma, pancreas, urinary bladder"
-      ]
-    }
-  ],
-  "definitions": [
-    {
-      "term": "Gastrulation",
-      "definition": "The formative morphogenetic process in the third embryonic week that establishes the three primary germ layers (ectoderm, mesoderm, endoderm) from the epiblast."
+      "heading": "The Cell Cycle and Interphase",
+      "body": "The cell cycle consists of the Mitotic (M) phase and Interphase[cite: 4]. Interphase accounts for about 90% of the cell cycle and is divided into the G1 phase (first gap for growth and normal metabolic roles), the S phase (period of DNA synthesis/replication), and the G2 phase (second gap for synthesizing structures like centrioles, organelles, and proteins needed for division)[cite: 4]."
     },
     {
-      "term": "Syncytiotrophoblast",
-      "definition": "The outer multinucleated syncytial layer of the trophoblast that invades maternal uterine endometrium and produces hCG."
-    },
-    {
-      "term": "Notochord",
-      "definition": "A cellular rod developed along the longitudinal embryonic axis that serves as the primitive axial skeleton and induces neural tube formation."
+      "heading": "Mitosis",
+      "body": "Mitosis is divided into prophase, metaphase, anaphase, and telophase[cite: 4]. In Prophase, chromatin condenses into discrete rod-shaped chromosomes, the nucleolus disappears, and the nuclear envelope breaks down[cite: 4]. In Metaphase, condensed chromosomes attach to the microtubules of the mitotic spindle at the centromere[cite: 4]. In Anaphase, sister chromatids separate and are pulled towards opposite poles[cite: 4]. In Telophase, two sets of chromosomes reach the poles, revert to their condensed state, and cytokinesis occurs with the appearance of a cleavage furrow[cite: 4]."
     }
   ],
   "inTextQuestions": [
     {
-      "question": "At what stage of meiosis is the primary oocyte arrested prior to ovulation?",
-      "answer": "The primary oocyte is arrested in prophase I (specifically the diplotene stage) from embryonic life until puberty."
+      "question": "Which organelle is responsible for lipid biosynthesis, membrane synthesis, and repair?[cite: 4]",
+      "answer": "The Smooth Endoplasmic Reticulum[cite: 4]."
     },
     {
-      "question": "Where does physiological fertilization typically take place in the female reproductive tract?",
-      "answer": "In the ampulla of the uterine (fallopian) tube."
-    },
-    {
-      "question": "Which specific embryonic layer gives rise to the central nervous system?",
-      "answer": "The neuroectoderm (specialized surface ectoderm induced by the underlying notochord)."
+      "question": "What is the function of lysosomes inside the cell?[cite: 4]",
+      "answer": "They contain digestive enzymes, aid in cell renewal, break down old cell parts, and digest foreign bodies[cite: 4]."
     }
   ],
   "saqs": [
     {
       "id": "2.1",
-      "question": "Outline the fundamental cytological differences between spermatogenesis and oogenesis.",
-      "answer": "Spermatogenesis: Commences at puberty, continuous process without major meiotic arrest, produces 4 functional spermatozoa per primary spermatocyte, motile gametes, millions produced daily. Oogenesis: Commences in prenatal fetal life, contains two prolonged meiotic arrests (prophase I until puberty, metaphase II until fertilization), yields only 1 mature ovum and 2-3 non-functional polar bodies per primary oocyte, non-motile gamete with abundant cytoplasm, cyclical release (typically one per month)."
+      "question": "State the Principles of Cell Theory.[cite: 4]",
+      "answer": "All living things are made of cells[cite: 4]. The smallest living unit of structure and function of all organisms is the cell[cite: 4]. All cells arise from pre-existing cells[cite: 4]."
     },
     {
       "id": "2.2",
-      "question": "Define gastrulation and enumerate the three primary germ layers with two tissue derivatives of each.",
-      "answer": "Gastrulation is the embryonic process occurring in week 3 that converts the bilaminar embryonic disc into a trilaminar disc composed of three primary germ layers: (1) Ectoderm derivatives: Epidermis of skin and Central Nervous System (brain and spinal cord). (2) Mesoderm derivatives: Skeletal muscle and cardiovascular system (heart, blood vessels). (3) Endoderm derivatives: Epithelial lining of the digestive tract and epithelial lining of the respiratory tree."
+      "question": "What are the primary functions of the plasma membrane?[cite: 4]",
+      "answer": "It separates the cytoplasm inside a cell from extracellular fluid, separates cells from one another, provides an abundant surface for chemical reactions, and regulates the passage of materials through selective permeability[cite: 4]."
+    },
+    {
+      "id": "2.3",
+      "question": "Describe the three stages of Interphase in the cell cycle.[cite: 4]",
+      "answer": "G1 stage is the period of first growth where cells mature and carry out normal metabolic activities[cite: 4]. S stage is the period of synthesis where DNA is copied or replicated[cite: 4]. G2 stage is the second growth stage where cell structures, organelles, and proteins needed for division are made[cite: 4]."
     }
-  ],
-  "sourceTag": "manual"
+  ]
 }

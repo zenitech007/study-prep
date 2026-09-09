@@ -130,18 +130,19 @@ export interface ContentSection {
 }
 
 export interface StudySessionContent {
-  sessionNumber: number;
+  id?: number;
+  sessionNumber?: number;
   title: string;
-  overview: string;
+  overview?: string;
   introduction?: string;
   learningOutcomes?: string[];
   content?: ContentSection[];
-  keyPoints: string[];
+  keyPoints?: string[];
   models?: ModelContent[];
   definitions?: DefinitionContent[];
   inTextQuestions?: InTextQuestion[];
   saqs?: SAQuestion[];
-  sourceTag: SourceTag;
+  sourceTag?: SourceTag;
 }
 
 export interface ModelContent {

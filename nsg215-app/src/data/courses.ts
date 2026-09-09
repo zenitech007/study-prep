@@ -41,7 +41,7 @@ export const COURSES: Course[] = [
     level: '200-Level; First Semester',
     aim: 'Introduce basic concepts of human gross anatomy, anatomical terminology, and developmental embryology from gametogenesis to organogenesis.',
     description: 'Master general anatomy terminology, anatomical planes, human embryology, and early embryonic development with 300 University of Ibadan-aligned practice questions.',
-    sessionCount: 3,
+    sessionCount: 8,
     questionCount: 300,
     status: 'active',
     tags: ['Gross Anatomy', 'Embryology', 'Gametogenesis', 'Germ Layers', 'Organogenesis'],

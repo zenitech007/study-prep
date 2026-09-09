@@ -9,11 +9,19 @@ import { Settings, Play, ChevronDown, RotateCcw } from 'lucide-react';
 interface DrillConfigProps {
   onResumeQuiz?: () => void;
   onStartQuiz?: () => void;
+  initialTopic?: string;
+  autoStart?: boolean;
 }
 
-export default function DrillConfig({ onResumeQuiz, onStartQuiz }: DrillConfigProps) {
+export default function DrillConfig({
+  onResumeQuiz,
+  onStartQuiz,
+  initialTopic,
+  autoStart,
+}: DrillConfigProps) {
   const currentCourseId = useAppStore((s) => s.currentCourseId);
   const questions = useAppStore((s) => s.questions);
+  const questionsLoaded = useAppStore((s) => s.questionsLoaded);
   const progress = useAppStore((s) => s.progress);
   const startQuiz = useAppStore((s) => s.startQuiz);
   const resumeSavedQuiz = useAppStore((s) => s.resumeSavedQuiz);
@@ -35,12 +43,38 @@ export default function DrillConfig({ onResumeQuiz, onStartQuiz }: DrillConfigPr
 
   const [config, setConfig] = useState<QuizConfig>({
     questionCount: 20,
-    topics: [],
+    topics: initialTopic ? [initialTopic] : [],
     difficulties: [],
     mode: 'practice',
     smartDrill: false,
     srsOnly: false,
   });
+
+  // Auto-select initial topic if passed and not yet set
+  useEffect(() => {
+    if (initialTopic) {
+      setConfig((prev) => ({
+        ...prev,
+        topics: [initialTopic],
+      }));
+    }
+  }, [initialTopic]);
+
+  // Handle auto-start if requested and questions are loaded with no conflicting active quiz
+  useEffect(() => {
+    if (autoStart && questionsLoaded && !savedQuiz && questions.length > 0) {
+      const activeTopic = initialTopic ? [initialTopic] : [];
+      startQuiz({
+        questionCount: 'all',
+        topics: activeTopic,
+        difficulties: [],
+        mode: 'practice',
+        smartDrill: false,
+        srsOnly: false,
+      });
+      if (onStartQuiz) onStartQuiz();
+    }
+  }, [autoStart, questionsLoaded, savedQuiz, questions.length, initialTopic, startQuiz, onStartQuiz]);
 
   const matchingCount = useMemo(() => {
     return questions.filter((q) => {

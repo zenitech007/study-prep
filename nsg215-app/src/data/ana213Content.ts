@@ -2,259 +2,566 @@ import type { StudySessionContent } from '../types';
 
 export const ana213Sessions: StudySessionContent[] = [
   {
+    id: 1,
     sessionNumber: 1,
-    title: 'Module 1: General Anatomy, Organization of Human Body & Anatomical Terminology',
-    overview: 'Introduction to human gross anatomy, anatomical terminology, anatomical planes, positions, cavities, and body organization.',
+    title: 'Introduction to Anatomy and General Histology',
+    introduction: "The word anatomy is derived from a Greek word 'Anatome' meaning to cut up[cite: 4]. It is the study of structures that make up the body and how those structures relate with each other[cite: 4]. For nurses, it helps in understanding how the human body is organized and functions, and assists in understanding what happens and what to do when the body is injured or diseased[cite: 4].",
+    learningOutcomes: [
+      '1. Understand and use anatomical terms[cite: 4].',
+      '2. Understand the function of the various organs and their relations with one another[cite: 4].',
+      '3. Know the location of each organ and the important anatomical land marks[cite: 4].',
+      '4. Know the normal structure of the human body in general[cite: 4].',
+      '5. Use the knowledge of anatomy in nursing practice and for teaching[cite: 4].',
+    ],
     content: [
       {
-        heading: '1.1 The Anatomical Position and Directional Terminology',
-        body: 'The anatomical position is the standardized reference posture adopted internationally for anatomical descriptions. In this position, the human body stands upright, feet slightly separated with toes directed forward, eyes looking horizontally forward, upper limbs resting beside the torso, and the palms of the hands facing anteriorly with thumbs pointed away from the body. All directional descriptions assume this position regardless of patient orientation. Key terms: Superior (cranial) denotes toward the head or upper part of a structure; Inferior (caudal) denotes away from the head or toward the lower body; Anterior (ventral) is toward the front; Posterior (dorsal) is toward the back; Medial is nearer to the midline; Lateral is further from the midline; Proximal is closer to the limb origin; Distal is further from the limb origin; Superficial is nearer the surface; Deep is farther from the body surface.'
+        heading: 'Sub-specialties of Anatomy',
+        body: 'Anatomy includes several sub-specialties[cite: 4]. Gross anatomy studies body structure that can be seen with the naked eyes[cite: 4]. Systemic anatomy studies relationships of organs within a system, whereas Regional anatomy studies body parts regionally[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs[cite: 4]. Developmental anatomy studies the changes in cells, tissues, organs, and the entire body that occurs as the cells of each parent combine to form a baby[cite: 4].',
       },
       {
-        heading: '1.2 Cardinal Anatomical Planes and Sections',
-        body: 'Sectional anatomy relies on three fundamental mutually perpendicular cardinal planes: (1) The Sagittal plane passes vertically through the body, dividing it into right and left portions. When passing precisely through the midline, it is termed the median sagittal plane (mid-sagittal) dividing the body into equal symmetrical halves; planes parallel to it are parasagittal planes. (2) The Coronal (frontal) plane passes vertically at right angles to the sagittal plane, dividing the body into anterior (front) and posterior (back) parts. (3) The Transverse (horizontal or axial) plane cuts horizontally across the longitudinal axis, dividing the body into superior (upper) and inferior (lower) portions.'
+        heading: 'Level of Structural Organization',
+        body: 'The body is organized into several levels[cite: 4]. A Cell is the smallest independent unit of life[cite: 4]. A Tissue is made up of many similar cells that perform a specific function (divided into Epithelial, Connective, Muscle, and Nerve tissue)[cite: 4]. An Organ is an integrated collection of two or more kinds of tissue that works together to perform a specific function[cite: 4]. A System is a group of organs that work together to perform major functions[cite: 4].',
       },
       {
-        heading: '1.3 Human Body Cavities and Serous Membranes',
-        body: 'Body cavities are internal fluid-filled spaces that shield, support, and accommodate internal organs. The dorsal body cavity contains the cranial cavity (housing the brain and meninges) and the vertebral canal (housing the spinal cord). The ventral body cavity is subdivided by the dome-shaped diaphragm into the superior thoracic cavity and the inferior abdominopelvic cavity. The thoracic cavity contains the paired pleural cavities (lungs), the pericardial cavity (heart), and the central mediastinum. The abdominopelvic cavity is lined by the peritoneum, the thoracic cavity by the pleura, and the pericardial space by the pericardium. Serous membranes consist of a parietal layer lining cavity walls and an inner visceral layer covering organ surfaces, lubricated by slippery serous fluid.'
+        heading: 'Anatomical Position and Body Planes',
+        body: 'The Anatomical Position is universally accepted as the starting point for positional references[cite: 4]. The subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4]. Body planes are imaginary surfaces that divide the body[cite: 4]. The Sagittal plane divides the body into right and left halves (Mid-sagittal divides into equal halves, Para-sagittal into unequal halves)[cite: 4]. The Frontal/coronal plane divides the body into asymmetrical anterior and posterior sections[cite: 4]. The Transverse plane divides the body into upper and lower sections[cite: 4].',
       },
       {
-        heading: '1.4 Structural Levels of Biological Organization',
-        body: 'The human body is structured in a hierarchical continuum: Chemical level (atoms bonding into macromolecular compounds such as DNA, carbohydrates, proteins, and lipids), Cellular level (specialized functional units of life), Tissue level (groups of similar cells with specialized extracellular matrices classified into epithelial, connective, muscle, and nervous tissue), Organ level (distinct structures formed from two or more primary tissue types executing specialized physiological roles), System level (integrated organs functioning harmoniously), and Organismal level (the complete living biological being).'
-      }
-    ],
-    keyPoints: [
-      'Standard anatomical position assumes an erect posture, eyes forward, arms at sides, palms facing forward with thumbs lateral, and feet flat.',
-      'Sagittal, coronal, and transverse planes are the three cardinal orthogonal reference planes used in clinical imaging and gross anatomy.',
-      'The diaphragm is the primary anatomical muscular partition separating the thoracic cavity from the abdominopelvic cavity.',
-      'Serous membranes feature double layers: the parietal layer lines the body cavity wall, while the visceral layer directly envelops organs.',
-      'Biological structural hierarchy ascends from chemical to cellular, tissue, organ, organ-system, and organismal levels.'
-    ],
-    models: [
-      {
-        name: 'Hierarchy of Anatomical Organization',
-        description: 'Six ascending hierarchical levels of structure and function in the human organism.',
-        components: [
-          'Chemical Level: Atoms, molecules, and biological macromolecules',
-          'Cellular Level: Basic structural and functional units (e.g., osteocytes, neurons, myocytes)',
-          'Tissue Level: Epithelial, Connective, Muscular, and Nervous tissues',
-          'Organ Level: Discrete anatomical organs composed of two or more tissues',
-          'Organ System Level: Eleven integrated physiological organ systems',
-          'Organismal Level: Complete, coordinated living human entity'
-        ]
-      }
-    ],
-    definitions: [
-      {
-        term: 'Anatomical Position',
-        definition: 'Universal standard anatomical reference posture: erect body, gaze forward, upper limbs by sides, palms facing forward with thumbs pointing laterally, feet together.'
+        heading: 'Body Cavities',
+        body: 'There are two sets of internal body cavities[cite: 4]. The Dorsal cavity protects the fragile nervous system and has two subdivisions: the cranial cavity (encases the brain) and the vertebral/spinal cavity (encloses the spinal cord)[cite: 4]. The Ventral body cavity is larger and houses internal organs[cite: 4]. It is subdivided into the thoracic and abdominopelvic cavities, which are separated by the diaphragm, a dome-shaped muscle important in breathing[cite: 4].',
       },
       {
-        term: 'Coronal (Frontal) Plane',
-        definition: 'A vertical plane dividing the human body or organ into anterior (front) and posterior (back) portions.'
+        heading: 'Microscopy',
+        body: "Histology is the study of tissues and how they are arranged to form organs[cite: 4]. Magnification is the increase of an object's apparent size, while Resolution is the capacity of the optical system to show details clearly[cite: 4]. The Compound Light Microscope has several major parts: Eyepiece (contains ocular lens), Nose-piece (holds objective lens), Arm, Stage (holds the specimen), Light source, Coarse and fine adjustment knobs, and the Base[cite: 4].",
       },
-      {
-        term: 'Sagittal Plane',
-        definition: 'A vertical longitudinal plane that divides the body into right and left sections; mid-sagittal yields symmetrical equal halves.'
-      },
-      {
-        term: 'Visceral Serosa',
-        definition: 'The inner layer of a serous membrane that adheres directly to the outer surface of visceral organs.'
-      }
     ],
     inTextQuestions: [
       {
-        question: 'Why is the anatomical position universally utilized as the benchmark for anatomical and clinical descriptions?',
-        answer: 'It provides a fixed, unambiguous frame of reference regardless of the actual position (supine, prone, lateral) the patient or specimen assumes during examination, imaging, or surgical procedures.'
+        question: 'Which plane divides the body into equal left and right halves?[cite: 4]',
+        answer: 'The Mid-sagittal (or median) plane[cite: 4].',
       },
       {
-        question: 'Which anatomical plane would divide the brain into anterior and posterior segments?',
-        answer: 'The coronal (or frontal) plane.'
+        question: 'Which muscle separates the thoracic cavity from the abdominopelvic cavity?[cite: 4]',
+        answer: 'The diaphragm[cite: 4].',
       },
-      {
-        question: 'What anatomical structure separates the thoracic cavity from the abdominal cavity?',
-        answer: 'The muscular thoracic diaphragm.'
-      }
     ],
     saqs: [
       {
         id: '1.1',
-        question: 'Define the standard anatomical position and state four reciprocal directional pairs used in clinical anatomy.',
-        answer: 'The standard anatomical position is the reference posture wherein the subject stands erect, face oriented forward, upper extremities alongside the trunk, palms facing anteriorly with thumbs directed outward, and lower extremities parallel with feet flat on the floor. Reciprocal directional pairs: (1) Superior (cranial) and Inferior (caudal), (2) Anterior (ventral) and Posterior (dorsal), (3) Medial and Lateral, (4) Proximal and Distal.'
+        question: 'Why is it important for nurses to study anatomy?[cite: 4]',
+        answer: 'It helps in understanding how the human body is organized and function[cite: 4]. It assists the student in understanding what happens and what to do when the body is injured or diseased[cite: 4].',
       },
       {
         id: '1.2',
-        question: 'Differentiate between the parietal and visceral layers of serous membranes, providing two clinical anatomical examples.',
-        answer: 'The parietal layer lines the internal walls of closed body cavities, while the visceral layer directly envelops the outer adventitia/surface of organs within that cavity. Between them lies a serous fluid-filled potential space. Examples: (1) Parietal pleura lining the thoracic cage vs. visceral pleura covering lung parenchyma; (2) Parietal peritoneum lining abdominal walls vs. visceral peritoneum investing gastrointestinal viscera.'
-      }
+        question: 'Describe the standard Anatomical Position.[cite: 4]',
+        answer: 'In anatomical position, the subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4].',
+      },
+      {
+        id: '1.3',
+        question: 'Name the four primary groups of tissues in the body.[cite: 4]',
+        answer: 'The four groups are: 1) Epithelial tissue, 2) Connective tissue, 3) Muscle tissue, and 4) Nerve tissue[cite: 4].',
+      },
+      {
+        id: '1.4',
+        question: 'Differentiate between Gross Anatomy and Microscopic Anatomy.[cite: 4]',
+        answer: 'Gross anatomy studies body structures that can be seen with the naked eyes[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs of the body[cite: 4].',
+      },
     ],
-    sourceTag: 'manual'
+    sourceTag: 'manual',
   },
   {
+    id: 2,
     sessionNumber: 2,
-    title: 'Module 2: General Embryology, Gametogenesis & Early Human Development',
-    overview: 'Overview of gametogenesis, fertilization, cleavage, blastocyst formation, implantation, gastrulation, and germ layer derivatives.',
+    title: 'Cell Structure and Function',
+    introduction:
+      'Principles of Cell Theory: All living things are made of cells[cite: 4]. The smallest living unit of structure and function of all organisms is the cell[cite: 4]. All cells arise from pre-existing cells[cite: 4].',
+    learningOutcomes: [
+      '2.1 Understand the Principles of Cell Theory and characteristics of all cells[cite: 4].',
+      '2.2 Describe the plasma membrane and its functions in enclosing the cell[cite: 4].',
+      '2.3 Identify the membranous organelles inside the cell and their respective functions[cite: 4].',
+      '2.4 Explain the role of the extracellular matrix outside the cell[cite: 4].',
+      '2.5 Discuss the cell cycle, including interphase and the stages of mitosis[cite: 4].',
+    ],
     content: [
       {
-        heading: '2.1 Gametogenesis: Spermatogenesis and Oogenesis',
-        body: 'Gametogenesis is the specialized biological process through which primordial germ cells undergo meiosis and cytodifferentiation to produce mature haploid gametes (spermatozoa and ova). Spermatogenesis begins at puberty within the seminiferous tubules of the testes, continuously generating four functional spermatozoa from each primary spermatocyte over approximately 64 to 74 days under FSH, LH, and testosterone regulation. In contrast, oogenesis begins during prenatal embryonic development: oogonia undergo mitosis and enter meiosis I to form primary oocytes, which remain arrested in prophase I (diplotene stage) until puberty. At ovulation, the secondary oocyte completes meiosis I and arrests in metaphase II, which is only completed upon successful fertilization by a spermatozoon.'
+        heading: 'Characteristics and Enclosing the Cell',
+        body: 'All cells have a surrounding membrane, cytoplasm, organelles, and a control center with DNA[cite: 4]. The plasma membrane contains cell contents and is made up of a double layer of phospholipids, cholesterol, glycolipid, and carbohydrate[cite: 4]. Its functions include separating the cytoplasm from extracellular fluid, separating cells from one another, providing a surface for chemical reactions, and regulating the passage of materials through selective permeability[cite: 4]. Membrane proteins include channels/transporters and receptors[cite: 4].',
       },
       {
-        heading: '2.2 Fertilization, Cleavage, and Blastocyst Formation',
-        body: 'Fertilization normally occurs in the ampulla of the uterine (fallopian) tube. It comprises sperm capacitation, the acrosome reaction (penetration of corona radiata and zona pellucida), fusion of plasma membranes, the cortical reaction to prevent polyspermy, and fusion of male and female pronuclei restoring diploidy (46 chromosomes). Following fertilization, the zygote undergoes rapid mitotic divisions called cleavage without net cell growth, creating individual cells termed blastomeres. By day 3–4, a solid ball of 16–32 blastomeres forms the morula. Fluid accumulates within the morula to form a blastocyst cavity (blastocoele), demarcating two distinct cell lineages: the outer trophoblast (which gives rise to embryonic placenta and extraembryonic membranes) and the inner cell mass or embryoblast (which forms the embryo proper).'
+        heading: 'Inside the Cell: Organelles',
+        body: 'The nucleus contains hereditary factors and controls cell activity and structure[cite: 4]. The Rough Endoplasmic Reticulum has attached ribosomes and helps manufacture and modify proteins[cite: 4]. The Smooth Endoplasmic Reticulum lacks ribosomes and is responsible for lipid biosynthesis, membrane synthesis, and repair[cite: 4]. Ribosomes are the site of protein synthesis[cite: 4]. Golgi bodies package proteins and move materials within and out of the cell[cite: 4]. Lysosomes contain digestive enzymes to break down old cell parts and foreign bodies, while vacuoles are membrane-bound storage sacs[cite: 4]. Mitochondria contain DNA and release energy as ATP through cellular respiration[cite: 4].',
       },
       {
-        heading: '2.3 Implantation and the Bilaminar Germ Disc',
-        body: 'Implantation of the blastocyst commences around day 6 post-fertilization in the endometrium of the superior posterior uterine wall. The trophoblast differentiates into an inner cellular cytotrophoblast and an outer invasive, multinucleated syncytiotrophoblast, which secretes human chorionic gonadotropin (hCG). Concurrently, during the second week (the "week of twos"), the embryoblast differentiates into a bilaminar embryonic disc comprising two layers: the dorsal epiblast (columnar cells giving rise to the amniotic cavity) and the ventral hypoblast (cuboidal cells lining the exocoelomic cavity / primary yolk sac).'
+        heading: 'Outside the Cell: Extracellular Matrix',
+        body: 'The extracellular matrix consists of materials secreted by cells that provide structural and biochemical support[cite: 4]. It provides mechanical support to the cell, transports nutrients and other materials to the cell, and carries away metabolites and secretory products[cite: 4].',
       },
       {
-        heading: '2.4 Gastrulation and the Trilaminar Embryonic Disc',
-        body: 'Gastrulation is the defining developmental event of the third week (the "week of threes"), transforming the bilaminar disc into a trilaminar embryo with three primary germ layers. Gastrulation is initiated by the formation of the primitive streak on the caudal dorsal surface of the epiblast. Epiblast cells invaginate through the primitive streak via epithelial-to-mesenchymal transition: displacing hypoblast cells to form the Endoderm, migrating laterally between layers to form the intraembryonic Mesoderm, and remaining dorsal epiblast cells become the Ectoderm. The primitive node and notochord establish embryonic axial orientation and induce neurulation.'
-      }
-    ],
-    keyPoints: [
-      'Spermatogenesis produces four viable spermatozoa per primary spermatocyte; oogenesis produces one mature ovum and polar bodies.',
-      'Oocytes are arrested in prophase I from fetal life until ovulation, and in metaphase II until fertilization.',
-      'Fertilization restores diploid chromosome count (2n = 46), determines chromosomal sex (XX or XY), and triggers cleavage.',
-      'Week 2 is characterized by bilaminar disc formation (epiblast + hypoblast) and trophoblast differentiation (cytotrophoblast + syncytiotrophoblast).',
-      'Gastrulation in week 3 produces the three definitive germ layers: Ectoderm, Mesoderm, and Endoderm.'
-    ],
-    models: [
-      {
-        name: 'Germ Layer Fate Mapping',
-        description: 'The three primary germ layers established during gastrulation and their adult anatomical tissue derivatives.',
-        components: [
-          'Ectoderm: Central and peripheral nervous systems, epidermis of skin, hair, nails, lens of eye, adrenal medulla',
-          'Mesoderm: Musculoskeletal system, cardiovascular system, kidneys and gonads, adrenal cortex, connective tissues',
-          'Endoderm: Epithelial lining of gastrointestinal tract, respiratory system, liver parenchyma, pancreas, urinary bladder'
-        ]
-      }
-    ],
-    definitions: [
-      {
-        term: 'Gastrulation',
-        definition: 'The formative morphogenetic process in the third embryonic week that establishes the three primary germ layers (ectoderm, mesoderm, endoderm) from the epiblast.'
+        heading: 'The Cell Cycle and Interphase',
+        body: 'The cell cycle consists of the Mitotic (M) phase and Interphase[cite: 4]. Interphase accounts for about 90% of the cell cycle and is divided into the G1 phase (first gap for growth and normal metabolic roles), the S phase (period of DNA synthesis/replication), and the G2 phase (second gap for synthesizing structures like centrioles, organelles, and proteins needed for division)[cite: 4].',
       },
       {
-        term: 'Syncytiotrophoblast',
-        definition: 'The outer multinucleated syncytial layer of the trophoblast that invades maternal uterine endometrium and produces hCG.'
+        heading: 'Mitosis',
+        body: 'Mitosis is divided into prophase, metaphase, anaphase, and telophase[cite: 4]. In Prophase, chromatin condenses into discrete rod-shaped chromosomes, the nucleolus disappears, and the nuclear envelope breaks down[cite: 4]. In Metaphase, condensed chromosomes attach to the microtubules of the mitotic spindle at the centromere[cite: 4]. In Anaphase, sister chromatids separate and are pulled towards opposite poles[cite: 4]. In Telophase, two sets of chromosomes reach the poles, revert to their condensed state, and cytokinesis occurs with the appearance of a cleavage furrow[cite: 4].',
       },
-      {
-        term: 'Notochord',
-        definition: 'A cellular rod developed along the longitudinal embryonic axis that serves as the primitive axial skeleton and induces neural tube formation.'
-      }
     ],
     inTextQuestions: [
       {
-        question: 'At what stage of meiosis is the primary oocyte arrested prior to ovulation?',
-        answer: 'The primary oocyte is arrested in prophase I (specifically the diplotene stage) from embryonic life until puberty.'
+        question: 'Which organelle is responsible for lipid biosynthesis, membrane synthesis, and repair?[cite: 4]',
+        answer: 'The Smooth Endoplasmic Reticulum[cite: 4].',
       },
       {
-        question: 'Where does physiological fertilization typically take place in the female reproductive tract?',
-        answer: 'In the ampulla of the uterine (fallopian) tube.'
+        question: 'What is the function of lysosomes inside the cell?[cite: 4]',
+        answer: 'They contain digestive enzymes, aid in cell renewal, break down old cell parts, and digest foreign bodies[cite: 4].',
       },
-      {
-        question: 'Which specific embryonic layer gives rise to the central nervous system?',
-        answer: 'The neuroectoderm (specialized surface ectoderm induced by the underlying notochord).'
-      }
     ],
     saqs: [
       {
         id: '2.1',
-        question: 'Outline the fundamental cytological differences between spermatogenesis and oogenesis.',
-        answer: 'Spermatogenesis: Commences at puberty, continuous process without major meiotic arrest, produces 4 functional spermatozoa per primary spermatocyte, motile gametes, millions produced daily. Oogenesis: Commences in prenatal fetal life, contains two prolonged meiotic arrests (prophase I until puberty, metaphase II until fertilization), yields only 1 mature ovum and 2-3 non-functional polar bodies per primary oocyte, non-motile gamete with abundant cytoplasm, cyclical release (typically one per month).'
+        question: 'State the Principles of Cell Theory.[cite: 4]',
+        answer: 'All living things are made of cells[cite: 4]. The smallest living unit of structure and function of all organisms is the cell[cite: 4]. All cells arise from pre-existing cells[cite: 4].',
       },
       {
         id: '2.2',
-        question: 'Define gastrulation and enumerate the three primary germ layers with two tissue derivatives of each.',
-        answer: 'Gastrulation is the embryonic process occurring in week 3 that converts the bilaminar embryonic disc into a trilaminar disc composed of three primary germ layers: (1) Ectoderm derivatives: Epidermis of skin and Central Nervous System (brain and spinal cord). (2) Mesoderm derivatives: Skeletal muscle and cardiovascular system (heart, blood vessels). (3) Endoderm derivatives: Epithelial lining of the digestive tract and epithelial lining of the respiratory tree.'
-      }
+        question: 'What are the primary functions of the plasma membrane?[cite: 4]',
+        answer: 'It separates the cytoplasm inside a cell from extracellular fluid, separates cells from one another, provides an abundant surface for chemical reactions, and regulates the passage of materials through selective permeability[cite: 4].',
+      },
+      {
+        id: '2.3',
+        question: 'Describe the three stages of Interphase in the cell cycle.[cite: 4]',
+        answer: 'G1 stage is the period of first growth where cells mature and carry out normal metabolic activities[cite: 4]. S stage is the period of synthesis where DNA is copied or replicated[cite: 4]. G2 stage is the second growth stage where cell structures, organelles, and proteins needed for division are made[cite: 4].',
+      },
     ],
-    sourceTag: 'manual'
+    sourceTag: 'manual',
   },
   {
+    id: 3,
     sessionNumber: 3,
-    title: 'Module 3: Musculoskeletal System & Neuroanatomy Fundamentals',
-    overview: 'Comprehensive introduction to osteology, arthrology, muscle architecture, central and peripheral nervous systems, and reflex arcs.',
+    title: 'Basic Tissues in the Body',
+    introduction:
+      'Tissue is an aggregation of cells and cell products of similar structure and embryonic origin that perform a common function[cite: 4]. Histology is the study of tissues, especially their structure and arrangement[cite: 4]. The hierarchy of body organization flows from cells to tissues, organs, systems, and finally the body[cite: 4].',
+    learningOutcomes: [
+      '3.1 Describe the main characteristics of the four basic tissue types[cite: 4].',
+      '3.2 Understand the development, functions, shapes, and arrangements of epithelial tissues[cite: 4].',
+      '3.3 Discuss connective tissues, including their ground substance, fibers, and specialized forms like cartilage, bone, and blood[cite: 4].',
+      '3.4 Explain the types and distinct characteristics of muscle tissues[cite: 4].',
+    ],
     content: [
       {
-        heading: '3.1 Skeletal System: Bone Classification and Osteology',
-        body: 'The human adult skeleton comprises 206 distinct bones divided into two major functional sections: the axial skeleton (80 bones: skull, vertebral column, ribs, and sternum providing central support and organ protection) and the appendicular skeleton (126 bones: pectoral and pelvic girdles and upper and lower limb bones facilitating locomotion and manipulation). Morphologically, bones are classified into: Long bones (e.g., femur, humerus, possessing a diaphysis shaft and epiphyses ends), Short bones (e.g., carpals, tarsals, roughly cuboidal), Flat bones (e.g., parietal bone, sternum, scapula, thin parallel compact plates enclosing cancellous diploë), Irregular bones (e.g., vertebrae, sphenoid), and Sesamoid bones (e.g., patella, embedded within tendons to modify tendon pull). Histologically, bone tissue presents dense compact cortical bone organized into osteons (Haversian systems) and inner trabecular spongy bone housing red bone marrow.'
+        heading: 'The Four Basic Tissue Types',
+        body: 'The human body consists of four basic tissue types: Nervous, Epithelial, Muscle, and Connective tissues[cite: 4]. Epithelial tissue is composed of aggregated polyhedral cells with only a small amount of extracellular matrix[cite: 4]. Muscle tissue consists of elongated contractile cells with a moderate amount of matrix, while connective tissue has several types of fixed and wandering cells with an abundant extracellular matrix[cite: 4]. Nervous tissue features intertwining elongated cells and contains no extracellular matrix[cite: 4].',
       },
       {
-        heading: '3.2 Arthrology: Classification and Mechanics of Joints',
-        body: 'Joints (articulations) occur where two or more skeletal elements meet. Structurally and functionally, joints are categorized into three classes: (1) Fibrous joints (synarthroses): bones united by fibrous connective tissue allowing negligible movement (sutures of cranial vault, syndesmoses like inferior tibiofibular joint, gomphoses anchor teeth into alveolar sockets). (2) Cartilaginous joints (amphiarthroses): bones joined by cartilage; primary cartilaginous joints (synchondroses) utilize hyaline cartilage (epiphyseal growth plates), while secondary cartilaginous joints (symphyses) utilize fibrocartilage (pubic symphysis, intervertebral discs). (3) Synovial joints (diarthroses): freely movable articulations featuring a joint cavity containing synovial fluid enclosed by a fibrous capsule, lined by synovial membrane, with articular ends capped by frictionless hyaline cartilage. Subtypes include planar, hinge, pivot, condyloid, saddle, and ball-and-socket joints.'
+        heading: 'Epithelial Tissue',
+        body: 'Epithelial tissue forms a sheet-like layer of cells covering surfaces or lining cavities, often containing glandular cells for fluid secretion[cite: 4]. It develops from three germ layers: the ectoderm, endoderm, and mesoderm[cite: 4]. The cells are classified by shape (squamous, columnar, cuboidal) and arrangement (simple, stratified, pseudostratified, or transitional)[cite: 4]. Simple epithelium has a single layer of cells, whereas stratified epithelium has multiple layers and is found at surfaces subject to wear and tear, like the skin[cite: 4].',
       },
       {
-        heading: '3.3 Muscular Architecture and Functional Roles',
-        body: 'Muscular tissue is categorized into skeletal, cardiac, and smooth muscle types. Skeletal muscles represent voluntary, striated contractile organs anchored to bones via collagenous tendons or broad aponeuroses. Muscle fascicle architectural arrangements dictate range of motion and force production: parallel, convergent (fan-shaped), pennate (unipennate, bipennate, multipennate providing high force), circular (sphincters), and fusiform. During movement execution, muscles act cooperatively: the Agonist (prime mover) contracts to produce the designated primary movement; the Antagonist stretches and yields to counteract the agonist; Synergists steady the joint or assist prime movement; and Fixators stabilize the proximal skeletal origin.'
+        heading: 'Connective Tissue',
+        body: 'Connective tissue consists of cells and extracellular fibres embedded in an amorphous ground substance containing tissue fluid[cite: 4]. It provides support, binds organs, and provides immunocompetent and phagocytic substances important in inflammation[cite: 4]. It is broadly classified into general connective tissue (loose and dense) and special connective tissue (cartilage, bone, blood)[cite: 4]. Key cells in connective tissues include fibroblasts, macrophages, fat cells, undifferentiated mesenchymal cells, pigment cells, blood leukocytes, and mast cells[cite: 4].',
       },
       {
-        heading: '3.4 Neuroanatomy: Central vs. Peripheral Nervous System',
-        body: 'The nervous system is organized anatomically into the Central Nervous System (CNS: brain and spinal cord enclosed in the dorsal cavity) and Peripheral Nervous System (PNS: 12 pairs of cranial nerves and 31 pairs of spinal nerves with associated ganglia). Functionally, the PNS divides into the Sensory (afferent) division transmitting somatosensory and visceral input toward the CNS, and the Motor (efferent) division conducting impulses outward. The motor division comprises the Somatic Nervous System (voluntary control of skeletal musculature) and the Autonomic Nervous System (ANS: involuntary control of cardiac muscle, smooth muscle, and glands). The ANS further divides into the sympathetic division ("fight or flight", thoracolumbar outflow) and the parasympathetic division ("rest and digest", craniosacral outflow). A basic reflex arc consists of a sensory receptor, afferent neuron, integrating center within CNS gray matter, efferent neuron, and effector organ.'
-      }
-    ],
-    keyPoints: [
-      'The 206 bones of the human skeleton divide into axial (80) and appendicular (126) skeletons.',
-      'Synovial joints are characterized by a fibrous capsule, synovial cavity, synovial fluid, and articular hyaline cartilage.',
-      'Muscles work in functional teams: agonist (prime mover), antagonist, synergist, and fixator.',
-      'The nervous system comprises the CNS (brain and spinal cord) and PNS (12 cranial nerve pairs, 31 spinal nerve pairs).',
-      'The autonomic nervous system is divided into sympathetic (thoracolumbar) and parasympathetic (craniosacral) divisions.'
-    ],
-    models: [
-      {
-        name: 'Synovial Joint Classification Model',
-        description: 'Morphological classification of diarthrodial joints and their degrees of operational freedom.',
-        components: [
-          'Hinge (Ginglymus): Uniaxial flexion/extension (e.g., elbow, interphalangeal joints)',
-          'Pivot (Trochoid): Uniaxial rotation around central axis (e.g., atlantoaxial, proximal radioulnar joint)',
-          'Condyloid (Ellipsoid): Biaxial flexion/extension and abduction/adduction (e.g., radiocarpal wrist joint)',
-          'Saddle (Sellar): Biaxial reciprocal concavoconvex surfaces (e.g., 1st carpometacarpal joint of thumb)',
-          'Ball and Socket (Spheroid): Multiaxial all planes + circumduction (e.g., glenohumeral shoulder, hip joint)',
-          'Plane (Gliding): Nonaxial gliding translation (e.g., acromioclavicular, intercarpal joints)'
-        ]
-      }
-    ],
-    definitions: [
-      {
-        term: 'Haversian System (Osteon)',
-        definition: 'The structural and functional microscopic cylindrical unit of compact cortical bone, consisting of concentric lamellae surrounding a central neurovascular canal.'
+        heading: 'Specialized Connective Tissues: Cartilage, Bone, and Blood',
+        body: 'Cartilage bears mechanical stress without permanent distortion and includes hyaline, white fibrocartilage, and yellow elastic cartilage types[cite: 4]. Bone is composed of a calcified matrix and three cell types: osteoblasts (young cells), osteocytes (mature cells), and osteoclasts (bone-removing cells)[cite: 4]. Blood is a specialized connective tissue made up of plasma and blood cells, including erythrocytes, leukocytes, and platelets[cite: 4].',
       },
       {
-        term: 'Synarthrosis',
-        definition: 'An immovable fibrous articulation providing maximum mechanical stability (such as cranial sutures).'
+        heading: 'Muscle Tissue',
+        body: 'Muscle tissue specializes in shortening its length by contraction to produce movement[cite: 4]. There are three types: skeletal, cardiac, and smooth muscle[cite: 4]. Skeletal muscles contain three layers of connective tissue (epimysium, perimysium, endomysium) and are multinucleate[cite: 4]. Cardiac muscle is striated, found only in the heart, and contains intercalated discs that link heart cells mechanically, chemically, and electrically[cite: 4]. Smooth muscles are long, slender, nonstriated, and spindle-shaped, possessing no transverse (T) tubules[cite: 4].',
       },
-      {
-        term: 'Autonomic Nervous System',
-        definition: 'The visceral efferent division of the peripheral nervous system regulating involuntary vegetative functions of cardiac muscle, smooth muscle, and glandular tissue.'
-      }
     ],
     inTextQuestions: [
       {
-        question: 'What type of cartilage coats the articular ends of bones in a typical synovial joint?',
-        answer: 'Hyaline articular cartilage.'
+        question:
+          'What type of muscle tissue is striated, found only in the heart, and features intercalated discs?[cite: 4]',
+        answer: 'Cardiac muscle[cite: 4].',
       },
       {
-        question: 'How many pairs of spinal nerves originate from the human spinal cord?',
-        answer: '31 pairs: 8 cervical, 12 thoracic, 5 lumbar, 5 sacral, and 1 coccygeal.'
+        question:
+          'Which basic tissue type consists of several types of fixed and wandering cells embedded in an abundant extracellular matrix?[cite: 4]',
+        answer: 'Connective tissue[cite: 4].',
       },
-      {
-        question: 'Which division of the autonomic nervous system originates from the thoracolumbar spinal cord segments?',
-        answer: 'The sympathetic nervous system (T1 to L2/L3 lateral horn neurons).'
-      }
     ],
     saqs: [
       {
         id: '3.1',
-        question: 'List the five structural components essential to every synovial joint.',
-        answer: '(1) Articular cartilage (hyaline cartilage covering bone ends), (2) Joint (synovial) cavity filled with synovial fluid, (3) Fibrous articular capsule enclosing the joint, (4) Synovial membrane lining internal capsule surfaces, and (5) Reinforcing ligaments (extrinsic or intrinsic).'
+        question: 'Explain the hierarchy of body component organization.[cite: 4]',
+        answer:
+          'Cells combine to form tissues, tissues combine in an organized manner to form functional units called organs, organs combine to form functional units called systems, and systems combine to form the body[cite: 4].',
       },
       {
         id: '3.2',
-        question: 'Outline the five anatomical components of a typical somatic reflex arc.',
-        answer: '(1) Sensory receptor (detects noxious or sensory stimulus), (2) Afferent / Sensory neuron (transmits impulse into the CNS), (3) Integrating center (one or more synapses within CNS gray matter, often involving interneurons), (4) Efferent / Motor neuron (transmits nerve impulse from CNS to periphery), and (5) Effector organ (skeletal muscle contracting in response).'
-      }
+        question: 'Differentiate between simple and stratified epithelium.[cite: 4]',
+        answer:
+          'Simple epithelium consists of thin plate-like cells arranged in a single layer, while stratified (or compound) epithelium consists of multiple layers of cells and is found at surfaces subject to wear and tear or potentially harmful conditions[cite: 4].',
+      },
+      {
+        id: '3.3',
+        question: 'Outline the components of bone and describe its three distinct cell types.[cite: 4]',
+        answer:
+          'Bone consists of intercellular calcified material, ground substance, fibres, and three cell types[cite: 4]. The three cell types are osteoblasts (young cells), osteocytes (mature cells), and osteoclasts (bone-removing cells)[cite: 4].',
+      },
+      {
+        id: '3.4',
+        question: 'What are the primary functions of muscle tissue?[cite: 4]',
+        answer:
+          'The functions of muscle tissue are to produce skeletal movement, maintain body position and posture, support soft tissues, guard body openings, maintain body temperature, and store nutrient reserves[cite: 4].',
+      },
     ],
-    sourceTag: 'manual'
+    sourceTag: 'manual',
+  },
+  {
+    id: 4,
+    sessionNumber: 4,
+    title: 'Gametogenesis and Weeks 1-3 of Development',
+    introduction:
+      'Human development starts at fertilization with the union of a spermatocyte and oocyte to become a single-cell zygote[cite: 4]. This unicellular zygote is transformed into a multicellular human via cell division, migration, growth, and differentiation[cite: 4]. The process of formation and development of specialized cells called gametes prepares these sex cells for fertilization[cite: 4].',
+    learningOutcomes: [
+      '4.1 Describe the process of gametogenesis, including the stages of meiosis[cite: 4].',
+      '4.2 Differentiate between oogenesis and spermatogenesis[cite: 4].',
+      '4.3 Explain the events of fertilization and the second week of development[cite: 4].',
+      '4.4 Understand the formation of the trilaminar germ disc during gastrulation[cite: 4].',
+    ],
+    content: [
+      {
+        heading: 'Mitosis vs. Meiosis',
+        body: 'Normal cells have 22 pairs of autosomes and a pair of sex chromosomes (46XX or 46XY)[cite: 4]. In Mitosis, daughter cells are genetically identical to the parent cell, each having 46 chromosomes[cite: 4]. Meiosis takes place in germ cells and reduces the chromosome number to haploid[cite: 4]. Meiosis I involves the replication of DNA, cross over (interchange of chromatid segments), and separation of homologous pairs[cite: 4]. Meiosis II separates sister chromatids[cite: 4].',
+      },
+      {
+        heading: 'Oogenesis',
+        body: 'Oogenesis is the conversion of oogonia to mature oocytes[cite: 4]. Mitotic divisions continue until reaching a maximum of 7 million oogonia at 5 months gestation, and all surviving primary oocytes are left in the prophase of meiosis I[cite: 4]. At puberty, 15-20 oocytes mature every cycle, completing Meiosis I to form a secondary oocyte and a first polar body[cite: 4]. Meiosis II is arrested in metaphase before ovulation and is only completed if the oocyte is fertilized[cite: 4].',
+      },
+      {
+        heading: 'Spermatogenesis and Spermiogenesis',
+        body: 'Spermatogenesis is the conversion of spermatogonia to spermatozoa, beginning at puberty[cite: 4]. Primary spermatocytes undergo meiosis I to form secondary spermatocytes, which undergo meiosis II to form spermatids[cite: 4]. Spermiogenesis is the transformation of spermatids into spermatozoa[cite: 4]. It involves the formation of an acrosome (containing enzymes for oocyte penetration), condensation of the nucleus, formation of the neck and tail, and shedding of cytoplasm[cite: 4]. This process takes 74 days[cite: 4].',
+      },
+      {
+        heading: 'Fertilization and the Second Week',
+        body: 'Fertilization occurs in the ampullary region of the uterine tube, restoring the diploid number of chromosomes[cite: 4]. Movement of the sperm takes 2-7 hours, aided by sperm motility and muscular contractions of the uterus and uterine tube[cite: 4]. Implantation is completed by the end of the 2nd week[cite: 4]. The inner cell mass differentiates into the hypoblast and epiblast, forming the bilaminar embryonic disc[cite: 4].',
+      },
+      {
+        heading: 'Third Week of Development: Trilaminar Germ Disc',
+        body: 'The main events of the third week are Gastrulation, formation of the notochord, and further placenta development[cite: 4]. Gastrulation establishes the three germ layers: ectoderm, mesoderm, and endoderm[cite: 4]. It begins with the primitive streak on the epiblast surface[cite: 4]. Epiblast cells migrate, detach, and slip beneath the streak (invagination) to form the endoderm and mesoderm, while the remaining epiblast cells form the ectoderm[cite: 4]. Prenotochordal cells invaginate to form a solid cord of cells (the notochord), which acts as the basis for the axial skeleton[cite: 4].',
+      },
+    ],
+    inTextQuestions: [
+      {
+        question: 'Where does the process of fertilization normally take place?[cite: 4]',
+        answer: 'It occurs in the ampullary region of the uterine tube[cite: 4].',
+      },
+      {
+        question:
+          'What is the specific name for the transformation of a spermatid into a spermatozoon, and what does it involve?[cite: 4]',
+        answer:
+          'It is called Spermiogenesis, which involves the formation of the acrosome, condensation of the nucleus, formation of the neck, middle piece and tail, and shedding of most of the cytoplasm[cite: 4].',
+      },
+    ],
+    saqs: [
+      {
+        id: '4.1',
+        question: 'Differentiate between Meiosis I and Meiosis II.[cite: 4]',
+        answer:
+          'Meiosis I involves the replication of DNA, crossing over between paired homologous chromosomes, and separation into two daughter cells to decrease the chromosome number to haploid[cite: 4]. Meiosis II separates the sister chromatids[cite: 4].',
+      },
+      {
+        id: '4.2',
+        question: 'Explain what happens to a primary oocyte during and after puberty.[cite: 4]',
+        answer:
+          'At puberty, a surge of Luteinizing hormone induces a preovulatory growth phase[cite: 4]. Meiosis I is completed, producing a secondary oocyte and a first polar body[cite: 4]. Meiosis II then starts but is arrested in metaphase until fertilization occurs[cite: 4].',
+      },
+      {
+        id: '4.3',
+        question: 'Define Gastrulation and describe its outcome.[cite: 4]',
+        answer:
+          'Gastrulation is the process which establishes the three germ layers: the ectoderm, mesoderm, and endoderm[cite: 4]. It begins with the primitive streak, where epiblast cells invaginate to displace the hypoblast and create these new layers[cite: 4].',
+      },
+    ],
+    sourceTag: 'manual',
+  },
+  {
+    id: 5,
+    sessionNumber: 5,
+    title: 'Third Month of Gestation to Birth',
+    introduction:
+      'This is the period between the third month to birth, also known as the fetal period[cite: 4]. The period is characterized by the rapid growth of the body and maturation of tissues, with growth in length being most intensive during the third to fifth month, and an increase in weight most evident during the last two months of gestation[cite: 4]. Birth typically occurs 266 days or 38 weeks after fertilization[cite: 4].',
+    learningOutcomes: [
+      '5.1 Describe the developmental milestones of the fetus from the 9th to the 38th week[cite: 4].',
+      '5.2 Identify the factors influencing fetal growth and the causes of low birth weight[cite: 4].',
+      '5.3 Explain the origins, structures, and functions of the fetal membranes (yolk sac, allantois, amnion, chorion)[cite: 4].',
+      '5.4 Understand the composition, origin, and functions of amniotic fluid[cite: 4].',
+      '5.5 Discuss placental circulation, parturition, and clinical considerations involving fetal development[cite: 4].',
+    ],
+    content: [
+      {
+        heading: 'Fetal Milestones: 9th to 20th Week',
+        body: 'Between the 9th and 12th week, there is rapid growth in body length, the appearance of primary ossification centers, fused eyelids, and erythropoiesis begins in the spleen by the end of the 12th week[cite: 4]. From the 13th to 16th week, limb movements coordinate, scalp hair patterns form, and external genitalia can be recognized[cite: 4]. Between the 17th and 20th week, fetal movements are felt by the mother, and the skin is covered with vernix caseosa (to protect from amniotic fluid) and lanugo (fine downy hair)[cite: 4]. Brown fat is also formed for heat production[cite: 4].',
+      },
+      {
+        heading: 'Fetal Milestones: 21st to 38th Week',
+        body: 'During the 21st to 25th week, there is substantial weight gain, rapid eye movements, and the secretion of surfactant to maintain the patency of developing alveoli, though the respiratory system remains immature[cite: 4]. From the 26th to 29th week, lungs and pulmonary vasculature are well developed, the CNS matures, and the bone marrow begins hematopoiesis[cite: 4]. From the 30th to 38th week, limbs gain a chubby appearance, the pupillary light reflex is present, and the fetus reaches full term[cite: 4].',
+      },
+      {
+        heading: 'Fetal Membranes',
+        body: 'Fetal membranes provide nutrition, respiration, excretion, and protection[cite: 4]. The Yolk Sac is involved in the transfer of nutrients and blood development before deteriorating[cite: 4]. The Allantois plays a significant role in urinary bladder development and its blood vessels persist as the umbilical vein and arteries[cite: 4]. The Amnion is a transparent membrane containing the amniotic fluid[cite: 4]. The Chorion is the outer membrane in contact with the uterine wall[cite: 4].',
+      },
+      {
+        heading: 'Amniotic Fluid and The Placenta',
+        body: 'Amniotic fluid is clear and slightly alkaline (pH 7.2)[cite: 4]. It is continuously turned over (400 to 500ml replaced every hour) and functions to protect the fetus against injury, maintain temperature, and aid in cervical dilation during labour[cite: 4]. The Placenta is a fetomaternal organ composed of a fetal portion (chorion frondosum) and a maternal portion (decidua basalis)[cite: 4]. It serves as the primary site of nutrient and gas exchange[cite: 4].',
+      },
+      {
+        heading: 'Parturition, Labour, and Clinical Considerations',
+        body: 'Parturition is the process where the fetus, placenta, and fetal membranes are expelled[cite: 4]. Labour occurs in 3 stages: thinning/dilatation of the cervix, delivery of the fetus, and delivery of the placenta and membranes[cite: 4]. Clinical considerations during development include Low Birth Weight (caused by teratogens, TORCH infections, smoking, or placental insufficiency), placenta previa, umbilical cord abnormalities, and amniotic bands[cite: 4].',
+      },
+    ],
+    inTextQuestions: [
+      {
+        question:
+          'What is the function of the vernix caseosa, which appears between the 17th and 20th week?[cite: 4]',
+        answer:
+          'It is a greasy cheese-like material that protects fetal skin from abrasions, chapping, and hardening that could result from exposure to amniotic fluid[cite: 4].',
+      },
+      {
+        question: 'What are the two components that make up the placenta?[cite: 4]',
+        answer:
+          'It is composed of a fetal portion (chorion frondosum) and a maternal portion (decidua basalis)[cite: 4].',
+      },
+    ],
+    saqs: [
+      {
+        id: '5.1',
+        question:
+          'Highlight the key developmental changes that occur in the fetus between the 26th and 29th weeks.[cite: 4]',
+        answer:
+          'The lungs and pulmonary vasculature have developed well, the CNS matures, lanugo and head hair are well developed, toe nails are visible, and the bone marrow begins hematopoiesis[cite: 4].',
+      },
+      {
+        id: '5.2',
+        question:
+          'What are the functions of amniotic fluid during pregnancy and during labour?[cite: 4]',
+        answer:
+          'During pregnancy, it protects the fetus against injury, provides a medium for movement, maintains fetal temperature, is a source of nutrition, and acts as a medium for fetal excretion[cite: 4]. During labour, it helps in the dilatation of the cervix and acts as an antiseptic for the birth canal after rupture of the membranes[cite: 4].',
+      },
+      {
+        id: '5.3',
+        question:
+          'List five potential causes of Low Birth Weight (LBW) or Intrauterine Growth Restriction (IUGR).[cite: 4]',
+        answer:
+          'Causes include: 1. Chromosomal abnormalities, 2. Teratogens, 3. Congenital infections (TORCH), 4. Poor maternal health (hypertension, renal & cardiac diseases), and 5. Cigarette smoking[cite: 4].',
+      },
+      {
+        id: '5.4',
+        question: 'Define the three stages of labour.[cite: 4]',
+        answer:
+          'Stage 1 is the thinning, shortening & dilatation of the cervix[cite: 4]. Stage 2 is the delivery of the fetus[cite: 4]. Stage 3 is the delivery of the placenta & fetal membranes[cite: 4].',
+      },
+    ],
+    sourceTag: 'manual',
+  },
+  {
+    id: 6,
+    sessionNumber: 6,
+    title: 'Development of the Head, Neck, and Respiratory System',
+    introduction:
+      'The most typical features in the development of the head and neck are the Pharyngeal arches, which appear between the 4th and 5th week of embryological development[cite: 4]. The respiratory tract is derived from foregut endoderm and associated mesoderm, beginning with the formation of lung buds during the 4th week[cite: 4].',
+    learningOutcomes: [
+      '6.1 Understand the structure and derivatives of the pharyngeal arches, pouches, clefts, and membranes[cite: 4].',
+      '6.2 Identify the cranial nerves and muscles associated with each pharyngeal arch[cite: 4].',
+      '6.3 Describe the embryological origins and patterning of the respiratory system, including the larynx and lungs[cite: 4].',
+      '6.4 Explain the four stages of lung maturation from the pseudoglandular period to the alveolar period[cite: 4].',
+      '6.5 Discuss clinical anomalies associated with the head, neck, and respiratory system developments[cite: 4].',
+    ],
+    content: [
+      {
+        heading: 'Structure of the Pharyngeal Arches',
+        body: 'Pharyngeal arches consist of bars of mesenchymal tissue separated by deep clefts[cite: 4]. Each arch has ectoderm on the outside, endoderm on the inside, and mesenchyme derived from neural crest cells and mesoderm in between[cite: 4]. Each arch has its own artery, cranial nerve, cartilage rod, and muscle cells[cite: 4]. The first arch is supplied by the Trigeminal nerve (V), the second by the Facial nerve (VII), the third by the Glossopharyngeal nerve (IX), and the fourth and sixth by the Vagus nerve (X)[cite: 4].',
+      },
+      {
+        heading: 'Derivatives of the Arches, Pouches, and Clefts',
+        body: "The First Arch develops into the maxillary and mandibular prominences, with Meckel's cartilage leaving behind the malleus and incus bones[cite: 4]. The Second (Hyoid) Arch utilizes Reichert's cartilage to form the stapes and parts of the hyoid bone[cite: 4]. Pharyngeal Pouches are endodermal linings: the 1st forms the primitive tympanic cavity and auditory tube, the 2nd forms the palatine tonsils, the 3rd forms the inferior parathyroid and thymus, and the 4th forms the superior parathyroid and the C cells of the thyroid gland[cite: 4]. The dorsal part of the 1st pharyngeal cleft forms the external auditory meatus[cite: 4].",
+      },
+      {
+        heading: 'Development of the Respiratory System',
+        body: 'The respiratory tract begins as a respiratory diverticulum (ventral outgrowth of foregut endoderm)[cite: 4]. Tracheo-esophageal ridges fuse to separate the trachea from the esophagus[cite: 4]. The epithelial lining of the larynx proliferates and temporarily occludes the lumen before recanalizing by about the 10th week[cite: 4]. The cartilages and muscles of the larynx are formed from the mesenchyme of the 4th and 6th pharyngeal arches[cite: 4].',
+      },
+      {
+        heading: 'Stages of Lung Maturation',
+        body: 'Lung maturation occurs in four stages[cite: 4]. 1) Pseudoglandular Period (5-17 weeks): Major elements have formed, except those involved with gas exchange[cite: 4]. 2) Canalicular Period (16-26 weeks): Lung tissue becomes vascular, and surfactant production begins around week 22[cite: 4]. 3) Terminal Sac Period (26 weeks to birth): Blood-air barrier becomes well-developed and surfactant production is sufficient to prevent airway collapse[cite: 4]. 4) Alveolar Period (late fetal to age 8): 95% of mature alveoli develop after birth[cite: 4].',
+      },
+      {
+        heading: 'Clinical Correlates',
+        body: 'Anomalies of the pharyngeal arches include branchial fistulas, ectopic parathyroid glands, and congenital auricular cysts[cite: 4]. Respiratory anomalies include Tracheo-esophageal fistulas (often associated with VATER/VACTERL defects), Laryngeal atresia (causing Congenital High Airway Obstruction Syndrome or CHAOS), and Respiratory Distress Syndrome (Hyaline Membrane Disease), which is a major cause of neonatal disease due to surfactant deficiency[cite: 4].',
+      },
+    ],
+    inTextQuestions: [
+      {
+        question:
+          'Which cranial nerve innervates the muscles of facial expression derived from the second pharyngeal arch?[cite: 4]',
+        answer: 'The Facial nerve (Cranial Nerve VII)[cite: 4].',
+      },
+      {
+        question:
+          'During which stage of lung maturation does surfactant production become sufficient to prevent airway collapse (atelacstasis)?[cite: 4]',
+        answer: 'The Terminal Sac Period (26 weeks to birth)[cite: 4].',
+      },
+    ],
+    saqs: [
+      {
+        id: '6.1',
+        question: 'Identify the adult derivatives of the first and second pharyngeal pouches.[cite: 4]',
+        answer:
+          'The 1st pharyngeal pouch forms the primitive tympanic (middle ear) cavity and the auditory (Eustachian) tube[cite: 4]. The 2nd pharyngeal pouch forms the primordial of the palatine tonsils and the tonsillar fossa[cite: 4].',
+      },
+      {
+        id: '6.2',
+        question:
+          'What is the origin of the respiratory diverticulum and how does it separate from the foregut?[cite: 4]',
+        answer:
+          'It appears as a ventral outgrowth of the foregut endoderm[cite: 4]. Longitudinal ridges called tracheo-esophageal ridges eventually fuse to separate the trachea from the esophagus[cite: 4].',
+      },
+      {
+        id: '6.3',
+        question:
+          'Explain the underlying cause of Respiratory Distress Syndrome (Hyaline Membrane Disease) in newborn infants.[cite: 4]',
+        answer:
+          'It is majorly caused by surfactant deficiency[cite: 4]. This leads to underinflated lungs and alveoli containing fluid with high protein content, often rendering Type II alveolar cells incapable of producing adequate surfactant[cite: 4].',
+      },
+    ],
+    sourceTag: 'manual',
+  },
+  {
+    id: 7,
+    sessionNumber: 7,
+    title: 'Development of the Skeletal and Urogenital Systems',
+    introduction:
+      'The skeletal system develops from paraxial and lateral plate mesoderm and neural crest cells, while the urogenital system develops from the intermediate mesenchyme derived from the dorsal body wall of the embryo. During folding of the embryo, the urogenital ridge forms, subdividing into the nephrogenic cord (urinary system) and the gonadal ridge (genital system)[cite: 4].',
+    learningOutcomes: [
+      '7.1 Describe the development of the skeletal system, including intramembranous and endochondral ossification[cite: 4].',
+      '7.2 Explain the formation of the skull and the embryological rotation of the upper and lower limbs[cite: 4].',
+      '7.3 Outline the development of the urinary system, tracing the pronephroi, mesonephroi, and metanephroi[cite: 4].',
+      '7.4 Detail the development of the male and female genital systems, including gonads, ducts, and external genitalia[cite: 4].',
+      '7.5 Identify clinical correlates associated with skeletal and urogenital development[cite: 4].',
+    ],
+    content: [
+      {
+        heading: 'Skeletal System Origins & Ossification',
+        body: 'The paraxial mesoderm forms somites, which differentiate into the sclerotome (forms bones), myotome (forms muscles), and dermatome (forms skin)[cite: 4]. Bones develop through two methods: Intramembranous ossification (direct laying down of bone into the primitive connective tissue or mesenchyme) and Endochondral ossification (development of long bones from a hyaline cartilage model precursor)[cite: 4].',
+      },
+      {
+        heading: 'Skull and Limb Development',
+        body: 'The skull is divided into the Neurocranium (protective case around the brain) and Viscerocranium (skeleton of the face)[cite: 4]. At birth, flat bones of the skull are separated by connective tissue seams called sutures and wide spots called fontanelles, which allow for molding during birth[cite: 4]. Limb buds become visible at the end of the 4th week; in the 7th week, upper limbs rotate 90 degrees laterally while lower limbs rotate 90 degrees medially[cite: 4].',
+      },
+      {
+        heading: 'Development of the Urinary System',
+        body: 'Three sets of kidneys develop in human embryos: the Pronephroi (never functional), the Mesonephroi (functions briefly during intrauterine life), and the Metanephroi (the permanent kidneys)[cite: 4]. The permanent kidneys develop from the ureteric bud and the metanephric mass[cite: 4]. Initially located in the pelvis, the kidneys gradually ascend into the abdomen by the ninth week[cite: 4]. The urinary bladder develops from the vesical part of the urogenital sinus[cite: 4].',
+      },
+      {
+        heading: 'Development of Gonads and Genital Ducts',
+        body: 'The SRY gene on the Y chromosome produces testis-determining factor (TDF), inducing the medullary cords to develop into seminiferous tubules and rete testis[cite: 4]. Interstitial cells of Leydig secrete testosterone to induce masculine differentiation[cite: 4]. In females, the absence of TDF allows cortical cords to incorporate primordial germ cells, forming primary oocytes[cite: 4]. The paramesonephric (Mullerian) ducts develop in females to form the uterine tubes, uterus, and upper vagina, while the mesonephric (Wolffian) ducts form the male ductus deferens and ejaculatory duct[cite: 4].',
+      },
+      {
+        heading: 'External Genitalia and Clinical Correlates',
+        body: 'External genitalia develop from identical primordia in both sexes[cite: 4]. The genital tubercle forms the glans penis in males or the clitoris in females[cite: 4]. Urethral folds form the penile urethra or the labia minora, while genital swellings form the scrotum or labia majora[cite: 4]. Clinical correlates include Craniosyntocis (premature suture closure), Horseshoe kidney (inferior poles fused), and Hypospadias[cite: 4].',
+      },
+    ],
+    inTextQuestions: [
+      {
+        question:
+          'Which of the three kidney systems in the human embryo becomes the permanent kidneys?[cite: 4]',
+        answer: 'The metanephroi (third set) becomes the permanent kidneys[cite: 4].',
+      },
+      {
+        question: 'What is the function of sutures and fontanelles in a newborn\'s skull?[cite: 4]',
+        answer: 'These sutures and fontanelles allow for molding (overlapping) during birth[cite: 4].',
+      },
+    ],
+    saqs: [
+      {
+        id: '7.1',
+        question: 'Differentiate between intramembranous and endochondral ossification.[cite: 4]',
+        answer:
+          'Intramembranous ossification is the direct laying down of bone into the primitive connective tissue (mesenchyme)[cite: 4]. Endochondral ossification is the process of development of long bones from a hyaline cartilage model precursor where cartilage is replaced by bone[cite: 4].',
+      },
+      {
+        id: '7.2',
+        question: 'Describe the embryological origins of the uterus and uterine tubes.[cite: 4]',
+        answer:
+          'The uterine tubes develop from the unfused cranial and horizontal parts of the paramesonephric ducts[cite: 4]. The caudal fused portions of these ducts form the uterovaginal primordium which becomes the uterus and the superior part of the vagina[cite: 4].',
+      },
+      {
+        id: '7.3',
+        question:
+          'Identify the adult derivatives of the embryonic genital tubercle, urethral folds, and genital swellings in both males and females.[cite: 4]',
+        answer:
+          'In males, the genital tubercle forms the glans penis, urethral folds form the penile urethra, and genital swellings form the scrotum[cite: 4]. In females, the genital tubercle forms the clitoris, urethral folds form the labia minora, and genital swellings form the labia majora[cite: 4].',
+      },
+    ],
+    sourceTag: 'manual',
+  },
+  {
+    id: 8,
+    sessionNumber: 8,
+    title: 'Development of the Muscular and Central Nervous Systems',
+    introduction:
+      'Most of the muscular system develops from the mesodermal germ layer, consisting of skeletal, smooth, and cardiac muscles[cite: 4]. The central nervous system develops through neurulation, transforming a flat sheet of ectoderm into an elongated neural tube, guided by the notochord[cite: 4].',
+    learningOutcomes: [
+      '8.1 Describe the embryological origins of skeletal, cardiac, and smooth muscles[cite: 4].',
+      '8.2 Differentiate between the epimere and hypomere in muscle formation[cite: 4].',
+      '8.3 Explain the process of neurulation and the derivatives of neural crest cells[cite: 4].',
+      '8.4 Outline the development of primary and secondary brain vesicles and their associated ventricles[cite: 4].',
+      '8.5 Identify the origins of nervous system cells through neurohistiogenesis[cite: 4].',
+    ],
+    content: [
+      {
+        heading: 'Origins of the Muscular System',
+        body: 'Skeletal muscle is derived from somites and somitomeres formed from the paraxial mesoderm[cite: 4]. Cardiac muscle develops from splanchnic mesoderm surrounding the endothelial heart tube[cite: 4]. Smooth muscles differentiate from splanchnic mesoderm (gut), lateral plate mesoderm, and ectoderm (pupillary, mammary, and sweat gland muscles)[cite: 4].',
+      },
+      {
+        heading: 'Skeletal Muscle Development',
+        body: 'By the 5th week, precursor muscle cells collect into a small dorsal portion called the epimere (forming extensor muscles of the vertebral column) and a larger ventral portion called the hypomere (forming muscles of the limbs and body wall)[cite: 4]. Limb muscles form from mesenchyme condensation in the 7th week, eventually splitting into flexor and extensor compartments directed by connective tissue[cite: 4].',
+      },
+      {
+        heading: 'Neurulation and Neural Crest Cells',
+        body: 'Neurulation transforms the general ectoderm into a thickened neural plate, shapes and folds it, and fuses the lateral surfaces to form the neural tube[cite: 4]. Abnormalities like Spina bifida and Anencephaly occur due to failure of neuropore closure[cite: 4]. Neural crest cells migrate to form structures unique to vertebrates, including connective tissue/bones of the face, cranial nerve ganglia, adrenal medulla, Schwann cells, and melanocytes[cite: 4].',
+      },
+      {
+        heading: 'Brain Vesicles and Ventricles',
+        body: 'By the 4th week, the neural tube dilates to form three primary brain vesicles: Prosencephalon, Mesencephalon, and Rhombencephalon[cite: 4]. By the 5th week, these become five secondary vesicles: Telencephalon (Cerebrum/Lateral ventricles), Diencephalon (Thalamus/Third ventricle), Mesencephalon (Midbrain/Aqueduct of Silvius), Metencephalon (Pons/Cerebellum/Fourth ventricle upper part), and Myelencephalon (Medulla/Fourth ventricle lower part)[cite: 4].',
+      },
+      {
+        heading: 'Neurohistiogenesis',
+        body: 'The cells of the nervous system are derived from three different origins[cite: 4]. The Neuroepithelium gives rise to neurons, astrocytes, oligodendrocytes, and ependymal cells[cite: 4]. Neural crest cells produce Schwann cells, while the Mesoderm gives rise to microglia[cite: 4].',
+      },
+    ],
+    inTextQuestions: [
+      {
+        question:
+          'Which germ layer derivative forms the pupillary, mammary, and sweat gland muscles?[cite: 4]',
+        answer: 'They are derived from the ectoderm[cite: 4].',
+      },
+      {
+        question:
+          'What does the Telencephalon adult structure become, and which cerebral ventricle is associated with it?[cite: 4]',
+        answer:
+          'It becomes the Cerebrum, and it is associated with the Lateral ventricles[cite: 4].',
+      },
+    ],
+    saqs: [
+      {
+        id: '8.1',
+        question: 'Differentiate between the epimere and the hypomere.[cite: 4]',
+        answer:
+          'The epimere is formed from dorsomedial cells of the somites and forms the extensor muscles of the vertebral column[cite: 4]. The hypomere is a larger ventral portion formed by migrating dorsolateral cells and forms the muscles of the limbs and body wall[cite: 4].',
+      },
+      {
+        id: '8.2',
+        question: 'List five structures derived from neural crest cells.[cite: 4]',
+        answer:
+          'Derivatives include connective tissue and bones of the face and skull, cranial nerve ganglia, adrenal medulla, Schwann cells, and melanocytes[cite: 4].',
+      },
+      {
+        id: '8.3',
+        question: 'Identify the cellular origins of neurons, Schwann cells, and microglia.[cite: 4]',
+        answer:
+          'Neurons are derived from the Neuroepithelium, Schwann cells from Neural crest cells, and microglia from the Mesoderm[cite: 4].',
+      },
+    ],
+    sourceTag: 'manual',
   }
 ];
