@@ -1,0 +1,61 @@
+{
+  "id": 6,
+  "title": "Coping response",
+  "introduction": "The state of being ill is a threat for human existence. There are several approaches and responses that man gives as a result of these illnesses. All these purposeful interactions aimed at managing stress/illness are known as coping. In this study therefore you will learn about coping response, stages of responses in illness, coping with a diagnosis, coping and culture.",
+  "learningOutcomes": [
+    "6.1 Explain coping response",
+    "6.2 Highlight the Stage of Responses in illness",
+    "6.3 Discuss coping with a diagnosis",
+    "6.4 Explain coping and culture"
+  ],
+  "content": [
+    {
+      "heading": "6.1 Coping responses",
+      "body": "Freud first talked about the unconscious mechanisms of coping, such as denial, repression, rationalization, and projection. Lazarus was one of the first to develop a theoretical perspective about coping as a conscious process, defining stress as consisting of primary appraisal, secondary appraisal, and coping. Coping strategies can be conceptualized into multiple ways: Biological/physiological Coping (the body's natural 'fight or flight' method), The cognitive component of coping (mental process of thinking about the situation), The learned component of coping (strategies learned from modeling/observation), and Intention (whether the strategy is voluntary or involuntary)."
+    },
+    {
+      "heading": "6.2 Stages of responses in illness",
+      "body": "There are different stages of responses in illness. 1. Crisis: the patient is seriously ill and very frightened, directing energies toward healing and controlling panic. 2. Isolation: the acute nature of the illness may decrease, but total recovery does not occur, leading to a dawning awareness of a chronic situation. 3. Anger: the sick person suffers from severe upset, terror, anxiety, and helplessness, often targeting themselves for these feelings. 4. Reconstruction: the sick person feels stronger physically or has time to master new living skills. 5. Intermittent Depression: the joy associated with new skills can give way to new feelings of despair. 6. Renewal: a sense of lingering regret for lost capacities remains, but the person learns to make realistic expectations and take an active approach to problems."
+    },
+    {
+      "heading": "6.3 Coping with a diagnosis",
+      "body": "Emotional reactions to illness may culminate in the feeling that life is meaningless. How people react to chronic illness depends on many conditions: The severity of the illness (putting energy into healing), The social support available (asking for help), and The pre illness personality of the person (resilience). The emotional trauma of chronic physical illness is caused by loss of a valued level of functioning."
+    },
+    {
+      "heading": "6.4 Coping and culture",
+      "body": "There is a connection between culture and coping. Collectivistic values emphasize interpersonal relationships, respect for authority figures, intra-cultural coping and relational universality. Forbearance, perseverance, and sacrifice are characteristics that are highly valued in collectivistic cultures. Cultural factors that can influence coping include discrimination and stigma which can erode resilience, as well as gender constraints, guilt, and shame. The 5 phase models of facing a potentially fatal illness are: Pre-diagnostic phase, Acute phase, Chronic phase, Recovery Phase, and Terminal Phase."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Coping strategies can be conceptualized into the following ways except a. Biological/physiological Coping b. The cognitive component of coping c. The trashing coping d. Intention",
+      "answer": "c. The trashing coping"
+    },
+    {
+      "question": "The severity of the illness could affect how a person responds to illness. True or False",
+      "answer": "True"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Explain the physiological way of coping",
+      "answer": "The body has a natural method of coping with stress. Any threat or challenge perceived by an individual in the environment triggers a physiological chain of events. The sympathetic/adrenal system secretes epinephrine and norepinephrine. This is the 'fight or flight' response."
+    },
+    {
+      "id": "6.2",
+      "question": "Discuss how patients respond in the crisis stage of illness",
+      "answer": "In the crisis stage, the patient is seriously ill and very frightened. There is decrease in his ability to respond to others psychologically and physically. The sick directs his energies toward healing, and controlling panic. The patient is often too sick to even be frightened. Events are often confused. Time is distorted. Disorientation is common."
+    },
+    {
+      "id": "6.3",
+      "question": "Explain how a patient could cope with a diagnosis",
+      "answer": "Emotional reactions to illness may culminate in the feeling that life is meaningless. How people react to chronic illness depends on many conditions: The severity of the illness, The social support available, The pre illness personality of the person."
+    },
+    {
+      "id": "6.4",
+      "question": "Highlight some cultural traits that can influence coping",
+      "answer": "Some of the cultural traits that can influence coping include the following: 1. Forbearance 2. Perseverance 3. Sacrifice 4. Discrimination 5. Stigmatization 6. Guilt 7. Shame."
+    }
+  ]
+}

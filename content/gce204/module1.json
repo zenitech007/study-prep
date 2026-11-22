@@ -1,0 +1,83 @@
+{
+  "id": 1,
+  "title": "Meaning of Learning and Factors Affecting Human Learning",
+  "introduction": "Learning is a foundational concept cutting across both psychology and education, defined psychologically as any relatively permanent change in behaviour resulting from practice or experience[cite: 110, 274]. Because human learning is shaped by the continuous interplay between internal organismic traits and external physical and psychological environments, understanding these determinants is essential for effective teaching and study[cite: 119, 129, 278].",
+  "learningOutcomes": [
+    "1.1 Define psychology, learning, behaviour (overt and covert), and experience (direct and vicarious), and distinguish learned behaviour from non-learned changes[cite: 109, 110, 115, 116, 276].",
+    "1.2 Outline the five sequential stages of the learning process and state why studying the psychology of learning is vital for educators[cite: 113, 114, 115].",
+    "1.3 Analyze organismic factors affecting learning, including intelligence (IQ measurement), personality, self-concept, willpower, sensory modalities, maturation, attitudes, locus of control, and emotions[cite: 119, 121, 122, 123, 124, 125, 126, 128].",
+    "1.4 Explain Thorndike's three maturational Conduction Units and the Einstellung effect of attitudes on academic performance[cite: 124, 125, 281].",
+    "1.5 Differentiate between genotype and phenotype (Intelligence A vs. Intelligence B) and evaluate how physical and psychological environments in the home, school, and society shape learning[cite: 129, 132, 133, 134, 286]."
+  ],
+  "content": [
+    {
+      "heading": "Meaning of Psychology, Learning, Behaviour, and Experience",
+      "body": "Psychology derives from the Greek words 'Psyche' (mind) and 'Logos' (disputation, study, or argument), and was established as an independent discipline by Wilhelm Wundt (1919) before evolving into the scientific study of human and animal behaviour and its application to human problems[cite: 109]. Learning is defined psychologically as any relatively permanent change in behaviour that occurs as a result of practice or experience—a broader view than education's narrower focus on classroom knowledge acquisition[cite: 110, 114, 274]. This definition has three essential elements: (1) a change in behaviour (for better or worse), (2) resulting from practice or experience rather than growth or maturation, and (3) lasting a relatively long time rather than being temporary[cite: 110]. Behaviour manifests in how individuals think, feel, and act, and is classified into overt behaviour (observable, such as anger) and covert behaviour (unobservable, such as thinking or imagination)[cite: 115]. Experience is the organism's interaction with environmental stimuli and is either direct (first-hand, which yields faster and better learning) or indirect/vicarious (acquired by watching or reading about others)[cite: 116, 275]."
+    },
+    {
+      "heading": "The Learning Process and What Learning Is Not",
+      "body": "Effective learning progresses through five defined stages: (1) Sensation—receiving, translating, and transmitting environmental messages through the bodily senses ('gateways to knowledge'); (2) Perception—organizing and interpreting sensory data via receptors; (3) Association—connecting new experience with previous experience; (4) Generalization—establishing rules, principles, or laws; and (5) Application—using those principles to solve real-life problems[cite: 113, 114]. Studying the psychology of learning helps teachers accommodate individual differences, apply motivation principles, minimize forgetting, and promote transfer of skills[cite: 114, 115]. A classic example of learning is a crawling child approaching fire (adient/approach behaviour), getting burnt, and permanently avoiding fire (abient/avoidance behaviour)—which can spread to similar stimuli through stimulus-response generalization (such as a child fearing anyone in a white uniform after a painful injection, or a bee-stung child fearing a harmless blue-bottle fly)[cite: 116, 276, 277]. Conversely, temporary behavioural changes caused by alcohol (lasting roughly three hours), drugs, fatigue, or illness, as well as unlearned maturational or species-specific behaviours like a newborn sucking, a newly hatched chick walking, or a young cock's first crow, do not constitute learning[cite: 110, 116, 276]."
+    },
+    {
+      "heading": "Organismic Factors I: Intelligence, Personality, Self-Concept, and Willpower",
+      "body": "Determinants of learning are divided into internal (organismic) factors inside the learner and external environmental factors[cite: 119, 278]. Intelligence is the most important organismic tool for learning, inherited through 46 chromosomes (23 from each parent) and defined by Wechsler as the global capacity to act purposefully, think rationally, and deal effectively with the environment[cite: 120, 279]. Alfred Binet's Intelligence Quotient formula is IQ = (Mental Age / Chronological Age) x 100; for instance, a 10-year-old performing at a 15-year-old mental age scores 150 (gifted), whereas a 10-year-old performing at a 6-year-old level scores 60[cite: 121, 280]. Personality—described by Heim (1974) as the non-arithmetic total of all traits, aptitudes, emotions, attitudes, and self-perceptions that distinguish an individual—strongly influences learning[cite: 121, 122]. Within personality, high (positive) self-concept enhances academic performance compared to low (negative) self-concept, with studies by Jahoda and Okoye (1981) showing that even names given to children shape their self-appraisal and performance[cite: 122]. Similarly, strong willpower ('Forward ever, backward never') sustains persistence through difficult subjects like mathematics and statistics, whereas weak willpower leads to abandoned goals[cite: 123]."
+    },
+    {
+      "heading": "Organismic Factors II: Sensory Modalities, Maturation, Attitudes, Locus of Control, and Emotions",
+      "body": "Learners perceive stimuli through five sensory modalities—visual (eyes), auditory (ears), olfactory (nose), gustatory (tongue), and tactile (fingers/body)—and combining two or more modalities produces higher-quality learning than using a single sense[cite: 123, 124]. Maturation (functional readiness or the 'teachable moment') determines when a learner is ready to start learning; forcing an unready learner fails[cite: 124]. Thorndike classified readiness into three Conduction Units: Conduction Unit One (organism ready, environment cooperative—high learning), Conduction Unit Two (organism ready, environment uncooperative—low learning), and Conduction Unit Three (organism not ready, forced by environment—low learning)[cite: 124, 281]. Attitudes—defined by Allport (1935) as mental states of readiness organized through experience—fulfill four functions (understanding, utilitarian/adjustive, ego-defensive, and value expression per Katz, 1960) and create the 'Einstellung effect', where positive attitudes aid learning while negative attitudes toward subjects or teachers foster poor performance and truancy[cite: 125, 126]. Julian Rotter (1966) distinguished Internal Locus of Control (accepting personal responsibility for success or failure, which promotes self-analysis and superior learning) from External Locus of Control (blaming fate, luck, or others, which lowers achievement)[cite: 126, 127, 128]. Emotions, generated by the limbic sector of the parasympathetic autonomic nervous system, facilitate learning in moderate doses (e.g., mild alertness/anxiety) but disorganize reasoning when overdosed[cite: 128]."
+    },
+    {
+      "heading": "External Physical Environment and Phenotype (Intelligence A vs. B)",
+      "body": "The external environment encompasses physical and psychological influences from the home, school, and society[cite: 129]. Physically, a home facilitates learning through quiet siting away from noise, adequate lighting and ventilation, dedicated study spaces or bookshelves, cooperative household members, judicious chore allocation, socioeconomic support, and proper nutrition—notably exclusive maternal breast milk for at least the first four months of post-natal life, whereas malnutrition impairs brain development and learning[cite: 119, 130, 131]. Schools provide structured physical facilities (classrooms, libraries, books, chalkboards, and teachers), while societies shape learning through educational infrastructure, urban vs. rural exposure (urban areas offering mass media and academic facilities; rural areas fostering nature, farming, and traditional norms), and cultural or superstitious beliefs that can hinder scientific education[cite: 131, 132]. When innate genetic endowments (genotype) interact with the environment, they produce the individual's phenotype[cite: 132, 286]. Skemp distinguished undeveloped genotypic intelligence as Intelligence A (concerned primarily with basic physiological/biogenic survival) from environmentally stimulated phenotypic intelligence as Intelligence B, which drives higher human culture and civilization[cite: 132, 286]."
+    },
+    {
+      "heading": "Psychological Environment, Teacher, and Peer Factors",
+      "body": "The psychological environment—concerned with the learner's mental well-being—often surpasses physical materials in its impact on learning[cite: 133]. At home, warm, permissive, and encouraging parents foster stronger learning than authoritarian, repressive, or broken homes filled with conflict and bickering[cite: 133]. In school, peaceful, secure classrooms with permissive teachers who use reinforcement, motivation, and positive teacher-pupil and pupil-pupil relationships outperform fear-dominated schools where teachers wield canes like masquerades and suppress expression[cite: 134]. At the societal level, peace, unity, and recognition of academic excellence (via prizes and scholarships) stimulate creativity, whereas social strife, taboos, cultural censorship, and negative attitudes toward education create mental blocks[cite: 134, 135]. Additional external variables include active learner participation, peer group influence (children often learn more freely among peers than intimidated among adults), teacher personality and instructional mastery, and freedom from traumatic environmental disasters[cite: 135, 136]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "A child injected by a nurse in a white uniform begins to fear anyone wearing white clothing. What psychological concept does this illustrate?",
+      "answer": "Stimulus-response generalization (developing abient/avoidance behaviour generalized from a painful experience)[cite: 116, 275, 276]."
+    },
+    {
+      "question": "What is the Intelligence Quotient (IQ) of a 10-year-old child who performs successfully on an intelligence test meant for a mental age of 15?",
+      "answer": "IQ = (MA / CA) x 100 = (15 / 10) x 100 = 150, which classifies the child as gifted according to Sperling (1979)[cite: 121, 280]."
+    },
+    {
+      "question": "What does the 'Einstellung effect' refer to in human learning?",
+      "answer": "It refers to the effect of attitude on human learning, whereby positive attitudes facilitate task performance and negative attitudes lead to poor performance[cite: 125, 279]."
+    },
+    {
+      "question": "How does Skemp differentiate between Intelligence A and Intelligence B?",
+      "answer": "Intelligence A is undeveloped, unstimulated genotypic intelligence serving basic biogenic/physiological needs, whereas Intelligence B is stimulated phenotypic intelligence produced by interaction with the environment[cite: 132, 285, 286]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "Define learning from a psychological perspective, state its three essential elements, and give three examples of behavioural changes that are not regarded as learning.",
+      "answer": "Learning is any relatively permanent change in behaviour occurring as a result of practice or experience[cite: 110]. Its three elements are: (1) a change in behaviour, (2) occurring through practice or experience rather than maturation, and (3) relative permanence[cite: 110]. Changes not regarded as learning include temporary intoxication from alcohol or drugs, behavioural shifts due to fatigue or illness, and unlearned innate/maturational behaviours such as a newborn sucking or a newly hatched chick walking[cite: 110, 116, 276]."
+    },
+    {
+      "id": "1.2",
+      "question": "List and briefly explain the five stages of the learning process.",
+      "answer": "1. Sensation: receiving and transmitting environmental stimuli to the brain via the senses[cite: 113]. 2. Perception: organizing and interpreting sensory information internally[cite: 113]. 3. Association: connecting new experiences with prior experiences[cite: 113]. 4. Generalization: deriving principles, rules, or laws from findings[cite: 113, 114]. 5. Application: using established principles to solve real-life problems[cite: 114]."
+    },
+    {
+      "id": "1.3",
+      "question": "Explain Thorndike's three maturational Conduction Units and their implication for schooling.",
+      "answer": "Conduction Unit One: the learner is ready and the environment is cooperative, yielding high learning[cite: 124, 281]. Conduction Unit Two: the learner is ready but the environment is uncooperative, yielding low learning[cite: 281]. Conduction Unit Three: the learner is not ready yet is forced by a cooperative environment, yielding low learning[cite: 281]. This implies children should be placed in classes based on maturational readiness rather than parental emotion, and learning requires mutual readiness of learner and teacher[cite: 124, 281]."
+    },
+    {
+      "id": "1.4",
+      "question": "Compare Internal Locus of Control and External Locus of Control (Rotter, 1966) and explain how each affects academic achievement.",
+      "answer": "Internal locus of control means attributing behavioural outcomes to oneself—accepting responsibility for success or failure, which triggers self-analysis, remediation, and better learning[cite: 127, 128]. External locus of control means attributing outcomes to outside forces such as luck, fate, teachers, or spiritual beings, which fosters resignation, reduces effort, and results in lower academic achievement[cite: 126, 127]."
+    },
+    {
+      "id": "1.5",
+      "question": "Differentiate between genotype and phenotype, and explain why the psychological climate of the home and school is crucial for learning.",
+      "answer": "Genotype refers to an individual's innate genetic make-up inherited at conception, whereas phenotype is the interactional product of one's genotype and environment[cite: 120, 132, 286]. The psychological environment governs mental well-being: warm, permissive, encouraging homes and secure, reinforcing classrooms allow learners to concentrate and express themselves freely, whereas authoritarian, conflict-ridden homes and fear-dominated schools suppress learning[cite: 133, 134]."
+    }
+  ]
+}

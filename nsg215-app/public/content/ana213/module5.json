@@ -1,0 +1,66 @@
+{
+  "id": 5,
+  "title": "Third Month of Gestation to Birth",
+  "introduction": "This is the period between the third month to birth, also known as the fetal period[cite: 4]. The period is characterized by the rapid growth of the body and maturation of tissues, with growth in length being most intensive during the third to fifth month, and an increase in weight most evident during the last two months of gestation[cite: 4]. Birth typically occurs 266 days or 38 weeks after fertilization[cite: 4].",
+  "learningOutcomes": [
+    "5.1 Describe the developmental milestones of the fetus from the 9th to the 38th week[cite: 4].",
+    "5.2 Identify the factors influencing fetal growth and the causes of low birth weight[cite: 4].",
+    "5.3 Explain the origins, structures, and functions of the fetal membranes (yolk sac, allantois, amnion, chorion)[cite: 4].",
+    "5.4 Understand the composition, origin, and functions of amniotic fluid[cite: 4].",
+    "5.5 Discuss placental circulation, parturition, and clinical considerations involving fetal development[cite: 4]."
+  ],
+  "content": [
+    {
+      "heading": "Fetal Milestones: 9th to 20th Week",
+      "body": "Between the 9th and 12th week, there is rapid growth in body length, the appearance of primary ossification centers, fused eyelids, and erythropoiesis begins in the spleen by the end of the 12th week[cite: 4]. From the 13th to 16th week, limb movements coordinate, scalp hair patterns form, and external genitalia can be recognized[cite: 4]. Between the 17th and 20th week, fetal movements are felt by the mother, and the skin is covered with vernix caseosa (to protect from amniotic fluid) and lanugo (fine downy hair)[cite: 4]. Brown fat is also formed for heat production[cite: 4]."
+    },
+    {
+      "heading": "Fetal Milestones: 21st to 38th Week",
+      "body": "During the 21st to 25th week, there is substantial weight gain, rapid eye movements, and the secretion of surfactant to maintain the patency of developing alveoli, though the respiratory system remains immature[cite: 4]. From the 26th to 29th week, lungs and pulmonary vasculature are well developed, the CNS matures, and the bone marrow begins hematopoiesis[cite: 4]. From the 30th to 38th week, limbs gain a chubby appearance, the pupillary light reflex is present, and the fetus reaches full term[cite: 4]."
+    },
+    {
+      "heading": "Fetal Membranes",
+      "body": "Fetal membranes provide nutrition, respiration, excretion, and protection[cite: 4]. The Yolk Sac is involved in the transfer of nutrients and blood development before deteriorating[cite: 4]. The Allantois plays a significant role in urinary bladder development and its blood vessels persist as the umbilical vein and arteries[cite: 4]. The Amnion is a transparent membrane containing the amniotic fluid[cite: 4]. The Chorion is the outer membrane in contact with the uterine wall[cite: 4]."
+    },
+    {
+      "heading": "Amniotic Fluid and The Placenta",
+      "body": "Amniotic fluid is clear and slightly alkaline (pH 7.2)[cite: 4]. It is continuously turned over (400 to 500ml replaced every hour) and functions to protect the fetus against injury, maintain temperature, and aid in cervical dilation during labour[cite: 4]. The Placenta is a fetomaternal organ composed of a fetal portion (chorion frondosum) and a maternal portion (decidua basalis)[cite: 4]. It serves as the primary site of nutrient and gas exchange[cite: 4]."
+    },
+    {
+      "heading": "Parturition, Labour, and Clinical Considerations",
+      "body": "Parturition is the process where the fetus, placenta, and fetal membranes are expelled[cite: 4]. Labour occurs in 3 stages: thinning/dilatation of the cervix, delivery of the fetus, and delivery of the placenta and membranes[cite: 4]. Clinical considerations during development include Low Birth Weight (caused by teratogens, TORCH infections, smoking, or placental insufficiency), placenta previa, umbilical cord abnormalities, and amniotic bands[cite: 4]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What is the function of the vernix caseosa, which appears between the 17th and 20th week?[cite: 4]",
+      "answer": "It is a greasy cheese-like material that protects fetal skin from abrasions, chapping, and hardening that could result from exposure to amniotic fluid[cite: 4]."
+    },
+    {
+      "question": "What are the two components that make up the placenta?[cite: 4]",
+      "answer": "It is composed of a fetal portion (chorion frondosum) and a maternal portion (decidua basalis)[cite: 4]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "5.1",
+      "question": "Highlight the key developmental changes that occur in the fetus between the 26th and 29th weeks.[cite: 4]",
+      "answer": "The lungs and pulmonary vasculature have developed well, the CNS matures, lanugo and head hair are well developed, toe nails are visible, and the bone marrow begins hematopoiesis[cite: 4]."
+    },
+    {
+      "id": "5.2",
+      "question": "What are the functions of amniotic fluid during pregnancy and during labour?[cite: 4]",
+      "answer": "During pregnancy, it protects the fetus against injury, provides a medium for movement, maintains fetal temperature, is a source of nutrition, and acts as a medium for fetal excretion[cite: 4]. During labour, it helps in the dilatation of the cervix and acts as an antiseptic for the birth canal after rupture of the membranes[cite: 4]."
+    },
+    {
+      "id": "5.3",
+      "question": "List five potential causes of Low Birth Weight (LBW) or Intrauterine Growth Restriction (IUGR).[cite: 4]",
+      "answer": "Causes include: 1. Chromosomal abnormalities, 2. Teratogens, 3. Congenital infections (TORCH), 4. Poor maternal health (hypertension, renal & cardiac diseases), and 5. Cigarette smoking[cite: 4]."
+    },
+    {
+      "id": "5.4",
+      "question": "Define the three stages of labour.[cite: 4]",
+      "answer": "Stage 1 is the thinning, shortening & dilatation of the cervix[cite: 4]. Stage 2 is the delivery of the fetus[cite: 4]. Stage 3 is the delivery of the placenta & fetal membranes[cite: 4]."
+    }
+  ]
+}

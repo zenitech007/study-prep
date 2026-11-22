@@ -1,0 +1,83 @@
+{
+  "id": 6,
+  "title": "Theories of Motivation and Observational Learning",
+  "introduction": "Psychologists developed motivational theories to answer three core questions: what the major motive systems are, how they relate to one another, and how psychological, environmental, and physiological causes interact to drive behaviour[cite: 215]. Alongside needs, drives, cognitions, and achievement motives, Albert Bandura's observational learning theory explains how humans acquire and perform complex behaviours simply by watching social models[cite: 215, 218, 220, 224, 227].",
+  "learningOutcomes": [
+    "6.1 Explain Abraham Maslow's Hierarchy of Needs (deficiency vs. growth/being needs), its criticisms, and its classroom implications[cite: 215, 216, 218].",
+    "6.2 Summarize Clark Hull's Drive Theory and contrast Dualism, Evolutionary, Instinctual, and Hedonistic theories of motivation[cite: 218, 219, 222, 223].",
+    "6.3 Analyze cognitive and attribution theories of motivation, including Festinger's cognitive dissonance, Weiner's three causal dimensions, and Heider's attribution theory[cite: 220, 221, 222].",
+    "6.4 Apply McClelland and Atkinson's Achievement Motivation theory and Bruner's three intrinsic motivators to classroom task design[cite: 224, 225, 226].",
+    "6.5 Describe Bandura's Bobo doll experiment, his four basic processes of observational learning, the dual role of reinforcement, and best practices for motivating learners[cite: 227, 228, 229, 230]."
+  ],
+  "content": [
+    {
+      "heading": "Maslow's Hierarchy of Needs and Hull's Drive Theory",
+      "body": "Abraham Maslow (1970) proposed a priority-ordered hierarchy of human needs divided into four lower Deficiency needs—physiological/survival, safety, belongingness and love, and esteem—and three higher Being (growth) needs: cognitive/intellectual achievement, aesthetic appreciation, and self-actualization[cite: 215, 216]. When deficiency needs are unmet, motivation rises to satisfy them and drops once filled; conversely, satisfying growth needs endlessly renews motivation for deeper fulfillment[cite: 215, 216]. Specifically, physiological needs (hunger, sex, sensory pleasures) dominate if unmet; safety needs demand shelter, order, and freedom from violence; belongingness needs require affection and discipline (Travers, 1986); esteem needs encompass self-esteem (competence, independence) and other-esteem (recognition, status); aesthetic needs seek order, beauty, and cosmic understanding; and self-actualization—the capstone reached by fewer than 1% of people (Maslow, 1970)—drives full creative potential and autonomy (Mittelman, 1995)[cite: 216, 217, 218]. Critics note that people do not always follow a strict sequence and sometimes sacrifice safety or friendship for knowledge; still, hungry, sick, or fearful students cannot focus on learning, and peer-group esteem can override teacher authority[cite: 218]. Complementing need models, C. L. Hull's (1942) Drive Theory states that a drive arising from primary needs (food, safety) or secondary needs (money, career) is essential both to form S-R habits via drive-reducing reinforcement and to perform them—an intense drive can even compensate for a weak habit[cite: 218]."
+    },
+    {
+      "heading": "Dualism, Evolutionary, Instinctual, and Hedonistic Theories",
+      "body": "Dualism Theory—rooted in Plato, Spinoza, Aristotle, St. Augustine (who emphasized willpower), and St. Thomas Aquinas (who contrasted animal instinct with human rational cognitive insight)—holds that animals are moved purely by mechanistic physiological/environmental factors, whereas humans are motivated by dual physicalistic and mentalistic/spiritual determinants (willpower, reason, and soul)[cite: 219, 220]. Evolutionary Theory views motives as Darwinian adaptations for survival and reproduction: hunger and thirst replenish bodily resources, pain triggers protective withdrawal, the sex drive ensures reproduction, and affiliation evolved for mutual protection, food gathering, and care during illness (Thornhill, 1992)[cite: 222]. Instinctual Theory—championed by Sigmund Freud (with Eros for pleasure/life and Thanatos for death), William James, and William McDougall (1958)—treats instincts as inherited, purposive, goal-seeking psychophysical dispositions; McDougall listed flight, repulsion, curiosity, pugnacity, self-abasement, self-assertion, parental reproduction, hunger, gregariousness, acquisitiveness, and constructiveness[cite: 222, 223]. Hedonistic Theory (peaking in the 18th and 19th centuries) argues that pleasure (a satisfier) triggers adient/approach behaviour while pain (an annoyer) triggers abient/avoidant behaviour; however, it fails to explain self-disciplined endurance of pain for long-term goals, Puritan rejection of pleasure, or suicide despite known pain (Murray, 1938)[cite: 223, 224]."
+    },
+    {
+      "heading": "Cognitive and Attribution Theories of Motivation",
+      "body": "Cognitive Theory argues that learners are inherently active organisms whose memory, thinking, perception, and expectancies motivate action ('thought motivates action', Fodor, 1994)[cite: 220, 221]. It highlights three domains: (1) Cognitive Dissonance (Leo Festinger, 1957)—unbalanced cognitions, expectancy disconfirmation, or acting contrary to one's attitudes creates dissonance that drives the person to restore balance; (2) Expectancy-Value; and (3) Level of Aspiration (McClelland et al., 1953)—goal strength shaped by perceived chances of success or failure[cite: 220]. Bernard Weiner (1980) emphasized how perceived causality motivates behaviour along three cognitive dimensions: Locus (internal self-blame vs. external blame, which raises or lowers self-esteem), Stability (whether an outcome seems permanent or temporary, shaping future expectations), and Controllability (whether outcomes can be influenced by effort, which also affects how we judge others)[cite: 221, 226]. Weiner's model connects directly to Fritz Heider's (1958) Attribution Theory, which distinguishes dispositional attributions from situational attributions as people search for meaningful causes of social and academic events[cite: 221, 222, 226]."
+    },
+    {
+      "heading": "Achievement Motivation and Bruner's Intrinsic Model",
+      "body": "David McClelland (building on Henry Murray, 1938) defined achievement motivation as a learned motive that shapes both individual goal attainment and a society's technological and economic growth[cite: 224]. John Atkinson (1978, supporting Hunt) proposed that the intrinsic will to achieve depends on two inversely related factors: Probability of Success (PS) and Incentive to Success (IS)—when probability of success is low, high rewards/incentives sustain effort[cite: 224, 225]. Atkinson found that success-oriented learners choose intermediate-difficulty goals (a 50-50 chance), whereas anxiety-ridden learners pick tasks that are either impossibly hard (avoiding blame for failure) or trivially easy (guaranteeing success); therefore, teachers should pitch lessons at an optimal halfway level of difficulty to prevent boredom or frustration[cite: 225]. Similarly, Jerome Bruner's (1966) Model of Motivated Behaviour identified three intrinsic motivators: (1) Curiosity (a biologically vital drive that must be channeled from restless shifting into sustained intellectual pursuit), (2) Drive to achieve competence (students engage in tasks where they feel capable), and (3) Reciprocity (the cooperative need to work with others, which underpins society itself)[cite: 225, 226]."
+    },
+    {
+      "heading": "Bandura's Observational (Social) Learning Theory",
+      "body": "Albert Bandura (1965, 1992) demonstrated that individuals acquire or modify social behaviours by watching models without direct operant reinforcement[cite: 227]. In his classic Bobo doll experiment (1965), children who watched a film of an adult beating an inflated Bobo doll reproduced the model's aggression in a toy room, whereas a control group did not—and aggression increased even further when children saw the model rewarded[cite: 227]. Follow-up studies confirmed that realistic televised or filmed violence increases aggression in children and adults (Bandura, Ross & Ross, 1963; Baron, 1974a; Liekert & Schwartzberg, 1987; Alhassan, 2000), and even lower animals like chickens learn by observation (Johnson, 1986)[cite: 227, 228]. Bandura (1965) identified four basic processes required for observational learning: (1) Attention (attending to the model), (2) Retention (storing the observed act in memory), (3) Reproduction (having the physical/motor capacity to perform the behaviour), and (4) Motivation (expecting performance to be rewarding)[cite: 228]. Although learning itself occurs without reinforcement, reinforcement serves two crucial roles in Bandura's framework: triggering actual performance of stored behaviours when rewards become available, and accelerating learning when the observer sees the model rewarded[cite: 229]."
+    },
+    {
+      "heading": "Classroom Application of Motivation Principles",
+      "body": "Motivated learners consistently outperform unmotivated learners, but teachers must administer motivation in moderate dosages because overly intense fear, pain, or anxiety disorganizes learning[cite: 229]. Educators should prioritize intrinsic over extrinsic motivation by clarifying clear learning goals and demonstrating how curriculum topics meaningfully satisfy learners' needs[cite: 229, 230]. Teachers should encourage learners through rewards rather than punishment, accentuate success rather than failure, and tie rewards directly to educational value—such as awarding book prizes instead of cash prizes[cite: 229, 230]. Competition and rivalry must be used cautiously because excessive competition breeds cheating, frustration, rancour, and diminished creativity; participative planning, respect, and individual recognition are far healthier alternatives[cite: 230]. Finally, while praise motivates, teachers must avoid over-praising and strictly refrain from blame, ridicule, and corporal punishment[cite: 230]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "In Maslow's Hierarchy of Needs, how does motivation change after a deficiency need is satisfied compared to a growth (being) need?",
+      "answer": "Once a deficiency need (survival, safety, belonging, esteem) is satisfied, motivation to pursue it decreases; in contrast, meeting a growth/being need (knowledge, aesthetics, self-actualization) increases and endlessly renews motivation for further fulfillment[cite: 215, 216]."
+    },
+    {
+      "question": "According to Atkinson's (1978) Theory of Achievement Motivation, what difficulty level of goals do success-oriented learners choose compared to anxiety-ridden learners?",
+      "answer": "Success-oriented learners set goals of intermediate (50-50) difficulty, whereas anxiety-ridden learners choose goals that are either extremely high (so no one blames them if they fail) or extremely low (so they are guaranteed to succeed)[cite: 225]."
+    },
+    {
+      "question": "In Bandura's Observational Learning theory, is reinforcement required for learning to occur?",
+      "answer": "No; Bandura emphasized that observational learning occurs simply by observing a model, while reinforcement serves instead to influence when the behaviour is actually performed and to accelerate learning when the model is seen being rewarded[cite: 229]."
+    },
+    {
+      "question": "Why does the course recommend giving students book prizes rather than cash prizes as classroom rewards?",
+      "answer": "Because marks, grades, and rewards should bear directly on the learning situation, and book prizes serve better educational purposes than cash prizes[cite: 229, 230]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Outline the six levels of Maslow's Hierarchy of Needs, distinguish deficiency needs from growth needs, and state two implications for classroom teachers.",
+      "answer": "From lowest to highest, the six needs are physiological, safety, belongingness and love, esteem, aesthetic/cognitive, and self-actualization[cite: 216, 217]. The lower four are deficiency needs required for survival whose motivational pull decreases once met, whereas the upper needs are growth/being needs that continuously renew motivation[cite: 215, 216]. In the classroom, teachers must recognize that hungry, sick, or fearful students cannot focus on academic goals, and should assign completable tasks that foster self-esteem and belongingness[cite: 217, 218]."
+    },
+    {
+      "id": "6.2",
+      "question": "Summarize C. L. Hull's (1942) Drive Theory of Motivation and explain how drive interacts with habit strength.",
+      "answer": "Hull proposed that a drive arising from primary needs (food, safety) or associated secondary needs (money, career) is necessary both to learn an S-R connection ('habit') and to perform it[cite: 218]. Habits are formed and strengthened when a response reduces the drive (reinforcement), with habit strength depending on the number of reinforced trials; if a drive is absent, the learned action will not be performed, whereas an intense drive can make a person perform an action even if the habit is weak[cite: 218]."
+    },
+    {
+      "id": "6.3",
+      "question": "Explain Bernard Weiner's (1980) three cognitive dimensions of perceived causality and state how each affects motivation.",
+      "answer": "Weiner's three dimensions are: (1) Locus (internal vs. external cause), which raises or lowers a person's self-esteem; (2) Stability (consistent vs. unusual cause), which shapes expectations of whether the outcome will recur in the future; and (3) Controllability (extent to which one can influence the outcome), which affects persistence and how we perceive and like other people[cite: 221, 226]."
+    },
+    {
+      "id": "6.4",
+      "question": "List and explain Albert Bandura's (1965) four basic processes of observational learning and cite the main finding of his Bobo doll experiment.",
+      "answer": "The four processes are: (1) Attention—attending closely to the model; (2) Retention—storing the observed behaviour in memory; (3) Reproduction—possessing the capability to execute the behaviour; and (4) Motivation—expecting a rewarding outcome for performing it[cite: 228]. In the Bobo doll study, children who watched a filmed adult beat a Bobo doll imitated the aggressive acts without prior direct reinforcement, and seeing the model rewarded increased their aggression even further[cite: 227]."
+    },
+    {
+      "id": "6.5",
+      "question": "Compare Bruner's (1966) three intrinsic motivators with four practical guidelines teachers should follow when applying motivation in school.",
+      "answer": "Bruner's three intrinsic motivators are curiosity (channeling innate exploration into intellectual pursuits), drive to achieve competence (engaging with activities where learners build skill), and reciprocity (cooperative work with others)[cite: 225, 226]. Practical classroom guidelines include: (1) keeping motivation moderate so anxiety does not disorganize learning, (2) emphasizing clear, meaningful goals to build intrinsic interest, (3) prioritizing educational rewards (like book prizes) and success over punishment, blame, or ridicule, and (4) replacing excessive rivalry with participative planning and individual recognition[cite: 229, 230]."
+    }
+  ]
+}

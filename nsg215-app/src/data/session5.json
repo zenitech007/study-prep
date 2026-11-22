@@ -1,0 +1,75 @@
+{
+  "id": 5,
+  "title": "Coping models with adaptation to illness",
+  "introduction": "Change is inevitable and it occurs in our day to day activity. At times, we need to manage these changes. The process of dealing with these day to day changes is known as Coping. In this study session you will learn about coping, coping models in the context of adaptation to illness, responses to stress model, motivational model of coping and the community stress prevention model.",
+  "learningOutcomes": [
+    "5.1 Define Coping",
+    "5.2 Discuss the coping models in the context of adaptation to illness",
+    "5.3 Explain the responses to stress model",
+    "5.4 Discuss the motivational model of coping",
+    "5.5 Explain the Community Stress Prevention Model"
+  ],
+  "content": [
+    {
+      "heading": "5.1 Coping",
+      "body": "According to Folkman & Lazarus (1984) Coping can be described as constantly changing cognitive and behavioral efforts to manage specific external and internal demands that are appraised as tasking or exceeding the resources of a person. The second definition is offered by the Red Cross as anything people do to adjust to the challenges and demands of stress. It is any adjustments made to reduce the negative impact of stress."
+    },
+    {
+      "heading": "5.2 Coping model in the context of adaptation to illness",
+      "body": "Coping model in the context of adaptation to illness could be expressed using several models: The Transactional Model of Stress and Coping, Responses to stress Model, Motivational Model of Coping, and The Community Stress Prevention Model. The transactional model of stress and coping is a systems-based framework for understanding and evaluating the processes of coping with stressful events. According to the Transactional Model of Coping, the concepts are Primary Appraisal (determination of the significance of the event) and Secondary appraisal (assessing the controllability of the stressor and coping resources). Emotion-focused coping refers to coping efforts directed inward in order to strengthen the emotional response to the stressor. Problem-focused coping relates to coping efforts directed outward as a means to change the environment."
+    },
+    {
+      "heading": "5.3 Responses to stress Model",
+      "body": "This developmental and contextual theoretical framework emphasizes the importance of developmental changes in the nature of stress experienced by children and adolescents, the internal /external constraints that limit coping processes, and the complex interplay between voluntary and involuntary responses to stress. Voluntary Strategies include: Primary Control Coping (Attempts to modify stressful problem), Secondary Control Coping (Attempts to adapt via cognition), and Disengagement Coping (Attempts to redirect attention away from the stressor). Involuntary Strategies involve Involuntary Engagement and Involuntary Disengagement."
+    },
+    {
+      "heading": "5.4 Motivational Model of Coping",
+      "body": "The Motivational Model of Coping described by Skinner and Wellborn (1997) is a life span theory based on the assumption that all people have basic needs for understanding, for competence, and for autonomy or self-determination. It suggests three universal stressors: Neglect (threatens understanding), Chaos (undermines competence), and Coercion (encroaches on independence)."
+    },
+    {
+      "heading": "5.5 The Community Stress Prevention Model",
+      "body": "The Community Stress Prevention Model emphasizes resilience and is thought to be appropriate for both prevention and intervention following disaster or illness. The six dimensions central to coping with adversity are: 1. Beliefs/Values, 2. Affection, 3. Social, 4. Imagination, 5. Cognitive, 6. Physiological."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "One of the assumptions of the transactional model is that stressful experiences are conceptualized as person-environment transactions. True or False",
+      "answer": "True"
+    },
+    {
+      "question": "Responses stress model emphasizes the importance of developmental changes in the nature of stress experienced by children and adolescents and the internal /external constraints that limit coping processes. True or False",
+      "answer": "True"
+    },
+    {
+      "question": "Neglect leads to insecure working models which lead to children doubting their own value, viewing others as likely to be dangerous, and reacting to stressful events with anxiety and expectations of negative consequences. True or False",
+      "answer": "True"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "5.1",
+      "question": "According to the Red Cross definition, what do we mean by coping?",
+      "answer": "According to the Red Cross definition, coping is anything people do to adjust to the challenges and demands of stress. It is any adjustments made to reduce the negative impact of stress."
+    },
+    {
+      "id": "5.2",
+      "question": "Explain the Coping model in the context of adaptation to illness using the transactional model of stress and coping",
+      "answer": "The transactional model of stress and coping is a systems-based framework for understanding and evaluating the processes of coping with stressful events. Some of the assumptions for this model include: Stressful experiences are conceptualized as person-environment transactions, and Adaptation is based on the entire system changing from moment to moment, from one emotional context to another."
+    },
+    {
+      "id": "5.3",
+      "question": "Discuss the responses to stress model and explain the Primary Control, Secondary Control and disengagement Coping.",
+      "answer": "Responses to stress model emphasizes the importance of developmental changes in the nature of stress experienced by children and adolescents, the internal/external constraints that limit coping processes, and the complex interplay between voluntary and involuntary responses to stress. Primary Control Coping: Attempts to modify stressful problem or emotion. Secondary Control Coping: Attempts to adapt via cognition. Disengagement Coping: Attempts to redirect attention away from the stressor or emotional reaction."
+    },
+    {
+      "id": "5.4",
+      "question": "Mention the three universal stressors",
+      "answer": "Neglect (because it threatens relatedness), Chaos (because it undermines competence), Coercion (because it impinges on autonomy)."
+    },
+    {
+      "id": "5.5",
+      "question": "The Community Stress Prevention Model suggests that by using some dimensions, coping styles can be effectively identified in individuals and communities. Highlight the dimensions.",
+      "answer": "The six dimensions central to coping with adversity are: 1. Beliefs/Values 2. Affection 3. Social 4. Imagination 5. Cognitive 6. Physiological."
+    }
+  ]
+}

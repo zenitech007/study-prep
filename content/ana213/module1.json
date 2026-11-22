@@ -1,0 +1,66 @@
+{
+  "id": 1,
+  "title": "Introduction to Anatomy and General Histology",
+  "introduction": "The word anatomy is derived from a Greek word 'Anatome' meaning to cut up[cite: 4]. It is the study of structures that make up the body and how those structures relate with each other[cite: 4]. For nurses, it helps in understanding how the human body is organized and functions, and assists in understanding what happens and what to do when the body is injured or diseased[cite: 4].",
+  "learningOutcomes": [
+    "1. Understand and use anatomical terms[cite: 4].",
+    "2. Understand the function of the various organs and their relations with one another[cite: 4].",
+    "3. Know the location of each organ and the important anatomical land marks[cite: 4].",
+    "4. Know the normal structure of the human body in general[cite: 4].",
+    "5. Use the knowledge of anatomy in nursing practice and for teaching[cite: 4]."
+  ],
+  "content": [
+    {
+      "heading": "Sub-specialties of Anatomy",
+      "body": "Anatomy includes several sub-specialties[cite: 4]. Gross anatomy studies body structure that can be seen with the naked eyes[cite: 4]. Systemic anatomy studies relationships of organs within a system, whereas Regional anatomy studies body parts regionally[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs[cite: 4]. Developmental anatomy studies the changes in cells, tissues, organs, and the entire body that occurs as the cells of each parent combine to form a baby[cite: 4]."
+    },
+    {
+      "heading": "Level of Structural Organization",
+      "body": "The body is organized into several levels[cite: 4]. A Cell is the smallest independent unit of life[cite: 4]. A Tissue is made up of many similar cells that perform a specific function (divided into Epithelial, Connective, Muscle, and Nerve tissue)[cite: 4]. An Organ is an integrated collection of two or more kinds of tissue that works together to perform a specific function[cite: 4]. A System is a group of organs that work together to perform major functions[cite: 4]."
+    },
+    {
+      "heading": "Anatomical Position and Body Planes",
+      "body": "The Anatomical Position is universally accepted as the starting point for positional references[cite: 4]. The subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4]. Body planes are imaginary surfaces that divide the body[cite: 4]. The Sagittal plane divides the body into right and left halves (Mid-sagittal divides into equal halves, Para-sagittal into unequal halves)[cite: 4]. The Frontal/coronal plane divides the body into asymmetrical anterior and posterior sections[cite: 4]. The Transverse plane divides the body into upper and lower sections[cite: 4]."
+    },
+    {
+      "heading": "Body Cavities",
+      "body": "There are two sets of internal body cavities[cite: 4]. The Dorsal cavity protects the fragile nervous system and has two subdivisions: the cranial cavity (encases the brain) and the vertebral/spinal cavity (encloses the spinal cord)[cite: 4]. The Ventral body cavity is larger and houses internal organs[cite: 4]. It is subdivided into the thoracic and abdominopelvic cavities, which are separated by the diaphragm, a dome-shaped muscle important in breathing[cite: 4]."
+    },
+    {
+      "heading": "Microscopy",
+      "body": "Histology is the study of tissues and how they are arranged to form organs[cite: 4]. Magnification is the increase of an object's apparent size, while Resolution is the capacity of the optical system to show details clearly[cite: 4]. The Compound Light Microscope has several major parts: Eyepiece (contains ocular lens), Nose-piece (holds objective lens), Arm, Stage (holds the specimen), Light source, Coarse and fine adjustment knobs, and the Base[cite: 4]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Which plane divides the body into equal left and right halves?[cite: 4]",
+      "answer": "The Mid-sagittal (or median) plane[cite: 4]."
+    },
+    {
+      "question": "Which muscle separates the thoracic cavity from the abdominopelvic cavity?[cite: 4]",
+      "answer": "The diaphragm[cite: 4]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "Why is it important for nurses to study anatomy?[cite: 4]",
+      "answer": "It helps in understanding how the human body is organized and function[cite: 4]. It assists the student in understanding what happens and what to do when the body is injured or diseased[cite: 4]."
+    },
+    {
+      "id": "1.2",
+      "question": "Describe the standard Anatomical Position.[cite: 4]",
+      "answer": "In anatomical position, the subject is standing erect and facing the observer, the feet are together, and the arms are hanging at the sides with the palms facing forward[cite: 4]."
+    },
+    {
+      "id": "1.3",
+      "question": "Name the four primary groups of tissues in the body.[cite: 4]",
+      "answer": "The four groups are: 1) Epithelial tissue, 2) Connective tissue, 3) Muscle tissue, and 4) Nerve tissue[cite: 4]."
+    },
+    {
+      "id": "1.4",
+      "question": "Differentiate between Gross Anatomy and Microscopic Anatomy.[cite: 4]",
+      "answer": "Gross anatomy studies body structures that can be seen with the naked eyes[cite: 4]. Microscopic anatomy (Histology) requires the use of a microscope to study tissues that form the various organs of the body[cite: 4]."
+    }
+  ]
+}

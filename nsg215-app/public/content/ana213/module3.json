@@ -1,0 +1,65 @@
+{
+  "id": 3,
+  "title": "Basic Tissues in the Body",
+  "introduction": "Tissue is an aggregation of cells and cell products of similar structure and embryonic origin that perform a common function[cite: 4]. Histology is the study of tissues, especially their structure and arrangement[cite: 4]. The hierarchy of body organization flows from cells to tissues, organs, systems, and finally the body[cite: 4].",
+  "learningOutcomes": [
+    "3.1 Describe the main characteristics of the four basic tissue types[cite: 4].",
+    "3.2 Understand the development, functions, shapes, and arrangements of epithelial tissues[cite: 4].",
+    "3.3 Discuss connective tissues, including their ground substance, fibers, and specialized forms like cartilage, bone, and blood[cite: 4].",
+    "3.4 Explain the types and distinct characteristics of muscle tissues[cite: 4]."
+  ],
+  "content": [
+    {
+      "heading": "The Four Basic Tissue Types",
+      "body": "The human body consists of four basic tissue types: Nervous, Epithelial, Muscle, and Connective tissues[cite: 4]. Epithelial tissue is composed of aggregated polyhedral cells with only a small amount of extracellular matrix[cite: 4]. Muscle tissue consists of elongated contractile cells with a moderate amount of matrix, while connective tissue has several types of fixed and wandering cells with an abundant extracellular matrix[cite: 4]. Nervous tissue features intertwining elongated cells and contains no extracellular matrix[cite: 4]."
+    },
+    {
+      "heading": "Epithelial Tissue",
+      "body": "Epithelial tissue forms a sheet-like layer of cells covering surfaces or lining cavities, often containing glandular cells for fluid secretion[cite: 4]. It develops from three germ layers: the ectoderm, endoderm, and mesoderm[cite: 4]. The cells are classified by shape (squamous, columnar, cuboidal) and arrangement (simple, stratified, pseudostratified, or transitional)[cite: 4]. Simple epithelium has a single layer of cells, whereas stratified epithelium has multiple layers and is found at surfaces subject to wear and tear, like the skin[cite: 4]."
+    },
+    {
+      "heading": "Connective Tissue",
+      "body": "Connective tissue consists of cells and extracellular fibres embedded in an amorphous ground substance containing tissue fluid[cite: 4]. It provides support, binds organs, and provides immunocompetent and phagocytic substances important in inflammation[cite: 4]. It is broadly classified into general connective tissue (loose and dense) and special connective tissue (cartilage, bone, blood)[cite: 4]. Key cells in connective tissues include fibroblasts, macrophages, fat cells, undifferentiated mesenchymal cells, pigment cells, blood leukocytes, and mast cells[cite: 4]."
+    },
+    {
+      "heading": "Specialized Connective Tissues: Cartilage, Bone, and Blood",
+      "body": "Cartilage bears mechanical stress without permanent distortion and includes hyaline, white fibrocartilage, and yellow elastic cartilage types[cite: 4]. Bone is composed of a calcified matrix and three cell types: osteoblasts (young cells), osteocytes (mature cells), and osteoclasts (bone-removing cells)[cite: 4]. Blood is a specialized connective tissue made up of plasma and blood cells, including erythrocytes, leukocytes, and platelets[cite: 4]."
+    },
+    {
+      "heading": "Muscle Tissue",
+      "body": "Muscle tissue specializes in shortening its length by contraction to produce movement[cite: 4]. There are three types: skeletal, cardiac, and smooth muscle[cite: 4]. Skeletal muscles contain three layers of connective tissue (epimysium, perimysium, endomysium) and are multinucleate[cite: 4]. Cardiac muscle is striated, found only in the heart, and contains intercalated discs that link heart cells mechanically, chemically, and electrically[cite: 4]. Smooth muscles are long, slender, nonstriated, and spindle-shaped, possessing no transverse (T) tubules[cite: 4]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What type of muscle tissue is striated, found only in the heart, and features intercalated discs?[cite: 4]",
+      "answer": "Cardiac muscle[cite: 4]."
+    },
+    {
+      "question": "Which basic tissue type consists of several types of fixed and wandering cells embedded in an abundant extracellular matrix?[cite: 4]",
+      "answer": "Connective tissue[cite: 4]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Explain the hierarchy of body component organization.[cite: 4]",
+      "answer": "Cells combine to form tissues, tissues combine in an organized manner to form functional units called organs, organs combine to form functional units called systems, and systems combine to form the body[cite: 4]."
+    },
+    {
+      "id": "3.2",
+      "question": "Differentiate between simple and stratified epithelium.[cite: 4]",
+      "answer": "Simple epithelium consists of thin plate-like cells arranged in a single layer, while stratified (or compound) epithelium consists of multiple layers of cells and is found at surfaces subject to wear and tear or potentially harmful conditions[cite: 4]."
+    },
+    {
+      "id": "3.3",
+      "question": "Outline the components of bone and describe its three distinct cell types.[cite: 4]",
+      "answer": "Bone consists of intercellular calcified material, ground substance, fibres, and three cell types[cite: 4]. The three cell types are osteoblasts (young cells), osteocytes (mature cells), and osteoclasts (bone-removing cells)[cite: 4]."
+    },
+    {
+      "id": "3.4",
+      "question": "What are the primary functions of muscle tissue?[cite: 4]",
+      "answer": "The functions of muscle tissue are to produce skeletal movement, maintain body position and posture, support soft tissues, guard body openings, maintain body temperature, and store nutrient reserves[cite: 4]."
+    }
+  ]
+}

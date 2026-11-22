@@ -1,0 +1,109 @@
+{
+  "id": 7,
+  "title": "Coping with the crisis of illness",
+  "introduction": "Bad events occur every day all over the world. From earthquake to tsunami, from tsunami to plane crash and list is endless. Crises abound every day. Illness in every context is not a good one and could be considered a crisis. In this study session, you will learn about the crisis theory, the defense mechanism of patients, the meaning of grief and mourning and how to assess a grieving patient, factors that influence how people cope when they grieve and the responsibility of a family when they grieve.",
+  "learningOutcomes": [
+    "7.1 Explain the crisis Theory",
+    "7.2 Discuss the ego defense mechanism",
+    "7.3 Enumerate the types of defence mechanism",
+    "7.4 Discuss the responses of patients and their families to terminal illnesses",
+    "7.5 Explain how to access a grieving patient",
+    "7.6 Highlight factors that Influence how people cope when they grieve",
+    "7.7 Explain the responsibilities of a family during grieving",
+    "7.8 Discuss grief as a family matter"
+  ],
+  "content": [
+    {
+      "heading": "7.1 Crisis Theory",
+      "body": "Illness is a crisis because it is a turning point in an individual's life. The crisis theory described the factors that affect people's adjustment to having serious illness. The coping process is influenced by three factors: Illness related factors, Background and personal factors, and Physical, social and environmental factors. The coping process includes: Cognitive appraisal, Adaptive tasks, Coping skills, Adaptation and Adjustment, and General tasks."
+    },
+    {
+      "heading": "7.2 & 7.3 Ego Defense Mechanism & Types",
+      "body": "These are unconscious behaviors that offer psychological protection from a stressful event. There are two types of adjustments: Direct coping (Confrontation, Compromise, Withdrawal) and Defensive coping. Types of Defense Mechanism include: Repression, Denial, Suppression, Rationalization, Intellectualization, Identification, Introjection, Compensation, Reaction formation, Displacement, Projection, Conversion, Undoing, Dissociation, Regression, and Sublimation."
+    },
+    {
+      "heading": "7.4 & 7.5 Grief, Mourning and Responses to Terminal Illness",
+      "body": "Grief is an emotional reaction/response to loss. Mourning is the outward expression of grief. It is usually based on cultural, religious, or personal belief systems. Grief has two responses: Normal response (grief that is eventually lessened as a person readjusts) and Abnormal response (complicated grief). Abnormal grief can be divided into: Chronic grief, Delayed grief, Disenfranchised grief, Exaggerated grief, and Sudden grief."
+    },
+    {
+      "heading": "7.6 & 7.7 Assessment of the Grieving Client & Factors Influencing Coping",
+      "body": "To assess the grieving client, several factors are taken into considerations: Developmental considerations, Nature of relationship with the ill or dead, Nature of the loss, Cultural and spiritual beliefs, Gender roles, and Socioeconomic status/ social support system. Factors that influence coping during the grieving process include Dying trajectories and Awareness contexts (Closed Awareness, Suspected Awareness, Mutual Pretense, Open Awareness). Fears associated with terminal illness include: Fear of pain, Fear of loneliness, and Fear of meaninglessness."
+    },
+    {
+      "heading": "7.8 Grief is a family matter",
+      "body": "Grief today is a family matter as much as it is an individual one. The five-stage model of family grief includes: Stage 1: Crisis (disrupts the family's equilibrium), Stage 2: Unity (putting longstanding complaints on hold), Stage 3: Upheaval (lifestyles gradually undergo significant changes), Stage 4: Resolution (gradual deterioration and resolving longstanding issues), and Stage 5: Renewal (begins with the funeral and opens the door to renewal)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "________ involves the logical analysis and cognitive redefinition of the meaning or significance of the illness, the threats and coping ability.",
+      "answer": "Cognitive appraisal"
+    },
+    {
+      "question": "When you face a stressful situation directly it is referred to as ________.",
+      "answer": "Confrontation"
+    },
+    {
+      "question": "From this study ________ means to Cover up for a weakness by overemphasizing or making up a desirable trait.",
+      "answer": "Compensation"
+    },
+    {
+      "question": "The process that begins with a life-threatening diagnosis proceeds through a period of treatment (or treatments), and end eventually in death is known as ________.",
+      "answer": "Grief"
+    },
+    {
+      "question": "The grief that is eventually lessened as a person readjusts to his loss is called ________.",
+      "answer": "Normal grief"
+    },
+    {
+      "question": "It is preferred by health care providers and patients and involves free and open discuss on the impending death. What kind of awareness is that?",
+      "answer": "Open Awareness"
+    },
+    {
+      "question": "The model of family grief include the following except (a) Crisis (b) Unity (c) Resolution (d) Decision",
+      "answer": "(d) Decision"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "7.1",
+      "question": "Explain the crisis theory",
+      "answer": "The crisis theory described the factors that affect people's adjustment to having serious illness (Moos, 1982)."
+    },
+    {
+      "id": "7.2",
+      "question": "Highlight the two types of adjustments",
+      "answer": "The two types of adjustments are: Direct coping, Defensive coping."
+    },
+    {
+      "id": "7.3",
+      "question": "Explain rationalization and Intellectualization defense mechanisms",
+      "answer": "Rationalization: Attempts to make or prove that one's feelings or behaviors are justifiable. Intellectualization: Using only logical explanations without feelings or an affective component."
+    },
+    {
+      "id": "7.4",
+      "question": "What is the major difference between grief and mourning?",
+      "answer": "Mourning is the outward expression of grief. It is the process one undertakes to deal with the void that is now left."
+    },
+    {
+      "id": "7.5",
+      "question": "Explain the abnormal response to grief",
+      "answer": "Abnormal grief is complicated grief. It can be divided into: Chronic grief, Delayed grief, Disenfranchised grief, Exaggerated grief, Sudden grief."
+    },
+    {
+      "id": "7.6",
+      "question": "How does 65 years and older age group perceive grief?",
+      "answer": "They are afraid of prolonged health problems. They witness death of family members and peers. This makes them see death as inevitable."
+    },
+    {
+      "id": "7.7",
+      "question": "Highlight the several fears associated with terminal illness",
+      "answer": "There are several fears associated with terminal illness and death. They are: Fear of pain, Fear of loneliness, Fear of meaninglessness."
+    },
+    {
+      "id": "7.8",
+      "question": "Discuss the crisis stage of the model of family grief.",
+      "answer": "The diagnosis of a terminal illness or a potentially terminal illness creates a crisis for the family. It disrupts the family's equilibrium, just as a rock thrown into the middle of a still pond disrupts its equilibrium. Anxiety is the most common initial reaction to the news that a family member is terminally ill."
+    }
+  ]
+}

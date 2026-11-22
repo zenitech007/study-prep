@@ -1,0 +1,60 @@
+{
+  "id": 4,
+  "title": "Gametogenesis and Weeks 1-3 of Development",
+  "introduction": "Human development starts at fertilization with the union of a spermatocyte and oocyte to become a single-cell zygote[cite: 4]. This unicellular zygote is transformed into a multicellular human via cell division, migration, growth, and differentiation[cite: 4]. The process of formation and development of specialized cells called gametes prepares these sex cells for fertilization[cite: 4].",
+  "learningOutcomes": [
+    "4.1 Describe the process of gametogenesis, including the stages of meiosis[cite: 4].",
+    "4.2 Differentiate between oogenesis and spermatogenesis[cite: 4].",
+    "4.3 Explain the events of fertilization and the second week of development[cite: 4].",
+    "4.4 Understand the formation of the trilaminar germ disc during gastrulation[cite: 4]."
+  ],
+  "content": [
+    {
+      "heading": "Mitosis vs. Meiosis",
+      "body": "Normal cells have 22 pairs of autosomes and a pair of sex chromosomes (46XX or 46XY)[cite: 4]. In Mitosis, daughter cells are genetically identical to the parent cell, each having 46 chromosomes[cite: 4]. Meiosis takes place in germ cells and reduces the chromosome number to haploid[cite: 4]. Meiosis I involves the replication of DNA, cross over (interchange of chromatid segments), and separation of homologous pairs[cite: 4]. Meiosis II separates sister chromatids[cite: 4]."
+    },
+    {
+      "heading": "Oogenesis",
+      "body": "Oogenesis is the conversion of oogonia to mature oocytes[cite: 4]. Mitotic divisions continue until reaching a maximum of 7 million oogonia at 5 months gestation, and all surviving primary oocytes are left in the prophase of meiosis I[cite: 4]. At puberty, 15-20 oocytes mature every cycle, completing Meiosis I to form a secondary oocyte and a first polar body[cite: 4]. Meiosis II is arrested in metaphase before ovulation and is only completed if the oocyte is fertilized[cite: 4]."
+    },
+    {
+      "heading": "Spermatogenesis and Spermiogenesis",
+      "body": "Spermatogenesis is the conversion of spermatogonia to spermatozoa, beginning at puberty[cite: 4]. Primary spermatocytes undergo meiosis I to form secondary spermatocytes, which undergo meiosis II to form spermatids[cite: 4]. Spermiogenesis is the transformation of spermatids into spermatozoa[cite: 4]. It involves the formation of an acrosome (containing enzymes for oocyte penetration), condensation of the nucleus, formation of the neck and tail, and shedding of cytoplasm[cite: 4]. This process takes 74 days[cite: 4]."
+    },
+    {
+      "heading": "Fertilization and the Second Week",
+      "body": "Fertilization occurs in the ampullary region of the uterine tube, restoring the diploid number of chromosomes[cite: 4]. Movement of the sperm takes 2-7 hours, aided by sperm motility and muscular contractions of the uterus and uterine tube[cite: 4]. Implantation is completed by the end of the 2nd week[cite: 4]. The inner cell mass differentiates into the hypoblast and epiblast, forming the bilaminar embryonic disc[cite: 4]."
+    },
+    {
+      "heading": "Third Week of Development: Trilaminar Germ Disc",
+      "body": "The main events of the third week are Gastrulation, formation of the notochord, and further placenta development[cite: 4]. Gastrulation establishes the three germ layers: ectoderm, mesoderm, and endoderm[cite: 4]. It begins with the primitive streak on the epiblast surface[cite: 4]. Epiblast cells migrate, detach, and slip beneath the streak (invagination) to form the endoderm and mesoderm, while the remaining epiblast cells form the ectoderm[cite: 4]. Prenotochordal cells invaginate to form a solid cord of cells (the notochord), which acts as the basis for the axial skeleton[cite: 4]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Where does the process of fertilization normally take place?[cite: 4]",
+      "answer": "It occurs in the ampullary region of the uterine tube[cite: 4]."
+    },
+    {
+      "question": "What is the specific name for the transformation of a spermatid into a spermatozoon, and what does it involve?[cite: 4]",
+      "answer": "It is called Spermiogenesis, which involves the formation of the acrosome, condensation of the nucleus, formation of the neck, middle piece and tail, and shedding of most of the cytoplasm[cite: 4]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Differentiate between Meiosis I and Meiosis II.[cite: 4]",
+      "answer": "Meiosis I involves the replication of DNA, crossing over between paired homologous chromosomes, and separation into two daughter cells to decrease the chromosome number to haploid[cite: 4]. Meiosis II separates the sister chromatids[cite: 4]."
+    },
+    {
+      "id": "4.2",
+      "question": "Explain what happens to a primary oocyte during and after puberty.[cite: 4]",
+      "answer": "At puberty, a surge of Luteinizing hormone induces a preovulatory growth phase[cite: 4]. Meiosis I is completed, producing a secondary oocyte and a first polar body[cite: 4]. Meiosis II then starts but is arrested in metaphase until fertilization occurs[cite: 4]."
+    },
+    {
+      "id": "4.3",
+      "question": "Define Gastrulation and describe its outcome.[cite: 4]",
+      "answer": "Gastrulation is the process which establishes the three germ layers: the ectoderm, mesoderm, and endoderm[cite: 4]. It begins with the primitive streak, where epiblast cells invaginate to displace the hypoblast and create these new layers[cite: 4]."
+    }
+  ]
+}

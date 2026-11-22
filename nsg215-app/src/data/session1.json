@@ -1,0 +1,46 @@
+{
+  "id": 1,
+  "title": "Introduction to human behavior and illness",
+  "introduction": "Health they say is wealth. Most individuals want to stay healthy. However not everybody is healthy. Our health status could be determined by ourselves, our behaviors and traits.",
+  "learningOutcomes": [
+    "1.1 Explain the concepts of behavior, health and illness",
+    "1.2 Discuss the determinants of health",
+    "1.3 Highlight the factors that influence health behaviors: health belief model."
+  ],
+  "content": [
+    {
+      "heading": "1.1 Concepts of Behavior, Health and Illness",
+      "body": "Behavior is the response of an individual or group to an action, environment, person, or stimulus. Health is defined by the WHO as a state of complete physical, mental, and social well-being, not merely the absence of disease or infirmity. Illness represents the subjective experience of feeling unwell and how an individual perceives and lives with symptoms, whereas disease is an objective, medically diagnosed pathological condition that affects part or all of an organism."
+    },
+    {
+      "heading": "1.2 Determinants of Health",
+      "body": "Health status is shaped by a broad spectrum of determinants: biological and genetic factors (age, sex, inherited traits), behavioral and lifestyle factors (diet, physical activity, tobacco or alcohol use), environmental conditions (sanitation, housing, water supply), socioeconomic circumstances (income, education, occupation), and access to quality healthcare services."
+    },
+    {
+      "heading": "1.3 Factors Influencing Health Behaviors: Health Belief Model",
+      "body": "The Health Belief Model (HBM) proposes that an individual will take action (exhibit a health behavior) to avoid disease primarily when two key conditions are met: (1) the individual's belief of personal susceptibility to a particular disease condition, and (2) the belief that the occurrence of the disease would have a moderately severe impact on some aspects of their life. Modifying factors include perceived benefits of the action, perceived barriers/costs, cues to action (advice, symptoms, reminders), and self-efficacy."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "-------is a definite strange condition, a disorder of outlook or function that affects part or all of an organism",
+      "answer": "A disease"
+    },
+    {
+      "question": "The norm or standard as of behavior that is considered vital or appropriate is _______",
+      "answer": "Value"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "How can we define human behavior?",
+      "answer": "Behavior is the response of an individual or group to an action, environment, person, or stimulus."
+    },
+    {
+      "id": "1.3",
+      "question": "The health- belief model proposes that the individual will take action (exhibit a behavior) to avoid disease if two conditions are met. What are the conditions?",
+      "answer": "It involves the individual's belief of susceptibility to a particular disease condition... The second condition is the belief that the occurrence of the disease would have a moderately severe impact on some aspects of the individual's life."
+    }
+  ]
+}

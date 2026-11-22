@@ -1,0 +1,83 @@
+{
+  "id": 3,
+  "title": "Cognitive and Constructivist Theories of Learning",
+  "introduction": "Dissatisfied with the piecemeal, stimulus-response focus of associationist and behaviourist psychology, cognitive theorists argued that learning involves active mental processing, holistic perception, and insightful problem solving[cite: 154, 157, 160, 311]. This module examines Gestalt cognitive psychology, Jerome Bruner's theory of instruction, and the methodological divide between behaviourists and cognitivists[cite: 154, 157, 160].",
+  "learningOutcomes": [
+    "3.1 Explain the origins and core principle of Gestalt cognitive psychology and identify its founding theorists[cite: 154, 311, 315].",
+    "3.2 Describe Wolfgang Kohler's chimpanzee experiments and explain insight learning ('Aha!' experience) and the characteristics of a good insight[cite: 155, 156, 312, 313].",
+    "3.3 Differentiate the Gestalt laws of perceptual organization and apply Gestalt views on practice (p-factor vs. o-factor), motivation, transfer, and forgetting to classroom teaching[cite: 156, 157, 313, 314, 315].",
+    "3.4 Analyze Jerome Bruner's Theory of Instruction, including the Enactive, Iconic, and Symbolic modes of representation, discovery learning, and the spiral curriculum[cite: 157, 158, 159, 160].",
+    "3.5 Contrast the behaviourist and cognitive approaches to learning, including the debate over using animal subjects and intervening variables[cite: 160, 161, 162]."
+  ],
+  "content": [
+    {
+      "heading": "Origins of Gestalt Cognitive Psychology",
+      "body": "Gestalt cognitive psychology originated in Germany to challenge associationist schools—structuralism, functionalism, and behaviourism—and their piecemeal analysis of behaviour and consciousness[cite: 154, 311]. Max Wertheimer (1880-1943), recognized as the Father of Cognitive Psychology, introduced the term 'Gestalt' in 1912, and the movement was popularized by Kurt Koffka (1886-1941, 'The Growth of the Mind', 1924), Wolfgang Kohler (1887-1967, 'The Mentality of Apes', 1925), and Kurt Lewin[cite: 154, 311, 315]. The German word 'Gestalt' has no exact English equivalent but closely means form, whole, pattern, shape, or configuration[cite: 154, 311]. Its central tenet is that 'the whole is greater than the sum of its parts'—just as an intact, drivable car possesses functional properties that a heap of its dismantled parts lacks[cite: 311, 315]. Originally focused on perception and problem solving, Wertheimer (cited in Gorman, 1974) defined learning as grouping stimuli into organized wholes, realizing the inner relatedness of their parts, and grasping the meaning and function of those parts toward a solution[cite: 154, 155]."
+    },
+    {
+      "heading": "Kohler's Insight Experiments and the 'Aha!' Experience",
+      "body": "Challenging Thorndike's trial-and-error model, Wolfgang Kohler studied problem solving in apes from 1913 to 1917 on the Island of Tenerife off the coast of Africa using five chimpanzees—Soho, Popo, Nueva, Chiko, and Sultan (the most intelligent)[cite: 154, 155, 312]. In his stick experiments, a hungry chimpanzee inside a cage could not reach fruit outside using one short stick; after fruitless attempts and a period of quiet observation, the ape either used the shorter stick to rake in a longer stick or plugged a socketed stick and a hooked stick together to pull in the banana[cite: 155, 312, 313]. In box experiments, apes moved a single box or stacked two boxes beneath a ceiling-hung banana to climb up and reach it[cite: 155, 156]. Kohler concluded that holistic observation of the entire problem field reveals its hidden gestalt, triggering abrupt, complete insight—the 'Aha!' or 'Eureka' experience (akin to 'Afugom ya!' in Igbo, 'Motiri!' in Yoruba, and 'Nagaji/Nagahi!' in Hausa, often marked by a smile)[cite: 312, 313, 315]. Morgan et al. (1986) noted that insight typically follows a problem, a period of inaction involving perceptual reorganization, and a sudden solution[cite: 156]. According to Lovell (1973), a good insight has two main characteristics: the ability to reproduce the solution when facing the same problem again, and the capacity to transfer that method of attack to similar problems[cite: 156, 157]."
+    },
+    {
+      "heading": "Gestalt Laws of Perceptual Organization",
+      "body": "Gestalt psychologists formulated laws explaining how the mind organizes scattered stimuli into meaningful patterns during perception and learning[cite: 156, 313]. The Law of Pragnanz (pregnancy) states that psychological organization consistently moves toward a 'good gestalt' characterized by regularity/consistency, simplicity, and stability, restoring equilibrium[cite: 156, 313]. The Law of Similarity (Law of Equality, formulated by Wertheimer) holds that items sharing features such as shape or colour are perceived and learned together as groups[cite: 156, 313]. The Law of Proximity states that elements close together in space or time tend to form perceptual groups—analogous to the law of recency in memory[cite: 156, 313]. The Law of Closure explains the perceptual drive to bridge gaps and complete unclosed areas; in learning, an unsolved problem represents an unstable, unclosed gap demanding resolution[cite: 156, 314]. The Law of Good Continuation (and Common Direction) states that lines, curves, or points continuing a series tend to be perceived as smooth, complete wholes[cite: 156, 314]. The Law of Simplicity states that learners compare objects or ideas with highly similar features, generalizing simpler forms to less regular ones[cite: 156]."
+    },
+    {
+      "heading": "Gestalt Views on Practice, Motivation, Transfer, Forgetting, and the Classroom",
+      "body": "Gestalt theory extends holistic principles across core learning processes[cite: 314, 315]. Regarding practice, repetition promotes recency, recognition, and over-learning, but must balance the 'p' factor (perseveration, which if overdeveloped causes rigid mental fixedness/fixation per Wright, 1966) against the 'o' factor (oscillation, which preserves flexibility to adapt to new situations)[cite: 314]. Motivation is explained through the Law of Closure: an uncompleted task creates a psychological gap that impels goal-directed action, making initial trial-and-error purposeful rather than blind[cite: 314, 315]. Understanding comes from grasping part-whole relationships, transfer occurs through transposition of perceptual relationships to new situations, and forgetting happens when memory traces decay or change within a faulty cognitive structure[cite: 315]. In the classroom, Gestalt theory guides teachers to formulate broad general objectives, teach course topics as integrated wholes rather than isolated fragments, use proximity and similarity to highlight relationships, and cultivate insightful problem solving[cite: 157]."
+    },
+    {
+      "heading": "Bruner's Theory of Instruction: Modes of Representation and Spiral Curriculum",
+      "body": "Jerome S. Bruner (1966, 1971) proposed that learners actively attend to, process, categorize, and construct knowledge into their own mental model of reality rather than passively having knowledge poured into them[cite: 157]. He identified three modes of knowledge representation: (1) Enactive Mode—predominant in early childhood and grounded in overt action and physical manipulation of objects without heavy reliance on words or imagery; (2) Iconic Mode—using accurate mental imagery so children can think about pictures, compute without finger counting, and recognize transformed objects (e.g., a resized or recoloured square) without physical manipulation; and (3) Symbolic Mode—emerging around adolescence, enabling purely abstract reasoning through language and symbols[cite: 157, 158]. Bruner (with Goodnow and Austin, 1956) emphasized hypothesis testing and discovery learning fueled by curiosity, novelty, and incongruity, urging teachers to tie isolated facts together with integrative concepts and cause-and-effect principles[cite: 158, 159]. Unlike Skinner's lockstep error-minimizing sequences, Bruner viewed errors as helpful for stimulating hypotheses and advocated a 'spiral curriculum', revisiting the same topics periodically at progressively deeper levels (for example, progressing from naming animals to classifying them, studying habitats, and eventually learning anatomy and physiology)[cite: 159, 160]. In practice, combining behaviourist and cognitive techniques in an eclectic approach outperforms relying on either alone[cite: 160]."
+    },
+    {
+      "heading": "Behaviourist vs. Cognitive Approaches and the Animal-Subject Debate",
+      "body": "Behaviourism dominated learning psychology into the 20th century before cognitive psychology rose as a major competitor during the 1960s[cite: 160]. Behaviourism—coined by J. B. Watson, who rejected 'introspection' (self-reporting private mental states) as unreliable—is defined by two salient characteristics: reliance on animal subjects and emphasis on observable external events with minimal speculation about internal mental processes[cite: 160, 162]. Behaviourists favour animals (rats, pigeons, cats, rabbits) for four reasons: avoiding human placebo or expectancy effects, convenience and reliable participation, strict control over prior experience and environment, and comparative simplicity[cite: 160, 161]. Cognitive psychologists criticize animal research on two main grounds: uniquely human complex skills like language, reading, and abstract problem solving cannot be studied in animals, and humans differ too profoundly from other animals for broad generalization[cite: 161, 162]. Consequently, cognitive psychologists freely invoke unobservable intervening variables—such as short-term memory, long-term memory, sensory storage, attention, and rehearsal—whereas behaviourists use them sparingly[cite: 162]."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Who is regarded as the Father of Cognitive Psychology, and in what country did Gestalt psychology originate?",
+      "answer": "Max Wertheimer is regarded as the Father of Cognitive Psychology, and Gestalt psychology originated in Germany[cite: 311, 312]."
+    },
+    {
+      "question": "In Gestalt psychology, which perceptual law explains motivation in terms of completing an unfinished task?",
+      "answer": "The Law of Closure, because an uncompleted job creates a psychological gap that impels the learner to act until closure is achieved[cite: 312, 314, 315]."
+    },
+    {
+      "question": "What are Jerome Bruner's three modes of representing knowledge, in developmental order?",
+      "answer": "The Enactive mode (action/manipulation), the Iconic mode (mental imagery), and the Symbolic mode (abstract symbols and language)[cite: 157, 158]."
+    },
+    {
+      "question": "Why did J. B. Watson reject the method of introspection in psychology?",
+      "answer": "Because introspection required extensive practice and remained unreliable, with two experienced psychologists often reporting different private thoughts and emotions for the same task[cite: 162]."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Describe Wolfgang Kohler's stick experiment with chimpanzees and explain what the 'Aha!' experience represents.",
+      "answer": "Kohler placed a hungry chimpanzee inside a cage with fruit out of reach on an external platform and two separate sticks inside—one socketed and one hooked (or a short stick inside and a longer one outside)[cite: 155, 312, 313]. After unsuccessful attempts and quiet observation of the whole situation, the ape suddenly recognized the relationship between the sticks, joined them (or raked in the longer stick), and retrieved the banana[cite: 155, 313]. The 'Aha!' (Eureka) experience represents the abrupt flash of insight achieved once the learner perceives the holistic gestalt of a problem[cite: 312, 313]."
+    },
+    {
+      "id": "3.2",
+      "question": "Explain any four Gestalt laws of perceptual organization and state the three properties of a good gestalt.",
+      "answer": "1. Law of Pragnanz: perceptual organization moves toward a clear, stable, orderly good gestalt[cite: 156, 313]. 2. Law of Similarity: items sharing features like shape or colour are grouped together[cite: 156, 313]. 3. Law of Proximity: items near each other in space or time are perceived as belonging together[cite: 156, 313]. 4. Law of Closure: the mind tends to bridge gaps to complete unclosed structures or unsolved problems[cite: 156, 314]. A good gestalt possesses regularity/consistency, simplicity, and stability[cite: 313]."
+    },
+    {
+      "id": "3.3",
+      "question": "Distinguish between the 'p' factor and the 'o' factor in Gestalt views on practice, and explain why both must be balanced.",
+      "answer": "The 'p' factor (perseveration factor) strengthens repetition but, if overdeveloped through prolonged practice, produces rigid response fixation or mental fixedness[cite: 314]. The 'o' factor (oscillation factor) enables the learner to adjust flexibly to changed situations[cite: 314]. Balancing both allows learners to gain the benefits of practice without becoming mentally rigid[cite: 314]."
+    },
+    {
+      "id": "3.4",
+      "question": "Explain Bruner's concept of the 'spiral curriculum' and contrast his view of learner errors with Skinner's approach.",
+      "answer": "Bruner's spiral curriculum revisits the same core topics periodically at progressively deeper levels of complexity—for example, moving from naming animals to classifying them, studying habitats, and later studying anatomy and physiology—rather than lockstep mastery[cite: 159, 160]. Whereas Skinner's approach focuses on minimizing errors through controlled step-by-step reinforcement, Bruner views errors as useful for maintaining interest and stimulating learners to form and test hypotheses[cite: 159]."
+    },
+    {
+      "id": "3.5",
+      "question": "State the two major characteristics of the behavioural approach and give two criticisms raised by cognitive psychologists against using animal subjects.",
+      "answer": "The two salient characteristics of behaviourism are reliance on animal subjects and emphasis on external observable events with reluctance to speculate about internal organismic processes[cite: 160]. Cognitive psychologists criticize animal experiments because (1) uniquely human complex skills such as language, reading, and complex problem solving cannot be studied in animals, and (2) humans differ so greatly from other animals that generalizing animal findings to human behaviour is limited[cite: 161, 162]."
+    }
+  ]
+}

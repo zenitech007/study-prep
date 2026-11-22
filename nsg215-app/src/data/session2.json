@@ -1,0 +1,63 @@
+{
+  "id": 2,
+  "title": "Illness and Disease",
+  "introduction": "She walked into the hospital looking weak and pale. You could judge by her looks that she is not her normal self. She is sick. I guess you could have met individuals like this before. That is what illness could do. In this study session you will learn the concept of illness and disease, the classes of illness and disease and the Illness behaviors in childhood, adolescence, and adulthood.",
+  "learningOutcomes": [
+    "2.1 Explain the concept of illness and disease",
+    "2.2 Highlight the classes of illness and disease",
+    "2.3 Discuss the illness behaviors in children, adolescence and adulthood."
+  ],
+  "content": [
+    {
+      "heading": "2.1 Concept of Illness and disease",
+      "body": "Illness is a condition of being unhealthy in your body and mind. It is an exact condition that prevents your body or mind from working normally. Illness is a state of being unwell. It is the level of depth of disease manifestation in an individual. Illness is a highly personal state in which the person's physical, emotional, intellectual, social, developmental or spiritual functioning is thought to be diminished.\n\nDisease is an interruption, termination, or disorder of a body, system, or organ structure or function. A disease is a definite strange condition, a disorder of outlook or function that affects part or all of an organism."
+    },
+    {
+      "heading": "2.2 Classes of illness and disease",
+      "body": "Illness can be classified into based on onset (beginning), duration and management. Illness could be Acute Illness or Chronic illness. Acute illness is a type of illness that will eventually resolve without any medical supervision. Acute Illness is characterized by severe symptoms of relatively short duration. Chronic illness is the type of illness that lasts for an extended period, usually six months or longer and often has periods of reduction, when the symptoms disappear and when symptoms re-appear e.g. sickle cell anemia."
+    },
+    {
+      "heading": "2.2.1 Stages of Illness",
+      "body": "There are different stages of illness: \n1. Symptoms experience: could occur when an individual sense physical limitation or knowing of something that is wrong but could not diagnose the problem. \n2. Assumption of the sick role: When symptom continue and turn out to be severe, clients accept the sick role and seek approval from families. \n3. Medical care contact: The person is encouraged to seek professional health services. \n4. Dependent client role: The client trust and depend on health care professionals for the relief of symptoms. \n5. Recovery or rehabilitation: This stage shows up suddenly just like when the symptoms shows up. In the case of prolonged illness, the final stage may require an adjustment to a prolong reduction in health and functioning."
+    },
+    {
+      "heading": "Classification of disease",
+      "body": "Diseases can be classified into the following types: 1. Heart, Lung and Other Organ Diseases 2. Blood and Immune System Diseases 3. Cancer 4. Injury 5. Brain and Nervous System Diseases 6. Endocrine System Diseases 7. Infectious and Parasitic Diseases 8. Pregnancy and Childbirth-Related Diseases 9. Inherited Diseases 10. Environmentally-Acquired Diseases."
+    },
+    {
+      "heading": "2.2.2 Differences between illness and disease",
+      "body": "Easily recoverable ailments are considered illnesses, while severe, life-death type treatments are considered diseases. For example, fever is considered illness, while Malaria or jaundice is a disease. Illness is a product of disease, but you can have disease without illness. Illness is something a man has; Disease is something an organ has."
+    },
+    {
+      "heading": "2.3 Illness behaviors in childhood, adolescence, and adulthood",
+      "body": "Illness behavior is a concept put forward by sociologists and is seen as a coping mechanism, which involves ways individual describe, monitor and interpret their symptoms, take remedial actions and use the health care system.\n\nIllness Behavior in Childhood: Erik Erickson divided human development into stages. Childhood (0-12 years) is categorized into Neonates/infancy (birth - 1 year), Toddler (2-3 years), Pre-school (4-5 years), and School Age (6-12 years). Children at different developmental stages react differently to illness and hospitalization.\n\nIllness Behavior in Adolescence (13 to 19): This age group is more likely to demand independence and this reflect this in the illness behavior.\n\nIllness Behaviors in Adulthood (20 years above): This age group could exhibit behavioral disorder which could reflect as anxiety, emotional disorder etc. They reflect their experience or background which is easily seen in their illness behavioral pattern."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "________ is the one that lasts for an extended period.",
+      "answer": "Chronic illness"
+    },
+    {
+      "question": "The different types of disease include the following except (a) Cancer (b) Injury (c) Brain Nervous System Diseases (d) Trypanosotic disease",
+      "answer": "(d) Trypanosotic disease"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Define illness and disease",
+      "answer": "Illness is a state in which the person's physical, emotional, intellectual, social, developmental or spiritual functioning is thought to be diminished. Disease is an interruption, termination, or disorder of a body, system, or organ structure or function."
+    },
+    {
+      "id": "2.2",
+      "question": "Explain the acute and chronic nature of illness",
+      "answer": "Acute illness is a type of illness that will eventually resolve without any medical supervision. Acute Illness is characterized by severe symptoms of relatively short duration. The symptoms often appear sharply and diminish quickly. Chronic illness is the type of illness that lasts for an extended period, usually six months or longer and often has periods of reduction, when the symptoms disappear and when symptoms re-appear e.g. sickle cell anemia."
+    },
+    {
+      "id": "2.3",
+      "question": "Discuss the illness behavior pattern of the childhood group",
+      "answer": "Childhood is the period between infancy and puberty i.e. 0-12 years. The term is non-specific and implies a varying range of years in human development. Children at different developmental stages react differently to illness and subsequently, hospitalization. The emotional reactions of children also depend on the type and quantity of the stress and tension produced by the illness, hospitalization, misperception about hospitalization and medical procedure."
+    }
+  ]
+}

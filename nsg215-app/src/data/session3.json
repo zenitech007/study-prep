@@ -1,0 +1,61 @@
+{
+  "id": 3,
+  "title": "Medication Adherence",
+  "introduction": "Most students who sit for exams want to pass. Likewise most patients who visit hospitals need healing. Complete wellness might not be realizable if the patients do not adhere to their medication. Medication adherence describes the degree to which a patient correctly follows medical guidance. This is achieved through different measures. In this study session you will understand the concept of medical adherence, assessing medication adherence, medication non-adherence, and nurses' role in medication adherence.",
+  "learningOutcomes": [
+    "3.1 Discuss Medication Adherence",
+    "3.2 Explain ways of accessing medication adherence",
+    "3.3 Discuss Medication non-adherence",
+    "3.4 Highlight nurses' responsibility in ensuring adherence"
+  ],
+  "content": [
+    {
+      "heading": "3.1 Medication Adherence",
+      "body": "Medication adherence describes the degree to which a patient correctly follows medical guidance. It can also refer to medication or drug compliance. This also includes medical device use, self-care, self-directed workouts, or treatment sessions. Medication adherence behavior can divided into 2 main concepts, namely, adherence and persistence. Adherence refers to the intensity of drug use during the duration of therapy, whereas persistence refers to the overall duration of drug therapy."
+    },
+    {
+      "heading": "3.2 Assessing Medication Adherence",
+      "body": "There are many different methods for assessing adherence to medications. They are: Direct method and Indirect method. Direct method includes directly observed therapy, measurement of the level of medicine or metabolite in blood, and measurement of the biological marker in blood. Indirect method involves the use of questionnaires, assessment of the patient's clinical response, electronic medication monitors, measurement of physiological markers, patient diaries, pharmacists refill, self-reports, pill counts, rate of prescription refills etc."
+    },
+    {
+      "heading": "3.3 Medication non adherence",
+      "body": "Non adherence to medications is common for patients with cardiovascular diseases. Non adherence could be tackled by taking some measures. Some of which are: 1. The creation of a patient-centered project 2. Encourage the patient's family to keep track of medication 3. Create an online medical database 4. Encourage patient participation and engagement 5. Creation of an application where patients can register 6. Promote meetings between medical staff and patients and their families 7. Changed and improved healthcare systems."
+    },
+    {
+      "heading": "3.4 Nurses' responsibilities in ensuring adherence",
+      "body": "Nurses plays very important roles in ensuring patients adhere to their medication. Nurses have access to the patients than the physicians and therefore there is need for them to ensure that the patients adhere to their medication. Some of their responsibilities include: Emphasizing the value of the regimen, Listening to your patient's concerns, Accessing the patients literacy level, and being a Patient Advocate."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Indirect method of assessing Medicare adherence include the following except a. Pharmacist Refill b. Pill Counts c. Observed therapy d. Self-reports",
+      "answer": "c. Observed therapy"
+    },
+    {
+      "question": "The culture and religious belief of patients could make them not to adhere to medication. True or false",
+      "answer": "True"
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Define Medication adherence",
+      "answer": "Medication adherence describes the degree to which a patient correctly follows medical guidance. It can also refer to medication or drug compliance. This also includes medical device use, self-care, self-directed workouts, or treatment sessions."
+    },
+    {
+      "id": "3.2",
+      "question": "State and explain the different methods for assessing adherence to medications",
+      "answer": "There are many different methods for assessing adherence to medications. They are: Direct method, Indirect method. Direct method includes directly observed therapy, measurement of the level of medicine or metabolite in blood, and measurement of the biological marker in blood. Indirect method involves the use of questionnaires, assessment of the patient's clinical response, electronic medication monitors, measurement of physiological markers, patient diaries, pharmacists refill, self-reports, pill counts, rate of prescription refills etc."
+    },
+    {
+      "id": "3.3",
+      "question": "Mention ways of tackling non-adherence of medications",
+      "answer": "Non adherence could be tackled by taking some measures. Some of which are: 1. The creation of a patient-centered project 2. Encourage the patient's family to keep track of medication 3. Create an online medical database 4. Encourage patient participation and engagement 5. Creation of an application where patients can register 6. Promote meetings between medical staff and patients and their families 7. Changed and improved healthcare systems."
+    },
+    {
+      "id": "3.4",
+      "question": "What is your role as a nurse in ensuring medication adherence?",
+      "answer": "Some of their responsibilities include: Emphasizing the value of the regimen, Listening to your patient's concerns, Accessing the patients literacy level, Patient Advocate."
+    }
+  ]
+}
