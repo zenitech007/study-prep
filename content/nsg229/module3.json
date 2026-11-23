@@ -1,0 +1,79 @@
+{
+  "id": 3,
+  "title": "Systematic Physical Examination of Body Systems and Neurological Assessment",
+  "introduction": "A thorough, head-to-toe physical examination translates clinical observation into measurable system-by-system data across neurological, respiratory, cardiovascular, gastrointestinal, renal, musculoskeletal, integumentary, eye, and ENT domains. Consistent use of standardized tools like the Glasgow Coma Scale and disciplined evaluation of abnormal findings safeguard patient safety and drive timely multidisciplinary intervention.",
+  "learningOutcomes": [
+    "3.1 Conduct a comprehensive neurological assessment, accurately score and interpret the Glasgow Coma Scale (GCS), and recognize vital sign changes associated with raised intracranial pressure.",
+    "3.2 Detail history, inspection, auscultation, and palpation findings for the respiratory and cardiovascular systems.",
+    "3.3 Perform systematic gastrointestinal and renal assessments, including proper abdominal exam sequence, four-quadrant auscultation, urinalysis, and blood chemistry parameters.",
+    "3.4 Conduct bilateral musculoskeletal and integumentary assessments, identifying urgent findings such as non-blanching petechial rashes and high-risk pressure injury sites.",
+    "3.5 Describe eye and ENT/oral cavity examination techniques (including pediatric sequencing) and explain the evaluation phase of health assessment."
+  ],
+  "content": [
+    {
+      "heading": "Neurological System Examination and the Glasgow Coma Scale (GCS)",
+      "body": "A comprehensive neurological assessment evaluates level of consciousness, temporal/spatial/relational orientation, memory, headaches, vertigo, dizziness, convulsions, loss of consciousness, paresis, paraesthesia, paralysis, fine/gross motor growth, reflexes (Babinski, pupillary light response), communication/speech quality, and sensory functions (taste—sweet/sour/salty, hearing in each ear, tactile touch, vision and ocular range of motion, smell, and proprioception). In neonates and infants, inspect fontanels and check for forceps/vacuum marks, cephalohematoma, or caput succedaneum. Nurses quantify whole-brain level of consciousness consistently across shifts using the Glasgow Coma Scale (GCS; Altman, 2010; Jarvis, 2012) across three brain functions: (1) Eye Opening Response (4 = spontaneous, 3 = to verbal command/speech/shout, 2 = to pain [not applied to face], 1 = none); (2) Verbal Response (5 = oriented, 4 = confused conversation, 3 = inappropriate discernible words, 2 = incomprehensible sounds, 1 = none); and (3) Motor Response (6 = obeys movement commands, 5 = purposeful movement to pain, 4 = withdraws from pain, 3 = abnormal spastic flexion/decorticate posture, 2 = rigid extension/decerebrate posture, 1 = none). A normal person scores 15; severity categories are Minor Brain Injury (13–15), Moderate Brain Injury (9–12), and Severe Brain Injury (3–8), with scores <7 reflecting coma. Critically, vital sign changes are LATE signs of brain deterioration: watch respiratory patterns (Cheyne-Stokes, rapid, irregular, clustered, gasping, ataxic), temperature shifts (hypothalamic/brainstem dysfunction), rising blood pressure with raised intracranial pressure (ICP), and pulse rates that initially rise compensatorily before slowing under rising ICP."
+    },
+    {
+      "heading": "Respiratory and Cardiovascular System Assessments",
+      "body": "Respiratory assessment begins with History (onset/duration of cough or dyspnoea, environmental triggers such as dust, aerosols, or pollen), followed by Inspection (overall appearance—alert/drowsy/irritable; central and peripheral colour—pink, flushed, pale, mottled, cyanosed, clubbing; respiratory rate, rhythm, and depth; Work of Breathing [WOB] and I:E ratio; accessory muscle use including intercostal, subcostal, suprasternal, supraclavicular, and substernal retractions, head bobbing, nasal flaring, and tracheal tug; chest symmetry/shape; tracheal position; audible wheeze, stridor, grunt, or cough; and oxygen saturation), Auscultation (equality/absence of breath sounds and bilateral adventitious wheezes, crackles, or stridor), and Palpation (bilateral chest expansion symmetry, skin temperature/turgor/moisture, central/peripheral capillary refill, and tactile fremitus). Cardiovascular assessment evaluates cardiac output adequacy through Inspection (central/peripheral colour and clubbing, Capillary Refill Time [CRT: brisk <2 seconds vs. sluggish], central/peripheral oedema, and hydration via skin turgor, oral mucosa, and infant anterior fontanels), Palpation (central and peripheral pulse rate, rhythm, and volume; central/peripheral skin temperature, turgor, and diaphoresis), and Auscultation (apical pulse compared against peripheral pulse for rate/rhythm consistency, plus heart sounds and murmurs)."
+    },
+    {
+      "heading": "Gastrointestinal and Renal System Assessments",
+      "body": "Gastrointestinal assessment evaluates feeding history (breastfeeding, formula, TPN, allergies/intolerances), elimination (frequency, consistency, colour, bleeding), pain/cramping/nausea/vomiting, and prior GI surgery, stomas, or feeding tubes (NGT/NJT/PEG/PEJ); avoid examining immediately after a full meal to prevent vomiting. Inspection assesses abdominal shape/symmetry (flat, rounded, distended, scaphoid), contour/scars/lesions, distention severity (tight/shiny), umbilicus (bulging, scars, or neonatal redness/discharge/cord stump), inguinal bulging/herniation, visible peristalsis, tube placement, and stoma output/dressings. Auscultation—performed BEFORE palpation—listens across all four quadrants (RUQ, RLQ, LUQ, LLQ) for presence, frequency, character, or absence of bowel sounds, measuring abdominal girth as indicated. Light Palpation checks for guarding, tenderness, softness/firmness, and pain location. Renal assessment evaluates urinary patterns (incontinence, frequency, urgency, dysuria), hydration (fluid balance, BP, weight), growth and diet/fluid restrictions, skin turgor/temperature/moisture, urine output, urinalysis (pH, ketones, protein, blood, leukocytes, specific gravity), and blood chemistry (urea, creatinine, electrolytes, albumin, and haemoglobin)."
+    },
+    {
+      "heading": "Musculoskeletal and Integumentary System Assessments",
+      "body": "Musculoskeletal assessment begins while observing bed movement or ambulation, always comparing limbs and joints bilaterally. Inspection assesses gait, ambulation, posture, movement symmetry, limb swelling/redness/deformity, joint redness/swelling, and passive versus active range of motion (ROM) for equality and pain. Palpation evaluates muscle mass, tone, strength, and limb pain or tenderness. Integumentary (Skin and Hair) inspection examines skin colour (pale, flushed, cyanotic, burned), rashes (lesion size, colour, texture, raised/flat/fluid-filled, distribution, itching/pain, plus parent/carer history—noting that a NON-BLANCHING PETECHIAL RASH must be reported immediately), existing wounds, irregular bruising, and high-risk pressure injury sites over bony prominences and medical equipment sites (masks, plasters, tubes, drains). Inspect nevi/moles for size, irregular borders, or colour variation (referring large or changing moles for medical review) and examine the scalp for lice or ticks. Palpation assesses skin temperature, moisture, turgor, oedema, deformities, haematomas, crepitus, and hair texture (brittleness/moisture)."
+    },
+    {
+      "heading": "Eye, Ear/Nose/Throat (ENT) Assessments, and Evaluation of Assessment",
+      "body": "Eye assessment inspects bilateral symmetry, shape, and placement relative to the ears; pupil size, shape, symmetry, and reactivity to light; conjunctiva and eyelids for inflammation, colour, and discharge; scleral colour; and iris/palpebral fissures for upslanting or downslanting. ENT and Oral Cavity assessment is particularly critical in children given frequent URIs, allergies, trauma, dental caries, and pharyngitis—completing throat and mouth inspection LAST in younger or less cooperative children. Inspect ears (symmetry, position, trauma, cerumen, redness, exudate/discharge), nose (symmetry, patency, septal deviation, foreign bodies, mucosal colour, discharge/bleeding), lips (shape, colour, dryness, corner fissures), teeth (number, alignment, caries), gums (bleeding/colour), tongue, secretions, hard/soft palate, uvula, tonsil size, and buccal mucosa (colour, exudate, odour). Palpate external ear structures (tragus, mastoid), frontal and maxillary sinuses in older children, and lips/gums/mucosa/palate/tongue for masses or tenderness. Finally, in the Evaluation of Assessment phase, the nurse verifies completeness, accuracy, and timely documentation, applies critical thinking to plan care, escalates abnormal findings promptly to medical and allied health teams, and continues ongoing reassessment for changes in patient condition."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What are the three brain functions assessed by the Glasgow Coma Scale, and what score range indicates Moderate Brain Injury versus coma?",
+      "answer": "Eye opening (1–4), Verbal response (1–5), and Motor response (1–6). Scores of 9–12 indicate Moderate Brain Injury (13–15 Minor, 3–8 Severe), and scores less than 7 reflect coma."
+    },
+    {
+      "question": "What skin finding during integumentary inspection must always be reported immediately to the medical team?",
+      "answer": "A non-blanching petechial rash (as well as irregular bruising or changing/irregular nevi requiring medical review)."
+    },
+    {
+      "question": "In young or less cooperative children, which part of the ENT physical examination should be completed last?",
+      "answer": "The examination of the throat and mouth."
+    },
+    {
+      "question": "How do blood pressure and pulse rate typically change when intracranial pressure (ICP) rises?",
+      "answer": "Blood pressure increases with raised ICP, while pulse rate initially rises as a compensatory mechanism and then slows."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Outline the scoring scale for all three domains of the Glasgow Coma Scale (Eye, Verbal, Motor) and state the total score cut-offs for Minor, Moderate, and Severe Brain Injury.",
+      "answer": "Eye Opening: 4 spontaneous, 3 to speech/shout, 2 to pain (not face), 1 none. Verbal: 5 oriented, 4 confused conversation, 3 inappropriate words, 2 incomprehensible sounds, 1 none. Motor: 6 obeys commands, 5 purposeful movement to pain, 4 withdraws from pain, 3 abnormal flexion/decorticate, 2 rigid extension/decerebrate, 1 none. Minor = 13–15, Moderate = 9–12, Severe = 3–8 (<7 reflects coma)."
+    },
+    {
+      "id": "3.2",
+      "question": "Summarize the key inspection, auscultation, and palpation assessments performed during a systematic respiratory examination.",
+      "answer": "Inspection: appearance, central/peripheral colour/clubbing, rate/rhythm/depth, work of breathing, accessory muscle use (retractions, nasal flaring, head bob, tracheal tug), chest symmetry, tracheal position, audible sounds, SpO2. Auscultation: breath sound equality/absence and adventitious sounds (wheeze, crackles, stridor). Palpation: bilateral chest expansion symmetry, skin temp/turgor/moisture, capillary refill, and tactile fremitus."
+    },
+    {
+      "id": "3.3",
+      "question": "Explain how a nurse evaluates cardiac output adequacy during a cardiovascular examination and list six parameters assessed in a renal examination.",
+      "answer": "Cardiovascular: inspect colour, capillary refill (<2 sec brisk vs sluggish), oedema, and hydration (turgor, mucosa, infant fontanels); palpate central/peripheral pulses and skin temp/diaphoresis; auscultate apical pulse (comparing consistency with peripheral pulse) plus heart sounds/murmurs. Six renal parameters: urinary pattern (frequency/urgency/dysuria/incontinence), hydration/fluid balance/BP/weight, urine output, urinalysis (pH, ketones, protein, blood, leukocytes, specific gravity), skin turgor, and blood chemistry (urea, creatinine, electrolytes, albumin, Hb)."
+    },
+    {
+      "id": "3.4",
+      "question": "Describe the proper sequence and key findings checked during a gastrointestinal examination of the abdomen.",
+      "answer": "Ensure stomach is not full to prevent vomiting, take feeding/elimination/GI history, then perform: (1) Inspection (shape—flat/rounded/distended/scaphoid, scars, umbilicus/neonatal cord, inguinal hernia, visible peristalsis, tubes/stoma); (2) Auscultation BEFORE palpation across all four quadrants (RUQ, RLQ, LUQ, LLQ) for bowel sounds plus abdominal girth; (3) Light palpation only for guarding, tenderness, firmness, and pain."
+    },
+    {
+      "id": "3.5",
+      "question": "Detail the bilateral musculoskeletal, skin/pressure-injury, eye, and ENT inspection priorities, and explain the nurse's duties in evaluating an assessment.",
+      "answer": "Musculoskeletal: bilateral gait, posture, symmetry, deformity, joint swelling, passive/active ROM, muscle mass/tone/strength. Skin: colour, rashes (report non-blanching petechial rash immediately), wounds, bony prominences/equipment pressure sites, changing nevi, scalp lice/ticks. Eye: alignment, pupil light reactivity, conjunctiva, sclera, palpebral fissures. ENT: ears/tragus/mastoid, nasal patency/sinuses, lips/teeth/gums/palate/tonsils (throat last in young children). Evaluation of assessment verifies complete, accurate documentation, escalates abnormalities to the health team, and continues reassessment."
+    }
+  ]
+}

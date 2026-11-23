@@ -1,0 +1,71 @@
+{
+  "id": 2,
+  "title": "Digestive System II: Digestive Juices, Enzymatic Digestion and Nutrient Absorption",
+  "introduction": "Chemical digestion transforms complex dietary macromolecules into absorbable monomers through the coordinated action of saliva, gastric juice, pancreatic juice, bile, and intestinal brush-border enzymes. Tracing cellular transport proteins (SGLT1, GLUT5, GLUT2, PEPT1, and chylomicron exocytosis) and GI hormones reveals how a balanced meal fuels systemic metabolism via the portal vein and lymphatic system.",
+  "learningOutcomes": [
+    "2.1 Compare the composition, autonomic/hormonal control, secretion phases, and physiological functions of saliva, gastric juice, pancreatic juice, and bile.",
+    "2.2 Trace the complete site-by-site enzymatic digestion and enterocyte absorption of dietary carbohydrates, including the roles of SGLT1, GLUT5, GLUT2, and the Na+/K+-ATPase.",
+    "2.3 Trace the complete digestion and absorption of dietary proteins, including zymogen activation by enteropeptidase and uptake via Na+-dependent carriers and PEPT1.",
+    "2.4 Explain dietary lipid emulsification by bile salts, pancreatic lipase/colipase digestion, micelle delivery, enterocyte re-esterification, chylomicron export into lacteals, and ASBT bile-salt reclamation.",
+    "2.5 Integrate digestion, absorption, hormonal regulation (gastrin, secretin, CCK), and transport routes (portal blood vs. lymphatics) across a complete balanced meal."
+  ],
+  "content": [
+    {
+      "heading": "Digestive Juices: Saliva, Gastric Juice, Pancreatic Juice, and Bile",
+      "body": "Four primary digestive juices drive chemical breakdown: (1) Saliva—hypotonic fluid higher in K+ and HCO3- and lower in Na+ and Cl-, containing alpha-amylase (ptyalin, initiating starch digestion; inactivated by low gastric pH), lingual lipase (initiating fat digestion in mouth, stomach, and upper small intestine), lubricating mucin, secretory IgA (first-line antimicrobial defence), lysozyme, and lactoferrin. Salivary secretion is controlled entirely by Autonomic Nervous System reflexes (triggered by thought, smell, or taste of food): Parasympathetic stimulation induces glandular vasodilation and profuse watery, electrolyte-rich saliva (blocked by atropine), whereas Sympathetic stimulation causes vasoconstriction and a small, viscous, mucus/organic-rich secretion. (2) Gastric Juice (~2 L/day)—secreted across Cephalic (thought/sight/smell/taste), Gastric (corpus/antral distension and elevated pH), and Intestinal (duodenal chyme) phases, containing mucus/bicarbonate (first-line anti-ulcer defence), HCl (from parietal cells; kills microbes, denatures proteins, activates pepsinogen), intrinsic factor (parietal cells), pepsinogen (chief cells; converted to active pepsin), and gastrin (G-17/G-34 from pyloric G cells stimulating acid). (3) Pancreatic Juice (1,200–1,500 mL/day across cephalic, gastric, and intestinal phases—strongly driven by CCK and secretin)—ductal cells secrete alkaline bicarbonate (neutralizing acidic gastric chyme in the duodenum), while acinar cells secrete enzymes for final digestion of proteins (trypsinogen, chymotrypsinogen, proelastase, procarboxypeptidases), fats (pancreatic lipase + colipase, phospholipase A2, cholesterol esterase), carbohydrates (pancreatic amylase), and nucleic acids (nucleases), protected from self-digestion by Trypsin Inhibitor. (4) Bile (250–1,100 mL/day synthesized continuously by hepatocytes and stored/concentrated in the gallbladder)—composed of bile acids (trihydroxycholic and dihydroxychenodeoxycholic acids), bile pigments (bilirubin, biliverdin, urobilin), phospholipids, cholesterol, and electrolytes, essential for fat emulsification and absorption."
+    },
+    {
+      "heading": "Digestion and Absorption of Carbohydrates and Proteins",
+      "body": "Carbohydrate Digestion & Absorption: Salivary alpha-amylase begins starch hydrolysis in the mouth (halted by gastric acid in the stomach). In the small intestine, pancreatic amylase converts starch to oligosaccharides/disaccharides, and intestinal brush-border (succus entericus) enzymes complete hydrolysis: maltase splits maltose into glucose + glucose, lactase splits lactose into glucose + galactose, and sucrase splits sucrose into glucose + fructose. At the villus enterocyte apical membrane, Glucose and Galactose enter via SGLT1 (Na+-coupled secondary active cotransport powered by the basolateral Na+/K+-ATPase maintaining low intracellular Na+), while Fructose enters via GLUT5 (ATP-independent facilitated diffusion). All three monosaccharides exit across the basolateral membrane via GLUT2 (facilitated diffusion) into interstitial fluid and portal capillaries bound for the liver (note: insulin acts primarily on post-absorptive peripheral tissues, NOT as the direct intestinal glucose transporter). Protein Digestion & Absorption: In the stomach, HCl denatures proteins and activates pepsinogen into pepsin to begin proteolysis into polypeptides. In the duodenum, brush-border Enteropeptidase converts trypsinogen into active Trypsin, which cascades to activate chymotrypsin, elastase, and carboxypeptidases; jejunal brush-border aminopeptidases and dipeptidases then generate free amino acids and di-/tripeptides. Free amino acids enter enterocytes via multiple apical (largely Na+-dependent) carriers, while di- and tripeptides enter via apical PEPT1 (H+-coupled cotransport). Inside enterocytes, cytosolic peptidases hydrolyse most small peptides into free amino acids, which exit via basolateral amino-acid carriers into hepatic portal blood."
+    },
+    {
+      "heading": "Digestion and Absorption of Lipids, Nucleic Acids, Roughage, and Post-Absorptive Routes",
+      "body": "Lipid Digestion & Absorption: Lingual and gastric lipases begin minor fat breakdown, but major lipid processing occurs in the duodenum where CCK (from I cells) stimulates gallbladder contraction, pancreatic enzyme release, and slowed gastric emptying, while Secretin (from S cells) stimulates bicarbonate-rich pancreatic/ductal secretion. Amphipathic bile salts emulsify large fat globules into tiny droplets, allowing Pancreatic Lipase + Colipase to hydrolyse triglycerides into 2-monoacylglycerol (2-MAG) and free fatty acids (phospholipase A2 and cholesterol esterase process phospholipids and cholesteryl esters). Bile salts then package these insoluble products into water-soluble Micelles for delivery to the brush border. Fatty acids and 2-MAG cross the apical membrane (with CD36/FATP aiding fatty acid uptake and NPC1L1 aiding cholesterol uptake). Inside the enterocyte Smooth ER, fatty acids and 2-MAG undergo re-esterification back into triglycerides; in the ER/Golgi, Apolipoprotein B-48 (ApoB-48) and Microsomal Triglyceride Transfer Protein (MTP) package them into Chylomicrons, which undergo exocytosis into central villus Lacteals -> lymphatic vessels -> thoracic duct -> systemic bloodstream. Short- and medium-chain fatty acids bypass lymphatics and enter portal blood directly (often bound to albumin), while bile salts are reclaimed in the terminal ileum via the Apical Sodium-Dependent Bile Acid Transporter (ASBT). Nucleic acids are broken down into nucleosides/nucleotides and then sugars + bases. Dietary Roughages (fibre) resist human enzymatic digestion, are acted upon by colonic microflora to support balanced luminal pH, and add stool bulk for easy defecation; water is not digested but absorbed to maintain fluidity. Overall, monosaccharides and amino acids travel via the Portal Vein to the liver before general circulation, whereas long-chain lipids travel via Lymphatics into systemic circulation for cellular ATP production, growth, repair, and storage."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "How does parasympathetic versus sympathetic autonomic stimulation affect salivary gland secretion?",
+      "answer": "Parasympathetic stimulation causes glandular vasodilation and a large volume of watery, electrolyte-rich (low-protein) saliva; sympathetic stimulation causes vasoconstriction and a small volume of viscous, mucus/organic-rich saliva."
+    },
+    {
+      "question": "Which intestinal enzyme activates pancreatic trypsinogen, and what prevents the pancreas from digesting itself?",
+      "answer": "Brush-border enteropeptidase activates trypsinogen to trypsin in the duodenum; trypsin inhibitor inside pancreatic secretions prevents premature autodigestion of pancreatic cells."
+    },
+    {
+      "question": "Which apical and basolateral transporters mediate intestinal absorption of glucose, galactose, and fructose?",
+      "answer": "Apical SGLT1 (Na+-coupled, powered by basolateral Na+/K+-ATPase) absorbs glucose and galactose; apical GLUT5 absorbs fructose via facilitated diffusion; basolateral GLUT2 exports all three monosaccharides into portal blood."
+    },
+    {
+      "question": "How do absorbed monosaccharides and amino acids reach general circulation compared with long-chain dietary lipids?",
+      "answer": "Monosaccharides and amino acids enter intestinal blood capillaries and travel via the hepatic portal vein to the liver before general circulation, whereas long-chain lipids are packaged into chylomicrons and enter lymphatic lacteals -> thoracic duct -> systemic bloodstream."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Explain how sodium-glucose co-transport works at the intestinal enterocyte, specifying the roles of SGLT1, GLUT2, and the Na+/K+-ATPase.",
+      "answer": "The basolateral Na+/K+-ATPase uses ATP to actively pump Na+ out of the enterocyte, maintaining an inward Na+ gradient. Apical SGLT1 harnesses this Na+ gradient to cotransport glucose (and galactose) into the enterocyte against its concentration gradient. Intracellular glucose then exits passively across the basolateral membrane via GLUT2 facilitated diffusion into interstitial fluid and hepatic portal capillaries."
+    },
+    {
+      "id": "2.2",
+      "question": "Describe the role of bile in fat digestion and absorption, including emulsification, micelles, and ileal reclamation.",
+      "answer": "Synthesized by hepatocytes and concentrated in the gallbladder, bile salts emulsify large hydrophobic fat globules in the duodenum into tiny droplets, massively increasing surface area for pancreatic lipase + colipase. Bile salts then incorporate fatty acids and 2-monoacylglycerol into micelles to shuttle them across the unstirred water layer to the brush border. Afterward, bile salts are reabsorbed in the terminal ileum via the Apical Sodium-Dependent Bile Acid Transporter (ASBT)."
+    },
+    {
+      "id": "2.3",
+      "question": "Trace the complete digestion and absorption of a balanced meal (e.g., rice or bread, chicken/beef, vegetable oil, and leafy vegetables) from mouth to large intestine.",
+      "answer": "Mouth: mastication + salivary alpha-amylase starts starch breakdown; lingual lipase starts fat breakdown. Stomach: HCl kills germs, denatures proteins, activates pepsinogen -> pepsin digesting meat proteins into polypeptides. Duodenum/Jejunum: secretin releases bicarbonate; CCK releases bile (emulsifying oil) and pancreatic amylase, proteases (trypsin/chymotrypsin/carboxypeptidases), and lipase+colipase; brush-border enzymes finish monomers -> glucose/galactose (SGLT1), fructose (GLUT5), amino acids (Na+-carriers), di-/tripeptides (PEPT1) enter portal blood; fatty acids + 2-MAG re-esterify into chylomicrons (ApoB-48/MTP) entering lacteals -> lymph. Large intestine: water/electrolytes absorbed; vegetable roughage adds bulk and feeds microflora."
+    },
+    {
+      "id": "2.4",
+      "question": "State the cellular sources and main gastrointestinal actions of Gastrin, Secretin, and Cholecystokinin (CCK).",
+      "answer": "Gastrin (pyloric G cells) stimulates gastric HCl secretion and gastric motility. Secretin (duodenal S cells) stimulates bicarbonate-rich pancreatic and ductal secretions to neutralize acidic chyme. CCK (duodenal I cells) stimulates gallbladder contraction, pancreatic acinar enzyme secretion, and slows gastric emptying."
+    },
+    {
+      "id": "2.5",
+      "question": "Summarize the composition and three phases of gastric juice secretion, and name the three brush-border disaccharidases with their end products.",
+      "answer": "Gastric juice (~2 L/day) contains mucus, bicarbonate, HCl, pepsinogen, intrinsic factor, and gastrin, secreted across Cephalic (thought/sight/smell/taste), Gastric (stomach distension/pH rise), and Intestinal (duodenal chyme) phases. Brush-border disaccharidases: maltase (maltose -> glucose + glucose), lactase (lactose -> glucose + galactose), and sucrase (sucrose -> glucose + fructose)."
+    }
+  ]
+}

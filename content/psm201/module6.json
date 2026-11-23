@@ -1,0 +1,71 @@
+{
+  "id": 6,
+  "title": "Probability Distributions: Binomial, Poisson and Normal (Gaussian) Distributions",
+  "introduction": "Probability distributions model how likely every possible value of a discrete or continuous random variable is, bridging sample observations to population inference. Mastering the Binomial distribution for binary trials, the Poisson distribution for rare counts, and the Normal (Gaussian) distribution with $z$-score standardization underpins virtually all parametric tests in biostatistics.",
+  "learningOutcomes": [
+    "6.1 Define random variables and probability distributions, and classify discrete versus continuous probability distributions.",
+    "6.2 State the five properties, probability formula, mean, and variance of the Binomial distribution and compute exact and cumulative binomial probabilities.",
+    "6.3 State the properties, formula, mean, and variance of the Poisson distribution and apply the Poisson approximation to the Binomial distribution when $n$ is large and $p$ is small.",
+    "6.4 Explain the properties, parameters ($\\mu, \\sigma$), empirical rule ($68\\%, 95\\%, 99.7\\%$), and five reasons for the central importance of the Normal (Gaussian) distribution.",
+    "6.5 Standardize normal observations into $z$-scores ($z = (x - \\mu)/\\sigma$) and compute left-tail, right-tail, and between-interval probabilities and expected population counts."
+  ],
+  "content": [
+    {
+      "heading": "Random Variables, Probability Distributions, and the Binomial Distribution",
+      "body": "A Random Variable is a numerical outcome of a random process whose values vary across repetitions (either discrete or continuous), and a Probability Distribution maps all possible outcomes of a random variable to their corresponding probabilities. Discrete Probability Distributions (integer counts) include Bernoulli, Binomial, Poisson, Geometric, Hypergeometric, and Negative Binomial—with Binomial and Poisson being most vital in medicine. A Binomial Random Variable $X \\sim \\text{Bin}(n, p)$ counts total successes across $n$ trials meeting four properties: (1) each trial is dichotomous (only two outcomes: success/failure, yes/no, present/absent), (2) fixed number of $n$ repeated trials, (3) successive trials are independent, and (4) constant probability of success $p$ (and failure $q = 1 - p$) on every trial. Its probability mass function is $P(X = x) = \\binom{n}{x} p^x (1 - p)^{n - x} = \\frac{n!}{x!(n - x)!} p^x (1 - p)^{n - x}$ for $x = 0, 1, \\dots, n$ (recalling $0! = 1$, $1! = 1$, $n! = n(n-1)\\cdots 1$). Its mean is $\\mu_X = E(X) = np$, variance is $\\sigma_X^2 = np(1 - p)$, and standard deviation is $\\sigma_X = \\sqrt{np(1 - p)}$. For example, if 30 susceptible individuals contact a TB carrier with transmission probability $p = 0.10$, expected infections equal $E(X) = 30 \\times 0.10 = 3$; if 25% of a population has low haemoglobin and $n = 5$ are sampled, $P(X \\le 2) = P(0)+P(1)+P(2) = 0.2373+0.3955+0.2637 = 0.8965$, and $P(X \\ge 1) = 1 - P(0) = 0.7627$."
+    },
+    {
+      "heading": "The Poisson Distribution and Poisson Approximation to the Binomial",
+      "body": "The Poisson Distribution $X \\sim \\text{Poisson}(\\lambda)$ models counts of discrete, random, rare events occurring at a constant average rate $\\lambda$ over a continuous interval of time, space, or volume (e.g., annual lung cancer deaths, emergency ward accidents, or rare cellular defects). Its probability formula is $P(X = x) = \\frac{\\lambda^x e^{-\\lambda}}{x!}$ for $x = 0, 1, 2, \\dots$, where $e \\approx 2.7183$. A defining hallmark of the Poisson distribution is that its Mean equals its Variance: $E(X) = \\text{Var}(X) = \\lambda$ (so $SD = \\sqrt{\\lambda}$). For example, if annual lung cancer deaths average $\\lambda = 12$, then $P(X = 10) = \\frac{12^{10} e^{-12}}{10!} = 0.1048$, and $P(X \\ge 3) = 1 - [P(0) + P(1) + P(2)] = 1 - 0.00052 = 0.9995$. When a Binomial experiment has a very LARGE sample size $n$ and a very SMALL success probability $p$, the Poisson Distribution closely approximates the Binomial using $\\lambda = np$: for instance, given $6,000$ WBCs per drop ($n = 6,000$) and deficiency probability $p = 0.001$, $\\lambda = 6000 \\times 0.001 = 6$, yielding $P(X = 0) = e^{-6} = 0.00248$ and $P(X \\ge 2) = 1 - [P(0) + P(1)] = 0.9826$."
+    },
+    {
+      "heading": "The Normal (Gaussian) Distribution and Standard Normal (Z) Scores",
+      "body": "Continuous Probability Distributions (real-number variables like height, blood pressure, temperature, haemoglobin) include Uniform, Exponential, Gamma, Normal, Chi-square, Student $t$, and Weibull. Named after Carl Friedrich Gauss, the Normal Distribution $X \\sim N(\\mu, \\sigma^2)$ has probability density $f(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x - \\mu)^2}{2\\sigma^2}}$ ($-\\infty < x < \\infty$) and eight essential properties: (1) bell-shaped, (2) perfectly symmetric about $\\mu$, (3) uniquely defined by $\\mu$ and $\\sigma^2$, (4) $\\text{Mean} = \\text{Median} = \\text{Mode}$, (5) total area under curve equals $1$ ($100\\%$), (6) $\\approx 68\\%$ of values lie within $\\mu \\pm 1\\sigma$, (7) $\\approx 95\\%$ lie within $\\mu \\pm 1.96\\sigma$, and (8) $>99\\%$ ($\\approx 99.7\\%$) lie within $\\mu \\pm 2.576\\sigma$. It is vital in biostatistics because it fits many biomedical traits, approximates the Binomial when $n$ is large, governs sampling distributions of means and proportions, serves as the cornerstone of parametric tests, and underpins $\\chi^2$, $t$, and $F$ distributions. Any normal distribution can be transformed into the Standard Normal Distribution $Z \\sim N(0, 1)$ (mean $0$, SD $1$) via the $z$-score formula $z = \\frac{x - \\mu}{\\sigma}$, which measures how many standard deviations $x$ lies above or below $\\mu$ (e.g., scoring $80$ when $\\mu = 50, \\sigma = 10$ gives $z = +3$). Areas under the standard normal curve give population proportions or probabilities via $z$-tables: e.g., for male height $\\mu = 171.5\\text{ cm}, \\sigma = 6.5\\text{ cm}$, men taller than $180\\text{ cm}$ have $z = (180 - 171.5)/6.5 = 1.31 \\rightarrow P(Z > 1.31) = 1 - 0.9049 = 0.0951$ ($9.5\\%$, or $95$ out of $1,000$ men); for weights of $500$ students ($\\mu = 62\\text{ kg}, \\sigma = 4\\text{ kg}$), those $>70\\text{ kg}$ ($z = 2$) represent $2.28\\%$ ($\\approx 12$ students)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "State the formulas for the mean and variance of a Binomial random variable $X \\sim \\text{Bin}(n, p)$ and of a Poisson random variable $X \\sim \\text{Poisson}(\\lambda)$.",
+      "answer": "Binomial: Mean $= np$, Variance $= np(1 - p)$. Poisson: Mean $= \\lambda$, Variance $= \\lambda$ (mean equals variance)."
+    },
+    {
+      "question": "Under what conditions can the Poisson distribution approximate the Binomial distribution?",
+      "answer": "When the number of trials $n$ is very large and the probability of success $p$ is very small, setting $\\lambda = np$."
+    },
+    {
+      "question": "What proportions of observations in a Normal distribution lie within $\\pm 1\\sigma$, $\\pm 1.96\\sigma$, and $\\pm 2.576\\sigma$ of the mean?",
+      "answer": "Approximately $68\\%$ within $\\pm 1\\sigma$, $95\\%$ within $\\pm 1.96\\sigma$, and over $99\\%$ ($99.7\\%$) within $\\pm 2.576\\sigma$."
+    },
+    {
+      "question": "A student scores 80 on a biostatistics exam with $\\mu = 50$ and $\\sigma = 10$. Compute and interpret their $z$-score.",
+      "answer": "$z = (80 - 50) / 10 = +3.0$, meaning the student scored exactly 3 standard deviations above the class mean."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "State the five properties of the Binomial distribution and compute the expected number and SD of infections when 30 susceptible individuals meet a TB carrier ($p = 0.10$).",
+      "answer": "Properties: dichotomous outcomes, fixed $n$ trials, independent trials, constant success probability $p$, and $X$ counts total successes. Expected infections $E(X) = np = 30(0.10) = 3$; Variance $= np(1-p) = 30(0.10)(0.90) = 2.7$; $SD = \\sqrt{2.7} \\approx 1.64$."
+    },
+    {
+      "id": "6.2",
+      "question": "List five properties of the Poisson distribution and use the Poisson approximation to find the probability of zero deficient WBCs in a drop of 6,000 WBCs where deficiency probability is 0.001.",
+      "answer": "Properties: models count data, random events in continuous time/space/volume, rare events (small $p$, large/unknown $n$), characterized by single parameter $\\lambda$, and $\\text{Mean} = \\text{Variance} = \\lambda$. Calculation: $\\lambda = np = 6000(0.001) = 6$; $P(X = 0) = \\frac{6^0 e^{-6}}{0!} = e^{-6} = 0.00248$."
+    },
+    {
+      "id": "6.3",
+      "question": "List six properties of the Normal (Gaussian) distribution and state five reasons why it is central to biostatistics.",
+      "answer": "Properties: bell-shaped, symmetric about $\\mu$, defined by $\\mu$ and $\\sigma^2$, $\\text{Mean} = \\text{Median} = \\text{Mode}$, total area $= 1$, and $68\\%/95\\%/>99\\%$ lie within $\\pm 1, \\pm 1.96, \\pm 2.576\\sigma$. Importance: fits biomedical traits, approximates Binomial for large $n$, governs sampling distributions of means/proportions, underpins parametric tests, and forms the basis of $\\chi^2$, $t$, and $F$ distributions."
+    },
+    {
+      "id": "6.4",
+      "question": "Define the Standard Normal Distribution and explain how standardization ($z$-scores) allows probabilities to be computed from any normal curve.",
+      "answer": "The Standard Normal Distribution ($Z \\sim N(0, 1)$) is a normal curve with $\\mu = 0$ and $\\sigma = 1$. Computing $z = (x - \\mu)/\\sigma$ expresses any raw observation in standard-deviation units from its mean, enabling direct probability/proportion lookup from a single standard normal table."
+    },
+    {
+      "id": "6.5",
+      "question": "Given normal male heights ($\\mu = 171.5\\text{ cm}, \\sigma = 6.5\\text{ cm}$) and standard normal lookup $P(Z < 1.31) = 0.9049$, find the percentage of men taller than $180\\text{ cm}$ and how many out of 1,000 men exceed $180\\text{ cm}$.",
+      "answer": "$z = (180 - 171.5) / 6.5 = 1.31$. $P(Z > 1.31) = 1 - P(Z < 1.31) = 1 - 0.9049 = 0.0951$ (9.51%). Out of 1,000 men, approximately $0.0951 \\times 1000 \\approx 95$ men are taller than $180\\text{ cm}$."
+    }
+  ]
+}

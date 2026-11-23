@@ -1,0 +1,71 @@
+{
+  "id": 6,
+  "title": "Cardiovascular Physiology: Cardiac Cycle, Haemodynamics, Conducting System and Electrocardiography",
+  "introduction": "The heart functions as an electrically self-exciting dual pump whose rhythmic contractions propel blood continuously through the systemic and pulmonary circuits. Mastering core haemodynamic equations, the 0.8-second cardiac cycle, Frank-Starling mechanics, the specialized six-part conducting system, and the waveform complexes of the electrocardiogram (ECG) provides the bedrock for clinical cardiovascular assessment.",
+  "learningOutcomes": [
+    "6.1 Define core cardiovascular terms—heartbeat, systole, diastole, heart sounds ('LUB' and 'DUP'), pulse, pulse pressure, blood pressure, stroke volume, heart rate, cardiac output, and Frank-Starling Law.",
+    "6.2 Trace the phases and durations of the 0.8-second cardiac cycle and distinguish the four fundamental properties of cardiac muscle.",
+    "6.3 Map the six anatomical components of the cardiac conducting system, emphasizing the SA node pacemaker, AV nodal delay, and Purkinje fiber velocity.",
+    "6.4 Explain the biophysical basis of the Electrocardiogram (ECG), including galvanometer recording, zero potential, depolarization, repolarization, and Einthoven's triangle.",
+    "6.5 Interpret the P wave, QRS complex, T wave, and P-R interval with their normal durations and clinical diagnostic utility."
+  ],
+  "content": [
+    {
+      "heading": "Cardiovascular Terminologies, Haemodynamics, Cardiac Cycle, and Muscle Properties",
+      "body": "A complete Heart Beat consists of two coordinated phases: Systole (ventricular contraction ejecting blood into arteries, accompanied by closure of the atrioventricular [AV] valves generating the louder first heart sound, 'LUB') and Diastole (ventricular relaxation filling from the atria, accompanied by closure of the aortic and pulmonary semilunar valves generating the softer second heart sound, 'DUP'). The Pulse is the palpable wave of systolic-diastolic pressure travelling along superficial arteries. In a healthy young adult with resting arterial Blood Pressure (pressure in the brachial artery) of 120/70 mmHg, Pulse Pressure equals Systolic minus Diastolic pressure ($120 - 70 = 50$ mmHg). Arterial Blood Pressure is the product of Cardiac Output and Peripheral Resistance ($BP = CO \\times PR$). Cardiac Output ($Q$)—the blood volume pumped by each ventricle per minute—is given by $Q = SV \\times HR$, where Stroke Volume ($SV$, also linked to ventricular end-diastolic volume/preload) averages 70–72 mL/beat per ventricle and Heart Rate ($HR$, beats/min) varies with age, gender, body temperature, and autonomic tone; during vigorous exercise, $Q$ rises to ~25 L/min in untrained adults and up to 35 L/min in trained athletes. According to the Frank-Starling Law of the Heart, the mechanical energy generated during cardiac contraction is a direct function of the end-diastolic length (stretch) of cardiac muscle fibers. One complete Cardiac Cycle lasts approximately 0.8 seconds, divided into Atrial Systole (0.1 s), Ventricular Systole (0.3 s), and Complete Cardiac Diastole (0.4 s). Cardiac muscle exhibits four intrinsic properties: (1) Excitability (ability to respond to stimuli and generate impulses), (2) Rhythmicity (automatic continuous, regular impulse discharge), (3) Conductivity (transmission of action potentials across the myocardium), and (4) Contractility (mechanical shortening following electrical excitation)."
+    },
+    {
+      "heading": "The Conducting System of the Heart",
+      "body": "Cardiac excitation originates intrinsically within specialized conducting cells—low in contractility, rich in mitochondria and glycogen, and electrically specialized—arranged across six sequential structures so atria always contract before ventricles: (1) Sinoatrial (SA) Node (the Pacemaker)—located at the posterior upper right atrium near the superior vena cava entrance; fires intrinsically at 90–120 beats/min (higher in youth, declining with age; accelerated by fever, thyroid hormone, epinephrine, and norepinephrine); (2) Interatrial Tract (Bachmann's Bundle)—conducts impulses rapidly from the SA node to the left atrium for near-simultaneous bi-atrial depolarization and contraction; (3) Internodal Tracts (Anterior, Middle, and Posterior bundles)—specialized pathways linking the SA node to the AV node that resist conduction block better than ordinary atrial muscle; (4) Atrioventricular (AV) Node—located beneath the right interatrial septal endocardium near the tricuspid valve, serving normally as the SOLE electrical bridge from atria to ventricles and richly innervated by sympathetic and vagal fibers; its slow conduction produces the critical AV Nodal Delay (100–150 milliseconds), giving the atria time to finish emptying blood into the ventricles before ventricular systole; (5) Bundle of His (AV Bundle)—continues from the AV node along the right interventricular septum and splits into Right and Left Bundle Branches; and (6) Purkinje Fibers—extensive subendocardial ventricular branches possessing the HIGHEST conduction velocity in the heart, ensuring near-simultaneous, high-efficiency contraction of both ventricles."
+    },
+    {
+      "heading": "Electrocardiography (ECG): Action Potentials, Einthoven's Triangle, and Wave Complexes",
+      "body": "The Electrocardiogram (ECG) uses a galvanometer to record surface voltage fluctuations across time between body-surface electrodes—commonly arranged in Einthoven's Triangle (both arms and the left leg, centering the heart). Clinically, the ECG diagnoses excitation disorders, arrhythmias, cardiac hypertrophy, myocardial damage, and ischaemia/necrosis, though it does NOT directly measure the heart's mechanical pumping performance. Electrical deflection principles include: Zero Potential (during complete diastole, all cardiac cells are uniformly polarized—positive outside, negative inside—producing zero voltage difference and a flat baseline), Depolarization (excitation reverses membrane polarity so the exterior becomes negative relative to resting neighbours, generating a measurable potential difference), and Repolarization (recovery proceeding in the same direction as depolarization deflects the galvanometer in the opposite direction). The standard ECG tracing features four key components: (1) P Wave—represents Atrial Depolarization as the SA node impulse sweeps across both atria; (2) QRS Complex (normal duration ~0.08 seconds: negative Q wave, positive R wave, negative S wave)—represents rapid Ventricular Depolarization travelling via the Bundle of His and Purkinje fibers; (3) T Wave—represents Ventricular Repolarization (relaxation of ventricular muscle, normally deflecting in the same direction as the QRS complex); and (4) P-R Interval (onset of P wave to onset of QRS complex; normal duration 0.12–0.21 seconds depending on heart rate)—measures total AV Conduction Time including the AV nodal delay (while the interval between successive QRS complexes measures cardiac cycle length)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "State the Frank-Starling Law of the Heart and distinguish the origin of the 'LUB' and 'DUP' heart sounds.",
+      "answer": "Frank-Starling Law states that the energy produced by the heart during contraction is a function of the end-diastolic length of its muscle fibers. 'LUB' (first, louder sound) comes from closure of the AV valves during ventricular systole; 'DUP' (second, softer sound) comes from closure of the aortic and pulmonary semilunar valves during diastole."
+    },
+    {
+      "question": "What are the durations of the three phases of a single 0.8-second cardiac cycle?",
+      "answer": "Atrial systole = 0.1 seconds, Ventricular systole = 0.3 seconds, and Complete cardiac diastole = 0.4 seconds (total = 0.8 s)."
+    },
+    {
+      "question": "How long is the AV nodal delay, why is it physiologically essential, and which conducting structure has the highest conduction velocity?",
+      "answer": "The AV nodal delay lasts 100–150 milliseconds, giving the atria time to contract and optimize ventricular filling before ventricular systole begins. Purkinje fibers have the highest action-potential conduction velocity."
+    },
+    {
+      "question": "What cardiac electrical events correspond to the P wave, QRS complex, T wave, and P-R interval on an ECG?",
+      "answer": "P wave = atrial depolarization; QRS complex (0.08 s) = ventricular depolarization; T wave = ventricular repolarization; P-R interval (0.12–0.21 s) = AV conduction time including AV nodal delay."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Define Stroke Volume, Heart Rate, Cardiac Output, Pulse Pressure, and Blood Pressure, giving the mathematical relationships and normal adult resting values.",
+      "answer": "Stroke Volume (SV): volume pumped per ventricle per beat (~70–72 mL). Heart Rate (HR): beats per minute. Cardiac Output: $Q = SV \\times HR$ (rising to 25–35 L/min in exercise). Pulse Pressure = Systolic − Diastolic ($120 - 70 = 50$ mmHg). Blood Pressure (arterial pressure, ~120/70 mmHg) = Cardiac Output $\\times$ Peripheral Resistance."
+    },
+    {
+      "id": "6.2",
+      "question": "List and define the four fundamental physiological properties of cardiac muscle.",
+      "answer": "1. Excitability: ability to respond to stimulation and generate an impulse; 2. Rhythmicity: ability to discharge impulses continuously and regularly; 3. Conductivity: ability to transmit action potentials across the entire cardiac muscle from one point; 4. Contractility: ability to contract mechanically following electrical excitation."
+    },
+    {
+      "id": "6.3",
+      "question": "Trace an electrical impulse sequentially through all six components of the cardiac conducting system and explain the role of Bachmann's bundle and the internodal tracts.",
+      "answer": "SA Node (pacemaker, 90–120 bpm) -> Bachmann's bundle (interatrial tract causing near-simultaneous left/right atrial depolarization) and Anterior/Middle/Posterior Internodal Tracts (block-resistant conduits to AV node) -> AV Node (100–150 ms delay for ventricular filling) -> Bundle of His & Right/Left Bundle Branches -> Purkinje Fibers (fastest conduction for near-simultaneous ventricular contraction)."
+    },
+    {
+      "id": "6.4",
+      "question": "Explain zero potential, depolarization, repolarization, and Einthoven's triangle in electrocardiography, and state one key limitation of an ECG.",
+      "answer": "Zero potential occurs in diastole when all cells are equally polarized (flat baseline); depolarization reverses outer polarity to negative creating a voltage deflection; repolarization moving in the same direction deflects the galvanometer oppositely. Einthoven's triangle places electrodes on both arms and the left leg around the heart. Limitation: the ECG assesses electrical excitation/damage/arrhythmias but does NOT measure mechanical pumping performance."
+    },
+    {
+      "id": "6.5",
+      "question": "Explain the diagnostic value of an ECG and describe the QRS complex components (Q, R, S) alongside the normal durations of the QRS complex and P-R interval.",
+      "answer": "ECGs evaluate excitation events, arrhythmias, cardiac hypertrophy, myocardial damage, and ischaemia/necrosis. The QRS complex (normal duration 0.08 s, ventricular depolarization via AV bundle/Purkinje fibers) consists of a negative Q wave preceding a positive R wave, followed by a negative S wave. The P-R interval normally spans 0.12–0.21 seconds (measuring AV conduction time and nodal delay)."
+    }
+  ]
+}

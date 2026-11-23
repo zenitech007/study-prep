@@ -1,0 +1,71 @@
+{
+  "id": 3,
+  "title": "Descriptive Statistics I: Tabular and Graphical Presentation of Data",
+  "introduction": "Before performing formal statistical tests, researchers organize raw health data into clear tables and informative visual displays to reveal distributions, detect outliers, clean errors, and generate hypotheses. Matching table construction rules and graph types accurately to qualitative versus quantitative variables ensures clarity without distorting underlying clinical patterns.",
+  "learningOutcomes": [
+    "3.1 Define tabular presentation, distinguish simple frequency tables from cross-tabulation (contingency) tables, and state the five essential qualities of a good table.",
+    "3.2 Define all nine technical terms used in constructing grouped frequency tables (classes, frequency, relative frequency, cumulative frequency, class limits, class boundaries, class mark, class width).",
+    "3.3 Compute relative frequencies, percentages, cumulative frequencies, and cumulative percentages from grouped medical data.",
+    "3.4 State the advantages and main disadvantage of graphical presentation and select appropriate charts for quantitative versus qualitative variables.",
+    "3.5 Differentiate histograms from bar charts (simple, component, multiple) and explain how to construct and interpret a pie chart."
+  ],
+  "content": [
+    {
+      "heading": "Tabular Presentation: Frequency Tables, Contingency Tables, and Table Construction Terms",
+      "body": "Tables arrange data systematically in columns and rows by one or more classification variables to reveal patterns, exceptions, trends, and relationships, facilitate data cleaning, and supply the basis for graphs. Frequency Distribution Tables summarize data using two primary columns (Column 1: all mutually exclusive values or non-overlapping class intervals; Column 2: observed counts/frequencies). Tables may be Simple (one variable, e.g., sex distribution or reasons physicians do not smoke) or Cross-Tabulations / Contingency Tables (two or more variables, e.g., sex by marital status, or a $2 \\times 2$ cohort table cross-tabulating fish consumption against gastrointestinal illness to compute attack rates and relative risk). Every quality frequency table must satisfy five criteria: (1) simple and uncluttered (no more than 3 variables), (2) clear title stating person, place, and time (What? When? Where?), (3) clear row and column labels, (4) explicit units of measurement, and (5) row, column, and grand totals that add up accurately. Constructing grouped quantitative tables relies on nine key terms: Classes / Class Intervals (grouping categories—avoid too many classes and NEVER allow overlaps); Frequency (count of observations in a class); Frequency Distribution (listing of all classes and frequencies); Relative Frequency / Percent Frequency (class frequency divided by total observations $n$, multiplied by 100 for percentage); Cumulative Frequency (total observations less than or equal to the upper class boundary, summed progressively); Class Limits (smallest lower limit and largest upper limit of each class); Class Boundaries (continuous limits where one class's upper boundary equals the next class's lower boundary, found as the midpoint between adjacent class limits); Class Mark (midpoint between lower and upper class limits); and Class Size / Width (upper class boundary minus lower class boundary)."
+    },
+    {
+      "heading": "Graphical Presentation: Purposes, Trade-Offs, and Variable-Matched Charts",
+      "body": "Graphical presentation depicts statistical magnitudes geometrically using lines, rectangles, circular sectors, or pictures—giving stronger immediate visual impressions than tables ('a picture is worth a thousand words'). Advantages include ease of understanding and interpretation, rapid pattern detection, hypothesis generation, and exploratory checks prior to formal analysis; the primary Disadvantage is Loss of Detail. Graphs are plotted on rectangular X–Y axes (dependent variable on the vertical Y-axis) and must uphold simplicity, clear titles, and labelled axes with units. Choice of chart strictly depends on variable type: (1) Quantitative / Numerical Data—Histogram, Frequency Polygon, Cumulative Frequency Curve (Ogive—used to estimate quartiles/percentiles), Box Plot, and Scatter Diagram (for bivariate relationships); and (2) Qualitative / Categorical Data—Bar Charts and Pie Charts."
+    },
+    {
+      "heading": "Histograms, Bar Charts, and Pie Charts",
+      "body": "A Histogram plots a frequency distribution for continuous or interval-scale quantitative variables using ADJOINING (touching) slender rectangles whose total area equals total frequency; histograms reveal the data's range, the location of highest measurement concentration, and the presence or absence of symmetry. In contrast, a Bar Chart represents categorical/qualitative frequencies with SEPARATE, DISTINCT rectangles whose heights correspond to frequencies, occurring in three forms: (1) Simple Bar Chart (non-joining bars displaying totals for single categories, e.g., marital status or reasons physicians do not smoke), (2) Component Bar Chart (each bar is subdivided into constituent parts to show both total and part sizes), and (3) Multiple Bar Chart (two or more bars grouped side-by-side in constant sequence to compare subgroup values without emphasizing the overall total, e.g., monthly male vs. female patients). A Pie Chart is a circle subdivided into differently shaded sectors whose areas are proportional to parts of a single total; each category's sector angle is calculated as $(n_i / N) \\times 360^\\circ$ and drawn with a protractor. While pie charts effectively visualize relative proportions of a whole, they become unsuitable when there are too many categories or multiple series to compare."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What are the five essential qualities every frequency table should possess?",
+      "answer": "1. Simple information (not more than 3 variables); 2. Clear title specifying what, where, and when (person, place, time); 3. Clear row and column labels; 4. Explicit units of measurement; 5. Row, column, and grand totals that add up accurately."
+    },
+    {
+      "question": "How is a Class Boundary calculated, and how does it differ from a Class Mark and Class Width?",
+      "answer": "A class boundary is the midpoint between the upper limit of one class and the lower limit of the next; a class mark is the midpoint between the lower and upper limits of the same class; class width (size) is the upper class boundary minus the lower class boundary."
+    },
+    {
+      "question": "What is the key visual and data-type difference between a Histogram and a Bar Chart?",
+      "answer": "A Histogram displays continuous/interval quantitative data with ADJOINING (touching) rectangles whose area equals frequency, whereas a Bar Chart displays categorical/qualitative data with SEPARATE, distinct rectangles."
+    },
+    {
+      "question": "In a survey of 60 non-smoking physicians, 25 cited health reasons. What sector angle represents 'Health' on a pie chart?",
+      "answer": "$(25 / 60) \\times 360^\\circ = 150^\\circ$ (41.7% / ~42% of the circle)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Define a frequency distribution table and a contingency table, and explain how relative frequency and cumulative frequency are computed.",
+      "answer": "A frequency distribution table lists mutually exclusive variable values/classes alongside their counts for one variable; a contingency table (cross-tabulation) classifies observations across two or more variables simultaneously. Relative frequency divides class frequency by total sample size ($f/n$, $\\times 100\\%$ for percent); cumulative frequency progressively sums frequencies up to the upper class boundary."
+    },
+    {
+      "id": "3.2",
+      "question": "For a grouped age class of 20–29 years followed by 30–39 years, determine the lower/upper class limits, class boundaries, class mark, and class width of the 20–29 class.",
+      "answer": "Lower class limit = 20, upper class limit = 29; Class boundaries = 19.5 to 29.5; Class mark $= (20 + 29)/2 = 24.5$; Class width $= 29.5 - 19.5 = 10$."
+    },
+    {
+      "id": "3.3",
+      "question": "State four advantages and one major disadvantage of graphical presentation of data, and classify five graphs for quantitative data versus two for qualitative data.",
+      "answer": "Advantages: easy to understand/interpret, reveals data patterns, aids hypothesis generation, useful before formal analysis. Disadvantage: loss of numerical detail. Quantitative graphs: histogram, frequency polygon, cumulative frequency curve (ogive), box plot, scatter diagram. Qualitative graphs: bar chart and pie chart."
+    },
+    {
+      "id": "3.4",
+      "question": "State three specific analytical purposes of a Histogram and differentiate Simple, Component, and Multiple bar charts.",
+      "answer": "Histogram purposes: shows data range, locates highest measurement concentration, and reveals symmetry or skewness. Simple bar chart shows single-category totals; Component bar chart splits each bar to show both overall total and part shares; Multiple bar chart places subgroup bars side-by-side in fixed order to compare subgroup values directly."
+    },
+    {
+      "id": "3.5",
+      "question": "Outline the steps for constructing a Pie Chart and explain when a pie chart is NOT an appropriate graphical choice.",
+      "answer": "Steps: (1) compute each category's proportion and multiply by $360^\\circ$ using $(n_i / N) \\times 360^\\circ$, (2) draw a circle of convenient radius with a marked centre, (3) measure each sector angle using a protractor, and (4) shade sectors distinctly with labels/legend. Pie charts are unsuitable when there are many divisions/categories or multiple series of figures that are difficult to compare visually."
+    }
+  ]
+}

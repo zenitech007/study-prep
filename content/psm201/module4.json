@@ -1,0 +1,71 @@
+{
+  "id": 4,
+  "title": "Descriptive Statistics II: Measures of Central Tendency, Partition and Dispersion",
+  "introduction": "Numerical descriptive indices condense an entire dataset into two complementary summaries: a measure of central location describing the typical centre and a measure of dispersion quantifying how widely observations scatter around that centre. Selecting the right combination—mean with standard deviation for symmetric data, or median with interquartile range for skewed data—is vital for accurate medical reporting.",
+  "learningOutcomes": [
+    "4.1 Compute and interpret the Arithmetic Mean, Median, and Mode for both ungrouped and grouped health data, comparing their strengths and limitations.",
+    "4.2 Diagnose distribution symmetry, positive (right) skewness, and negative (left) skewness from the relative positions of Mean, Median, and Mode.",
+    "4.3 Define measures of non-central partition (Quartiles, Deciles, Percentiles) and their equivalences.",
+    "4.4 Compute and interpret five measures of dispersion: Range, Interquartile Range (IQR), Variance, Standard Deviation (ungrouped & grouped), and Coefficient of Variation (CV).",
+    "4.5 Select the most appropriate numerical summary indices for symmetric versus skewed/outlier-prone datasets and interpret $SD = 0$ and unit-independence of CV."
+  ],
+  "content": [
+    {
+      "heading": "Measures of Central Tendency (Mean, Median, Mode) and Distribution Skewness",
+      "body": "Measures of central location/tendency summarize a distribution in a single representative value: (1) Arithmetic Mean ($\\bar{x}$)—most useful and mathematically tractable measure for symmetric quantitative data, utilizing EVERY observation: for ungrouped data, $\\bar{x} = \\frac{\\sum_{i=1}^{n} x_i}{n}$ (e.g., 5 SBPs 120, 80, 90, 110, 95 yield $\\bar{x} = 495/5 = 99$ mmHg); for grouped data, multiply each class mark $x_i$ by class frequency $f_i$ and divide: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$. However, the mean is highly sensitive to extreme values (outliers) and misleading when data are skewed. (2) Median ($P_{50}$ or $Q_2$)—middle value separating the lower 50% from the upper 50% of ordered observations (for odd $n$, pick middle; for even $n$, average the two middle values). For grouped data, identify the median class (first class with cumulative frequency $\\ge n/2$) and apply $\\text{Median} = L_b + \\left(\\frac{n/2 - cf}{f_m}\\right) w$ (where $L_b$ = lower boundary of median class, $cf$ = cumulative frequency of preceding class, $f_m$ = median-class frequency, $w$ = class width; replace $n/2$ with $(n+1)/2$ when $n$ is odd). Because it relies on ranks rather than magnitudes, the median is unaffected by outliers and is the BEST central measure for skewed, ordinal, or discrete data, though less amenable to further algebra. (3) Mode—most frequently occurring value (tallest histogram/bar peak; distributions can be unimodal, bimodal, multimodal, or have no mode). For grouped data: $\\text{Mode} = L_b + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) w$, where $\\Delta_1 = f_m - f_1$ (modal minus preceding frequency) and $\\Delta_2 = f_m - f_2$ (modal minus succeeding frequency). Easiest to understand and insensitive to outliers, but least used and mathematically intractable. Comparing the three diagnoses shape: $\\text{Mean} = \\text{Median} = \\text{Mode}$ indicates Symmetry; $\\text{Mean} > \\text{Median} > \\text{Mode}$ indicates Positive (Right) Skewness; and $\\text{Mean} < \\text{Median} < \\text{Mode}$ indicates Negative (Left) Skewness."
+    },
+    {
+      "heading": "Measures of Partition (Non-Central Location) and Measures of Dispersion",
+      "body": "Measures of partition divide ordered data into equal segments (often read from an ogive): Quartiles divide data into 4 equal parts ($Q_1 = 25\\text{th}$ percentile, $Q_2 = 50\\text{th}$ percentile = Median, $Q_3 = 75\\text{th}$ percentile); Deciles divide data into 10 equal parts; Percentiles divide data into 100 equal parts. Every central measure must be paired with a Measure of Dispersion/Spread showing variability around the centre: (1) Range ($\\text{Max} - \\text{Min}$)—easy to compute in original units, best reported as lowest-to-highest limits alongside the median, BUT uses only two extreme values and is distorted by outliers; (2) Interquartile Range ($\\text{IQR} = Q_3 - Q_1$)—captures the spread of the middle 50% of ordered observations and is NOT affected by outliers; (3) Sample Variance ($s^2$)—mean squared deviation from the mean, expressed in squared units: for ungrouped data, $s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n - 1} = \\frac{\\sum x_i^2 - (\\sum x_i)^2/n}{n - 1}$ (e.g., SBPs 120, 80, 90, 110, 95 give $s^2 = 1020/4 = 255$); for grouped data, $s^2 = \\frac{\\sum f_i (x_i - \\bar{x})^2}{\\sum f_i - 1} = \\frac{\\sum f_i x_i^2 - (\\sum f_i x_i)^2/n}{n - 1}$; (4) Standard Deviation ($s = \\sqrt{s^2}$)—BEST dispersion measure for symmetric data, expressed in the same original units as the mean and amenable to inferential math ($s = 0$ ONLY when every observation has the exact same value; smaller $s$ means lower variability); and (5) Coefficient of Variation ($CV = \\frac{s}{\\bar{x}} \\times 100\\%$ or $\\frac{\\sigma}{\\mu} \\times 100\\%$)—a dimensionless percentage correcting for differences in scale or units (e.g., comparing variability of height in metres [$CV = 14.74\\%$] versus weight in kg [$CV = 9.70\\%$], showing height has greater relative spread despite smaller numerical SD; CV stays identical whether weight is measured in kg or pounds)."
+    },
+    {
+      "heading": "Choosing Appropriate Descriptive Statistics",
+      "body": "Selection depends on both variable type and distribution shape: For single-peaked, symmetrical continuous quantitative data (e.g., healthy serum sodium, normal blood pressures, symmetric test scores), report Mean with Standard Deviation ($\\bar{x} \\pm SD$). For skewed numerical data or datasets containing significant outliers (e.g., skewed hospital stay lengths or income), report Median paired with Range or Interquartile Range (IQR). For categorical/qualitative variables (e.g., sex of PSM 201 students, presence of diarrhoea in children), summarize using frequencies, percentages/proportions, bar charts, or pie charts."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "If a dataset has $\\text{Mean} > \\text{Median} > \\text{Mode}$, what is the shape of its distribution, and which central and spread measures should be reported?",
+      "answer": "It is positively (right) skewed; the Median paired with Interquartile Range (or Range) should be reported rather than the mean and SD."
+    },
+    {
+      "question": "What does it mean mathematically when a dataset has a Standard Deviation equal to zero ($s = 0$)?",
+      "answer": "There is zero spread—all $n$ observations in the dataset have the exact same value."
+    },
+    {
+      "question": "In a dataset of adults, Height has Mean $1.56\\text{ m}$ ($SD = 0.23\\text{ m}$) and Weight has Mean $63.2\\text{ kg}$ ($SD = 6.13\\text{ kg}$). Which variable actually has greater relative variability, and why?",
+      "answer": "Height has greater relative variability because its Coefficient of Variation is $0.23/1.56 \\times 100\\% = 14.74\\%$, compared to Weight's $6.13/63.2 \\times 100\\% = 9.70\\%$. CV must be used because the two variables are measured in different units."
+    },
+    {
+      "question": "Find the Median of the 5 gestational booking ages: 18, 16, 20, 23, and 14 weeks.",
+      "answer": "Ordered: 14, 16, 18, 20, 23. The middle value is 18 weeks."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Compare the Arithmetic Mean, Median, and Mode in terms of data usage, sensitivity to outliers, and suitability for skewed distributions.",
+      "answer": "Mean uses all observations and supports advanced statistics, but is highly sensitive to outliers and unsuitable for skewed data. Median depends on ordered ranks/middle value(s), is unaffected by outliers, and is best for skewed/ordinal data. Mode identifies the most frequent value, is insensitive to outliers, does not use all data, may not exist or be multiple, and is mathematically intractable."
+    },
+    {
+      "id": "4.2",
+      "question": "Write the formulas for grouped-data Mean, grouped-data Median, and grouped-data Mode, defining every symbol.",
+      "answer": "Grouped Mean: $\\bar{x} = \\frac{\\sum f_i x_i}{\\sum f_i}$ ($f_i$ = frequency, $x_i$ = class mark). Grouped Median: $L_b + \\left(\\frac{n/2 - cf}{f_m}\\right) w$ ($L_b$ = lower boundary of median class, $n$ = total count, $cf$ = cumulative frequency before median class, $f_m$ = median class frequency, $w$ = width). Grouped Mode: $L_b + \\left(\\frac{\\Delta_1}{\\Delta_1 + \\Delta_2}\\right) w$ ($\\Delta_1 = f_m - f_1$, $\\Delta_2 = f_m - f_2$)."
+    },
+    {
+      "id": "4.3",
+      "question": "Define Quartiles, Deciles, and Percentiles and state how the 25th, 50th, and 75th percentiles relate to quartiles and the median.",
+      "answer": "Quartiles split ordered data into 4 equal parts, Deciles into 10 equal parts, and Percentiles into 100 equal parts. The 25th percentile equals the 1st quartile ($Q_1$), the 50th percentile equals the 2nd quartile ($Q_2$) and the Median, and the 75th percentile equals the 3rd quartile ($Q_3$)."
+    },
+    {
+      "id": "4.4",
+      "question": "Calculate the sample mean, variance, and standard deviation for the five systolic blood pressures: 120, 80, 90, 110, and 95 mmHg.",
+      "answer": "Mean $\\bar{x} = (120+80+90+110+95)/5 = 99\\text{ mmHg}$. Deviations: $+21, -19, -9, +11, -4$; squared deviations sum to $441+361+81+121+16 = 1020$. Variance $s^2 = 1020 / (5-1) = 255\\text{ mmHg}^2$. Standard Deviation $s = \\sqrt{255} = 15.97\\text{ mmHg}$."
+    },
+    {
+      "id": "4.5",
+      "question": "Explain why the Coefficient of Variation (CV) is preferred over Standard Deviation when comparing spread across different measurement units, and state the rule for choosing descriptive statistics in symmetric vs. outlier-heavy data.",
+      "answer": "SD carries the original measurement units (e.g., kg vs. lb or m vs. kg), whereas CV ($\\frac{s}{\\bar{x}} \\times 100\\%$) is dimensionless and unit-invariant, enabling valid relative-spread comparisons. For single-peaked symmetric data, use Mean + SD; for skewed or outlier-heavy data, use Median + Range/IQR."
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import DrillConfig from '../components/drill/DrillConfig';
 import QuizRunner from '../components/drill/QuizRunner';
 import ResultsSummary from '../components/drill/ResultsSummary';
 import DrillResumeModal from '../components/drill/DrillResumeModal';
+import LockedCourseView from '../components/common/LockedCourseView';
 import { COURSES } from '../data/courses';
 
 export default function DrillPage() {
@@ -26,17 +27,22 @@ export default function DrillPage() {
   const topicParam = searchParams.get('topic') || undefined;
   const autoStartParam = searchParams.get('autoStart') === 'true';
 
-  useEffect(() => {
-    setCurrentCourse((paramCourseId || currentCourseId || 'nsg215').toLowerCase());
-  }, [paramCourseId, currentCourseId, setCurrentCourse]);
+  const activeId = (paramCourseId || currentCourseId || 'gce204').toLowerCase();
+  const activeCourse = COURSES.find((c) => c.id === activeId);
 
-  const activeCourse = COURSES.find(
-    (c) => c.id === (paramCourseId || currentCourseId || 'nsg215').toLowerCase()
-  );
-  const activeId = (paramCourseId || currentCourseId || 'nsg215').toLowerCase();
-  if ((activeId === 'ana214' || activeId === 'gce204' || activeId === 'nsg222') && courseLoadError) return null;
-  if ((activeId === 'ana214' || activeId === 'gce204' || activeId === 'nsg222') && !questionsLoaded) return <div role="status" aria-label="Loading drill" className="space-y-4"><div className="card h-24 animate-pulse bg-slate-100 dark:bg-slate-800" /><div className="card h-48 animate-pulse bg-slate-100 dark:bg-slate-800" /></div>;
-  if ((activeId === 'gce204' || activeId === 'nsg222') && questions.length === 0) return <section className="card p-8"><h1 className="text-xl font-bold">Drill questions are pending</h1><p className="mt-3 text-sub">The 300-question bank is being prepared.</p><Link to="/" className="btn btn-primary inline-flex items-center min-h-11 mt-4">Back to Course Library</Link></section>;
+  useEffect(() => {
+    if (activeCourse && activeCourse.status === 'active') {
+      setCurrentCourse(activeId);
+    }
+  }, [paramCourseId, currentCourseId, setCurrentCourse, activeCourse, activeId]);
+
+  if (activeCourse && activeCourse.status === 'locked') {
+    return <LockedCourseView course={activeCourse} />;
+  }
+
+  if ((activeId === 'ana214' || activeId === 'gce204' || activeId === 'nsg222' || activeId === 'nsg223' || activeId === 'nsg225' || activeId === 'nsg229' || activeId === 'nsg232' || activeId === 'pio206' || activeId === 'psy205' || activeId === 'psm201') && courseLoadError) return null;
+  if ((activeId === 'ana214' || activeId === 'gce204' || activeId === 'nsg222' || activeId === 'nsg223' || activeId === 'nsg225' || activeId === 'nsg229' || activeId === 'nsg232' || activeId === 'pio206' || activeId === 'psy205' || activeId === 'psm201') && !questionsLoaded) return <div role="status" aria-label="Loading drill" className="space-y-4"><div className="card h-24 animate-pulse bg-slate-100 dark:bg-slate-800" /><div className="card h-48 animate-pulse bg-slate-100 dark:bg-slate-800" /></div>;
+  if ((activeId === 'gce204' || activeId === 'nsg222' || activeId === 'nsg223' || activeId === 'nsg225' || activeId === 'nsg229' || activeId === 'nsg232' || activeId === 'pio206' || activeId === 'psy205' || activeId === 'psm201') && questions.length === 0) return <section className="card p-8"><h1 className="text-xl font-bold">Drill questions are pending</h1><p className="mt-3 text-sub">The 300-question bank is being prepared.</p><Link to="/" className="btn btn-primary inline-flex items-center min-h-11 mt-4">Back to Course Library</Link></section>;
 
   // If quiz is finished, show results summary
   if (activeQuiz?.completedAt) {

@@ -1,0 +1,75 @@
+{
+  "id": 4,
+  "title": "Nursing Diagnosis, Diagnostic Process and NANDA-I Taxonomy II",
+  "introduction": "Nursing diagnosis bridges patient assessment and care planning by translating clustered clinical cues into standardized, accountable nursing judgments. Mastering the history of NANDA International, the three-step diagnostic process, the seven structural components and four types of diagnoses, PES statement formats, and the thirteen domains of Taxonomy II is essential for accurate clinical reasoning.",
+  "learningOutcomes": [
+    "4.1 Trace the history and global evolution of NANDA International (NANDA-I) from 1950s literature and the 1973 St. Louis conference through 2020.",
+    "4.2 State the four main purposes of nursing diagnosis and apply the three-step nursing diagnostic process.",
+    "4.3 Differentiate the seven NANDA-I components of a nursing diagnosis, distinguishing modifiable related/risk factors from non-modifiable at-risk populations and associated conditions.",
+    "4.4 Classify the four types of nursing diagnoses (actual/problem-focused, risk, health promotion/wellness, syndrome) and construct accurate one-part, two-part, and three-part (PES) diagnostic statements.",
+    "4.5 Explain the structure of NANDA-I Taxonomy II (three levels: 13 domains, 47 classes, and 244 diagnoses)."
+  ],
+  "content": [
+    {
+      "heading": "Historical Evolution of NANDA International (NANDA-I) and Purpose of Nursing Diagnosis",
+      "body": "Although the phrase 'nursing diagnosis' first appeared in 1950s nursing literature, formal classification began when Saint Louis University faculty members Kristine Gebbie and Mary Ann Lavin identified the need to define nurses' roles in ambulatory care and convened the First National Conference on the Classification of Nursing Diagnoses in St. Louis, Missouri in 1973. Subsequent conferences met in 1975, 1980, and biennially thereafter. Reflecting joint U.S. and Canadian nurse participation, the group formally became the North American Nursing Diagnosis Association (NANDA) in 1982. To reflect growing worldwide adoption, it became NANDA International (NANDA-I) in 2002 and reorganized as NANDA International, Inc. in 2012—retaining 'NANDA' as a global brand name rather than an acronym. Clinicians submit new or refined diagnoses to the Diagnostic Review Committee, with final inclusion approved by the NANDA-I Board of Directors; as of 2020, NANDA-I approved 244 diagnoses organized across 13 domains and 47 classes. Nursing diagnoses serve four vital purposes: (1) identifying nursing priorities, (2) directing nursing interventions toward high-priority client needs, (3) standardizing communication among nurses and the wider healthcare team, and (4) providing a clear foundation for evaluating care outcomes."
+    },
+    {
+      "heading": "The Diagnostic Process and Seven Components of a Nursing Diagnosis",
+      "body": "Constructing an accurate nursing diagnosis follows a three-step Diagnostic Process: (1) Analyze Data—compare collected data against clinical standards/norms, cluster related cues, and identify data gaps or inconsistencies; (2) Identify health problems, risks, and client strengths; and (3) Formulate clear diagnostic statements. Under NANDA-I (2018–2021), nursing diagnoses incorporate seven distinct components: (1) Problem Statement (Diagnostic Label)—names the client's health problem or response, paired with qualifiers for precision; (2) Definition—provides a precise description differentiating the diagnosis from similar labels; (3) Defining Characteristics—clusters of observable subjective/objective signs and symptoms manifesting an actual diagnosis (lending support to diagnostic accuracy); (4) Risk Factors—environmental, physiological, psychological, genetic, or chemical elements increasing vulnerability to an unhealthy event (present ONLY in risk diagnoses); (5) Related Factors—probable causes, antecedents, or contributing factors showing patterned relationships (mandatory ONLY for problem-focused diagnoses and syndromes); (6) At-Risk Population—groups sharing a trait conferring susceptibility that is NOT independently modifiable by the nurse; and (7) Associated Conditions—medical diagnoses, injury procedures, medical devices, or pharmaceutical agents that are NOT independently modifiable by the nurse."
+    },
+    {
+      "heading": "Four Types of Nursing Diagnoses and Diagnostic Statement Formats",
+      "body": "NANDA-I recognizes four primary types of nursing diagnoses: (1) Actual (Problem-Focused) Diagnosis—a health problem currently present at assessment, validated by associated defining characteristics (signs and symptoms); (2) Risk Diagnosis—clinical judgment applied to vulnerable individuals, families, or communities where the problem does not yet exist but risk factors do (e.g., 'Risk for Infection as evidenced by inadequate vaccination and immunosuppression'); (3) Health Promotion (Wellness) Diagnosis—clinical judgment reflecting a client's motivation and desire to increase well-being and actualize health potential (e.g., 'Readiness for Enhanced Self-Care as evidenced by expressed desire to enhance self-care'); and (4) Syndrome Diagnosis—a cluster of nursing diagnoses occurring together and best addressed jointly through similar interventions (e.g., 'Rape trauma syndrome'). Depending on type, diagnostic statements follow three writing formats: One-Part Statement (used for Wellness/'Readiness for enhanced...' and Syndrome diagnoses); Basic Two-Part Statement combining Problem (P) + 'related to' + Etiology (E) (e.g., 'Constipation related to prolonged laxative abuse' or 'Anxiety related to threat of death'); and Basic Three-Part (PES) Statement combining Problem (P) + 'related to' + Etiology (E) + 'as evidenced by' + Signs and Symptoms (S) (e.g., 'Situational low self-esteem related to alteration in body image as evidenced by self-negating verbalization')."
+    },
+    {
+      "heading": "NANDA-I Taxonomy II Structure: Domains, Classes, and Diagnoses",
+      "body": "The NANDA-I taxonomy is a hierarchical classification schema systematically ordering nursing clinical judgments into main groups, subgroups, and items. Early versions shifted from an alphabetical list (Taxonomy I) to 'human response patterns', culminating in Taxonomy II. According to NANDA-I (2018–2020), Taxonomy II has three structural levels—Domains (13), Classes (47), and Nursing Diagnoses (244). The thirteen Domains and their representative Classes are: (1) Health Promotion (health awareness, health management); (2) Nutrition (ingestion, digestion, absorption, metabolism, hydration); (3) Elimination/Exchange (urinary, gastrointestinal, integumentary, pulmonary function); (4) Activity/Rest (sleep/rest, activity/exercise, energy balance, cardiovascular-pulmonary responses, self-care); (5) Perception/Cognition (attention, orientation, sensation/perception, cognition, communication); (6) Self-Perception (self-concept, self-esteem, body image); (7) Role Relationship (caregiving roles, family relationships, role performance); (8) Sexuality (sexual identity, sexual function, reproduction); (9) Coping/Stress Tolerance (post-trauma responses, coping responses, neurobehavioral stress); (10) Life Principles (values, beliefs, value/belief/action congruence); (11) Safety/Protection (infection, physical injury, violence, environmental hazards, defensive processes, thermoregulation); (12) Comfort (physical, environmental, social comfort); and (13) Growth/Development (growth, development)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "How many levels, domains, classes, and approved diagnoses make up NANDA-I Taxonomy II (2018–2020)?",
+      "answer": "Three levels (Domains, Classes, Nursing Diagnoses), comprising 13 domains, 47 classes, and 244 approved diagnoses."
+    },
+    {
+      "question": "Which type of nursing diagnosis is applied to vulnerable populations when no current signs or symptoms of the problem exist?",
+      "answer": "A Risk nursing diagnosis."
+    },
+    {
+      "question": "What are the three components of a Basic Three-Part (PES) Actual Nursing Diagnosis statement?",
+      "answer": "Problem (P), Etiology (E — 'related to'), and Signs and Symptoms (S — 'as evidenced by')."
+    },
+    {
+      "question": "Why are 'At-Risk Populations' and 'Associated Conditions' distinguished from 'Related Factors' in NANDA-I (2018–2021)?",
+      "answer": "At-risk populations and associated conditions (such as medical diagnoses, medical devices, or drugs) are NOT independently modifiable by the professional nurse, whereas related factors represent probable causes/contributing factors nurses can target."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Trace the historical evolution of NANDA International from 1973 to 2012 and state the four primary purposes of nursing diagnosis.",
+      "answer": "1973: Kristine Gebbie and Mary Ann Lavin organized the First National Conference on Classification of Nursing Diagnoses in St. Louis. 1982: Named North American Nursing Diagnosis Association (NANDA). 2002: Renamed NANDA International (NANDA-I). 2012: Re-invented as NANDA International, Inc. (NANDA as brand name). Four purposes: identify nursing priorities, direct interventions to high-priority needs, facilitate team communication, and provide a basis for evaluation."
+    },
+    {
+      "id": "4.2",
+      "question": "Outline the three steps of the nursing diagnostic process and define 'defining characteristics', 'risk factors', and 'related factors'.",
+      "answer": "Three steps: (1) Analyze data (compare against standards, cluster cues, spot gaps/inconsistencies), (2) Identify health problems, risks, and strengths, (3) Formulate diagnostic statements. Defining characteristics are observable subjective/objective signs and symptoms manifesting an actual diagnosis; Risk factors increase vulnerability in risk diagnoses; Related factors are probable causes/contributing factors required for problem-focused and syndrome diagnoses."
+    },
+    {
+      "id": "4.3",
+      "question": "Compare the four types of nursing diagnoses (Actual, Risk, Health Promotion, Syndrome) and give one example of a Two-Part and a Three-Part diagnostic statement.",
+      "answer": "Actual: problem currently present with defining signs/symptoms. Risk: problem absent, but risk factors increase vulnerability. Health Promotion: motivation/desire to enhance well-being. Syndrome: cluster of diagnoses occurring together best treated jointly. Two-part example: 'Constipation related to prolonged laxative abuse'. Three-part example: 'Situational low self-esteem related to alteration in body image as evidenced by self-negating verbalization'."
+    },
+    {
+      "id": "4.4",
+      "question": "Name the three structural levels of NANDA-I Taxonomy II and list any eight of its thirteen domains.",
+      "answer": "Three levels: Domains, Classes, and Nursing Diagnoses. Eight domains (out of 13): (1) Health Promotion, (2) Nutrition, (3) Elimination/Exchange, (4) Activity/Rest, (5) Perception/Cognition, (6) Self-Perception, (7) Role Relationship, (8) Sexuality [remaining five: (9) Coping/Stress Tolerance, (10) Life Principles, (11) Safety/Protection, (12) Comfort, (13) Growth/Development]."
+    },
+    {
+      "id": "4.5",
+      "question": "Identify the six classes under Domain 11 (Safety/Protection) and the three classes under Domain 12 (Comfort) in NANDA-I Taxonomy II.",
+      "answer": "Domain 11 (Safety/Protection): Infection, Physical Injury, Violence, Environmental Hazards, Defensive Processes, and Thermoregulation. Domain 12 (Comfort): Physical Comfort, Environmental Comfort, and Social Comfort."
+    }
+  ]
+}

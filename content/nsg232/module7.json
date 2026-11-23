@@ -1,0 +1,71 @@
+{
+  "id": 7,
+  "title": "Wound Dressing, Stages of Wound Healing and Wound Complications",
+  "introduction": "Any break in skin integrity breaches the body's primary barrier against microbial invasion. Performing sterile non-touch wound dressing with proper forceps handling, direction of cleansing, and exudate assessment—combined with understanding wound healing intentions and systemic barriers to healing—accelerates tissue repair and prevents infection, dehiscence, and evisceration.",
+  "learningOutcomes": [
+    "7.1 Define wound dressing, state its five core clinical purposes, and conduct a thorough pre-dressing wound assessment.",
+    "7.2 Organize sterile top-shelf and bottom-shelf trolley requirements and prepare the client and clinical environment safely.",
+    "7.3 Execute step-by-step sterile non-touch wound dressing, including proper forceps roles, tape removal, and cleansing directions for linear versus irregular wounds.",
+    "7.4 Differentiate primary, secondary, and tertiary intention wound healing.",
+    "7.5 Analyze factors that delay wound healing and identify the three major complications of wounds (infection, dehiscence, evisceration)."
+  ],
+  "content": [
+    {
+      "heading": "Definition, Five Purposes, Assessment, Nursing Plan, and Trolley Setup",
+      "body": "Wound dressing is the sterile cleaning and covering of a wound to achieve five key purposes: (1) protecting the wound from microbial contamination, (2) providing or maintaining a moist wound-healing environment, (3) immobilizing the wound to facilitate healing, (4) absorbing wound drainage, and (5) preventing haemorrhage. Pre-dressing assessment evaluates eight parameters: wound location/size/shape (determines dressing type), condition of current dressing, exterior moisture/drainage (signals copious exudate needing more absorbent dressing), exudate volume/colour/viscosity/odour, freshness/amount of blood (large fresh blood indicates haemorrhage needing a pressure dressing), pain severity (manage pain beforehand to ensure cooperation), elevated temperature or pulse (suggests wound infection), and client willingness to participate. Nursing diagnoses include Risk for Infection, Pain, Impaired Physical Mobility, and Impaired Skin Integrity. Preparation requires explaining/consenting, administering analgesics if needed, disinfecting the trolley with clean gloves, donning a facemask, closing nearby windows (limiting airborne contaminants), pre-cutting tape strips, raising the bed to working height, and placing a dressing mackintosh beneath the limb/body part. Trolley Requirements: Top Shelf (sterile)—kidney dish with 2 non-toothed dissecting forceps and 2 dressing forceps (+ scissors if needed and extra dressing forceps for multiple wounds), 2–3 gallipots for cleansing and dressing lotions, and a medium covered bowl of cotton balls and gauze swabs; Bottom Shelf—bandages, adhesive tape, scissors, normal saline, prescribed topical medications (e.g., honey, povidone-iodine cream, Sofratulle), mackintosh/towel, disinfectant kidney dish for used forceps, covered paper-lined destructor bowl/disposal bag, paper-lined kidney dish for used swabs, and clean/sterile gloves."
+    },
+    {
+      "heading": "Step-by-Step Sterile Non-Touch Wound Dressing Technique",
+      "body": "Wound dressing is a strict sterile non-touch procedure: (1) wash hands, open sterile bowls/receivers aseptically, pour cleansing lotion into gallipot, don facemask and clean gloves; (2) remove adhesive tape slowly while supporting skin and pulling TOWARD the wound (prevents traction/pain along the incision line); (3) lift soiled dressings using dissecting forceps (moistening with sterile normal saline if adhered) and dispose into the destructor bowl; (4) inspect drainage colour/consistency/odour/amount and check for healing or dehiscence, then discard soiled forceps; (5) don sterile gloves and use a paired forceps technique—hold the DISSECTING FORCEPS in the NON-DOMINANT hand to pick up sterile swabs and pass them to the DRESSING FORCEPS in the DOMINANT hand for cleansing, keeping forceps tips pointed downward at all times so fluid does not run back and contaminate the sterile tips; (6) cleanse moving from least to most contaminated—for linear incisions, stroke firmly proximal-to-distal directly over the incision first, then adjacent skin (discarding each swab after one stroke); for irregular wounds, stroke firmly from the centre outward in circular motions using a fresh swab for each circle; dry similarly if overly wet; (7) apply prescribed topical medication and sufficient sterile absorbent gauze—avoiding tight packing in non-bleeding wounds because tight packing forces wound edges apart and delays healing; (8) discard gloves, secure dressing with tape/bandages, reposition client comfortably, wash instruments with clean gloves and pack for CSSD sterilization, clear trolley, wash hands, and document pre/post-dressing wound status (exudate, erythema, granulation) and lotions used."
+    },
+    {
+      "heading": "Stages (Intentions) of Wound Healing, Delaying Factors, and Complications",
+      "body": "Wounds heal via three distinct intentions: (1) Primary Intention (ideal healing)—clean, straight, minimal tissue loss, well-approximated sutured edges (e.g., surgical incisions) healing rapidly via fibroblast/capillary-bud proliferation and collagen with minimal scarring; (2) Secondary Intention—open wounds with significant tissue loss or infection where edges cannot be approximated, healing slowly from the base upward via granulation tissue, resulting in a large scar covered by epithelium; and (3) Tertiary Intention (Delayed Primary Closure)—deep or potentially fluid-accumulating wounds deliberately left open for several days (often with a drain or gauze pack) before suturing closed, carrying heightened risk of infection and inflammation. Seventeen systemic and local factors delay wound healing: malnutrition (lacking protein, carbohydrates, fatty acids, trace elements), reduced blood supply/ischaemia/cardiovascular disease, medications (NSAIDs, corticosteroids), chemotherapy (immunosuppression), radiotherapy (cell-damaging free radicals), psychological stress and sleep deprivation, obesity (poor tissue perfusion), infection (prolongs inflammation, consumes nutrients, releases toxins), low wound temperature (cold lotions or prolonged exposure), underlying conditions (diabetes mellitus, autoimmune disorders), maceration (excess moisture lowering tensile strength), inappropriate wound care, non-compliance, unrelieved pressure, immobility, alcohol/cigarette abuse, and advanced age (diminished fibroblastic activity and circulation). The three major wound complications are Wound Infection, Dehiscence (separation of wound edges), and Evisceration (protrusion of internal viscera through a separated wound)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "In the paired-forceps wound dressing technique, which hand holds the dissecting forceps and which hand holds the dressing forceps?",
+      "answer": "The non-dominant hand holds the dissecting forceps to pick up sterile swabs, while the dominant hand holds the dressing forceps to clean and dress the wound."
+    },
+    {
+      "question": "How should adhesive tape be removed from a wound dressing, and in what direction should an irregular wound be cleansed?",
+      "answer": "Remove tape slowly while supporting the skin and pulling TOWARD the wound to minimize pain and incision tension. Cleanse an irregular wound from the centre outward in circular motions (least to most contaminated), discarding the swab after each circle."
+    },
+    {
+      "question": "Which wound-healing intention is also called 'delayed primary closure', and why should non-bleeding wounds NOT be tightly packed?",
+      "answer": "Tertiary intention is delayed primary closure. Tightly packing a non-bleeding wound forces the wound edges apart and delays healing."
+    },
+    {
+      "question": "What are the three major complications of wounds?",
+      "answer": "Wound infection, dehiscence, and evisceration."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "7.1",
+      "question": "State the five purposes of wound dressing and explain what elevated temperature/pulse and copious fresh blood on a dressing signify during pre-dressing assessment.",
+      "answer": "Five purposes: protect from microbial contamination, maintain moist healing, immobilize wound to facilitate healing, absorb drainage, and prevent haemorrhage. Elevated temperature/pulse suggests wound infection; large amounts of fresh blood suggest haemorrhage requiring a pressure dressing."
+    },
+    {
+      "id": "7.2",
+      "question": "List the top-shelf and bottom-shelf articles on a wound dressing trolley and explain why nearby windows are closed before starting.",
+      "answer": "Top shelf: kidney dish with 2 non-toothed dissecting forceps, 2 dressing forceps, scissors, 2–3 gallipots for lotions, covered bowl with cotton balls/gauze. Bottom shelf: bandages/tape/scissors, normal saline, prescribed topical agents (honey, povidone-iodine, Sofratulle), mackintosh/towel, disinfectant dish for used forceps, destructor bowl, paper-lined dish for used swabs, clean & sterile gloves. Windows are closed to prevent airborne dust/microbial contamination."
+    },
+    {
+      "id": "7.3",
+      "question": "Describe the aseptic cleansing technique for both a linear surgical incision and an irregular open wound, stating the rationale for keeping forceps tips pointed downward.",
+      "answer": "Linear incision: stroke firmly proximal-to-distal over the incision first, then adjacent skin, using a fresh swab per stroke. Irregular wound: stroke firmly from centre outward in circular motions, changing swabs after each circle (moves from least to most contaminated). Keeping forceps tips downward prevents cleansing lotion from running back up the handle and contaminating the sterile tips."
+    },
+    {
+      "id": "7.4",
+      "question": "Compare Primary Intention, Secondary Intention, and Tertiary Intention wound healing.",
+      "answer": "Primary intention: clean, minimal tissue loss, sutured well-approximated edges healing rapidly with minimal scarring. Secondary intention: open wound with substantial tissue loss/infection healing via granulation tissue and large scar. Tertiary intention (delayed primary closure): deep wound left open several days with drain/pack before suturing, with higher infection/inflammatory risk."
+    },
+    {
+      "id": "7.5",
+      "question": "Identify four patient-specific factors delaying foot-ulcer healing in a 54-year-old obese diabetic woman undergoing cancer treatment, and list six other general factors that delay wound healing.",
+      "answer": "Patient-specific factors: underlying diabetes mellitus, obesity (reduced perfusion), advancing age (54), and cancer therapy (chemotherapy immunosuppression / radiotherapy free-radical cell damage). Six other factors: malnutrition, ischaemia/cardiovascular disease, NSAIDs/corticosteroids, wound infection, maceration, and smoking/alcohol abuse (also low wound temperature, psychological stress, unrelieved pressure, immobility)."
+    }
+  ]
+}

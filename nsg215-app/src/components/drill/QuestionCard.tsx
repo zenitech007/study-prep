@@ -5,6 +5,7 @@ import type { Question, QuizMode, QuizAnswer } from '../../types';
 import { speechService } from '../../utils/speech';
 import { getRandomPhrase, CORRECT_FEEDBACK_PHRASES, INCORRECT_FEEDBACK_PHRASES } from '../../utils/voiceFeedback';
 import TTSButton from '../common/TTSButton';
+import { formatMathText } from '../../utils/math';
 
 interface QuestionCardProps {
   question: Question;
@@ -65,13 +66,13 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
   // Build audio scripts
   const questionSpeechScript = useMemo(() => {
     const optionsScript = question.options
-      .map((opt, i) => `Option ${String.fromCharCode(65 + i)}: ${opt}.`)
+      .map((opt, i) => `Option ${String.fromCharCode(65 + i)}: ${formatMathText(opt)}.`)
       .join(' ');
-    return `${question.stem}. ${optionsScript}`;
+    return `${formatMathText(question.stem)}. ${optionsScript}`;
   }, [question]);
 
   const rationaleSpeechScript = useMemo(() => {
-    let script = `Rationale: ${question.explanation.correct}. `;
+    let script = `Rationale: ${formatMathText(question.explanation.correct)}. `;
     if (question.explanation.distractors.length > 0) {
       script += "Distractor analysis: ";
       question.options.forEach((opt, i) => {
@@ -80,7 +81,7 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
           if (i > question.correctIndex) distractorIdx -= 1;
           const exp = question.explanation.distractors[distractorIdx];
           if (exp) {
-            script += `Option ${String.fromCharCode(65 + i)}, ${opt}: ${exp}. `;
+            script += `Option ${String.fromCharCode(65 + i)}, ${formatMathText(opt)}: ${formatMathText(exp)}. `;
           }
         }
       });
@@ -130,7 +131,7 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
 
       {/* Stem */}
       <div className="text-sm text-main mb-5 whitespace-pre-line leading-relaxed font-normal">
-        {question.stem}
+        {formatMathText(question.stem)}
       </div>
 
       {/* Options */}
@@ -182,7 +183,7 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
               >
                 {label}
               </span>
-              <span className="flex-1 text-sm text-main mt-0.5">{opt}</span>
+              <span className="flex-1 text-sm text-main mt-0.5">{formatMathText(opt)}</span>
               {showFeedback && isCorrect && (
                 <CheckCircle size={18} style={{ color: 'var(--color-success)' }} className="shrink-0 mt-0.5" />
               )}
@@ -219,7 +220,7 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
             />
           </div>
 
-          <p className="text-sm text-sub mb-3">{question.explanation.correct}</p>
+          <p className="text-sm text-sub mb-3">{formatMathText(question.explanation.correct)}</p>
 
           {/* Why wrong options are wrong */}
           {question.explanation.distractors.length > 0 && (
@@ -231,8 +232,8 @@ export default function QuestionCard({ question, mode, currentAnswer, timeElapse
                 if (!explanation) return null;
                 return (
                   <div key={i} className="text-xs text-sub">
-                    <span className="font-medium text-main">{String.fromCharCode(65 + i)}. {opt}:</span>{' '}
-                    {explanation}
+                    <span className="font-medium text-main">{String.fromCharCode(65 + i)}. {formatMathText(opt)}:</span>{' '}
+                    {formatMathText(explanation)}
                   </div>
                 );
               })}

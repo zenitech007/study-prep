@@ -1,0 +1,75 @@
+{
+  "id": 1,
+  "title": "Foundations of Human Development, Lifespan Perspective, Developmental Psychology and Influences",
+  "introduction": "Developmental psychology scientifically investigates how and why human beings change and remain stable from conception to old age. Grounded in Paul Baltes' lifespan perspective, ten foundational principles of development, multidisciplinary collaboration, developmental diagnosis, and the interplay of heredity, environment, socioeconomic status, ethnicity, and maturation, this module establishes the core framework for studying human growth.",
+  "learningOutcomes": [
+    "1.1 Define human development and developmental psychology (ontogenesis), identify six related disciplines, and list other major branches of psychology.",
+    "1.2 Explain Paul Baltes' (1987) Lifespan Perspective and its six core assumptions (lifelong, multidimensional, multidirectional, plastic, contextual, multidisciplinary).",
+    "1.3 State and apply the ten foundational principles of human development.",
+    "1.4 Differentiate the six categories of lifespan change (ontogenesis/embryogenesis, orthogenesis, pathogenesis, microgenesis, phylogenesis, historical/cultural) and explain developmental diagnosis and specialist referral.",
+    "1.5 Analyze the five major factors influencing human development: heredity, environment, socioeconomic status (SES), ethnic group/culture, and maturation."
+  ],
+  "content": [
+    {
+      "heading": "Meaning of Human Development, Related Disciplines, and Baltes' Lifespan Perspective",
+      "body": "Human development is the scientific study of how and why people change throughout life across physical, emotional, intellectual/cognitive, social, perceptual, and personality domains—applying this knowledge practically to help individuals achieve their full health, well-being, and potential. Six major disciplines contribute to studying human development: Biology (physical and genetic growth), Anthropology (human culture and evolution), Sociology (social relationships and institutions), Education (applying developmental knowledge to learning), History (developmental changes across generations), and Psychology (behaviour and mental processes). German psychologist Paul Baltes (1987) formulated the influential Lifespan Perspective built on six key assumptions: (1) Lifelong—change continues from conception to death rather than ending at adolescence, with early experiences shaping later life; (2) Multidimensional—dynamic interaction across the Physical domain (height, weight, gross/fine motor skills, senses, nervous system, health), Cognitive domain (intelligence, wisdom, perception, problem-solving, memory, language), and Psychosocial domain (emotions, self-perception, relationships), where shifts in one domain cascade into others; (3) Multidirectional—involving both gains and losses across life (e.g., older adults losing physical speed while gaining wisdom); (4) Plastic—human traits remain malleable and changeable; (5) Contextual—shaped by ecological, historical, and socio-cultural contexts; and (6) Multidisciplinary."
+    },
+    {
+      "heading": "Ten Principles of Human Development",
+      "body": "Human growth and change obey ten core principles: (1) Continuous—physical and mental development proceeds continuously from conception through maturity and across the lifespan; (2) Gradual—changes unfold cumulatively rather than suddenly; (3) Sequential—every species follows a predictable orderly sequence (e.g., crawling before creeping, standing before walking, babbling before talking); (4) Individual Variation in Rate—rates differ between individuals, between boys and girls, and across body parts, alternating between intense spurts and equilibrium; (5) General to Specific—broad global activity precedes refined specific responses (e.g., whole-body fetal movement before fine acts; generalized infant fear before targeted crying, turning away, or hiding); (6) Correlation of Traits—strengths often correlate across areas (e.g., children with above-average cognitive growth frequently show strong health, sociability, and aptitudes); (7) Product of Heredity and Environment—both nature and nurture jointly drive development; (8) Predictable—observation and psychological testing allow prediction of physiological and psychological potential; (9) Structural and Functional Changes—development produces both anatomical and behavioural transformations; and (10) Constant Interaction of Factors—domains continuously influence each other (e.g., good physical health supports social and intellectual activity)."
+    },
+    {
+      "heading": "Developmental Psychology, Branches, Categories of Change, and Developmental Diagnosis",
+      "body": "Developmental Psychology—existing as a formal lifespan discipline for over 200 years—is the scientific study of individual development from conception to old age, also called Ontogenesis. Alongside developmental psychology, sister branches of psychology include Social, Personality, Psychometrics, Industrial-Organizational, Clinical, Forensic, Experimental, Abnormal, Rehabilitation, Forensic Developmental, Sports, Environmental, Cross-Cultural, Positive, Ecological, and Health Psychology. Lifespan developmental psychology investigates systematic intra-individual change across six categories: (1) Ontogenesis (individual lifespan development, including Embryogenesis—embryo development), (2) Orthogenesis (normal development), (3) Pathogenesis (development of psychopathology), (4) Microgenesis (change over very short timescales, e.g., forming a single percept), (5) Phylogenesis and Evolution (comparative development of species), and (6) Historical and Cultural Development. In applied practice, Developmental Diagnosis uses developmental screening and formal evaluation—combining caregiver interviews, medical history review, and standardized tests of communication, social/emotional, physical/motor, and cognitive functioning—to detect developmental problems early and refer clients to specialists such as speech-language pathologists, physical therapists, or occupational therapists."
+    },
+    {
+      "heading": "Five Major Factors Influencing Human Development",
+      "body": "Five interacting influences shape every individual from conception: (1) Heredity—inborn genetic influences carried by 80,000–100,000 DNA genes located on 23 pairs (46) of chromosomes in every body cell except gametes; females carry XX ova while males produce X- or Y-bearing sperm (XY zygote = boy; XX zygote = girl); (2) Environment—all external non-genetic influences, centred on family structures including Nuclear families (two-generational: two parents and biological/adopted children), Extended families (multigenerational kinship network of grandparents, uncles, aunts, cousins), Single-parent families, and Step-families; (3) Socioeconomic Status (SES)—a composite of income, education, and occupation linked to child health, cognitive outcomes, and maternal verbal interaction indirectly through housing quality, neighbourhood safety, healthcare access, and schooling; (4) Ethnic Group and Culture—an ethnic group shares ancestry, race, language, or national origin, while culture comprises dynamic, learned customs, traditions, beliefs, values, language, and tools passed across generations and continuously transformed through intercultural contact; and (5) Maturation—genetically influenced, age-related unfolding of physical changes, behavioural patterns, and readiness to master new abilities."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Who established the Lifespan Perspective in 1987, and what does it mean that human development is 'multidirectional' and 'plastic'?",
+      "answer": "German psychologist Paul Baltes (1987). Multidirectional means development involves both gains and losses throughout life (e.g., losing physical speed while gaining wisdom in old age); plastic means human characteristics are malleable and changeable."
+    },
+    {
+      "question": "Distinguish between Ontogenesis, Orthogenesis, Pathogenesis, and Microgenesis in lifespan developmental psychology.",
+      "answer": "Ontogenesis is individual development across the lifespan; Orthogenesis is normal development; Pathogenesis is the development of psychopathology; Microgenesis is development over a very small timescale, such as forming a single percept."
+    },
+    {
+      "question": "Does Socioeconomic Status (SES) affect child developmental outcomes directly or indirectly? Explain.",
+      "answer": "Indirectly—it is not SES (income, education, occupation) by itself, but associated factors such as home and neighbourhood conditions, quality of medical care, and quality of schooling that affect health and cognitive outcomes."
+    },
+    {
+      "question": "How is biological sex determined at fertilization?",
+      "answer": "Human ova carry X chromosomes while sperm carry either X or Y chromosomes; an X-carrying sperm fertilizing an ovum produces an XX female zygote, whereas a Y-carrying sperm produces an XY male zygote."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "Define human development, list the six disciplines related to it, and state what each discipline contributes.",
+      "answer": "Human development is the scientific study of how and why people change throughout life across physical, emotional, social, perceptual, and personality domains. Six disciplines: Biology (physical/genetic growth), Anthropology (culture/evolution), Sociology (social relationships/institutions), Education (learning applications), History (generational changes), and Psychology (behaviour and mental processes)."
+    },
+    {
+      "id": "1.2",
+      "question": "Outline the six key assumptions of Paul Baltes' (1987) Lifespan Perspective and explain the three domains of multidimensional development.",
+      "answer": "Six assumptions: lifelong, multidimensional, multidirectional, plastic, influenced by contextual/socio-cultural factors, and multidisciplinary. Three domains: Physical (body size, motor skills, senses, nervous system, health), Cognitive (intelligence, wisdom, perception, problem-solving, memory, language), and Psychosocial (emotions, self-perception, family/peer relationships)."
+    },
+    {
+      "id": "1.3",
+      "question": "State and briefly explain any six of the ten principles of human development.",
+      "answer": "1. Continuous (conception through life); 2. Gradual and cumulative; 3. Sequential (predictable species pattern, e.g., crawling before walking); 4. Rate varies person to person; 5. General to specific (whole-body/general fear before targeted responses); 6. Product of heredity and environment (others: traits correlated, predictable, structural/functional changes, constant interaction)."
+    },
+    {
+      "id": "1.4",
+      "question": "Explain Developmental Diagnosis, listing the assessment components used for children and three specialists to whom a child may be referred.",
+      "answer": "Developmental diagnosis involves developmental screening or evaluation to detect developmental problems—combining parent/caregiver interviews, medical history review, and standardized testing of communication, social/emotional, physical/motor, and cognitive skills. Identified cases may be referred to a speech-language pathologist, physical therapist, or occupational therapist."
+    },
+    {
+      "id": "1.5",
+      "question": "Differentiate nuclear from extended families, define culture, and explain maturation as an influence on human development.",
+      "answer": "A nuclear family is a two-generational unit of two parents and their biological/adopted children, whereas an extended family is a multigenerational kinship network (grandparents, uncles, aunts, cousins). Culture is a dynamic, learned way of life (customs, traditions, beliefs, values, language, tools) passed across generations. Maturation is the genetically influenced, age-related unfolding of physical changes and readiness to master new abilities."
+    }
+  ]
+}

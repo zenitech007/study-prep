@@ -1,0 +1,71 @@
+{
+  "id": 2,
+  "title": "Theoretical Perspectives of Human Development and Bronfenbrenner's Ecological Systems Theory",
+  "introduction": "Developmental theories organize empirical data into testable frameworks that allow scientists to describe, explain, predict, and modify human behaviour. Complementing individual-level perspectives, Urie Bronfenbrenner's Ecological Systems Theory situates the developing child inside five interlocking environmental systems—from intimate home interactions to cultural ideologies and historical time.",
+  "learningOutcomes": [
+    "2.1 Define a scientific theory and explain its core functions (describing, explaining, predicting, modifying behaviour; generating hypotheses; adapting to new data).",
+    "2.2 Explain why understanding theoretical perspectives and their cultural origins is essential for evaluating developmental research.",
+    "2.3 Identify the five major theoretical perspectives examined in developmental psychology.",
+    "2.4 Describe Urie Bronfenbrenner's Ecological Systems Theory and differentiate its five interlocking systems (microsystem, mesosystem, exosystem, macrosystem, chronosystem) with examples.",
+    "2.5 Evaluate the practical implications of the ecological approach for observing and assessing child behaviour across multiple settings."
+  ],
+  "content": [
+    {
+      "heading": "Definition, Functions, Research Importance, and Five Theoretical Perspectives",
+      "body": "A theory is a set of related concepts that seeks to organize and explain data—the information gathered through empirical research. Theories serve four fundamental goals for developmental scientists: describing behaviour, explaining behaviour, predicting behaviour, and modifying (controlling) behaviour. Specifically, theories perform three dynamic research functions: (1) Predict—forecasting what data should emerge under given conditions and generating testable hypotheses; (2) Adapt—remaining dynamic by evolving to incorporate new or unexpected findings; and (3) Inspire—sparking new research questions and hypotheses whether or not initial findings confirm the original theory. In developmental research, historical emphasis shifted from description and explanation toward prediction and behavioural control (notably behaviourism during the 1960s). Because every theoretical perspective is shaped by the culture in which it originated, it determines the questions researchers ask, the methods they select, and how they interpret data—making it essential to recognize the underlying perspective when evaluating any study. Five major theoretical perspectives anchor developmental psychology: (1) Psychoanalytic (focusing on unconscious emotions and drives), (2) Psychosocial (focusing on social and emotional development across life), (3) Cognitive (stressing mental thought processes), (4) Behaviourism (predicting and controlling observable behaviour), and (5) Contextual (emphasizing the impact of social, ecological, and cultural contexts)."
+    },
+    {
+      "heading": "Bronfenbrenner's Ecological Systems Theory: Five Interlocking Systems",
+      "body": "American psychologist Urie Bronfenbrenner (1979, 1986, 1994) proposed Ecological Systems Theory (the bio-ecological approach), classifying environmental influences by immediacy of impact across five interlocking levels extending from the most intimate home environment to broad historical conditions: (1) Microsystem—the child's immediate everyday environment (home, school, neighbourhood) built on bidirectional face-to-face relationships with parents, siblings, caregivers, classmates, and teachers (remarkably, microsystem experiences can differ substantially even for siblings within the same family); (2) Mesosystem—a 'system of microsystems' comprising linkages and interactions between two or more settings containing the child (e.g., parent-teacher conferences linking home and school, or interactions between family and peer group); (3) Exosystem—linkages between two or more settings where at least one setting does NOT directly contain the child yet affects them indirectly (e.g., a mother frustrated at her workplace returning home and mistreating her children); (4) Macrosystem—overarching cultural patterns, dominant beliefs, ideologies, and economic or political systems (such as capitalism, socialism, cultural preferences regarding family size or gender, and societal family support); and (5) Chronosystem—the dimension of time encompassing normative or non-normative change and constancy in both child and environment (e.g., shifts in family structure, relocation, parental employment changes, wars, and economic cycles)."
+    },
+    {
+      "heading": "Implications of the Ecological Approach for Developmental Psychology",
+      "body": "Examining systems inside and beyond the immediate family reveals the dense network of interrelated factors shaping human development. Crucially, the ecological perspective alerts developmentalists, educators, and clinicians that the exact same child may behave very differently across different settings: a child who completes a school assignment smoothly at home may freeze and become tongue-tied when questioned about it in class, while a child who behaves like a terror on the playground may act 'docile as a lamb' having lunch at Grandma's house. Consequently, developmental experts must observe and assess behaviour across multiple environments—and examine the linkages connecting those contexts—rather than judging a child from a single setting."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What four scientific aims do developmental theories help psychologists accomplish regarding human behaviour?",
+      "answer": "Describe, explain, predict, and modify (control) behaviour."
+    },
+    {
+      "question": "Why must researchers and readers identify the theoretical perspective behind a developmental study?",
+      "answer": "Because a theoretical perspective (shaped by its culture of origin) directly influences the questions researchers ask, the methods they use, and how they interpret their data."
+    },
+    {
+      "question": "Distinguish between Bronfenbrenner's Mesosystem and Exosystem using concrete examples.",
+      "answer": "The Mesosystem connects two settings that both contain the child (e.g., home and school via parent-teacher conferences), whereas the Exosystem connects settings where at least one does NOT contain the child yet affects them indirectly (e.g., a parent's stressful workplace affecting parenting at home)."
+    },
+    {
+      "question": "What practical lesson does Bronfenbrenner's ecological approach teach about assessing a child's behaviour?",
+      "answer": "Because the same child may behave very differently across settings (e.g., confident at home vs. tongue-tied in class, or unruly on the playground vs. calm at Grandma's), experts must observe behaviour across multiple contexts and examine links between them."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Define a theory and explain its three key dynamic functions in scientific research.",
+      "answer": "A theory is a set of related concepts that organizes and explains empirical research data. Its three functions are: (1) Predict—generating testable hypotheses about expected data; (2) Adapt—evolving dynamically to incorporate new or unexpected findings; and (3) Inspire—suggesting new research issues and hypotheses regardless of whether initial data confirm the theory."
+    },
+    {
+      "id": "2.2",
+      "question": "List the five major theoretical perspectives of human development and state the primary focus of each.",
+      "answer": "1. Psychoanalytic (unconscious emotions and drives); 2. Psychosocial (social and emotional development across life); 3. Cognitive (thought and mental processes); 4. Behaviourism (predicting and controlling observable behaviour); 5. Contextual (impact of social, cultural, and ecological context)."
+    },
+    {
+      "id": "2.3",
+      "question": "Describe Urie Bronfenbrenner's Ecological Systems Theory and explain why two children raised in the same home may experience different microsystems.",
+      "answer": "Proposed by Bronfenbrenner (1979, 1986, 1994), the theory conceptualizes development within five interlocking levels of external influence ranging from intimate daily settings to broad cultural and historical systems. Even within one family, microsystem relationships are bidirectional and unique to each child's temperament, age, and face-to-face interactions with parents and siblings."
+    },
+    {
+      "id": "2.4",
+      "question": "Define all five systems in Bronfenbrenner's Ecological Systems Theory and give one specific example of each.",
+      "answer": "1. Microsystem: immediate face-to-face settings (parents, siblings, teachers); 2. Mesosystem: links between microsystems (parent-teacher conferences, family-peer links); 3. Exosystem: indirect external setting (mother's workplace stress affecting home care); 4. Macrosystem: cultural beliefs/ideologies/economic systems (capitalism, socialism); 5. Chronosystem: dimension of time and life/historical transitions (relocation, family structure changes, wars, economic cycles)."
+    },
+    {
+      "id": "2.5",
+      "question": "Explain the implications of Bronfenbrenner's ecological approach for developmental psychology and clinical assessment.",
+      "answer": "The ecological approach demonstrates that multiple interrelated environmental layers jointly influence development and that behaviour varies by setting (e.g., home vs. classroom; playground vs. grandmother's house). Therefore, psychologists must evaluate children across multiple settings and strengthen positive links among home, school, and community."
+    }
+  ]
+}

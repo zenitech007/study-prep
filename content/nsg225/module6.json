@@ -1,0 +1,75 @@
+{
+  "id": 6,
+  "title": "Childhood Communicable Diseases I: Malaria and Measles",
+  "introduction": "Malaria and measles remain two of the most consequential preventable communicable diseases threatening children under five in Nigeria and sub-Saharan Africa. Understanding their causative pathogens, transmission dynamics, pathophysiology, diagnostic criteria, WHO-recommended therapies, and nursing/vector-control strategies is fundamental to pediatric clinical practice.",
+  "learningOutcomes": [
+    "6.1 Identify the Plasmodium species causing human malaria, factors driving Anopheles transmission, high-risk populations, clinical manifestations, complications, and diagnostic gold standards.",
+    "6.2 Trace the complete malaria parasite life cycle inside both the Anopheles mosquito and the human body (exoerythrocytic and erythrocytic phases).",
+    "6.3 Outline WHO medical management (ACTs and drug resistance), nursing care, and community prevention strategies (LLINs, IRS, IPTp/IPTi, SMC, T3 surveillance) for malaria.",
+    "6.4 Distinguish rubeola (red measles) from rubella (German measles), explain measles pathophysiology, diagnostic criteria (3 C's and Koplik's spots), risk factors, and pregnancy risks.",
+    "6.5 Describe measles treatment (supportive care and Vitamin A), complications, nursing management, and immunization schedules in endemic versus developed regions."
+  ],
+  "content": [
+    {
+      "heading": "Malaria: Aetiology, Transmission Factors, High-Risk Groups, Symptoms, and Diagnosis",
+      "body": "Malaria is an acute febrile tropical parasitic infection of red blood cells caused by Plasmodium species transmitted via the night-time bites of infected female Anopheles mosquitoes (which breed in shallow fresh water such as puddles, rice fields, and hoof prints). Four primary human species exist—Plasmodium falciparum (most deadly and prevalent in Africa), P. vivax (also common), P. malariae, and P. ovale—plus zoonotic P. knowlesi in South-East Asian forests. Transmission intensity depends on parasite, vector (long lifespan and human-biting preference of African vectors), climate (rainfall, temperature, humidity—peaking during/after rainy seasons), and human partial immunity. High-risk populations include: (1) young children (passively protected by maternal antibodies for 3–6 months, then facing frequent severe/fatal disease from 6 months to 3 years before partial immunity builds); (2) non-immune pregnant women (high miscarriage and maternal death risk); (3) semi-immune pregnant women (miscarriage and low birth weight, especially in 1st/2nd pregnancies); (4) semi-immune HIV-infected pregnant women (placental malaria increases vertical HIV transmission); (5) people with HIV/AIDS; and (6) non-immune international travellers and returning emigrants. Symptoms appear ≥7 days (usually 10–15 days) post-bite: fever, shivering, arthralgia, vomiting, haemolytic anaemia, jaundice, haemoglobinuria, retinal damage, convulsions, and abnormal posturing indicating severe cerebral damage. Complications include splenomegaly, hepatomegaly, severe headache, cerebral ischaemia, hypoglycaemia, blackwater fever (haemoglobinuria with renal failure/coma), and childhood developmental impairment. Microscopic blood film examination (thick and thin films showing ring forms/gametocytes) is the diagnostic gold standard, complemented by CBC, liver function tests, and saliva/urine assays where available."
+    },
+    {
+      "heading": "Malaria Life Cycle, Medical Management, Drug Resistance, and Prevention",
+      "body": "In the mosquito cycle, a female Anopheles ingests human gametocytes, which differentiate into male and female gametes, fuse in the mosquito gut into an ookinete, penetrate the gut wall to form oocysts, and rupture to release sporozoites migrating to the salivary glands for injection during a blood meal. In the human body, two phases occur: (1) Phase 1 Exoerythrocytic (Hepatic)—sporozoites reach the liver within minutes and multiply asexually in hepatocytes before rupturing to release thousands of merozoites wrapped in host-cell membranes to evade immunity; and (2) Phase 2 Erythrocytic—merozoites invade RBCs, progressing through ring forms, trophozoites, and schizonts before rupturing RBCs repeatedly. P. falciparum expresses adhesive proteins that sequester infected RBCs along small blood vessel walls to avoid splenic clearance, blocking high endothelial venules and triggering placental and cerebral malaria (coma). WHO recommends Artemisinin-based Combination Therapies (ACTs)—artemether-lumefantrine (Coartem), artesunate-amodiaquine, artesunate-mefloquine, or artesunate-SP—for uncomplicated P. falciparum malaria (ensuring accurate pediatric dosing and retention), with second-line regional ACTs or 7-day artesunate/quinine plus tetracycline, doxycycline, or clindamycin. Oral artemisinin monotherapy drives dangerous resistance (detected in the Greater Mekong sub-region) because patients stop early once symptoms fade. Nursing care gathers health/medication history, ensures complete parasite eradication to prevent relapse/resistance, and champions prevention: Vector control via universal Long-Lasting Insecticidal Nets (LLINs, pyrethroid-treated) and Indoor Residual Spraying (IRS, effective 3–6 months, requiring high community coverage), covering stagnant water, chemoprophylaxis for travellers, Intermittent Preventive Treatment with SP in pregnant women (IPTp after 1st trimester) and infants (IPTi, 3 doses with routine vaccines), Seasonal Malaria Chemoprevention (SMC: monthly amodiaquine + SP for under-5s in the Sahel), WHO's T3 (Test, Treat, Track) surveillance initiative, and distinguishing elimination (zero local transmission) from eradication (zero global incidence)."
+    },
+    {
+      "heading": "Measles: Causative Agent, Rubeola vs. Rubella, Pathophysiology, and Clinical Diagnosis",
+      "body": "Measles (morbilli / rubeola) is a highly contagious acute respiratory infection caused by an enveloped, single-stranded, negative-sense RNA paramyxovirus (genus Morbillivirus) with humans as its sole natural reservoir. Spread via respiratory droplets and direct or aerosol contact with nasal/oral secretions, measles infects ~90% of non-immune household contacts, with an asymptomatic incubation period of 8–15 days (commonly 9–12 days) and infectivity spanning 2–4 days before to 2–5 days after rash onset. Rubeola ('red/hard measles', risking pneumonia or encephalitis) differs strictly from Rubella ('German/3-day measles', caused by a distinct virus notorious for congenital birth defects when passed in utero). Pathophysiologically, inhaled or conjunctival droplets invade local lymph nodes and destroy lymphocytes (primary viraemia), followed by a second stage affecting mucous membranes (producing pathognomonic Koplik's spots inside the mouth) and skin (generalized maculopapular erythematous rash). Key risk factors include HIV/AIDS or steroid/leukaemia immunodeficiency, malnutrition, vitamin A deficiency, pregnancy, loss of passive maternal antibodies before vaccination age, and travel to endemic regions. Clinical diagnosis requires: (1) fever lasting ≥3 days, (2) at least one of the three C's (Cough, Coryza/runny nose, Conjunctivitis/red eyes), and (3) Koplik's spots—confirmed in laboratories via measles IgM antibodies, salivary IgA, or respiratory viral RNA isolation alongside epidemiological contact history."
+    },
+    {
+      "heading": "Measles Treatment, Pregnancy Risks, Complications, Prevention, and Nursing Management",
+      "body": "No specific antiviral cures measles; uncomplicated cases recover with rest and symptomatic support—acetaminophen (paracetamol) or ibuprofen for fever/pain, fast-acting bronchodilators for cough if needed, and Vitamin A supplementation (proven to reduce mortality in children under 2 years). Although most recover, severe complications—worse in adults and immunocompromised patients (e.g., fatal giant cell pneumonia)—include superimposed otitis media, bacterial or primary viral pneumonia, acute measles encephalitis (2–7 days post-rash with high fever, headache, convulsions, coma), diarrhoea, hepatitis, appendicitis, extremity gangrene, corneal laceration/scarring, and rare fatal subacute sclerosing panencephalitis (SSPE, ~1 in 140,000 cases). In pregnancy (especially early gestation), maternal infection risks miscarriage, stillbirth, low birth weight, congenital cataracts, heart defects, hearing impairment, learning disabilities, and birth defects. Prevention relies on vaccination: in developed nations, MMR vaccine is given around 15–18 months (after maternal antibodies wane) with a booster at ages 4–5; in endemic developing countries, WHO recommends two doses at 6 and 9 months regardless of HIV status, often bundled with bed nets, deworming, and vitamin A—countering vaccine-hesitancy rumours that have sparked lethal outbreaks (such as northern Nigeria in the early 2000s and global surges in South Africa, Europe, and DRC). Nursing management encompasses history taking, physical examination, psychological support, strict isolation (barrier nursing), eye irrigation, enforced rest, tepid sponge bathing for fever, liberal oral fluids against dehydration, humidifiers/vaporizers to soothe cough, and administering prescribed antipyretics/analgesics."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What is the gold-standard diagnostic test for malaria, and why is oral artemisinin monotherapy discouraged?",
+      "answer": "Microscopic blood film examination (thick and thin films) is the gold standard. Oral artemisinin monotherapy encourages patients to stop treatment early once symptoms fade, leaving resistant parasites to survive and spread."
+    },
+    {
+      "question": "Explain the difference between the exoerythrocytic and erythrocytic phases of the malaria parasite life cycle in humans.",
+      "answer": "The exoerythrocytic phase occurs first when sporozoites invade and multiply asexually in liver hepatocytes; the erythrocytic phase follows when released merozoites infect red blood cells (forming rings, trophozoites, and schizonts) and rupture them periodically."
+    },
+    {
+      "question": "What are the 'three C's' and the pathognomonic oral sign used for the clinical diagnosis of measles?",
+      "answer": "The three C's are Cough, Coryza (runny nose), and Conjunctivitis (red eyes), accompanied by Koplik's spots on the buccal mucous membrane and fever for at least 3 days."
+    },
+    {
+      "question": "What is the clinical benefit of Vitamin A administration in children with measles?",
+      "answer": "Vitamin A supplementation significantly reduces measles-related mortality in children aged less than two years."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Name the four main human Plasmodium species, identify which is deadliest, and list six major signs/symptoms and four severe complications of malaria.",
+      "answer": "Species: Plasmodium falciparum (deadliest), P. vivax, P. malariae, and P. ovale (plus zoonotic P. knowlesi). Signs/symptoms: fever, shivering, joint pain (arthralgia), vomiting, haemolytic anaemia, jaundice, haemoglobinuria, convulsions, retinal damage, abnormal posturing. Complications: cerebral malaria/ischaemia, severe anaemia, hypoglycaemia, blackwater fever (haemoglobinuria with renal failure/coma), splenomegaly, hepatomegaly, and developmental impairment."
+    },
+    {
+      "id": "6.2",
+      "question": "Trace the life cycle of Plasmodium in the female Anopheles mosquito and explain how P. falciparum sequestration causes cerebral malaria.",
+      "answer": "Mosquito ingests human gametocytes -> male/female gametes fuse in gut -> ookinete penetrates gut wall -> oocysts form and rupture releasing sporozoites -> sporozoites migrate to salivary glands for injection into a new host. In humans, P. falciparum displays adhesive proteins making infected RBCs stick to small blood vessel walls to avoid splenic destruction, obstructing cerebral venules and breaching the blood-brain barrier to cause coma."
+    },
+    {
+      "id": "6.3",
+      "question": "State the recommended first-line ACTs for uncomplicated P. falciparum malaria and outline five public health strategies for malaria prevention.",
+      "answer": "First-line ACTs: artemether-lumefantrine (Coartem), artesunate-amodiaquine, artesunate-mefloquine, and artesunate-sulfadoxine-pyrimethamine. Five prevention strategies: universal Long-Lasting Insecticidal Nets (LLINs), Indoor Residual Spraying (IRS), Intermittent Preventive Treatment with SP in pregnancy (IPTp) and infants (IPTi), Seasonal Malaria Chemoprevention (SMC in Sahel under-5s), and eliminating stagnant mosquito breeding water plus WHO T3 (Test, Treat, Track) surveillance."
+    },
+    {
+      "id": "6.4",
+      "question": "Differentiate rubeola from rubella, state the clinical and laboratory diagnostic criteria for measles, and list six complications of measles.",
+      "answer": "Rubeola (red/hard measles, Morbillivirus) causes severe respiratory rash illness risking pneumonia/encephalitis, whereas rubella (German/3-day measles) is a different virus causing major congenital defects in utero. Diagnosis: ≥3 days fever + ≥1 of the 3 C's (cough, coryza, conjunctivitis) + Koplik's spots (lab: positive measles IgM, salivary IgA, or viral RNA). Six complications: otitis media, bacterial/primary viral pneumonia, encephalitis, diarrhoea, corneal laceration/scarring, and subacute sclerosing panencephalitis (SSPE)."
+    },
+    {
+      "id": "6.5",
+      "question": "Outline ten nursing management actions for a child hospitalized with measles and compare WHO measles immunization timing in endemic versus developed countries.",
+      "answer": "Nursing care: (1) history taking, (2) physical examination, (3) psychological support, (4) isolation/barrier nursing, (5) eye irrigation, (6) adequate rest, (7) tepid sponge baths for fever, (8) liberal fluid intake, (9) humidifier/vaporizer for cough, and (10) prescribed antipyretics/analgesics (plus Vitamin A). Endemic developing countries give two doses at 6 and 9 months (regardless of HIV status), whereas developed countries typically administer MMR around 15–18 months with a booster at ages 4–5."
+    }
+  ]
+}

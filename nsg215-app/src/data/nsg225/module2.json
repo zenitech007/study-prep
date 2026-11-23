@@ -1,0 +1,79 @@
+{
+  "id": 2,
+  "title": "Developmental Theories of Childhood",
+  "introduction": "No single developmental theory explains every dimension of a child's life. Integrating Jean Piaget's cognitive stages, Erik Erikson's lifespan psychosocial crises, Sigmund Freud's psychosexual perspective, Lawrence Kohlberg's moral reasoning levels, James Fowler's spiritual faith stages, behavioural conditioning models, and social-ecological frameworks empowers nurses to tailor communication, play, teaching, and family support to each child's developmental readiness.",
+  "learningOutcomes": [
+    "2.1 Explain the four key concepts (schemas, assimilation, accommodation, equilibration) and four developmental stages—including the six sensorimotor substages—of Jean Piaget's Cognitive Theory.",
+    "2.2 Detail Erik Erikson's eight psychosocial stages, their organizing concepts, central crises, developmental tasks, virtues, and typical age-related responses to illness.",
+    "2.3 Describe Sigmund Freud's five psychosexual stages, fixation, nursing relevance, and historical contributions versus limitations.",
+    "2.4 Outline Lawrence Kohlberg's three levels and six stages of moral development and James Fowler's seven stages (0–6) of spiritual/faith development with clinical safeguards.",
+    "2.5 Compare classical conditioning (Pavlov/Watson), operant conditioning (Skinner), and social/ecological development theories (Bowlby, Bandura, Vygotsky, Bronfenbrenner) in pediatric nursing."
+  ],
+  "content": [
+    {
+      "heading": "Jean Piaget's Cognitive Child Development Theory",
+      "body": "Swiss theorist Jean Piaget (1896–1980) observed that children are not less intelligent than adults—they actively construct knowledge and simply think differently, moving from action-based learning to mental operations. Four core concepts drive cognitive growth: Schemas (mental and physical frameworks used to interpret experience), Assimilation (fitting new information into existing schemas, e.g., calling a large dog or unfamiliar four-legged animal 'dog'), Accommodation (altering existing schemas or creating new ones when new experiences do not fit), and Equilibration (balancing assimilation and accommodation to resolve disequilibrium and progress to higher stages). Piaget described four sequential stages: (1) Sensorimotor (birth–2 years)—learns through senses and motor acts and gradually develops object permanence across six substages: (i) Reflexes (0–1 mo: sucking, looking), (ii) Primary Circular Reactions (1–4 mos: repeating pleasurable body-centred acts like thumb sucking), (iii) Secondary Circular Reactions (4–8 mos: intentionally repeating actions to trigger environmental responses like mouthing a toy), (iv) Coordination of Reactions (8–12 mos: intentional combined schemas, imitation, recognizing object qualities like shaking a rattle), (v) Tertiary Circular Reactions (12–18 mos: trial-and-error experimentation), and (vi) Early Representational Thought (18–24 mos: mental symbols replacing pure action); (2) Preoperational/Preconceptual (2–7 years)—symbolic thought via words and pretend play, characterized by egocentrism, centration, irreversibility, and lack of conservation; (3) Concrete Operational (7–11 years)—logical reasoning with concrete objects, conservation, classification, seriation, decentration, reversibility, shared-topic communication, and arithmetic; and (4) Formal Operational (11/12 years onward)—abstract, hypothetical ('what if?'), and systematic problem-solving. Nurses adapt care accordingly: sensory play/caregiver presence for infants; simple literal words, dolls, and immediate pre-procedure explanations for preschoolers; stepwise models/diagrams for school-agers; and shared decision-making discussing risks honestly with adolescents."
+    },
+    {
+      "heading": "Erik Erikson's Psychosocial Development Theory",
+      "body": "Erik Erikson (1902–1994) framed personality development as a lifelong sequence of social interactions anchored by four organizing concepts: stages of development, developmental goals/tasks, psychosocial crisis, and the process of coping. Central to his model is ego identity—the conscious sense of self continuously reshaped through daily social interaction. Resolving a stage's turning-point crisis builds ego strength (mastery/virtue), whereas poor resolution yields inadequacy. Erikson's eight lifespan stages are: (1) Trust vs. Mistrust (Infancy, 0–1 yr; Virtue: Hope; significant other: mother/surrogate; illness response: cries, fears strange place, refuses feeds); (2) Autonomy vs. Shame & Doubt (Toddler, 1–3 yrs; Virtue: Will; parents; toilet training and choices; illness response: fear of painful invasive procedures and separation); (3) Initiative vs. Guilt (Preschool/Early Childhood, 3–6 yrs; Virtue: Purpose; entire family; purposeful play; illness response: equates illness with being bad/punishment—requires reassurance); (4) Industry vs. Inferiority (School Age/Mid Childhood, 6–12 yrs; Virtue: Competence; school/neighbourhood; skill mastery; illness response: anger over restrictions and guilt over family crises); (5) Identity vs. Role Confusion (Adolescence, 12–18 yrs; Virtue: Fidelity; peers/role models; coherent self-identity; illness response: anger over dependency); (6) Intimacy vs. Isolation (Young Adulthood, 18–40 yrs; Virtue: Love; intimates; committed relationships; illness response: fear of relationship change/depression); (7) Generativity vs. Stagnation (Middle Adulthood, 40–65 yrs; Virtue: Care; expanded family/community; contributing to the next generation); and (8) Integrity vs. Despair (Older Adulthood, 65+; Virtue: Wisdom; life review and acceptance)."
+    },
+    {
+      "heading": "Sigmund Freud's Psychosexual Theory",
+      "body": "Sigmund Freud (1856–1939) proposed that early childhood experiences largely establish personality by age five as psychological pleasure-seeking energy (libido) shifts across five erogenous zones: (1) Oral Stage (birth–18 months)—pleasure through mouth (sucking, feeding, biting); (2) Anal Stage (18 months–3/4 years)—bowel/bladder control, toilet training, holding in and letting go; (3) Phallic Stage (3–6/7 years)—genital awareness, common masturbation, parental identification, and Oedipus/Electra concepts; (4) Latency Stage (6 years–puberty/~12 years)—sexual impulses relatively quiet, energy channelled into school, peers, and skills; and (5) Genital Stage (puberty onward)—resurgence of mature sexual interest and adult relationships. Unresolved conflict from frustration or overindulgence produces fixation—remaining stuck at an earlier stage (e.g., oral fixation manifesting as over-dependency, smoking, drinking, or overeating). While Freud highlighted early emotional needs and family ties, his fixed stage claims are difficult to test scientifically and reflect cultural/gender biases of his era; nurses interpret his theory critically without labelling children—promoting responsive feeding, non-punitive readiness-based toilet learning, calm factual answers to body questions, school-age peer skills, and respectful, confidential adolescent reproductive education."
+    },
+    {
+      "heading": "Kohlberg's Moral Development and Fowler's Spiritual Development Theories",
+      "body": "Influenced by Piaget, Lawrence Kohlberg (1927–1987) studied how people justify right and wrong across three levels and six stages: Level 1 Pre-conventional—Stage 1 Obedience and Punishment (wrong if punished by adults) and Stage 2 Self-Interest/Instrumental Purpose (right if rewarded or reciprocal); Level 2 Conventional—Stage 3 Good Interpersonal Relationships (seeking approval from close people) and Stage 4 Law and Order (following society's rules to maintain order); and Level 3 Post-conventional—Stage 5 Social Contract (rules viewed as flexible agreements protecting rights/welfare) and Stage 6 Universal Ethical Principles (abstract justice, dignity, and equality—reached by few). Nurses use stories and dilemmas to explore reasoning, explain safety rules clearly to young children, discuss empathy/fairness with older children, and model ethical conduct. Similarly building on Piaget and Kohlberg, James W. Fowler (1940–2015, Stages of Faith, 1981) described faith as a meaning-making force across seven stages: Stage 0 Primal/Undifferentiated (0–2 yrs, matches Sensorimotor; trust/safety shapes worldview), Stage 1 Intuitive–Projective (2/3–7 yrs, matches Preoperational; stories, images, imagination), Stage 2 Mythic–Literal (7–12 yrs, matches Concrete Operational; literal beliefs, fairness/reciprocity, human-like deities), Stage 3 Synthetic–Conventional (12+ yrs; conforming to peer/religious authority), Stage 4 Individuative–Reflective (young adulthood/21+; critical personal responsibility for beliefs), Stage 5 Conjunctive (mid-life/35+; embracing paradox and multidimensional truth), and Stage 6 Universalising (rare, 45+; inclusive universal love and justice). Ethically, nurses ask sensitively what brings comfort, respect safe rituals/dietary practices, arrange chaplains if requested, never assume religiosity or proselytize, and never imply illness is punishment."
+    },
+    {
+      "heading": "Behavioural and Social-Ecological Child Development Theories",
+      "body": "Behavioural theories (Ivan Pavlov, John B. Watson, B.F. Skinner) focus on observable behaviours shaped by environmental stimuli, rewards, and punishments. Pavlov's Classical Conditioning forms associations across three phases: Before Conditioning (Unconditioned Stimulus [UCS, e.g., food smell] naturally triggers Unconditioned Response [UCR, salivation/hunger]), During Conditioning (pairing neutral stimulus [bell/whistle] repeatedly with UCS to become Conditioned Stimulus [CS]), and After Conditioning (CS alone triggers Conditioned Response [CR]—clinically explaining why a child who experiences repeated pain in a treatment room becomes anxious simply entering it). Skinner's Operant (Instrumental) Conditioning shapes behaviour via consequences: Positive Reinforcement (adding praise/reward to increase behaviour), Negative Reinforcement (removing an unpleasant condition to increase behaviour), Positive Punishment (adding an unpleasant consequence to reduce behaviour—not preferred as it erodes trust), and Negative Punishment (proportionately removing a privilege to reduce behaviour). Nurses reinforce specific efforts promptly and investigate underlying fear, pain, or unmet needs before attempting behaviour modification. Social Child Development Theories explain learning through relationships and social context: John Bowlby pioneered attachment theory showing early caregiver bonds shape lifelong social relationships; Albert Bandura's Social Learning Theory showed children learn via observational modelling across four steps—Attention, Retention, Reproduction, and Motivation (including internal pride/self-efficacy, useful for teaching handwashing or inhaler technique); Lev Vygotsky's Sociocultural Theory emphasized active hands-on learning guided by caregivers, peers, and culture; and Urie Bronfenbrenner's Ecological Systems Theory mapped five nested environments—Microsystem (family, school, clinic), Mesosystem (family-school links), Exosystem (caregiver workplace, local health services), Macrosystem (cultural values, laws, poverty), and Chronosystem (life transitions, migration, pandemics)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "In Piaget's Sensorimotor Stage, during which substage does a child begin trial-and-error experimentation?",
+      "answer": "Tertiary Circular Reactions (12–18 months)."
+    },
+    {
+      "question": "During which stage of Sigmund Freud's psychosexual theory is masturbation common?",
+      "answer": "The Phallic Stage (3–6 years)."
+    },
+    {
+      "question": "Which Piagetian cognitive stage corresponds to Stage 1 (Intuitive–Projective faith) in James Fowler's Stages of Faith?",
+      "answer": "The Preoperational Stage (2–7 years)."
+    },
+    {
+      "question": "In Skinner's operant conditioning, what is the difference between reinforcement and punishment?",
+      "answer": "Reinforcement (positive or negative) strengthens or increases the behaviour it follows, whereas punishment (positive or negative) decreases or weakens the behaviour it follows."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Define schemas, assimilation, accommodation, and equilibration in Piaget's theory, and list the four stages of cognitive development with their approximate ages.",
+      "answer": "Schemas are organized mental/physical frameworks for interpreting experience; assimilation fits new info into existing schemas; accommodation modifies existing schemas or creates new ones; equilibration balances assimilation and accommodation to advance thinking. The four stages are Sensorimotor (birth–2 yrs), Preoperational (2–7 yrs), Concrete Operational (7–11 yrs), and Formal Operational (11/12 yrs onward)."
+    },
+    {
+      "id": "2.2",
+      "question": "Explain Erikson's concept of ego identity, list his four organizing concepts, and state the crisis, virtue, and typical illness response for Preschoolers and Adolescents.",
+      "answer": "Ego identity is the conscious sense of self continually developed through social interaction. Erikson's four organizing concepts are stages of development, developmental tasks/goals, psychosocial crisis, and coping process. Preschoolers (3–6 yrs): Initiative vs. Guilt, virtue Purpose, often equate illness with being bad/punishment. Adolescents (12–18 yrs): Identity vs. Role Confusion, virtue Fidelity, commonly react with anger over illness-imposed dependency."
+    },
+    {
+      "id": "2.3",
+      "question": "Outline Lawrence Kohlberg's three levels and six stages of moral development and explain how nurses apply them clinically.",
+      "answer": "Level 1 Pre-conventional: (1) Obedience & Punishment, (2) Self-Interest/Reward. Level 2 Conventional: (3) Good Interpersonal Relationships/Approval, (4) Law & Order. Level 3 Post-conventional: (5) Social Contract, (6) Universal Ethical Principles. Clinically, nurses explain safety rules simply to young children, discuss fairness and empathy with older children via stories/dilemmas, avoid judging solely by age, and model ethical conduct."
+    },
+    {
+      "id": "2.4",
+      "question": "Describe James Fowler's first four stages of faith (Stages 0–3) and state four ethical safeguards nurses must uphold in spiritual care.",
+      "answer": "Stage 0 Primal/Undifferentiated (0–2 yrs, basic trust/safety); Stage 1 Intuitive–Projective (2–7 yrs, stories/imagination); Stage 2 Mythic–Literal (7–12 yrs, literal stories/fairness); Stage 3 Synthetic–Conventional (12+ yrs, conformity to peer/religious authority). Ethical safeguards: never assume religiosity, never impose beliefs/proselytize, balance safe rituals with clinical consent/safety, and never imply illness is punishment or lack of faith."
+    },
+    {
+      "id": "2.5",
+      "question": "Compare Pavlov's Classical Conditioning and Bandura's Social Learning Theory, and list the five systems in Bronfenbrenner's Ecological Systems Theory.",
+      "answer": "Pavlov's classical conditioning explains learning by pairing a neutral stimulus with an unconditioned stimulus until the conditioned stimulus alone triggers a conditioned response (e.g., treatment-room anxiety). Bandura's social learning theory explains learning by observing and imitating models through attention, retention, reproduction, and motivation (including internal pride/self-efficacy). Bronfenbrenner's five nested systems are the Microsystem, Mesosystem, Exosystem, Macrosystem, and Chronosystem."
+    }
+  ]
+}

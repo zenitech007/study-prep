@@ -1,0 +1,79 @@
+{
+  "id": 6,
+  "title": "Nursing Documentation: Principles, Methods, Standardized Trends and Clinical Reporting",
+  "introduction": "Accurate nursing documentation creates the permanent legal, clinical, educational, and research record of the entire nursing process. Navigating traditional and electronic charting methods, standardized nursing terminologies (NMDS, NIC, NOC), specialized recording tools (Kardex, progress notes, flow charts, discharge summaries), and concise clinical reporting ensures seamless, safe continuity of care.",
+  "learningOutcomes": [
+    "6.1 Explain the eight core purposes of effective nursing documentation and the role of initial admission evaluation.",
+    "6.2 Compare seven nursing documentation methods (source-oriented, problem-oriented, PIE, focusing diagram, charting by exception, computerized/EHR, and case management), including electronic confidentiality safeguards.",
+    "6.3 Describe standardized nursing language trends—Nursing Minimum Data Set (NMDS: 16 elements), Nursing Interventions Classification (NIC), and Nursing Outcomes Classification (NOC).",
+    "6.4 Differentiate key clinical recording forms (Kardex, progress notes, discharge summaries, flow charts, leaves of flow, traditional vs. standardized care plans) and long-term/home care documentation.",
+    "6.5 Explain the purpose and formats of clinical reporting, including summary reports, incident reports, and shift change handoff reports."
+  ],
+  "content": [
+    {
+      "heading": "Principles and Eight Purposes of Effective Nursing Documentation",
+      "body": "Effective nursing documentation builds a comprehensive patient database reflecting the patient's current status and every phase of the nursing process throughout care. Patient files serve eight primary purposes: (1) Communication—exchanging clinical information smoothly among health professionals; (2) Creation of the Patient Care Plan—supplying foundational data for individualized planning; (3) Control of Health Organizations—enabling institutional quality audits; (4) Research—providing aggregate clinical evidence across patient populations; (5) Education—serving as real-world learning tools for health-science students; (6) Compensation/Reimbursement—documenting accurate diagnoses and appropriate care to secure public or private insurance payment; (7) Legal Documentation—serving as admissible evidence in courts of law; and (8) Analysis of Health Care—identifying institutional staffing, service, and resource needs. Documentation opens with the Initial Nursing Evaluation (initial database/nursing background) completed on unit entry via systematic clinical and functional examination, followed by continuous entries on flow sheets and progress notes."
+    },
+    {
+      "heading": "Seven Methods of Nursing Documentation and Computer Confidentiality",
+      "body": "Clinical facilities apply seven primary documentation methods: (1) Source-Oriented Recording—each discipline documents on separate forms (admission sheet, medical notes, nursing notes); forms are easy to locate, but data on a single problem are scattered chronologically; (2) Problem-Oriented Recording—organized around patient problems across four components (Data Base, numbered List of Problems, Care Plan, and multidisciplinary Progress Notes); promotes collaboration and visibility of needs, though time-consuming and repetitive when interventions span multiple problems; (3) Problem–Intervention–Evaluation (PIE) Model—groups notes into Problems, Interventions, and Evaluation anchored by structured assessment frameworks (human needs or functional health patterns); (4) Focusing Diagram (Focus Charting)—centres documentation on the patient's concerns and strengths using checklists/diagrams without forcing all three PIE elements into strict order in every entry; (5) Charting by Exception (CBE)—documents ONLY abnormal or significant deviations using three elements (bedside Diagrams/flow sheets, established Standards/criteria of nursing care, and Bedside chart access), cutting repetitive notes and making clinical changes immediately visible; (6) Computerized Recording / EHR—uses desktop/bedside terminals, standardized drop-down pick-lists, voice recognition, and inter-unit transmission; safeguarding privacy requires six strict rules: never share personal access codes, never leave terminals logged in unattended, shield screens from unauthorized view, display only necessary data, follow error-correction protocols, and follow institutional policies for sensitive diagnoses (e.g., AIDS); and (7) Case Management—multidisciplinary documentation emphasizing quality and cost-effectiveness by tracking daily expected outcomes across patient groups."
+    },
+    {
+      "heading": "Standardized Documentation Trends: NMDS, NIC, and NOC",
+      "body": "To store, aggregate, compare, and research nursing care consistently inside Electronic Health Records (EHRs), the ANA recognizes standardized nursing terminologies including NANDA-I, NIC, NOC, and the Omaha System. Developed by Harriet Werley and colleagues in 1985, the Nursing Minimum Data Set (NMDS) defines a uniform set of 16 core elements across three groups to establish comparable data, describe care, project trends/resource allocation, stimulate research, and inform health policy: 4 Nursing Care Elements (nursing diagnosis, nursing intervention, nursing outcome, nursing intensity), 5 Client Elements (unique ID, date of birth, gender, race/ethnicity, residence), and 7 Service Provider Elements (unique facility ID, health record number, provider ID, encounter date, discharge date, disposition, expected payer). The Nursing Interventions Classification (NIC) standardizes independent/collaborative, direct/indirect, physiological, psychosocial, preventive, family, and community nursing treatments across all settings; its 6th edition contains 565 interventions and ~13,000 activities—standardized intervention labels and definitions are NEVER altered, while nurses individualize care by selecting/adapting from 10–30 logically sequenced activities per intervention. The Nursing Outcomes Classification (NOC)—first published in 1997 (expanded 2000, 2004, 2008, 2013)—standardizes nursing-sensitive patient outcomes linked with NANDA-I and NIC for outcome identification, evaluation, the NMDS outcome element, and Pesut and Herman's Outcome-Present State Test (OPT) clinical reasoning model."
+    },
+    {
+      "heading": "Forms of Recording Data and Specialized Care Documentation",
+      "body": "Nurses utilize specialized clinical records to organize care efficiently: (1) Kardex—a quick-reference information system updated each shift for handoffs summarizing allergies, history, medications, invasive lines, code status, and priority/long-term interventions; (2) Progress Notes—chronological records of patient problems, abnormal findings paired with specific nursing interventions, and progress toward outcomes; (3) Nursing Discharge Card & Report Summary—completed at transfer or discharge (often combining final progress notes, care instructions, and checklists) to guide community nurses; (4) Flow Charts—directional, step-by-step protocol diagrams summarizing clinical actions for specific scenarios (e.g., chest trauma management); (5) Leaves of Flow (Flow Sheets)—concise graphic logs for vital signs, weight, surgery dates, fluid intake/output, medications, and skin/turning schedules; and (6) Nursing Care Plans—either Traditional (custom-written per patient, typically in 3 columns: diagnosis, expected results, interventions) or Standardized (time-saving evidence-based templates that MUST still be individualized). Long-Lasting (Long-Term) Care distinguishes specialized extensive nursing care from intermediate chronic ADL assistance under specific regulatory schedules, while Home Care relies on two core files—a home care certificate with therapy plan, and a medical briefing with patient status form (increasingly synced remotely via portable computers/modems)."
+    },
+    {
+      "heading": "Clinical Reporting: Summary Reports, Incident Reports, and Shift Change Handoffs",
+      "body": "Clinical reporting transmits vital, concise, relevant patient information orally or in writing without extraneous clutter across care teams, via telephone, or at shift changes. Summary Reports consolidate baseline and ongoing multi-system assessments (neuro, skin, cardiac, respiratory, GI, GU, safety, lines, isolation). Incident Reports (e.g., medication error forms) formally document unexpected events or errors—capturing the resident/patient involved, error type (wrong dose, drug, route, time, or resident), exact date/time occurred and identified, factual incident description, signatures, notifications (manager, physician, pharmacist), and corrective follow-up actions. Shift Change Reports brief oncoming nurses on every patient's active needs and care instructions to ensure uninterrupted continuity: person-to-person oral handoffs allow oncoming staff to ask clarifying questions immediately, whereas written or audio-recorded reports are typically briefer and more time-efficient."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What are the four basic components of Problem-Oriented Recording?",
+      "answer": "Data base, List of problems, Care plan, and Progress notes."
+    },
+    {
+      "question": "Who developed the Nursing Minimum Data Set (NMDS) in 1985, and what are its four Nursing Care Elements?",
+      "answer": "Harriet Werley and colleagues developed the NMDS; its four Nursing Care Elements are Nursing diagnosis, Nursing intervention, Nursing outcome, and Nursing intensity."
+    },
+    {
+      "question": "In the Nursing Interventions Classification (NIC), which parts are strictly standardized and which part is used to individualize care?",
+      "answer": "The intervention label name and definition are strictly standardized and must not be changed, whereas the nursing activities (selecting/adding from 10–30 activities per intervention) are used to individualize care."
+    },
+    {
+      "question": "Is a flow chart a non-directional image of hospital protocols? Explain.",
+      "answer": "False. A flow chart is a directional image summarizing the step-by-step clinical protocols and interventions to follow in specific clinical situations."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Explain six of the eight core purposes of effective nursing documentation.",
+      "answer": "1. Communication among healthcare professionals; 2. Creation of individualized patient care plans; 3. Organizational quality control/audits; 4. Source of data for clinical research; 5. Educational resource for health-science students; 6. Admissible legal documentation in court (others: insurance compensation/reimbursement and healthcare service analysis)."
+    },
+    {
+      "id": "6.2",
+      "question": "Compare Source-Oriented Recording, Charting by Exception (CBE), and Case Management documentation, and list four safeguards for computer record confidentiality.",
+      "answer": "Source-oriented files separate records by discipline (easy to locate forms, but scatters problem chronology). CBE records only abnormal/significant exceptions using diagrams, care standards, and bedside access (avoids repetitive notes and highlights changes). Case management uses a multidisciplinary cost-and-quality approach tracking daily expected outcomes. Four computer safeguards: never share personal access codes, never leave computers unattended while logged in, shield screens from unauthorized eyes, and follow institutional protocols for sensitive diagnoses (e.g., AIDS) and error correction."
+    },
+    {
+      "id": "6.3",
+      "question": "List all sixteen elements of the Nursing Minimum Data Set (NMDS) grouped into their three categories.",
+      "answer": "Nursing Care Elements (4): nursing diagnosis, nursing intervention, nursing outcome, nursing intensity. Client Elements (5): unique ID, DOB, gender, race/ethnicity, residence. Service Provider Elements (7): unique facility ID, health record number, provider ID, encounter date, discharge date, disposition of client, expected payer."
+    },
+    {
+      "id": "6.4",
+      "question": "Differentiate the Nursing Interventions Classification (NIC) from the Nursing Outcomes Classification (NOC) and explain how both link with NANDA-I.",
+      "answer": "NIC (6th ed.: 565 interventions, ~13,000 activities) standardizes independent/collaborative direct and indirect nursing treatments to communicate care and measure impact; NOC (first published 1997) standardizes nursing-sensitive patient outcomes for outcome identification, evaluation, and clinical reasoning (OPT model). Together with NANDA-I diagnoses, they create unified standardized linkages for EHRs, NMDS reporting, effectiveness research, and nursing theory development."
+    },
+    {
+      "id": "6.5",
+      "question": "Differentiate a Kardex, Progress Notes, Flow Charts, and Incident Reports, and compare oral versus written/recorded shift change reports.",
+      "answer": "A Kardex is a shift-updated quick-reference handoff summary of active patient needs and interventions; Progress Notes track problems, abnormal findings, interventions, and goal progress; Flow Charts are directional step-by-step clinical protocol diagrams; Incident Reports formally document errors/adverse events (e.g., medication errors) and follow-up actions. Oral face-to-face shift reports allow listeners to ask immediate questions, whereas written or recorded reports are shorter and save time."
+    }
+  ]
+}

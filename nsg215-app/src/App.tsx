@@ -7,6 +7,7 @@ const LearnPage = lazy(() => import('./pages/LearnPage'));
 const ConceptsPage = lazy(() => import('./pages/ConceptsPage'));
 const DrillPage = lazy(() => import('./pages/DrillPage'));
 const TrackerPage = lazy(() => import('./pages/TrackerPage'));
+import CourseRouteGuard from './components/layout/CourseRouteGuard';
 import { useAppStore } from './store/useAppStore';
 import { storage } from './store/storage';
 
@@ -43,11 +44,13 @@ function App() {
       <Suspense fallback={<div role="status" aria-label="Loading course view" className="mx-auto max-w-5xl space-y-4 p-6"><div className="h-16 rounded-xl bg-slate-200 dark:bg-slate-800 animate-pulse" /><div className="h-40 rounded-xl bg-slate-200 dark:bg-slate-800 animate-pulse" /></div>}><Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="course/:courseId" element={<CourseDashboardPage />} />
-          <Route path="course/:courseId/learn" element={<LearnPage />} />
-          <Route path="course/:courseId/concepts" element={<ConceptsPage />} />
-          <Route path="course/:courseId/drill" element={<DrillPage />} />
-          <Route path="course/:courseId/tracker" element={<TrackerPage />} />
+          <Route path="course/:courseId" element={<CourseRouteGuard />}>
+            <Route index element={<CourseDashboardPage />} />
+            <Route path="learn" element={<LearnPage />} />
+            <Route path="concepts" element={<ConceptsPage />} />
+            <Route path="drill" element={<DrillPage />} />
+            <Route path="tracker" element={<TrackerPage />} />
+          </Route>
           <Route path="learn" element={<LearnPage />} />
           <Route path="concepts" element={<ConceptsPage />} />
           <Route path="drill" element={<DrillPage />} />

@@ -1,0 +1,79 @@
+{
+  "id": 6,
+  "title": "Informed Consent and On-Going Consent to Care",
+  "introduction": "Modern health care has shifted power from paternalistic directives toward client self-determination and bodily autonomy. Obtaining valid informed consent—and maintaining five-stage on-going consent in long-term care—is a vital legal and ethical safeguard protecting both client dignity and nursing practitioners from liability.",
+  "learningOutcomes": [
+    "6.1 Define informed consent, trace its historical origin (1957), and state its three major legal and ethical elements.",
+    "6.2 Differentiate physician and nurse responsibilities in obtaining and witnessing consent, and contrast the Bolam Test, patient-centred informed consent, and assault/battery standards.",
+    "6.3 Explain written and electronic consent processes, the Nuremberg Code, and the Hawthorne Effect in research ethics.",
+    "6.4 Identify the three groups of clients legally unable to provide consent and explain legal exceptions such as implied emergency consent and emancipated minors.",
+    "6.5 Describe the five stages of on-going consent to care (including advance statements vs. binding advance directives) and outline four strategies for resolving consent refusal."
+  ],
+  "content": [
+    {
+      "heading": "Definition, History, and Assessment of Informed Consent",
+      "body": "Informed consent is a legal procedure ensuring that patients, clients, and research participants understand the nature of a treatment or procedure, its intended benefits, potential risks and costs, possible alternatives, and have an opportunity to ask questions. The technical term first appeared in a 1957 U.S. medical malpractice court case and brings together three core practices: agreeing based on genuine internal understanding (not fear or social pressure), having multiple uncompelled choices with real comprehension of consequences, and giving explicit permission rather than relying on assumptions. Valid informed consent requires three major elements: (1) consent must be given voluntarily or freely, (2) the giver must have the capacity and competence to understand, and (3) the client must receive enough information to serve as the ultimate decision-maker. Evaluating capacity is complex because verbal agreement or a signature does not guarantee internal comprehension, yet in formal clinical settings an explicit signature (e.g., on a 'do not resuscitate' directive) is generally relied upon legally."
+    },
+    {
+      "heading": "Physician vs. Nurse Responsibilities and Legal Standards of Consent",
+      "body": "Obtaining informed consent for medical and surgical procedures is strictly the physician's responsibility because the person performing the surgery or anaesthesia best understands what is involved; delegating this duty to nurses is highly undesirable. For medical procedures, the nurse's role is to witness the consent: (1) witnessing the physician-client exchange, (2) verifying that the client genuinely understood the explanation, (3) confirming consent was given freely and voluntarily, and (4) witnessing the client's signature or thumbprint. If the nurse witnessed only the signature and not the explanation, the nurse must write 'witnessed signature only' on the form and notify the physician if the client does not understand. Conversely, obtaining informed consent for nursing procedures—such as nasogastric tube insertion, medication administration, and advanced practice interventions by nurse midwives, anaesthetists, and practitioners—is the nurse's direct responsibility. Legally, the UK, Malaysia, and Singapore apply the 'Bolam Test' ('sufficient consent', disclosing risks standard for an acceptable medical professional), whereas the U.S., Australia, and Canada use patient-centred 'informed consent' combining objective (reasonable patient) and subjective (particular patient) risk disclosure. Informed consent governs negligence (requiring causation: the patient would have declined if warned), whereas general medical consent governs assault or battery—illustrated by a UK physician disciplined by the General Medical Council for removing a cancerous womb during routine surgery without obtaining consent. Effective disclosure also adapts to cultural communication contexts (for example, Mediterranean and Arab clients often weigh who, where, when, and how information is delivered alongside its content)."
+    },
+    {
+      "heading": "Written/Electronic Consent, Research Ethics, and Legal Exceptions",
+      "body": "Hospitals traditionally capture paper consent forms and scan them into document systems, though institutions increasingly adopt electronic consent platforms—such as the open-source Research Permissions Management System (RPMS) created by Health Sciences South Carolina—to improve comprehension, indexing, and retrieval. Crucially, a written consent form guides verbal explanation and meaningful dialogue; it is never a substitute for discussion. In medical research, the 1947 Nuremberg Code (born from post-Holocaust trials) established international informed-consent standards overseen by ethics committees/IRBs. In low-risk social science research, prior consent is occasionally waived with ethics-committee approval when disclosure triggers the Hawthorne Effect (subjects altering behaviour because they know they are watched, such as car dealers hiding discrimination), provided societal benefits outweigh minimal risk. Clinically, three groups cannot legally provide consent: (1) Minors (under 18 years, plus adults with child-level mental capacity under guardianship), where parents or guardians consent—though minors who are married, pregnant, parents, or in the military are often legally permitted to consent in some jurisdictions; (2) Unconscious or severely injured clients, where the closest adult relative consents, or implied consent applies in life-threatening emergencies when neither client nor relative is reachable; and (3) Mentally ill persons formally judged incompetent by professionals, whose rights and staff protections are defined by the Mental Health Act."
+    },
+    {
+      "heading": "Five Stages of On-Going Consent to Care",
+      "body": "Single-episode surgical consent is inadequate for long-term care, where clients require on-going consent through five progressive stages: Stage 1 (Giving Information)—informing competent clients of their written care plan, letting them read or explaining it, and detailing the treatment's purpose, intended benefits, risks/negative outcomes, and advantages/disadvantages of alternatives including no treatment (record access is refused only if likely to cause serious harm); Stage 2 (Consultation with the Client)—incorporating client beliefs, values, preferences, and perceived quality of life so nurses never confuse passive 'compliance' with genuine consent; Stage 3 (Active Participation)—engaging clients in planning and reviewing care, yielding more individualized, workable plans that promote independence and reduce hospitalization; Stage 4 (Consent to Care)—the client's meaningful agreement built upon Stages 1 to 3; and Stage 5 (Making an Advance Statement and/or Directive)—specifying future care wishes in case of incapacity. An advance statement expresses non-binding views to be considered in decisions, whereas an advance directive (living will) is intended to be binding on the health team (for example, refusing artificial tube feeding in end-stage dementia)."
+    },
+    {
+      "heading": "Problems in Obtaining Consent and Resolution Strategies",
+      "body": "Nurses frequently encounter religious, socio-cultural, economic, or political resistance to treatment—such as a patient refusing needed care, a parent refusing life-saving treatment for a child, mentally ill, intoxicated, or belligerent clients, or a client withdrawing previously given consent. These scenarios pit the right to life and duty to preserve life against the right to die and duty to relieve suffering, carrying serious legal and ethical liability. To resolve consent barriers, nurses integrate behavioural assessment and modification through four steps: (1) assess and address underlying psychosocial or physical barriers hindering consent; (2) use every reasonable, lawful persuasion to encourage acceptance of necessary treatment; (3) never treat a conscious, rational adult client or parent against their refusal (which risks civil and criminal liability), instead carefully documenting and having the refusal witnessed (e.g., 'discharge against medical advice'); and (4) obtain legal consultation when the client's condition is sufficiently grave."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What should a nurse write on a surgical consent form if the nurse only saw the client sign the document and did not witness the physician's explanation?",
+      "answer": "The nurse should write 'witnessed signature only' on the form—and must notify the physician if the client does not appear to understand the explanation."
+    },
+    {
+      "question": "How does the UK 'Bolam Test' standard of consent differ from the U.S./Canadian/Australian 'informed consent' standard?",
+      "answer": "The Bolam Test ('sufficient consent') evaluates what risks a medical professional would ordinarily disclose as acceptable professional practice, whereas the patient-centred informed consent standard requires disclosing significant risks plus risks of particular importance to that specific patient."
+    },
+    {
+      "question": "What is the difference between an advance statement and an advance directive (living will) in Stage 5 of on-going consent?",
+      "answer": "An advance statement expresses a client's views or wishes to be considered in decision-making and is not legally binding on the health team, whereas an advance directive (living will) is intended to be binding (e.g., refusing artificial feeding in end-stage dementia)."
+    },
+    {
+      "question": "Why might a social science researcher occasionally request an ethics-committee waiver of informed consent?",
+      "answer": "Because in low-risk behavioural studies, informing subjects they are being observed can trigger the Hawthorne Effect—altering the very behaviour being studied."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "Define informed consent, state its three major elements, and list the four key types of information a client must receive to give valid consent.",
+      "answer": "Informed consent is a legal procedure ensuring clients/participants know the nature, benefits, risks, costs, and alternatives of a treatment or procedure. Its three major elements are: voluntary/free agreement, decision-making capacity and competence, and sufficient information. Clients must know the treatment's purpose, intended benefits, possible risks/negative outcomes, and advantages/disadvantages of alternatives including no treatment."
+    },
+    {
+      "id": "6.2",
+      "question": "Compare the responsibilities of the physician and the nurse in obtaining informed consent for medical/surgical versus nursing procedures.",
+      "answer": "The physician performing a medical or surgical procedure is responsible for explaining it and obtaining consent; the nurse's role is to witness the physician-client exchange, verify comprehension and voluntariness, and witness the signature/thumbprint. However, nurses—especially nurse midwives, anaesthetists, and practitioners, as well as bedside nurses inserting NG tubes or giving medications—are directly responsible for obtaining informed consent for nursing procedures."
+    },
+    {
+      "id": "6.3",
+      "question": "Identify the three groups of clients legally unable to provide consent and state the legal exceptions applicable to minors and unconscious emergency patients.",
+      "answer": "The three groups are minors (under 18), unconscious or severely injured persons unable to consent, and mentally ill persons formally judged incompetent. Exceptions: minors who are married, pregnant, parents, or in the military are often legally permitted to consent in some jurisdictions; in life-threatening emergencies where neither an unconscious client nor a relative can consent, consent is legally implied."
+    },
+    {
+      "id": "6.4",
+      "question": "List and briefly explain the five stages of on-going consent to care, emphasizing why Stage 2 warns against confusing compliance with consent.",
+      "answer": "1. Giving Information (sharing and explaining the care plan); 2. Consultation with the Client (incorporating beliefs, values, and preferences—without consultation, nurses obtain mere passive compliance rather than valid consent); 3. Active Participation (co-planning care to improve workability and independence); 4. Consent to Care (meaningful agreement following Stages 1-3); and 5. Making an Advance Statement or binding Advance Directive."
+    },
+    {
+      "id": "6.5",
+      "question": "Outline four strategies a nurse should use when a client or family refuses necessary medical treatment.",
+      "answer": "1. Assess and address psychosocial or physical barriers contributing to refusal. 2. Make every reasonable, lawful effort to persuade the client to accept needed care. 3. Respect a conscious, rational adult's or parent's refusal to avoid civil/criminal liability, carefully documenting and witnessing it (e.g., Discharge Against Medical Advice). 4. Obtain legal consultation if the client's condition is sufficiently grave."
+    }
+  ]
+}

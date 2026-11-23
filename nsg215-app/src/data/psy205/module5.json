@@ -1,0 +1,71 @@
+{
+  "id": 5,
+  "title": "Lifespan Growth Domains and Prenatal Development",
+  "introduction": "Human growth intertwines physical, cognitive, and psychosocial domains from the moment a single spermatozoon fertilizes an ovum inside the fallopian tube. Across roughly 266 days of gestation—germinal, embryonic, and fetal stages—the developing organism progresses from a single zygote to a sensory-active, learning fetus shaped by both genetic morphogens and the prenatal environment.",
+  "learningOutcomes": [
+    "5.1 Distinguish growth from physical development and explain how physical, cognitive, and psychosocial domains interact alongside heredity and nutrition across the lifespan.",
+    "5.2 Describe fertilization, male/female gamete characteristics, morphogens, and the cephalocaudal and proximodistal principles of prenatal and postnatal growth.",
+    "5.3 Detail the three stages of prenatal development (germinal, embryonic, fetal), including germ-layer differentiation, embryonic vulnerability, miscarriage statistics, and male prenatal vulnerability.",
+    "5.4 Explain fetal sensory discrimination (taste, smell, amniotic swallowing) and fetal learning and memory (auditory/vibroacoustic responses and newborn voice preferences).",
+    "5.5 Identify major maternal, paternal, and external teratogenic environmental hazards and justify the necessity of early prenatal care."
+  ],
+  "content": [
+    {
+      "heading": "Physical, Cognitive, and Psychosocial Domains and Lifespan Growth Patterns",
+      "body": "Human development interconnects three domains: Physical Development (increasing bodily skill and functioning across brain, motor skills, sensation/perception, body growth, and nutrition—distinct from Growth, which specifically measures increases in height, weight, and general size), Cognitive Development (how the mind thinks, learns, remembers, and understands experiences through brain maturation and experience), and Psychosocial Development (regulating emotions, temperament, self-control, and attachment relationships). Physical stature and weight develop over 15–20 years from an average full-term newborn (~7.5 lb and 20 inches) to adult proportions, shifting from a relatively large head and short limbs to a smaller proportional head and long torso/limbs. Birth weight doubles in the first 4 months, triples by 12 months, and quadruples by 24 months, slowing through childhood until the rapid prepubertal growth spurt (ages 9–15). While genetics sets maximum potential stature (reflected in population/ethnic stature differences and sexual dimorphism), achieving genetic potential requires adequate nutrition and freedom from chronic illness; malnutrition stunts stature and delays puberty, yet even optimal environments cannot exceed hereditary limits."
+    },
+    {
+      "heading": "Fertilization and the Three Stages of Prenatal Development",
+      "body": "Fertilization (conception) unites one male spermatozoon (tiny, ~1/6,000 inch, highly motile, produced by hundreds of millions daily in testes) with one female ovum (the body's largest cell, ~1/4 the size of a printed period; girls are born with ~400,000 immature ova in ovarian follicles, ovulating roughly every 28 days) inside the fallopian tube to create a single-celled Zygote. Gestation lasts ~9 months (266 days from conception). Activated genes produce Morphogens that sculpt limbs, brain, and organs following two fundamental directional gradients: Cephalocaudal (head-to-tail: head is 1/2 body length at 2 months gestation, 1/4 at birth) and Proximodistal (centre-outward: trunk before limbs, arms/legs before fingers/toes). Prenatal development spans three stages: (1) Germinal Stage (Fertilization–2 weeks)—rapid mitosis (36 hrs -> 16–32 cells at 72 hrs -> 64 cells next day), 3–4 day tubal transit forming a fluid-filled Blastocyst that implants via outer Trophoblast threads into the uterine wall; the Embryonic Disk differentiates into Ectoderm (outer skin, hair, nails, teeth, sensory organs, brain/spinal cord), Endoderm (digestive system, liver, pancreas, salivary glands, respiratory system), and later Mesoderm (inner skin, muscles, skeleton, excretory and circulatory systems), alongside protective Placenta, Umbilical Cord, and Amniotic Sac; (2) Embryonic Stage (2–8 weeks)—rapid organogenesis of major systems; the CRITICAL PERIOD of maximal vulnerability to teratogens (unformed organs are at highest risk). About 1/3 of all conceptions and 3 in 4 miscarriages (spontaneous abortions; 50–70% chromosomal abnormalities) occur in the 1st trimester; males are more vulnerable to prenatal shocks (~120–170 males conceived per 100 females -> only 106 boys born per 100 girls); maternal miscarriage risk rises with smoking, alcohol/coffee, age >35, prior miscarriage, bleeding, uterine/endocrine issues, or infections; and (3) Fetal Stage (8 weeks–birth)—begins with first bone cells, growing ~20x in length with active kicking, somersaulting, swallowing, and thumb-sucking observable on Ultrasound; a major brain/neurobehavioural maturation jump occurs at 28–32 weeks (improving premature survival), and stable individual/gender differences emerge (male fetuses move more vigorously; fetal activity at 24 weeks correlates with postnatal temperament)."
+    },
+    {
+      "heading": "Fetal Sensory Discrimination, Fetal Learning, Environmental Hazards, and Prenatal Care",
+      "body": "Fetuses actively sense and learn inside the womb. In Fetal Sensory Discrimination, swallowing and inhaling amniotic fluid begins around week 12—stimulating taste, smell, and respiratory/digestive maturation—while mature taste cells appear around week 14 and the olfactory system develops well before birth (transmitting flavours/odours of maternal foods, though basic taste preferences appear largely innate). In Fetal Learning, fetuses hear maternal voice, heartbeat, and body vibrations: vibroacoustic responses begin at 26 weeks and plateau by 32 weeks, and by 7 months fetuses discriminate bells and different tones. Demonstrating prenatal memory, 2–4-day-old newborns prefer musical and speech sequences heard in utero, prefer their mother's voice over strangers, female voices over male voices, and their mother's native language—helping hungry newborns orient toward the mother's voice to locate food. Because Environmental Hazards (Teratogens)—whose impact depends on timing, intensity, and genetic interaction—threaten development via both maternal factors (poor nutrition, smoking, alcohol, legal/illegal drugs, AIDS/STIs, infections, maternal age, blood-type incompatibility, chemicals, radiation) and paternal factors (environmental toxins harming sperm), early, quality Prenatal Care is vital to detect disorders early and reduce maternal/infant mortality, low birth weight, and birth complications."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "At what postnatal ages does a healthy infant's birth weight typically double, triple, and quadruple?",
+      "answer": "Doubles in the first 4 months, triples by 12 months, and quadruples by 24 months."
+    },
+    {
+      "question": "Which embryonic germ layer gives rise to the brain and spinal cord, which forms the skeleton and circulatory system, and which forms the digestive and respiratory systems?",
+      "answer": "Ectoderm -> brain, spinal cord, outer skin, hair, nails, teeth, sensory organs; Mesoderm -> skeleton, muscles, inner skin, circulatory and excretory systems; Endoderm -> digestive system, liver, pancreas, salivary glands, and respiratory system."
+    },
+    {
+      "question": "At what gestational week do mature taste cells appear, and at what weeks do vibroacoustic sound/vibration responses begin and plateau?",
+      "answer": "Mature taste cells appear around 14 weeks of gestation; fetal responses to sound and vibration begin at 26 weeks and reach a plateau around 32 weeks."
+    },
+    {
+      "question": "Why are only about 106 boys born for every 100 girls despite 120–170 males being conceived per 100 females?",
+      "answer": "Male embryos and fetuses are more biologically vulnerable to prenatal shocks, spontaneous abortion (miscarriage), and stillbirth—potentially due to greater embryonic alteration from the baseline female body plan, harmful Y-chromosome genes, or sex differences in immunity."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "5.1",
+      "question": "Differentiate growth from physical development and explain how heredity and environment interact to determine adult stature.",
+      "answer": "Growth refers specifically to quantitative increases in height, weight, and general size, whereas physical development involves increasing bodily skill and functioning (brain, motor, sensory). Genetics sets maximum potential stature, while adequate nutrition and health are required to reach it; poor nutrition or disease stunts growth and delays puberty, but even optimal environments cannot exceed hereditary limits."
+    },
+    {
+      "id": "5.2",
+      "question": "Describe fertilization, define morphogens, and explain the cephalocaudal and proximodistal principles with prenatal examples.",
+      "answer": "Fertilization joins a spermatozoon and an ovum in the fallopian tube to form a zygote. Morphogens are gene-produced molecules switched on after fertilization to sculpt body parts. Cephalocaudal ('head to tail') means head/brain develop earliest (half of body length at 2 months gestation vs. one-fourth at birth); Proximodistal ('near to far') means trunk develops before limbs and arms/legs before fingers/toes."
+    },
+    {
+      "id": "5.3",
+      "question": "Summarize the three stages of prenatal development (Germinal, Embryonic, Fetal) including their timing and defining milestones.",
+      "answer": "Germinal (0–2 wks): rapid mitosis, blastocyst formation, uterine implantation, ectoderm/endoderm/mesoderm differentiation, placenta/umbilical cord/amniotic sac formation. Embryonic (2–8 wks): rapid organogenesis of major systems, critical period of peak teratogen vulnerability and highest miscarriage risk. Fetal (8 wks–birth): begins with first bone cells, 20x length growth, vigorous movements, 28–32 wk brain maturation jump, finishing touches (nails, eyelids)."
+    },
+    {
+      "id": "5.4",
+      "question": "Explain the evidence for fetal sensory discrimination and fetal learning/memory before birth.",
+      "answer": "Fetal sensory discrimination begins as fetuses swallow/inhale amniotic fluid (~12 wks), develop mature taste cells (~14 wks), and form functional olfactory receptors before birth. Fetal learning is shown by vibroacoustic responses (26–32 wks), tone discrimination by 7 months, and 2–4-day-old newborns preferring in-utero speech/music sequences, their mother's voice, female voices, and their mother's native language."
+    },
+    {
+      "id": "5.5",
+      "question": "List eight maternal or environmental teratogenic hazards affecting the developing fetus and state three key benefits of early prenatal care.",
+      "answer": "Eight hazards: poor maternal nutrition, smoking, alcohol, legal/illegal drugs, AIDS/maternal infections, advanced maternal age, blood-type incompatibility, and chemicals/radiation (plus paternal sperm toxins). Benefits of early prenatal care: early detection of defects/disorders, reduced maternal and infant mortality, and lower rates of low birth weight and birth complications."
+    }
+  ]
+}

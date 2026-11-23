@@ -1,0 +1,79 @@
+{
+  "id": 2,
+  "title": "Nursing Health Assessment: Purpose, Types, Data Collection Techniques, Interviews and Nursing Models",
+  "introduction": "Nursing health assessment is the foundation of both the nursing process and the therapeutic nurse-patient relationship. Mastering structured observation, the four physical examination techniques (inspection, auscultation, palpation, percussion), open-ended interviewing, and conceptual assessment models—especially Roy, Orem, and Gordon's eleven Functional Health Patterns—ensures accurate, holistic data collection.",
+  "learningOutcomes": [
+    "2.1 Explain the clinical and relational purpose of nursing assessment and distinguish the four types of nursing assessment (initial, problem-focused, emergency, time-lapsed).",
+    "2.2 Describe observation as the foundation of data collection and demonstrate proper sequence and technique for inspection, auscultation, palpation, and percussion (including the five percussion sounds).",
+    "2.3 Compare closed/semi-closed versus open-ended questions during the nursing interview.",
+    "2.4 Identify seven major nursing assessment models and apply Roy's Adaptation Model and Orem's eight Universal Self-Care Requisites to patient assessment.",
+    "2.5 Apply Gordon's eleven Functional Health Patterns (including COLDSPA pain assessment) and differentiate general, problem-focused, special population, and baseline assessment formats."
+  ],
+  "content": [
+    {
+      "heading": "Purpose and Four Types of Nursing Assessment",
+      "body": "As the first stage of the nursing process, nursing assessment systematically explores physical, psychological, spiritual, and social dimensions of a patient's life to establish the foundation for all subsequent phases (Foster & Hawkins, 2005). Because assessment marks the first nurse-patient encounter, it establishes first impressions that strongly influence the therapeutic nurse-patient relationship (Patrick, 2013) while collecting subjective and objective data to identify actual and potential problems (Weber & Kelley, 2013). Four types of assessment are used in practice: (1) Initial Nursing Assessment—performed within a specified time after admission to establish a complete baseline database; (2) Problem-Focused Assessment—an ongoing process integrated with care to determine the status of a specific identified problem; (3) Emergency Assessment—performed during physiological or psychological crises to identify life-threatening, new, or overlooked problems rapidly; and (4) Time-Lapsed Reassessment—conducted several months after initial assessment to compare current client status against baseline."
+    },
+    {
+      "heading": "Observation, Physical Examination Techniques, and the Nursing Interview",
+      "body": "Observation—the foundation of all data collection—is a deliberate, objective, non-judgmental focus engaging the five senses, intellectual abilities (judging volume, form, intensity), and comparative/deductive memory. Physical examination uses four basic techniques ordered from least invasive to most invasive (Jarvis, 2012): (1) Inspection—the most frequent technique and ALWAYS performed first, using eyes, ears, and nose to detect skin colour, lesions, bruises, rashes, symmetry, body part size, sounds, and odours; (2) Auscultation—performed after inspection and critically BEFORE percussion or palpation during abdominal exams to prevent creating false bowel sounds; conducted in a quiet room directly over bare skin (never over clothing/gowns), pressing the stethoscope firmly enough to leave a slight ring, noting body hair interference, cleaning between patients, and using the Diaphragm for high-pitched sounds and the Bell for low-pitched sounds; (3) Palpation—touching with finger pads at varying pressures: Light Palpation (1/2 to 3/4 inch) assesses texture, tenderness, temperature, moisture, pulsations, and superficial masses, whereas Deep Palpation (1 1/2 to 2 inches) assesses deep masses and internal organs; and (4) Percussion—pressing the distal middle finger of the non-dominant hand firmly on the skin (keeping the rest of the hand off), flexing the dominant wrist (not forearm), and tapping perpendicularly with the dominant middle finger to elicit tenderness or five characteristic sounds: Tympany (drum-like over air pockets), Resonance (hollow over solid + air, e.g., normal lungs), Hyperresonance (booming over trapped air, e.g., emphysema), Dullness (over solid organs or masses), and Flatness (over dense muscle or bone). During the Nursing Interview, closed/semi-closed questions capture precise facts (age, urination count) but quickly shut down dialogue, whereas open-ended questions are generally recommended to let patients express feelings, perceptions, and concerns freely without being led."
+    },
+    {
+      "heading": "Models of Nursing Assessment: Roy's Adaptation and Orem's Self-Care Requisites",
+      "body": "Seven major conceptual models guide nursing assessment: Roy's Adaptation Model, Orem's Self-Care Deficit Theory, Nightingale's Environment Theory, Peplau's Theory of Interpersonal Relations, Neuman's Systems Model, King's Theory of Goal Attainment, and Rogers' Theory of Unitary Human Beings. Under Callista Roy's Adaptation Model, nurses assess four adaptive domains: (1) Physiologic Needs (activity and rest, nutrition, elimination, fluid and electrolytes, oxygenation, protection, and regulation of temperature, the senses, and the endocrine system); (2) Self-Concept (physical self and personal self); (3) Role Function; and (4) Interdependence. Under Dorothea Orem's Self-Care Model, assessment is organized around eight Universal Self-Care Requisites: (1) maintaining sufficient intake of air, (2) sufficient intake of water, (3) sufficient intake of food, (4) provision of care associated with elimination processes and excrement, (5) balance between activity and rest, (6) balance between solitude and social interaction, (7) prevention of hazards to human life, functioning, and well-being, and (8) promotion of human functioning and development within social groups in accordance with human potential, limitations, and desire for normalcy."
+    },
+    {
+      "heading": "Gordon's Eleven Functional Health Patterns",
+      "body": "Marjory Gordon's framework organizes holistic subjective history and objective physical examination across eleven Functional Health Patterns: (1) Health Perception & Health Management—perceived health, promotive/preventive/restorative practices (smoking, alcohol, breast/testicular self-exams, adherence, accident history); (2) Nutrition & Metabolism—food/fluid intake, supplements, weight/height changes, appetite, breastfeeding, swallowing, healing, skin/oral/dental/abdominal exam; (3) Elimination—bowel/bladder frequency, character, control, laxatives, perspiration, odour, drains; (4) Activity & Exercise—energy, exercise, leisure/play, ADL abilities, gait, posture, ROM, hand grip, cardiopulmonary exam; (5) Sleep & Rest—restfulness, sleep onset, sleep aids, nightmares, dark circles, yawning, concentration; (6) Cognition & Perception—five senses (vision/hearing), memory, concentration, decision-making, learning style, and structured pain history using COLDSPA (Character, Onset, Location, Duration, Severity, Pattern, Associated factors — Weber, 2003); (7) Self-Perception & Self-Concept—self-worth, body image, emotional states, eye contact, speech, posture, 1–5 nervous/relaxed and assertive/passive ratings; (8) Roles & Relationships—family structure, dependents, loneliness, work/school, income, observed family interaction; (9) Sexuality & Reproduction—sexual satisfaction/problems, contraception, menarche, LMP, menstrual issues, gravida/para; (10) Coping & Stress Tolerance—recent crises, support systems, tension relief, coping effectiveness; and (11) Values & Beliefs—life goals, religious/spiritual importance, health beliefs, and hospital accommodation of religious practices."
+    },
+    {
+      "heading": "Assessment Formats: General, Problem-Focused, Special Populations, and Baseline",
+      "body": "Clinicians tailor assessment formats to patient acuity and context while upholding privacy and open communication. A General (Comprehensive) Health Assessment gathers symptom trajectories and physical findings supporting differential diagnosis and builds lasting rapport upon admission, return from testing, or shift start. A Problem-Focused Assessment is triggered when a comprehensive assessment uncovers a potential problem, an interval assessment detects a status change, a new symptom appears, or the patient develops distress—allowing rapid targeted questioning and focused physical examination (Jarvis, 2012; Scanlon, 2011). Special Population Assessments address distinct physiological and developmental needs of pregnant patients, infants, children, and the elderly. Crucially, whenever problem-focused or special population assessments are indicated, they follow a Baseline Comprehensive Assessment and help determine the frequency of subsequent interval assessments; special assessments augment—never replace—comprehensive and interval assessments, and systematic physical assessment must never be dismissed due to time constraints (Zambas, 2010)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Why must abdominal auscultation always be performed BEFORE percussion and palpation?",
+      "answer": "To prevent stimulating the bowel and producing false bowel sounds."
+    },
+    {
+      "question": "Which part of the stethoscope is used for high-pitched sounds versus low-pitched sounds?",
+      "answer": "The diaphragm is used to listen to high-pitched sounds, whereas the bell is best for identifying low-pitched sounds."
+    },
+    {
+      "question": "What percussion sound is heard over normal lungs versus over solid organs or masses?",
+      "answer": "Resonance (hollow sound) is heard over normal lungs (solid structure with air), whereas Dullness is heard over solid organs or masses."
+    },
+    {
+      "question": "In Gordon's Cognition and Perception pattern, what does the COLDSPA mnemonic for pain assessment stand for?",
+      "answer": "Character, Onset, Location, Duration, Severity, Pattern, and Associated factors."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Define the four types of nursing assessment and explain when each is performed.",
+      "answer": "1. Initial assessment: performed within a specified time period on admission to establish a complete database. 2. Problem-focused assessment: ongoing process integrated with care to evaluate a specific problem. 3. Emergency assessment: performed during physiological/psychological crises to identify life-threatening or overlooked problems. 4. Time-lapsed reassessment: conducted several months later to compare current status against baseline."
+    },
+    {
+      "id": "2.2",
+      "question": "Differentiate light palpation from deep palpation and describe the five characteristic sounds heard during percussion.",
+      "answer": "Light palpation presses 1/2–3/4 inch with finger pads to assess texture, tenderness, temperature, moisture, pulsations, and superficial masses; deep palpation compresses 1 1/2–2 inches to evaluate deep masses and internal organs. Five percussion sounds: Tympany (drum-like over air pockets), Resonance (hollow over normal lungs), Hyperresonance (booming over air in emphysema), Dullness (over solid organs/masses), and Flatness (over dense muscle/bone)."
+    },
+    {
+      "id": "2.3",
+      "question": "Compare open-ended and closed/semi-closed questions in a nursing interview and explain why open-ended questions are generally preferred.",
+      "answer": "Closed/semi-closed questions efficiently collect precise factual data (age, urination frequency) but restrict emotional expression and end conversations quickly. Open-ended questions are preferred because they avoid leading the patient in a predetermined direction and encourage free communication of feelings, concerns, and perceptions."
+    },
+    {
+      "id": "2.4",
+      "question": "List Dorothea Orem's eight Universal Self-Care Requisites used to structure nursing assessment.",
+      "answer": "1. Sufficient intake of air; 2. Sufficient intake of water; 3. Sufficient intake of food; 4. Care associated with elimination and excrement; 5. Balance between activity and rest; 6. Balance between solitude and social interaction; 7. Prevention of hazards to human life, functioning, and well-being; 8. Promotion of human functioning and development within social groups."
+    },
+    {
+      "id": "2.5",
+      "question": "List all eleven of Gordon's Functional Health Patterns and state which four groups require Special Population Assessments.",
+      "answer": "Gordon's 11 patterns: (1) Health Perception & Health Management, (2) Nutrition & Metabolism, (3) Elimination, (4) Activity & Exercise, (5) Sleep & Rest, (6) Cognition & Perception, (7) Self-Perception & Self-Concept, (8) Roles & Relationships, (9) Sexuality & Reproduction, (10) Coping & Stress Tolerance, and (11) Values & Beliefs. Four special populations: pregnant patients, infants, children, and the elderly."
+    }
+  ]
+}

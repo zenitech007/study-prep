@@ -4,6 +4,7 @@ import { BookOpen, Target, Brain, TrendingUp, AlertTriangle, Zap, Award, RotateC
 import { useAppStore } from '../store/useAppStore';
 import { getDueSRSQuestions } from '../utils/srs';
 import { getCourse, COURSES } from '../data/courses';
+import LockedCourseView from '../components/common/LockedCourseView';
 
 export default function CourseDashboardPage() {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ export default function CourseDashboardPage() {
   const courseLoadError = useAppStore((s) => s.courseLoadError);
   const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
 
-  const course = getCourse(courseId || 'nsg215') || COURSES[0];
+  const course = getCourse(courseId || 'gce204') || COURSES[0];
   const isAvailable = course.status === 'active';
 
   // Sync active course on load
@@ -23,6 +24,10 @@ export default function CourseDashboardPage() {
       setCurrentCourse(course.id);
     }
   }, [course, setCurrentCourse]);
+
+  if (course.status === 'locked') {
+    return <LockedCourseView course={course} />;
+  }
 
   const dueSRSQuestions = getDueSRSQuestions(questions, progress.questionHistory);
 
@@ -94,7 +99,7 @@ export default function CourseDashboardPage() {
         </p>
       </section>
 
-      {(course.id === 'gce204' || course.id === 'nsg222') && questions.length === 0 && (
+      {(course.id === 'gce204' || course.id === 'nsg222' || course.id === 'nsg223' || course.id === 'nsg225' || course.id === 'nsg229' || course.id === 'nsg232' || course.id === 'pio206' || course.id === 'psy205' || course.id === 'psm201') && questions.length === 0 && (
         <div className="card p-5 border border-amber-500" role="status">
           <p className="font-semibold text-main">Practice questions are pending</p>
           <p className="text-sm text-sub mt-1">The {course.code} question bank has not been added yet. You can browse the module framework.</p>
@@ -146,7 +151,7 @@ export default function CourseDashboardPage() {
           <div className="text-2xl font-bold" style={{ color: 'var(--color-accent)' }}>
             {course.sessionCount}
           </div>
-          <div className="text-xs text-muted mt-1">{course.id.startsWith('ana') || course.id === 'gce204' || course.id === 'nsg222' ? 'Modules' : 'Study Sessions'}</div>
+          <div className="text-xs text-muted mt-1">{course.id.startsWith('ana') || course.id === 'gce204' || course.id === 'nsg222' || course.id === 'nsg223' || course.id === 'nsg225' || course.id === 'nsg229' || course.id === 'nsg232' || course.id === 'pio206' || course.id === 'psy205' || course.id === 'psm201' ? 'Modules' : 'Study Sessions'}</div>
         </div>
         <div className="card p-4 text-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--color-success)' }}>

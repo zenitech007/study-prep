@@ -1,0 +1,71 @@
+{
+  "id": 6,
+  "title": "Collection of Specimens from the Nose, Throat and Sputum",
+  "introduction": "Upper and lower respiratory tract cultures pinpoint causative pathogens in pharyngitis, nasal colonization, pneumonia, and tuberculosis. Grounded in nasal sinus and pharyngeal anatomy, precise swabbing of target mucosa, deep-cough sputum expectoration, and safe sterile tracheal suctioning yield uncontaminated diagnostic specimens while protecting airway oxygenation across all age groups.",
+  "learningOutcomes": [
+    "6.1 Describe the relevant anatomy of the nose (including the four paranasal sinuses and their developmental timelines) and throat (pharynx, tonsils, adenoids, larynx, epiglottis).",
+    "6.2 Perform pre-collection clinical assessment, state nursing diagnoses, and identify required articles for nose, throat, and sputum cultures.",
+    "6.3 Demonstrate step-by-step sterile throat swabbing and nasal mucosa culturing techniques while avoiding oral or anterior-nares contamination.",
+    "6.4 Execute sputum specimen collection by both client expectoration and sterile tracheal suctioning, emphasizing oxygenation intervals and biohazard handling.",
+    "6.5 Apply essential pediatric safety precautions when collecting throat and respiratory specimens from infants and young children."
+  ],
+  "content": [
+    {
+      "heading": "Anatomy of the Nose, Paranasal Sinuses, and Throat",
+      "body": "The nose—responsible for breathing and olfaction—comprises the external meatus, external nostrils divided by the cartilaginous/bony septum, ciliated mucous-lined nasal passages filtering air, and four paired air-filled paranasal sinuses draining into the nasal passages: Ethmoid sinuses (between the eyes at the nasal bridge; present at birth), Maxillary sinuses (cheeks; present at birth), Frontal sinuses (forehead; develop around age 7 years), and Sphenoid sinuses (deep behind the nose; develop in the teen years). The throat (pharynx—divided into nasopharynx, oropharynx, and hypopharynx) is a muscular passageway for air, food, liquid, and speech containing lymphoid tissue: Adenoids (top of throat behind nose; shrink by early adulthood) and Tonsils (back of mouth laterally; protect against childhood infection). Below lies the Larynx (voice box housing vocal cords leading into the trachea) guarded superiorly by the Epiglottis, a soft-tissue flap folding over the vocal cords during swallowing to prevent aspiration."
+    },
+    {
+      "heading": "Assessment, Equipment, Throat Swabbing, and Nasal Mucosa Culturing",
+      "body": "Prior to swabbing, assess the client's comprehension, observe for anxiety, and inspect nasopharyngeal mucosa for redness, swelling, exudates, congestion, or bleeding so sampling targets inflamed areas; nursing diagnoses include Health-Seeking Behaviours (knowledge deficit), Anxiety, and Pain (mucosal irritation). Required articles: sterile cotton-tipped swab in culture tube (for pharyngeal exudates), sterile flexible wire swab in culture tube (for nasal mucosa—less traumatic), tongue depressor, penlight/head-mounted light, facial tissues, emesis basin (for gagging/vomiting), ID labels, laboratory requisition, gloves, and apron. For Throat Swabbing: explain the procedure (warning of a brief tickling sensation), wash hands, seat client upright with tissues and emesis basin nearby, loosen swab cap, ask client to tilt head back and open wide, depress tongue while illuminating pharynx to spot inflamed areas/exudates, set penlight aside, insert swab carefully avoiding the tongue, teeth, and cheeks (GOOD targets: posterior throat wall & tonsils; UNSUITABLE: tongue & sides of mouth), rub quickly and firmly over tonsils and posterior pharynx behind the uvula, crush the transport medium ampoule at the bottom of the tube and push swabs firmly onto the sponge (never cut or detach red-cap swabs; discard white transport cap), discard tongue blade, offer tissues/water, wash hands, label, and send promptly. For Nasal Mucosa Culturing: instruct client to blow nose (clearing anterior contaminants), tilt head back to access turbinates, check nostril patency with penlight, check expiry date and optionally moisten swab with sterile water for comfort; insert pre-curved flexible wire swab gently without touching anterior sides, advance past slight resistance to reach the turbinates, rotate against turbinate mucosa, and withdraw cleanly (alternatively, for anterior nares screening, sweep upwards in one anterior nare and repeat in the opposite nare with the same swab)."
+    },
+    {
+      "heading": "Sputum Collection by Expectoration and by Tracheal Suctioning",
+      "body": "Before sputum collection, verify test purpose, specimen count, respiratory infection signs (cough, chest pain), and ability to cough deeply (nursing diagnoses: Ineffective Airway Clearance, Health-Seeking Behaviours, Anxiety). For Client Expectoration: explain procedure and gain consent, have client rinse mouth with water first (removes oral flora contaminants), don clean gloves, position upright (high Fowler's, dangling, or standing for maximal lung expansion), hand sterile container warning not to touch the inside, instruct client to take slow deep breaths and cough deeply after full inhalation to bring up lower-airway secretions directly into the container until at least 5 mL is collected, screw cap tightly BEFORE wiping exterior sputum with a disinfectant wipe, offer tissues and mouth care, label in the client's presence, place in a biohazard plastic bag, discard PPE, wash hands, transport immediately, and document sputum appearance/quality. For Sputum Collection by Suctioning: place client in high Fowler's position, attach suction tubing to a sterile sputum collection trap, open sterile saline and suction kit aseptically, don a sterile glove on the dominant hand, pour saline into cup with ungloved hand, attach suction catheter to trap, turn on suction, lubricate catheter tip by dipping in sterile normal saline (NEVER oil), advance gently through patent nare, endotracheal tube, or tracheostomy into the trachea, encourage coughing, apply intermittent suction briefly by covering the valve with gloved thumb while avoiding prolonged hypoxia, WAIT AT LEAST 1 FULL MINUTE between suction passes for reoxygenation until 5 mL is collected, monitor continuously for dyspnoea, cyanosis, or restlessness (giving oxygen if hypoxic), withdraw gently WITHOUT suction, seal trap tubing onto its adaptor, comfort client, wash hands, and document. Pediatric Special Considerations: Infants are obligate nose-breathers—NEVER occlude an infant's nose when taking a throat swab; cooperative children can sit on their hands, open their mouths, and laugh or pant like a dog while a parent gently steadies them."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Which two paranasal sinuses are present at birth, and when do the frontal and sphenoid sinuses typically develop?",
+      "answer": "Ethmoid and maxillary sinuses are present at birth; frontal sinuses develop around age 7 years, and sphenoid sinuses typically develop during the teen years."
+    },
+    {
+      "question": "Which oral structures must be strictly avoided during throat swabbing, and which areas are the proper swab targets?",
+      "answer": "Avoid touching the tongue, teeth, and cheeks (sides of the mouth); firmly swab the tonsils and posterior pharyngeal/nasopharyngeal wall behind the uvula."
+    },
+    {
+      "question": "What minimum volume of sputum is required for diagnostic testing, and what lubricant is used on a suction catheter tip?",
+      "answer": "A minimum of 5 mL of sputum is required. Sterile normal saline (never oil) is used to lubricate the suction catheter tip."
+    },
+    {
+      "question": "How long must a nurse wait between tracheal suction passes when collecting sputum, and why must an infant's nose never be occluded during a throat swab?",
+      "answer": "Wait at least 1 full minute between passes to permit reoxygenation. Infants normally breathe only through their noses, so occluding an infant's nose risks respiratory compromise."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "6.1",
+      "question": "List the eight essential articles needed for collecting nose and throat cultures and state the specific purpose of the flexible wire swab and tongue depressor.",
+      "answer": "Articles: sterile cotton-tipped swab in culture tube, sterile flexible wire swab in culture tube, tongue depressor, penlight, facial tissue, identification labels, laboratory requisition, and emesis basin. The flexible wire swab collects nasal mucosa exudates with less tissue trauma, while the tongue depressor pushes down the tongue for unobstructed pharyngeal visualization."
+    },
+    {
+      "id": "6.2",
+      "question": "Outline the step-by-step procedure for swabbing a patient's throat and explain proper handling of the culture transport tube.",
+      "answer": "Explain procedure (brief tickle), wash hands, seat upright with tissue/emesis basin -> tilt head back, open mouth -> depress tongue and inspect pharynx with penlight for redness/exudates -> insert sterile swab avoiding tongue/teeth/cheeks -> rub quickly and firmly over tonsils and posterior wall behind uvula -> crush culture medium ampoule and seat swab firmly onto sponge (without breaking red-cap swabs) -> discard blade, comfort client, wash hands, label, and send promptly."
+    },
+    {
+      "id": "6.3",
+      "question": "Explain the positioning and sequential steps for culturing the nasal mucosa using a flexible wire swab.",
+      "answer": "Ask client to blow nose (clears anterior microbes) -> tilt head back to expose turbinates -> inspect patency with penlight -> gently insert pre-curved wire swab without touching anterior nares -> advance gently past turbinate resistance -> rotate tip against turbinate mucosa -> withdraw quickly without touching sides -> seal, label, and transport."
+    },
+    {
+      "id": "6.4",
+      "question": "Describe the nursing procedure for collecting a sputum specimen by client expectoration, including mouth preparation, positioning, volume, and exterior decontamination.",
+      "answer": "Explain procedure -> rinse mouth with water first to remove oral contaminants -> don gloves and place upright (high Fowler's/standing) for maximal lung expansion -> give sterile container (do not touch inside) -> deep breaths followed by deep cough expectorating directly until ≥5 mL collected -> tighten lid completely BEFORE wiping outside with disinfectant wipe -> offer tissues/mouth care, label in patient's presence, place in biohazard bag, transport immediately, and document."
+    },
+    {
+      "id": "6.5",
+      "question": "Explain the sterile precautions, oxygenation safety rules, and pediatric adaptations for respiratory specimen collection.",
+      "answer": "Suctioning uses high Fowler's position, sterile glove on dominant hand, saline lubrication (never oil), brief intermittent suction during cough, ≥1 full minute rest between passes for reoxygenation, monitoring for hypoxia/dyspnoea, and gentle withdrawal without suction. Pediatric care: never occlude an infant's nose during throat swabbing (obligate nasal breathers); encourage cooperative children to put hands under buttocks and laugh/pant like a dog with parental support."
+    }
+  ]
+}

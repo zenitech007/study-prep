@@ -1,0 +1,71 @@
+{
+  "id": 5,
+  "title": "Reproductive Physiology II: Fertilization, Pregnancy, Placenta, Parturition, Lactation and Fetal Circulation",
+  "introduction": "Human pregnancy spans approximately 38 weeks from fertilization (40 weeks from LMP), uniting embryonic implantation, the multifaceted endocrine and exchange functions of the placenta, profound maternal multisystem adaptations, positive-feedback parturition, lactation, and the dramatic circulatory transition from parallel fetal shunts to independent neonatal breathing.",
+  "learningOutcomes": [
+    "5.1 Trace fertilization (acrosome and cortical reactions), early cleavage (zygote, morula, blastocyst), and the four steps of implantation (hatching, apposition, adhesion, invasion) plus decidualization.",
+    "5.2 Summarize the major fetal events of the three trimesters and describe placental structure, five core placental functions, pregnancy hormones, and the luteal-placental shift.",
+    "5.3 Explain maternal physiological adaptations during pregnancy across reproductive, mammary, cardiovascular, respiratory, GI, urinary, haematologic, and musculoskeletal systems.",
+    "5.4 Detail the three stages of parturition, the hormonal positive-feedback relay (oxytocin, estrogen, prostaglandins), and the neuroendocrine reflexes of lactation.",
+    "5.5 Differentiate fetal circulation (foramen ovale, ductus arteriosus, ductus venosus, HbF) from adult circulation and list the six major circulatory changes at birth."
+  ],
+  "content": [
+    {
+      "heading": "Fertilization, Implantation, Trimesters, and the Placenta",
+      "body": "Fertilization occurs in the ampulla of the fallopian tube within ~24 hours of ovulation, performing three core functions: transmitting parental genes, restoring the diploid chromosome number, and initiating development. As sperm meets the ovum, the Acrosome Reaction releases hydrolytic enzymes to penetrate the corona radiata and zona pellucida; sperm-egg plasma membrane fusion permits nuclear entry, triggering the Cortical Reaction (cortical granules fuse with the egg membrane, hardening the vitelline/zona layer to block polyspermy). Rapid mitotic cleavage yields 2-, 4-, and 8-cell stages -> a solid Morula (Day 3) -> a fluid-filled Blastocyst entering the uterus (Day 5) with outer Trophoblast and inner Embryoblast. Implantation (~Days 6–9, usually upper posterior uterine wall) proceeds through Hatching, Apposition (initial contact with endometrial pinopods), Adhesion (firm trophoblast attachment), Invasion (syncytiotrophoblast penetration), and Decidualization (stromal cells form supportive decidual cells). Gestation spans three clinical Trimesters: First (Weeks 1–12: fertilization, implantation, organogenesis [weeks 3–8], embryo -> fetus), Second (Weeks 13–27: rapid skeletal/organ growth, maternal perception of movement [quickening]), and Third (Weeks 28–40: rapid weight gain, brain/lung maturation, fat deposition, head-down presentation). The Placenta (formed from fetal chorion frondosum and maternal decidua basalis) projects fetal chorionic villi into maternal intervillous blood spaces fed by uterine spiral arteries; fetal blood travels to the placenta via TWO umbilical arteries and returns oxygenated via ONE umbilical vein across a selective (not absolute—alcohol, drugs, and pathogens can cross) barrier. Its five major functions are: (1) Respiratory (O2/CO2 diffusion), (2) Nutritive/Transport (glucose, amino acids, fatty acids, vitamins, electrolytes, water), (3) Excretory (fetal urea, uric acid, creatinine), (4) Endocrine (hCG, progesterone, estrogens, hPL, placental CRH), and (5) Immunological (maternal-fetal immune tolerance and passive IgG transfer)."
+    },
+    {
+      "heading": "Hormones of Pregnancy and Maternal Physiological Adaptations",
+      "body": "Syncytiotrophoblast-derived hCG (detectable ~1 day post-implantation / 8 days post-ovulation—basis of pregnancy tests) binds corpus luteum LH/hCG receptors to prevent luteolysis, maintaining early progesterone/estrogen secretion until the Luteal-Placental Shift (commonly weeks 8–12 of the 1st trimester) when the placenta takes over steroidogenesis. Key pregnancy hormones include: Progesterone (maintains decidua, maintains uterine quiescence, supports immune tolerance and breast alveoli), Estrogens—especially Estriol (peaks at weeks 38–40; falling levels warn of feto-placental compromise; drives uterine growth/blood flow, breast ducts, and near-term gap junctions/oxytocin receptors), Human Placental Lactogen (hPL—promotes maternal insulin resistance and lipolysis to channel glucose/nutrients to the fetus and develops mammary glands), Relaxin (corpus luteum/placenta—highest 1st trimester; softens cervix, relaxes pelvic ligaments, vasodilates kidneys), and Placental CRH (rises near term, timing birth). Maternal systemic adaptations include: Uterus (hyperplasia/hypertrophy expanding from 7.5 cm/50 g to 35 cm/1,000 g and ~5–7 L capacity, dextro-rotated in 80% of cases, lower uterine segment forming from 4th month; involutes to pre-pregnancy size ~8 weeks postpartum); Cervix (softens, mucus-filled); Mammary Glands (3–4 wks tingling; 6–8 wks enlargement, tenderness, visible veins; 8–12 wks dark primary areola & prominent Montgomery tubercles; 16 wks colostrum secretion & secondary areola; minimal milk release before birth); Body Weight (+~12.5 kg); Cardiovascular (blood/plasma volume +40–50%, cardiac output peaks weeks 28–30; disproportionate plasma rise causes physiological anaemia of pregnancy; low diastolic BP via forearm vasodilation; hypercoagulable state increasing DVT risk and normal physiological leukocytosis); Respiratory (diaphragm rises reducing lung capacity, but progesterone stimulates medullary ventilation raising tidal volume and O2 supply -> dyspnoea); GI (early nausea/vomiting, ptyalism, upward stomach displacement + relaxed LES causing reflux, progesterone-slowed motility causing constipation/haemorrhoids, gallbladder stasis, elevated placental alkaline phosphatase); Urinary (GFR +50%, RPF +25–50%, higher creatinine clearance/lower BUN, bladder compression causing frequency, tubular glucose spillover causing glycosuria -> elevated UTI risk); and Musculoskeletal (lumbar lordosis, loosened pelvic ligaments, waddling gait, backaches)."
+    },
+    {
+      "heading": "Parturition, Lactation, and Fetal-to-Neonatal Circulation",
+      "body": "Parturition (childbirth, ~40 ± 2 weeks from LMP) is triggered not by an abrupt drop in human circulating progesterone, but by functional progesterone withdrawal alongside rising estrogen, placental CRH, oxytocin receptors, gap junctions, and placental prostaglandins. Cervical stretching sends afferent nerve impulses to the hypothalamus -> posterior pituitary Oxytocin release -> stronger myometrial contractions -> further cervical stretch and prostaglandin release in a Positive Feedback Relay until delivery. Parturition comprises Three Stages: (1) Stage 1—Cervical Dilation (up to ~10 cm with amniotic sac rupture; lasts hours to a day), (2) Stage 2—Fetal Expulsion (birth of baby driven by forceful uterine, abdominal wall, diaphragmatic, and expiratory contractions; minutes to an hour), and (3) Stage 3—Placental Delivery (continued contractions detach and expel the afterbirth). Postpartum Lactation relies on two suckling-triggered reflexes: nipple mechanoreceptors signal the hypothalamus to stimulate anterior pituitary Prolactin (milk synthesis) and posterior pituitary Oxytocin (myoepithelial contraction for milk ejection/let-down). In Fetal Circulation, the placenta replaces the non-functional bypassed lungs, Fetal Haemoglobin (HbF) binds oxygen with higher affinity than maternal Hb, and the right and left ventricles pump in PARALLEL via three fetal shunts: (1) Ductus Venosus (shunts oxygenated umbilical venous blood past the liver to the IVC), (2) Foramen Ovale (open flap shunting oxygenated blood from right atrium to left atrium), and (3) Ductus Arteriosus (shunts pulmonary artery blood directly into the aorta, bypassing lungs). Six major circulatory changes occur at birth: (1) closure of placental circulation, (2) shutting of the patent foramen ovale, (3) closure of the patent ductus arteriosus, (4) umbilical artery constriction triggered by stress, rising O2 tension, and cooler temperature, (5) spontaneous onset of pulmonary respiration, and (6) major neonatal haemodynamic reorganization into adult series circulation."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "How many umbilical arteries and umbilical veins connect the fetus to the placenta, and which vessel carries oxygenated blood back to the fetus?",
+      "answer": "Two umbilical arteries carry fetal blood to the placenta, and one umbilical vein returns oxygenated blood from the placenta back to the fetus."
+    },
+    {
+      "question": "What is the Luteal-Placental Shift, when does it occur, and what hormone maintains the corpus luteum beforehand?",
+      "answer": "The luteal-placental shift (weeks 8–12 of the 1st trimester) is the transition in which the placenta takes over progesterone/estrogen synthesis from the corpus luteum. Syncytiotrophoblast-derived hCG rescues and maintains the corpus luteum prior to this shift."
+    },
+    {
+      "question": "What causes 'physiological anaemia of pregnancy' and why are pregnant women more susceptible to urinary tract infections (UTIs)?",
+      "answer": "Physiological anaemia occurs because maternal blood/plasma volume rises (+40–50%) disproportionately faster than red blood cell mass, diluting haemoglobin. Elevated UTI risk results from impaired tubular reabsorption of the heightened filtered glucose load (glycosuria) alongside bladder compression/urinary stasis."
+    },
+    {
+      "question": "Name the three anatomical shunts in fetal circulation and state what each bypasses.",
+      "answer": "1. Ductus venosus (bypasses the semi-functional fetal liver); 2. Foramen ovale (shunts right atrial blood to left atrium, bypassing pulmonary circuit); 3. Ductus arteriosus (shunts pulmonary artery blood into aorta, bypassing the non-functional lungs)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "5.1",
+      "question": "Trace the journey from ovulation to blastocyst implantation, explaining the acrosome reaction, cortical reaction, and the four stages of implantation.",
+      "answer": "Ovulation (Day 0) -> ampullary fertilization within 24 hrs: sperm acrosome reaction digests zona pellucida, plasma membranes fuse, and cortical reaction hardens the egg coat against polyspermy -> cleavage (Days 1–3) -> morula (Day 3) -> blastocyst (Day 5). Implantation (Days 6–9) proceeds via Hatching, Apposition (pinopod contact), Adhesion (firm trophoblast binding), Invasion (syncytiotrophoblast penetration), and Decidualization."
+    },
+    {
+      "id": "5.2",
+      "question": "Summarize the five major physiological functions of the placenta and state the main source and key actions of hCG, hPL, and Relaxin.",
+      "answer": "Placental functions: Respiratory (O2/CO2 exchange), Nutritive (glucose, amino acids, lipids, vitamins), Excretory (urea/creatinine), Endocrine (steroids/peptides), Immunological (tolerance + maternal IgG transfer). hCG (syncytiotrophoblast): rescues corpus luteum/progesterone. hPL (syncytiotrophoblast): induces maternal insulin resistance and lipolysis to feed fetus, aids breast growth. Relaxin (corpus luteum/placenta): cervical remodelling, pelvic ligament relaxation, renal vasodilation."
+    },
+    {
+      "id": "5.3",
+      "question": "Outline the timeline of mammary gland changes during pregnancy (weeks 3–16) and describe four major uterine changes across gestation.",
+      "answer": "Mammary timeline: 3–4 wks (tingling/increased blood supply), 6–8 wks (enlargement, tenderness, bluish visible veins), 8–12 wks (dark erectile primary areola, prominent Montgomery tubercles), 16 wks (colostrum secretion, secondary areola). Uterine changes: height increases 7.5 -> 35 cm, weight increases 50 -> 1,000 g (capacity ~5–7 L), dextro-rotation to the right in 80% of cases, lower uterine segment forms from isthmus starting 4th month (reaches 10 cm at term), returning to baseline ~8 weeks postpartum."
+    },
+    {
+      "id": "5.4",
+      "question": "Explain the positive-feedback hormonal mechanism driving parturition and summarize the three stages of labour.",
+      "answer": "Near term, rising estrogen, oxytocin receptors, gap junctions, and functional progesterone shift prime the myometrium. Fetal head stretching the cervix sends nerve signals to the hypothalamus -> posterior pituitary releases oxytocin -> stronger uterine contractions -> placenta releases prostaglandins -> greater cervical stretch in a positive-feedback loop. Stages: (1) Cervical dilation (up to ~10 cm), (2) Fetal expulsion (delivery of baby), (3) Placental delivery (expulsion of afterbirth)."
+    },
+    {
+      "id": "5.5",
+      "question": "State four major differences between fetal and adult circulation and list the six physiological changes that occur at birth.",
+      "answer": "Differences: open Foramen Ovale, patent Ductus Arteriosus (parallel ventricular pumping), bypassed non-functional lungs (placenta acts as lungs), and fetal HbF with higher O2 affinity than maternal Hb. Six changes at birth: closure of placental circulation, shutting of foramen ovale, closure of ductus arteriosus, umbilical artery constriction (stress/high O2/cold), spontaneous respiration onset, and marked neonatal haemodynamic shifts."
+    }
+  ]
+}

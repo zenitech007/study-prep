@@ -1,0 +1,71 @@
+{
+  "id": 8,
+  "title": "Fluid Input/Output Monitoring and Intravenous Infusion Therapy",
+  "introduction": "Maintaining precise fluid and electrolyte homeostasis—regulated primarily by the kidneys—demands accurate 24-hour intake/output tracking alongside skilled administration and maintenance of intravenous infusions. Understanding isotonic, hypotonic, and hypertonic fluid physiology, gravity and pump flow control, and aseptic 72-hour tubing and dressing changes protects clients from fluid overload, air embolism, infiltration, and bloodstream infection.",
+  "learningOutcomes": [
+    "8.1 Define fluid input/output (I&O) monitoring, state its four purposes, apply standard bedside fluid volume equivalents, and measure output accurately including in incontinent or infant clients.",
+    "8.2 Define intravenous (IV) infusion, list its six clinical purposes, and compare isotonic, hypotonic, and hypertonic solutions (osmolality, indications, contraindications, and complications).",
+    "8.3 Demonstrate step-by-step IV infusion setup, priming, flow regulation, and monitoring while identifying contraindicated venipuncture sites, flow-rate factors, and IV complications.",
+    "8.4 State the two reasons for changing IV containers, tubing, and dressings (every 72 hours) and outline the required sterile articles.",
+    "8.5 Execute step-by-step aseptic changing of an IV container, tubing, and cannula site dressing without dislodging or contaminating the venous line."
+  ],
+  "content": [
+    {
+      "heading": "Monitoring Fluid Input and Output (I&O)",
+      "body": "Fluid intake and output (I&O) monitoring is the accurate measuring and recording of all fluids entering and leaving the body over a 24-hour period (kidneys serve as the primary fluid regulators) to achieve four purposes: assessing general health, monitoring specific diseases, evaluating fluid and electrolyte balance, and assessing organ function such as the kidneys. Required articles: bedside I&O form, 24-hour chart graphic record, bedpan/urinal/commode, graduated drinking tumbler, graduated output container, clean gloves, and a bedside 'I&O Monitoring' sign. Standard bedside volume equivalents guide consistent oral measurement: water glassful = 200 mL, cupful = 120 mL, large paper cup = 200 mL, small paper cup = 120 mL, soup bowl = 180 mL, and full water pitcher = 1,000 mL. Intake includes ALL oral liquids (including water swallowed with pills), semi-solid liquid foods, tube feedings, and IV fluids; Output includes urine (emptying retention catheter bags into a measuring jug at shift end or prescribed intervals), NG suction, and wound/drainage outputs. For infants and incontinent clients, output is calculated by weighing dry diapers/incontinent pads and subtracting that dry weight from the weight of soiled items. Nurses sum 8-hour shift totals from the bedside sheet and transfer them to the 24-hour chart record, strictly observing universal precautions and instructing visitors/family members NEVER to empty bedpans, urinals, or catheter bags."
+    },
+    {
+      "heading": "Intravenous Infusion Therapy: Purposes and Types of IV Solutions",
+      "body": "Intravenous (IV) infusion administers sterile fluids directly into a peripheral (or central) vein via a cannula or butterfly needle for six purposes: maintaining fluid/electrolyte balance, supplying metabolic glucose, delivering water-soluble vitamins/minerals, establishing an emergency lifeline, administering medications (rapid onset within seconds to minutes—requiring strict rate/dilution verification), and transfusing blood/blood products (whole blood, PRBCs, albumin, cryoprecipitate). Solutions are classified relative to plasma osmolality (~300 mOsm/L): (1) Isotonic Fluids (total electrolytes ~310 mEq/L; do not shrink or swell RBCs; expand ECF by 1 L and plasma by 0.25 L—monitor HTN/HF clients for overload): D5W (5% dextrose, 252 mOsm/L; isotonic in bag but disperses hypotonically—1/3 ECF, 2/3 ICF—as glucose metabolizes; supplies water/treats hyperosmolality; contraindicated for fluid resuscitation due to hyperglycaemia), Normal Saline (0.9% NaCl, 308 mOsm/L; stays in ECF; used for blood transfusions and burn sodium losses; contraindicated in heart failure, pulmonary oedema, renal impairment, and sodium retention), and Lactated Ringer's (NaCl + potassium + calcium; corrects dehydration, sodium depletion, and GI losses); (2) Hypotonic Fluids (<250 mEq/L, e.g., 0.45% half-strength saline, 154 mOsm/L): replace cellular fluid and supply free water in hypernatremia/hyperosmolar states; excessive infusion causes intravascular depletion, hypotension, cellular oedema, and cell damage; and (3) Hypertonic Fluids (>375 mEq/L, e.g., D5NS, D5LR, or strongly hypertonic 50% dextrose in water—which MUST enter central veins for rapid dilution): draw water from ICF into ECF, shrinking cells; used cautiously only in severe hypo-osmolality because excess causes extracellular overload, circulatory overload, and cellular dehydration."
+    },
+    {
+      "heading": "IV Setup, Flow-Rate Control, Complications, and Changing IV Container, Tubing & Dressing",
+      "body": "IV setup begins by verifying the physician's order (solution, volume, flow rate), assessing baseline vitals, allergies (tape/povidone-iodine), bleeding tendencies, and screening venipuncture contraindications (AV fistula, arm on mastectomy side, phlebitis, infiltration, sclerosis). Inspect containers for turbidity, sediments, colour change, and expiry; add prescribed medications and paste the medication label UPSIDE DOWN for easy reading when hung; paste a timing/flow-rate label; hang the bag on an IV pole 3 feet above the patient's head (enabling gravity to overcome venous pressure); squeeze the drip chamber half full; prime tubing completely to expel all air bubbles (preventing air embolism); connect to cannula and regulate flow accurately via roller clamp or volumetric/syringe pump (preventing cardiac overload); and label tubing with date/time (IV tubing is changed every 72 hours). Five factors influence flow rate: forearm position, tubing position/patency, height of infusion container, infiltration/leakage, and cannula-to-vein size ratio. Monitor sites frequently for the three primary IV complications—Infiltration (swelling, coolness, blanching, slowed flow), Phlebitis (vein inflammation/redness/pain), and Extravasation (vesicant/blood leakage into tissue). Changing an IV Container, Tubing, and Dressing serves two purposes—preventing infection/phlebitis and maintaining patency—using new verified fluid, sterile drip set, labels, kidney tray, sterile gloves, sterile gauze, antiseptic swabs, tape, and underpad. After priming and labelling new tubing, don gloves, remove soiled dressing/tapes layer-by-layer EXCEPT the cannula-anchoring tape, and inspect the site (if infiltration or inflammation exists, REMOVE the cannula and start a new IV site elsewhere). Place a sterile swab beneath the hub, clamp old tubing, hold hub steady with non-dominant hand, twist off old tubing, attach new primed tubing, open clamp, remove anchor tape while holding hub, clean site with adhesive remover then alcohol/povidone-iodine from CENTRE TO PERIPHERY across a 2-inch diameter, apply antiseptic ointment and sterile gauze, label dressing with date/time, secure tubing, discard waste, wash hands, and document."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What standard fluid volumes correspond to a water glassful, a soup bowl, and a full water pitcher, and how often are shift I&O totals transferred to the 24-hour record?",
+      "answer": "Water glassful = 200 mL; soup bowl = 180 mL; full water pitcher = 1,000 mL. Totals are summed and transferred every 8-hour shift."
+    },
+    {
+      "question": "Which IV fluid is preferred for a burn patient with large sodium losses, and what four conditions contraindicate it?",
+      "answer": "Normal Saline (0.9% NaCl, isotonic). Contraindications: heart failure, pulmonary oedema, renal impairment, and sodium retention."
+    },
+    {
+      "question": "Why is an IV bag hung 3 feet above the patient's head, and how often should IV tubing be changed?",
+      "answer": "Hanging it 3 feet above the patient's head allows gravity to overcome venous pressure for steady flow. IV tubing must be labelled and changed every 72 hours."
+    },
+    {
+      "question": "When changing an IV dressing, what must the nurse do if signs of infiltration or inflammation are found at the cannula site, and in what pattern is an intact site cleansed?",
+      "answer": "If infiltration or inflammation is present, remove the cannula immediately and start a new IV line at a different site. An intact site is cleansed from the centre (entry point) outward to the periphery across a 2-inch diameter."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "8.1",
+      "question": "State the four purposes of monitoring fluid input and output, list the required bedside articles, and explain how output is measured in an incontinent patient.",
+      "answer": "Four purposes: assess general health, monitor specific diseases, evaluate fluid/electrolyte balance, and assess renal/organ status. Articles: bedside I&O form, 24-hr chart record, bedpan/urinal/commode, graduated drinking cup and output container, clean gloves, bedside I&O sign. Incontinent/infant output: weigh dry diapers or incontinent pads first, then subtract the dry weight from the weight of the soiled items."
+    },
+    {
+      "id": "8.2",
+      "question": "Compare Isotonic, Hypotonic, and Hypertonic intravenous fluids by electrolyte content, one example each, primary clinical use, and main complication of excess infusion.",
+      "answer": "Isotonic (~310 mEq/L, e.g., 0.9% NaCl, LR, D5W): expands ECF/replaces losses; excess causes fluid/circulatory overload. Hypotonic (<250 mEq/L, e.g., 0.45% NaCl): replaces cellular fluid in hypernatremia; excess causes intravascular depletion, hypotension, and cellular oedema/damage. Hypertonic (>375 mEq/L, e.g., 50% dextrose via central vein): corrects severe hypo-osmolality by drawing ICF to ECF; excess causes circulatory overload and cellular dehydration."
+    },
+    {
+      "id": "8.3",
+      "question": "List five contraindications to venipuncture at a specific extremity, five factors influencing IV flow rate, and three complications of IV therapy.",
+      "answer": "Venipuncture contraindications: arterio-venous fistula, arm on mastectomy side, phlebitis, infiltration, and vein sclerosis. Five flow-rate factors: forearm position, tubing position/patency, height of infusion container, infiltration/fluid leakage, and cannula-to-vein size ratio. Three IV complications: infiltration, phlebitis, and extravasation."
+    },
+    {
+      "id": "8.4",
+      "question": "Explain the rationale for pasting an IV medication label upside down, priming tubing before connection, squeezing the drip chamber half full, and monitoring infusion flow via pump or roller clamp.",
+      "answer": "Upside-down label enables easy reading once the bottle hangs; priming expels all air bubbles to prevent air embolism; half-filling the drip chamber prevents air moving down tubing while letting drops be counted; regulating flow via pump/clamp prevents cardiac/fluid overload."
+    },
+    {
+      "id": "8.5",
+      "question": "Outline the sequential steps for changing an IV container, tubing, and site dressing safely.",
+      "answer": "1. Verify physician order and inspect new container; 2. Wash hands, spike/label/prime new tubing; 3. Prepare tape strips/dressing tray and don gloves; 4. Remove soiled dressing/tapes layer-by-layer leaving anchor tape intact; 5. Assess site for infiltration/inflammation (restart elsewhere if present); 6. Place sterile swab under hub, clamp/disconnect old tubing while stabilizing hub, connect new primed tubing and open clamp; 7. Remove anchor tape holding hub, clean site centre-to-periphery (2-inch diameter) with alcohol/povidone-iodine; 8. Apply antiseptic ointment and sterile gauze, label with date/time, secure tubing, discard waste, wash hands, and document."
+    }
+  ]
+}

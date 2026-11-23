@@ -1,0 +1,71 @@
+{
+  "id": 7,
+  "title": "Inferential Statistics: Estimation, Confidence Intervals, Hypothesis Testing, t-Tests and Chi-Square",
+  "introduction": "Inferential statistics enables researchers to generalize from representative random samples to entire patient populations through two complementary pillars: Estimation (point estimates and confidence intervals powered by the Central Limit Theorem) and Hypothesis Testing (controlling Type I and Type II errors while applying Student $t$-tests and Chi-Square tests appropriately).",
+  "learningOutcomes": [
+    "7.1 Define inferential statistics, identify three requirements for valid generalization, and differentiate point estimation from interval estimation (Confidence Intervals).",
+    "7.2 Explain sampling distributions, the Central Limit Theorem, and Standard Error formulas for means and proportions (one-sample and two-sample), distinguishing SD from SE.",
+    "7.3 Compute and interpret 95% Confidence Intervals, including statistical-significance rules for mean/proportion differences (0) versus relative risks/odds ratios (1).",
+    "7.4 Outline the six steps of hypothesis testing, distinguishing $H_0$ vs. $H_1$, Type I ($\\alpha$) vs. Type II ($\\beta$) errors, statistical power ($1 - \\beta$), $p$-values, and parametric vs. non-parametric tests.",
+    "7.5 Select and apply One-Sample, Paired, and Independent Two-Sample Student $t$-tests as well as the Chi-Square ($\\chi^2$) test of association (including expected counts, df, $2 \\times 2$ formula, and limitations)."
+  ],
+  "content": [
+    {
+      "heading": "Estimation, Central Limit Theorem, Standard Error, and 95% Confidence Intervals",
+      "body": "Inferential statistics draws population conclusions from sample data—most accurately when samples are homogeneous, truly representative, and randomly selected—via Estimation and Hypothesis Testing. Because individual and sampling variations prevent a single Point Estimate ($\\bar{x}$ or $p$) from equalling the true parameter ($\\mu$ or $\\pi$) exactly, researchers rely on Sampling Distributions (distribution of a statistic across repeated equal-size samples). The Central Limit Theorem (CLT) guarantees that regardless of the parent population's shape, as sample size $n$ increases, the sampling distribution of sample means approaches a Normal distribution centred at the unbiased true mean $\\mu$ with standard deviation equal to the Standard Error (SE). Whereas Standard Deviation ($s$) measures spread among individual observations, Standard Error measures the precision/variability of a sample statistic (decreasing as $n$ increases): One-sample mean $SE(\\bar{x}) = \\frac{s}{\\sqrt{n}}$; Two independent means $SE(\\bar{x}_1 - \\bar{x}_2) = \\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}$; One-sample proportion $SE(p) = \\sqrt{\\frac{p(1-p)}{n}}$; Two independent proportions $SE(p_1 - p_2) = \\sqrt{\\frac{p_1(1-p_1)}{n_1} + \\frac{p_2(1-p_2)}{n_2}}$. Combining point estimate and SE yields a 95% Confidence Interval: $\\text{Statistic} \\pm 1.96 \\times SE(\\text{Statistic})$ (meaning 95 out of 100 repeated sample intervals capture the true parameter, while 5% miss it; larger $n$ narrows SE and CI). For example, 16 subjects with mean DBP $90.0\\text{ mmHg}$ and $s = 14$ give $SE = 14/\\sqrt{16} = 3.5$ and $95\\%\\text{ CI} = 90 \\pm 1.96(3.5) = [83.14, 96.86]$. CIs show both magnitude and significance: for differences in means/proportions, a CI containing $0$ is consistent with $H_0$ (not statistically significant); for Relative Risk or Odds Ratio, a CI containing $1$ indicates non-significance."
+    },
+    {
+      "heading": "Theory of Hypothesis Testing, Errors, p-Values, and Choosing Statistical Tests",
+      "body": "Hypothesis testing evaluates conjectures about group differences or variable associations across six steps: (1) state Null Hypothesis ($H_0$—statement of no difference/no association, either rejected or not rejected); (2) state Alternative Hypothesis ($H_1$—research conjecture of inequality, directional one-tailed or non-directional two-tailed); (3) set Level of Significance ($\\alpha$, typically $0.05$); (4) choose appropriate test statistic; (5) compute test statistic and $p$-value; and (6) make decision (reject $H_0$ if $p < \\alpha$). Two decision errors can occur: Type I Error (rejecting a true $H_0$; maximum tolerated probability is $\\alpha$) and Type II Error (failing to reject a false $H_0$; probability is $\\beta$), while Power ($1 - \\beta$) is the probability of correctly rejecting a false $H_0$. The $p$-value is the probability of observing a sample result as extreme as or more extreme than obtained assuming $H_0$ is true—smaller $p$-values provide stronger evidence against $H_0$ (if $p < 0.05$, the result is statistically significant). Statistical tests are either Parametric (assume population distribution—chiefly normality—e.g., $Z$-test, $t$-test, ANOVA $F$-test, Pearson's $r$) or Non-Parametric (distribution-free, slightly weaker when parametric assumptions hold—e.g., Sign test, Wilcoxon Signed-Rank, Mann-Whitney, Chi-Square, Kruskal-Wallis, Spearman's rank). Choosing the right test depends on study objective, design (independent/dependent), variable types, sample size, and sampling method: (a) 1 qualitative + 1 quantitative variable -> $t$-test (2 groups) or ANOVA $F$-test ($>2$ groups); (b) 2 qualitative variables -> $Z$-test (proportions) or Chi-Square test (association); (c) 2 quantitative variables -> Correlation (strength) or Linear Regression (prediction)."
+    },
+    {
+      "heading": "Student t-Tests and the Chi-Square Test of Association",
+      "body": "The Student $t$-test is a parametric test comparing means when population $\\sigma$ is unknown (approximating $Z$ when $n > 30$, with heavier tails governed by degrees of freedom for $n < 30$), assuming a normally distributed outcome, independent observations, and equal group variances. Its three forms are: (1) One-Sample $t$-test ($df = n - 1$, $t = \\frac{\\sqrt{n}(\\bar{x} - \\mu)}{s}$)—compares one sample mean against a known/hypothetical value (e.g., $n = 16, \\bar{x} = 90, \\mu = 75, s = 14 \\rightarrow t = 4.286, p < 0.01$, reject $H_0$); (2) Paired (Dependent) $t$-test ($t = \\frac{\\sqrt{n}\\bar{d}}{s_d}$)—compares repeated before/after or individually matched measurements by analysing pair differences $d_i$ as one sample; and (3) Independent 2-Sample $t$-test ($t = \\frac{\\bar{x}_1 - \\bar{x}_2}{\\sqrt{s_1^2/n_1 + s_2^2/n_2}}$)—compares means of two unrelated continuous groups (e.g., diseased vs. non-diseased preterm infants, $t = 3.394, p = 0.00068 < 0.05$, reject $H_0$). The Chi-Square ($\\chi^2$) Test is a non-parametric test evaluating association between two categorical (nominal/ordinal) variables in a contingency table under $H_0$ of no association: compute expected cell counts $e_{ij} = \\frac{\\text{Row Total} \\times \\text{Column Total}}{\\text{Grand Total}}$ and $\\chi^2 = \\sum \\frac{(o_{ij} - e_{ij})^2}{e_{ij}}$ with $df = (r - 1)(c - 1)$. For a $2 \\times 2$ table (cells $a, b, c, d$; total $N$): $\\chi^2 = \\frac{N(ad - bc)^2}{(a+b)(c+d)(a+c)(b+d)}$ ($df = 1$). Large $\\chi^2$ implies small $p$-value supporting association. Three key limitations of $\\chi^2$: it does not measure strength/substantive size of association, its value scales directly with sample size, and it is sensitive to small expected cell frequencies."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Explain the key conceptual difference between Standard Deviation ($SD$) and Standard Error ($SE$).",
+      "answer": "Standard Deviation describes variability among individual observations within a single sample, whereas Standard Error is the standard deviation of a sampling distribution describing the precision/variability of a sample statistic (such as $\\bar{x}$)."
+    },
+    {
+      "question": "Distinguish Type I error ($\\alpha$), Type II error ($\\beta$), and Statistical Power ($1 - \\beta$).",
+      "answer": "Type I error ($\\alpha$) is rejecting a true null hypothesis $H_0$; Type II error ($\\beta$) is failing to reject a false $H_0$; Statistical Power ($1 - \\beta$) is the probability of correctly rejecting a false $H_0$."
+    },
+    {
+      "question": "How do you determine statistical significance from a 95% Confidence Interval for (a) a difference between two means, and (b) a Relative Risk or Odds Ratio?",
+      "answer": "For a difference in means (or proportions), a 95% CI that excludes 0 is statistically significant (containing 0 is non-significant). For a Relative Risk or Odds Ratio, a 95% CI that excludes 1 is statistically significant (containing 1 is non-significant)."
+    },
+    {
+      "question": "Which statistical test is appropriate for comparing mean blood pressure across three ethnic groups, and which test examines the association between sex and dieting status?",
+      "answer": "ANOVA ($F$-test) compares means across more than two groups; the Chi-Square ($\\chi^2$) test examines association between two categorical variables (sex and dieting)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "7.1",
+      "question": "State the Central Limit Theorem and compute the Standard Error and 95% Confidence Interval for a sample of 49 subjects with mean heart rate $90\\text{ bpm}$ and $SD = 10\\text{ bpm}$.",
+      "answer": "The Central Limit Theorem states that regardless of population shape, as sample size $n$ increases, the sampling distribution of sample means approaches a Normal distribution with mean $\\mu$ and $SE = \\sigma/\\sqrt{n}$. Calculation: $SE = 10/\\sqrt{49} = 10/7 \\approx 1.429$; $95\\%\\text{ CI} = 90 \\pm 1.96(1.429) = [87.2, 92.8]\\text{ bpm}$."
+    },
+    {
+      "id": "7.2",
+      "question": "List the six steps of statistical hypothesis testing and explain what $p = 0.03$ means when $\\alpha = 0.05$.",
+      "answer": "Steps: (1) state $H_0$, (2) state $H_1$, (3) specify $\\alpha$, (4) choose test statistic, (5) compute statistic/$p$-value, (6) decide (reject or fail to reject $H_0$). A $p$-value of $0.03$ means if $H_0$ were true, there is only a $3\\%$ chance of observing data this extreme or more extreme; since $0.03 < 0.05$, we reject $H_0$ as statistically significant."
+    },
+    {
+      "id": "7.3",
+      "question": "Compare parametric and non-parametric statistical tests, giving four examples of each.",
+      "answer": "Parametric tests assume a known population distribution (commonly normality) and are more powerful when assumptions hold (examples: $Z$-test, Student $t$-test, ANOVA $F$-test, Pearson's $r$). Non-parametric tests are distribution-free (examples: Chi-Square, Sign test, Wilcoxon Signed-Rank, Mann-Whitney, Kruskal-Wallis, Spearman's rank)."
+    },
+    {
+      "id": "7.4",
+      "question": "State the three assumptions of the Student $t$-test and differentiate One-Sample, Paired, and Independent Two-Sample $t$-tests.",
+      "answer": "Assumptions: normally distributed dependent variable, independent observations, and equal group variances (unknown $\\sigma$). One-sample compares one sample mean to a fixed standard; Paired compares before/after or matched pairs using pair differences; Independent 2-sample compares means of two unrelated groups."
+    },
+    {
+      "id": "7.5",
+      "question": "Write the general and $2 \\times 2$ Chi-Square formulas, state the degrees-of-freedom rule, and list three limitations of the Chi-Square test.",
+      "answer": "General: $\\chi^2 = \\sum \\frac{(o_{ij} - e_{ij})^2}{e_{ij}}$ where $e_{ij} = \\frac{\\text{Row Total} \\times \\text{Col Total}}{\\text{Grand Total}}$ and $df = (r-1)(c-1)$. For $2 \\times 2$: $\\chi^2 = \\frac{N(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$ ($df = 1$). Limitations: does not show strength of relationship, scales directly with sample size, and is sensitive to small expected cell counts."
+    }
+  ]
+}

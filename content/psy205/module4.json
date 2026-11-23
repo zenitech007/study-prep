@@ -1,0 +1,75 @@
+{
+  "id": 4,
+  "title": "Cognitive, Behavioural, Social Learning and Attachment Theories",
+  "introduction": "Understanding how children think, learn from environmental consequences and social models, and build lasting emotional bonds requires four foundational frameworks: Jean Piaget's constructivist cognitive stages, Pavlov's classical conditioning, Skinner's operant conditioning, Bandura's social learning theory, and Bowlby and Ainsworth's attachment theory.",
+  "learningOutcomes": [
+    "4.1 Explain Jean Piaget's four key cognitive concepts (schemas, assimilation, accommodation, equilibration), four stages (including sensorimotor substages), and major criticisms.",
+    "4.2 Distinguish the four components of Ivan Pavlov's classical conditioning (UCS, UCR, CS, CR) and describe real-world educational and clinical applications.",
+    "4.3 Contrast positive reinforcement, negative reinforcement, positive punishment, and negative punishment in operant (instrumental) conditioning.",
+    "4.4 Detail Albert Bandura's Social Learning (Social Cognitive) Theory, including the Bobo doll study, three observational models, intrinsic reinforcement, and the four-step modelling process.",
+    "4.5 Explain John Bowlby's Attachment Theory (internal working models and four distinguishing characteristics) and compare the four attachment styles identified by Ainsworth, Main, and Solomon."
+  ],
+  "content": [
+    {
+      "heading": "Jean Piaget's (1952) Theory of Cognitive Development",
+      "body": "Swiss developmentalist Jean Piaget (born 1896) demonstrated that children are not less intelligent than adults—they actively construct knowledge through hands-on interaction and simply think differently. Four core concepts explain cognitive adaptation: Schemas (mental and physical frameworks organizing knowledge, e.g., a child's 'dog' schema), Assimilation (incorporating new experiences into existing schemas), Accommodation (altering existing schemas or creating new ones when new data do not fit), and Equilibration (balancing assimilation and accommodation to advance across stages). Piaget described four sequential stages: (1) Sensorimotor Stage (Birth–2 years)—knowledge arises through sensory perceptions and motor acts across six substages: Reflexes (0–1 mo: sucking, looking), Primary Circular Reactions (1–4 mos: repeating pleasurable body actions like thumb-sucking), Secondary Circular Reactions (4–8 mos: intentionally repeating acts to trigger environmental responses like mouthing toys), Coordination of Reactions (8–12 mos: intentional combined schemas, imitation, emerging object understanding), Tertiary Circular Reactions (12–18 mos: trial-and-error experimentation), and Early Representational Thought (18–24 mos); (2) Preoperational Stage (2–6 years)—rapid language growth, symbolic pretend play (using a broom as a horse), and role-playing, limited by Egocentrism (inability to take another's viewpoint, shown by the three-mountain task) and lack of Conservation (judging tall thin cups as holding more liquid than equal short wide cups prior to age 5); (3) Concrete Operations Stage (7–11 years)—logical thinking about concrete events, strong Inductive Logic (specific experience -> general principle, though deductive logic remains difficult), and Reversibility (reversing mental category orders, e.g., Labrador -> dog -> animal); and (4) Formal Operational Stage (12 years–adulthood)—abstract thought, Deductive Logic (general principle -> specific outcome), hypothetical reasoning, long-term planning, and methodical problem-solving. Criticisms of Piaget highlight his unrepresentative sample (his own three children plus high-SES professionals' children), evidence that environmental factors influence reaching formal operations, and Theory of Mind research showing 4–5-year-olds possess perspective-taking abilities earlier and are less egocentric than Piaget proposed."
+    },
+    {
+      "heading": "Behavioural Learning Theories: Classical and Operant Conditioning",
+      "body": "Learning theories explain how environmental interactions shape behaviour. Classical Conditioning—discovered by Russian physiologist Ivan Pavlov—creates associations between an environmental stimulus and a naturally occurring stimulus across four components: Unconditioned Stimulus (UCS—naturally, automatically triggers a response, e.g., smell of favourite food), Unconditioned Response (UCR—unlearned natural response, e.g., hunger), Conditioned Stimulus (CS—previously neutral stimulus like a whistle paired repeatedly with the UCS), and Conditioned Response (CR—learned response triggered by the CS alone, e.g., feeling hungry upon hearing the whistle). Real-world applications include pet training, treating phobias and anxiety disorders, and teachers pairing anxiety-provoking tasks (like class presentations) with warm, pleasant classroom settings so students associate speaking with calmness. Operant (Instrumental) Conditioning—learning through consequences—links behaviours with rewards or punishments across four contingencies: Positive Reinforcement (presenting a favourable outcome like praise or reward to INCREASE behaviour), Negative Reinforcement (removing an unfavourable event after a behaviour to INCREASE behaviour), Positive Punishment (presenting an adverse event to DECREASE behaviour), and Negative Punishment (removing a favourable privilege—such as losing recess for talking out of turn—to DECREASE behaviour)."
+    },
+    {
+      "heading": "Albert Bandura's Social Learning (Social Cognitive) Theory",
+      "body": "Albert Bandura (1977) demonstrated that direct reinforcement alone cannot explain human learning—most behaviours are acquired observationally through modelling, famously shown in his 'Bobo doll' experiments where children imitated adults' aggressive acts toward a doll. Bandura identified three core models of observational learning: (1) Live Model (an actual person demonstrating behaviour), (2) Verbal Instructional Model (descriptions and explanations of a behaviour), and (3) Symbolic Model (real or fictional characters in books, films, TV, or online media). Bridging behaviourism and cognition (which Bandura termed 'social cognitive theory'), he highlighted Intrinsic Reinforcement (internal rewards like pride, satisfaction, and accomplishment) and noted that learning does NOT automatically guarantee an immediate visible change in behaviour. Successful observational learning requires a four-step Process: (1) Attention (focusing on an interesting/novel model without distraction), (2) Retention (storing and recalling the coded information), (3) Reproduction (physically performing and practising the observed act), and (4) Motivation (incentive driven by reinforcement or punishment to imitate the model)."
+    },
+    {
+      "heading": "Attachment Theory: Bowlby, Ainsworth, and Four Attachment Styles",
+      "body": "Attachment is an enduring emotional bond ('lasting psychological connectedness', Bowlby, 1969) characterized in infants by proximity seeking toward sensitive, consistent caregivers (especially from ~6 months to 2 years). Caregiver responsiveness shapes 'internal working models' guiding later thoughts, feelings, and relationships across peer, romantic, and caregiving ties. Drawing on evolution, ethology, psychoanalysis, control systems, and cognitive psychology, John Bowlby identified four distinguishing characteristics of attachment: (1) Proximity Maintenance (desire to stay near the attachment figure), (2) Safe Haven (returning to the figure for comfort/safety under fear or threat), (3) Secure Base (using the figure as a launchpad to explore the world), and (4) Separation Distress (anxiety when the figure is absent). Using the Strange Situation Protocol (observing 12–18-month-olds during separation and reunion) and story-completion tests, Mary Ainsworth (1978) identified three styles, later expanded to four by Main and Solomon (1986): (1) Secure Attachment—responsive, consistent caregiver; child protests departure, calms quickly upon reunion, and resumes exploring; (2) Avoidant Attachment—unresponsive caregiver discouraging crying; child shows minimal separation distress, lower-quality play, and little reaction upon reunion; (3) Ambivalent (Anxious) Attachment—inconsistent caregiving; child shows distress at departure, may display anger, reluctance to warm up on reunion, freezing/rocking, stress-coping difficulty, or role reversal; and (4) Disorganized-Insecure Attachment—linked to frightening/disoriented, intrusive, neglectful, or maltreating caregiving, boundary confusion, and preoccupation preventing the child from using the caregiver as a secure base."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "In Piaget's theory, what distinguishes Inductive Logic (Concrete Operational) from Deductive Logic (Formal Operational)?",
+      "answer": "Inductive logic moves from a specific experience to a general principle (mastered in Concrete Operations, ages 7–11), whereas Deductive logic applies a general principle to determine a specific or hypothetical outcome (emerging in Formal Operations, 12+ years)."
+    },
+    {
+      "question": "In operant conditioning, how does Negative Reinforcement differ from Negative Punishment?",
+      "answer": "Negative reinforcement REMOVES an unfavourable event to INCREASE a behaviour, whereas negative punishment REMOVES a favourable event/privilege (e.g., losing recess) to DECREASE a behaviour."
+    },
+    {
+      "question": "Name the three models of observational learning and the four sequential steps of the modelling process proposed by Albert Bandura (1977).",
+      "answer": "Three models: Live model, Verbal instructional model, and Symbolic model. Four steps: Attention, Retention, Reproduction, and Motivation."
+    },
+    {
+      "question": "What are Bowlby's four distinguishing characteristics of attachment, and who added Disorganized-Insecure attachment as the fourth style in 1986?",
+      "answer": "Proximity Maintenance, Safe Haven, Secure Base, and Separation Distress. Main and Solomon (1986) added Disorganized-Insecure attachment."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Define schemas, assimilation, accommodation, and equilibration in Piaget's theory, and state two major criticisms of Piaget's work.",
+      "answer": "Schemas are mental/physical knowledge frameworks; assimilation fits new info into existing schemas; accommodation alters schemas or creates new ones; equilibration balances both to advance stages. Criticisms: (1) Unrepresentative sample (his own three children and high-SES children), limiting generalizability; (2) Underestimated young children's abilities—Theory of Mind research shows 4–5-year-olds are less egocentric and understand others' perspectives earlier than Piaget claimed."
+    },
+    {
+      "id": "4.2",
+      "question": "Describe Piaget's Preoperational Stage using the three-mountain task and liquid conservation experiment, and explain Reversibility in Concrete Operations.",
+      "answer": "Preoperational children (2–6 yrs) use symbols/pretend play but show egocentrism (selecting only their own viewpoint in the three-mountain task) and fail conservation (judging a tall thin cup as holding more liquid than an equal short wide cup). Concrete operational children (7–11 yrs) grasp reversibility—reversing mental category relationships (e.g., Labrador -> dog -> animal)."
+    },
+    {
+      "id": "4.3",
+      "question": "Explain Pavlov's Classical Conditioning using UCS, UCR, CS, and CR, and describe how a teacher can apply it to reduce classroom anxiety.",
+      "answer": "An Unconditioned Stimulus (UCS, food smell) naturally elicits an Unconditioned Response (UCR, hunger); pairing a neutral stimulus (whistle) repeatedly with UCS turns it into a Conditioned Stimulus (CS) that triggers a Conditioned Response (CR, hunger alone). Teachers pair anxiety-inducing events (presenting before a class) with warm, pleasant surroundings so students learn to associate speaking with calmness."
+    },
+    {
+      "id": "4.4",
+      "question": "Explain Bandura's Social Learning Theory, including intrinsic reinforcement, the Bobo doll study, and why learning does not always immediately change behaviour.",
+      "answer": "Bandura showed in his Bobo doll study that children imitate aggressive adult behaviour purely through observation. He added intrinsic reinforcement (internal pride, satisfaction, accomplishment) linking learning to cognition ('social cognitive theory') and emphasized that people can acquire coded knowledge observationally without immediately displaying it unless motivated."
+    },
+    {
+      "id": "4.5",
+      "question": "Compare Secure, Avoidant, Ambivalent, and Disorganized attachment styles and explain the role of 'internal working models'.",
+      "answer": "Parental responsiveness builds 'internal working models' guiding later feelings and relationship expectations. Secure: responsive parent, child protests departure, calms rapidly on return. Avoidant: unresponsive parent, little distress or reunion reaction. Ambivalent: inconsistent care, high distress, anger/ambivalence or freezing on reunion. Disorganized: frightened/disoriented or maltreating caregiving, boundary confusion, inability to use caregiver as a secure base."
+    }
+  ]
+}

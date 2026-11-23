@@ -5,6 +5,8 @@ import OverviewStats from '../components/tracker/OverviewStats';
 import TopicBreakdown from '../components/tracker/TopicBreakdown';
 import MissedQuestions from '../components/tracker/MissedQuestions';
 import DataPortability from '../components/tracker/DataPortability';
+import { getCourse } from '../data/courses';
+import LockedCourseView from '../components/common/LockedCourseView';
 
 export default function TrackerPage() {
   const { courseId: paramCourseId } = useParams<{ courseId?: string }>();
@@ -12,11 +14,20 @@ export default function TrackerPage() {
   const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
   const progress = useAppStore((s) => s.progress);
 
+  const activeCourseId = (paramCourseId || currentCourseId || 'gce204').toLowerCase();
+  const courseConfig = getCourse(activeCourseId);
+
   useEffect(() => {
-    setCurrentCourse((paramCourseId || currentCourseId || 'nsg215').toLowerCase());
-  }, [paramCourseId, currentCourseId, setCurrentCourse]);
-  const activeCourseId = (paramCourseId || currentCourseId || 'nsg215').toLowerCase();
-  const isPendingCourse = activeCourseId === 'gce204' || activeCourseId === 'nsg222';
+    if (courseConfig && courseConfig.status === 'active') {
+      setCurrentCourse(activeCourseId);
+    }
+  }, [paramCourseId, currentCourseId, setCurrentCourse, courseConfig, activeCourseId]);
+
+  if (courseConfig && courseConfig.status === 'locked') {
+    return <LockedCourseView course={courseConfig} />;
+  }
+
+  const isPendingCourse = activeCourseId === 'gce204' || activeCourseId === 'nsg222' || activeCourseId === 'nsg223' || activeCourseId === 'nsg225' || activeCourseId === 'nsg229' || activeCourseId === 'nsg232' || activeCourseId === 'pio206' || activeCourseId === 'psy205' || activeCourseId === 'psm201';
 
   return (
     <div className="space-y-6 animate-fade-in">

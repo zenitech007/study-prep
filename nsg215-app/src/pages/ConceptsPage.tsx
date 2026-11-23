@@ -4,6 +4,8 @@ import { Search, Brain, Printer, ChevronDown, ChevronUp } from 'lucide-react';
 import { conceptItems } from '../data/learnContent';
 import TTSButton from '../components/common/TTSButton';
 import { useAppStore } from '../store/useAppStore';
+import { getCourse } from '../data/courses';
+import LockedCourseView from '../components/common/LockedCourseView';
 
 export default function ConceptsPage() {
   const { courseId } = useParams<{ courseId?: string }>();
@@ -14,9 +16,20 @@ export default function ConceptsPage() {
     new Set(conceptItems.map((c) => c.category))
   );
   const printRef = useRef<HTMLDivElement>(null);
-  useEffect(() => { setCurrentCourse((courseId || currentCourseId || 'nsg215').toLowerCase()); }, [courseId, currentCourseId, setCurrentCourse]);
-  const activeCourse = (courseId || currentCourseId || 'nsg215').toLowerCase();
-  if (activeCourse === 'ana214' || activeCourse === 'gce204' || activeCourse === 'nsg222') return <section className="card p-8"><h1 className="text-xl font-bold">Quick-Prep</h1><p className="mt-3 text-sub">{activeCourse.toUpperCase()} flash facts are pending.</p><Link className="btn btn-primary inline-flex items-center min-h-11 mt-4" to="/">Back to Course Library</Link></section>;
+  const activeCourse = (courseId || currentCourseId || 'gce204').toLowerCase();
+  const courseConfig = getCourse(activeCourse);
+
+  useEffect(() => {
+    if (courseConfig && courseConfig.status === 'active') {
+      setCurrentCourse(activeCourse);
+    }
+  }, [courseId, currentCourseId, setCurrentCourse, courseConfig, activeCourse]);
+
+  if (courseConfig && courseConfig.status === 'locked') {
+    return <LockedCourseView course={courseConfig} />;
+  }
+
+  if (activeCourse === 'ana214' || activeCourse === 'gce204' || activeCourse === 'nsg222' || activeCourse === 'nsg223' || activeCourse === 'nsg225' || activeCourse === 'nsg229' || activeCourse === 'nsg232' || activeCourse === 'pio206' || activeCourse === 'psy205' || activeCourse === 'psm201') return <section className="card p-8"><h1 className="text-xl font-bold">Quick-Prep</h1><p className="mt-3 text-sub">{activeCourse.toUpperCase()} flash facts are pending.</p><Link className="btn btn-primary inline-flex items-center min-h-11 mt-4" to="/">Back to Course Library</Link></section>;
 
   const toggleCategory = (category: string) => {
     setExpandedCategories((prev) => {

@@ -1,0 +1,71 @@
+{
+  "id": 2,
+  "title": "Maintaining Skin Integrity and Pressure Ulcer Prevention",
+  "introduction": "Preserving intact skin is a core nursing responsibility—underscored by Florence Nightingale's 1859 observation that bedsores are generally a failure of nursing rather than disease. Systematically identifying at-risk clients with the Braden Scale, recognizing all stages of pressure injury, and executing rigorous 2-hourly turning, moisture control, and skin protection prevent debilitating tissue breakdown.",
+  "learningOutcomes": [
+    "2.1 Define pressure sore (decubitus ulcer/pressure injury) and distinguish internal versus external factors maintaining skin integrity.",
+    "2.2 Enumerate the fourteen risk factors for impaired skin integrity, high-risk client groups, and vulnerable bony prominences and skin-fold pressure areas.",
+    "2.3 Apply and interpret the six-subscale Braden Scale to predict pressure ulcer risk.",
+    "2.4 Differentiate Stages I through IV and unstageable (eschar) pressure ulcers, as well as the four types of wound exudate.",
+    "2.5 Execute structured skin-condition monitoring, skin-breakdown prevention protocols, documentation, and family education."
+  ],
+  "content": [
+    {
+      "heading": "Definition, Factors Maintaining Skin Integrity, Risk Factors, and Vulnerable Pressure Areas",
+      "body": "A pressure sore (decubitus ulcer or pressure injury, per NPIAP) is a localized area of damage to the skin and underlying soft tissue—usually over a bony prominence or beneath a medical device—caused by prolonged or intense pressure, friction, or shear that interferes with blood circulation. Early signs include non-blanching discoloured patches (red on light skin; purple or blue on dark skin), warm, spongy, or indurated tissue, and localized pain or itching. Skin integrity is maintained by Internal factors (genetics/race, skin pigmentation, allergies, light sensitivity, age, underlying health such as corticosteroid use) and External factors (physical activity). Fourteen key risk factors compromise skin integrity: (1) immobility, (2) excessive body heat, (3) inadequate nutrition, (4) advanced age, (5) friction and shearing, (6) chronic medical conditions (e.g., diabetes, cardiovascular disease), (7) faecal and urinary incontinence, (8) poor lifting techniques, (9) decreased mental status, (10) incorrect positioning, (11) diminished sensation, (12) hard support surfaces, (13) incorrect application of pressure-applying devices, and (14) tightly or badly applied bandages/splints. Clients requiring proactive skin protection include those undergoing invasive procedures, immobile patients, chronically ill clients, and trauma patients. Vulnerable pressure areas include the coccyx/sacrum, hips (greater trochanter and ischial tuberosities), elbows, heels, shoulder blades (scapulae), knees (patellae/inner knees), ankles (malleoli), back of the head (occiput), ears, skin folds in obese patients, beneath breasts, buttocks, and abdomen."
+    },
+    {
+      "heading": "Braden Scale Risk Assessment and Stages of Pressure Ulcers",
+      "body": "The Braden Scale is a validated 6-subscale predictive tool scoring up to 23 points, where a total score BELOW 18 indicates risk for developing pressure ulcers: (A) Sensory Perception (1 = completely limited, 2 = very limited, 3 = slightly limited, 4 = no impairment); (B) Moisture (1 = completely moist, 2 = moist, 3 = occasionally moist, 4 = rarely moist); (C) Activity (1 = bedfast, 2 = chairfast, 3 = walks occasionally, 4 = walks frequently); (D) Mobility (1 = completely immobile, 2 = very limited, 3 = slightly limited, 4 = no limitations); (E) Nutrition (1 = very poor, 2 = probably adequate, 3 = adequate, 4 = excellent); and (F) Friction and Shear (1 = problem, 2 = potential problem, 3 = no apparent problem). Pressure ulcers progress through four numbered stages plus an unstageable category: Stage I—non-blanchable erythema of intact skin (persistent redness on light skin or red/blue/purple hues on dark skin, with altered warmth/coolness, firm/boggy feel, or pain/itching); Stage II—partial-thickness skin loss involving epidermis, dermis, or both, appearing superficially as an abrasion, blister, or shallow crater; Stage III—full-thickness skin loss with damage or necrosis of subcutaneous tissue extending down to (but not through) underlying fascia, forming a deep crater with or without undermining; Stage IV—full-thickness skin and tissue loss with extensive destruction, necrosis, or damage to muscle, bone, tendons, or joint capsules, often with undermining and sinus tracts; and Unstageable/Ungradable—wound base fully obscured by thick, dry, black necrotic tissue (eschar). When assessing open lesions, exudate is classified as Serous (clear fluid free of blood/pus), Sanguinous (bloody), Serosanguinous (blood mixed with clear fluid), or Purulent (cloudy, viscous, pus-like)."
+    },
+    {
+      "heading": "Monitoring Skin Condition vs. Preventing Skin Breakdown",
+      "body": "Under the primary nursing diagnosis Risk for Impaired Skin Integrity (related to immobility, decreased sensory perception, impaired perfusion, friction, shear, moisture, and advanced age), nurses aim to maintain intact skin free of ischaemia, hyperaemia, necrosis, dryness, flaking, itching, or burning. Monitoring Skin Condition requires artificial light, a bath blanket, gown, and zinc-oxide cream/cornstarch powder: explain the procedure, ensure privacy, wash hands, compare skin colour against the client's racial baseline (observing pallor, flushing, jaundice, cyanosis), palpate temperature with the back of the fingers/hand (reflecting dermal blood circulation), inspect dryness/flaking/moisture/odours in folds, pinch a small skin fold to check turgor/return speed (reflecting hydration), press firmly over the ankle to check for pitting indentation, test sensory response to touch/heat/cold, and document lesions or discolourations (ecchymosis, petechiae, purpura, erythema—which can signal leukaemia, haemophilia, or vitamin deficiency). Preventing Skin Breakdown requires cornstarch powder (preferred because it does NOT 'cake' on contact with moisture), a pressure-relieving mattress, clean gloves for open lesions, and zinc oxide/barrier cream. Core prevention interventions include: turning at-risk clients at least every 2 hours (rotating right/left lateral, prone, supine, and swimming-type positions while inspecting vulnerable areas), proper lifting techniques avoiding drag/shear, lubricating dry unbroken skin, keeping skin dry and free of urine/faeces/soap/drainage, applying zinc oxide cream to sacrum, elbows, and heels several times daily, keeping linens clean, dry, and wrinkle-free, avoiding chipped bedpans, encouraging active/ROM exercises, providing protein-rich nutrition and adequate fluids, educating family members, and thoroughly documenting skin condition, mobility, turning frequency, care rendered, client complaints, and wound specimen details."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "A chairfast client (2) has very limited sensory perception (2), occasionally moist skin (3), slightly limited mobility (3), excellent nutrition (4), and no friction/shear problem (3). What is their Braden score and interpretation?",
+      "answer": "Total Braden score = 17 (2 + 2 + 3 + 3 + 4 + 3). Because the score is below 18, the client is AT RISK of developing a pressure ulcer."
+    },
+    {
+      "question": "How is a superficial pressure ulcer involving partial-thickness loss of the epidermis and/or dermis classified, and what defines an unstageable pressure ulcer?",
+      "answer": "Partial-thickness loss of epidermis/dermis (abrasion, blister, shallow crater) is Stage II. An unstageable/ungradable ulcer is fully covered by thick, dry, black necrotic tissue (eschar)."
+    },
+    {
+      "question": "Why is cornstarch powder preferred on skin and bed linens for pressure-ulcer prevention?",
+      "answer": "Cornstarch powder does not cause 'caking' when it comes into contact with moisture."
+    },
+    {
+      "question": "How frequently must at-risk immobilized patients be repositioned to prevent pressure sores?",
+      "answer": "At least every 2 hours (4-hourly turning is insufficient)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Define pressure sore, list eight risk factors for impaired skin integrity, and identify eight common vulnerable pressure areas.",
+      "answer": "A pressure sore (decubitus ulcer) is a localized injury to skin and underlying tissue over a bony prominence or medical device caused by prolonged pressure, friction, or shear impairing blood flow. Eight risk factors: immobility, excessive heat, inadequate nutrition, advanced age, friction/shear, chronic illness, faecal/urinary incontinence, decreased mental status (others: poor lifting, diminished sensation, hard surfaces, tight bandages/splints). Eight pressure areas: coccyx/sacrum, greater trochanter/ischium, heels, elbows, scapulae, patellae, malleoli, and occiput (plus ears, obese skin folds, under breasts)."
+    },
+    {
+      "id": "2.2",
+      "question": "List the six subscales of the Braden Scale with their score ranges and state the maximum score and risk threshold.",
+      "answer": "Sensory Perception (1–4), Moisture (1–4), Activity (1–4), Mobility (1–4), Nutrition (1–4), and Friction & Shear (1–3). Maximum score is 23; a score below 18 indicates risk for developing pressure ulcers."
+    },
+    {
+      "id": "2.3",
+      "question": "Differentiate Stages I, II, III, and IV of pressure ulcers and define serous, sanguinous, serosanguinous, and purulent exudates.",
+      "answer": "Stage I: intact skin with non-blanchable erythema. Stage II: partial-thickness loss of epidermis/dermis (blister/shallow crater). Stage III: full-thickness loss into subcutaneous tissue down to fascia. Stage IV: full-thickness loss with extensive necrosis/damage to muscle, bone, or tendons. Exudates: Serous (clear fluid), Sanguinous (bloody), Serosanguinous (blood mixed with clear fluid), Purulent (cloudy, viscous, pus-like)."
+    },
+    {
+      "id": "2.4",
+      "question": "Outline the steps for systematically monitoring a newly transferred trauma patient's skin condition and state what skin temperature and skin turgor indicate.",
+      "answer": "Explain procedure, ensure privacy, wash hands, inspect skin/mucosa colour against racial baseline, feel temperature with back of hand/fingers (reflects dermal blood circulation), inspect moisture/dryness/odours, gently pinch skin for turgor/return speed (reflects hydration), press ankle for pitting oedema, test sensation, and check for lesions or ecchymosis/petechiae/purpura."
+    },
+    {
+      "id": "2.5",
+      "question": "Summarize nine key nursing strategies for preventing pressure ulcers in bedridden clients.",
+      "answer": "1. Assess risk using the Braden Scale; 2. Reposition every 2 hours; 3. Use proper lifting techniques avoiding shear; 4. Keep skin clean, dry, and free of urine/faeces/drainage; 5. Apply zinc oxide cream to sacrum/elbows/heels and cornstarch powder; 6. Keep linens dry and wrinkle-free; 7. Avoid skin trauma (e.g., chipped bedpans); 8. Provide pressure-relieving mattresses/support devices; 9. Ensure protein-rich nutrition, fluids, and active/ROM exercises."
+    }
+  ]
+}

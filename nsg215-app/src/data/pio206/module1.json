@@ -1,0 +1,75 @@
+{
+  "id": 1,
+  "title": "Digestive System I: Gastrointestinal Structure, Accessory Organs, Sphincters and Motility",
+  "introduction": "The gastrointestinal tract (GIT) and its accessory organs serve as the body's portal for water, electrolytes, vitamins, minerals, and energy substrates. Mastering the four histological wall layers, specialized regional anatomy, six anatomical sphincters, and coordinated basic and functional motility patterns establishes the structural foundation for understanding human digestion and absorption.",
+  "learningOutcomes": [
+    "1.1 Identify all organs of the alimentary canal (GIT) and the six accessory digestive organs, describing the four histological layers of the GI wall.",
+    "1.2 Explain the structure-function relationships of the oral cavity, teeth, tongue, salivary glands, esophagus, stomach (including gastric gland cells), small intestine, and large intestine.",
+    "1.3 Detail the anatomical architecture and physiological functions of the liver, gallbladder, pancreas, and the major GIT sphincters.",
+    "1.4 Distinguish basic GIT movements (peristalsis, deglutition) from functional GIT movements (mastication, gastric motility, gastric emptying).",
+    "1.5 Trace the neural mechanisms of the chewing reflex, the three phases of deglutition, receptive relaxation, retropulsion, and regulation of gastric emptying."
+  ],
+  "content": [
+    {
+      "heading": "Overview of the Digestive System, Wall Layers, and GIT Sphincters",
+      "body": "Nutrition encompasses all processes supplying materials needed for energy production, growth, tissue repair, secretions, and fluid-electrolyte homeostasis. The digestive system comprises the muscular Gastrointestinal Tract (GIT / alimentary canal)—oral cavity, pharynx, esophagus, stomach, small intestine (duodenum, jejunum, ileum), large intestine (cecum, appendix, ascending, transverse, descending, and sigmoid colon), rectum, and anal canal—supported by six Accessory Organs: tongue, teeth, salivary glands, liver, gallbladder, and pancreas. Across the tract, food progresses through Ingestion, Digestion, Absorption, Assimilation, and Defecation. Histologically, the GIT wall exhibits four concentric layers from lumen outward: (1) Mucosa (epithelium, lamina propria with immune cells, and muscularis mucosae—secreting mucus, acid, and enzymes while absorbing nutrients); (2) Submucosa (connective tissue housing blood vessels, lymphatics, nerves, and submucosal glands); (3) Muscularis Externa (smooth muscle driving mixing and propulsion—circular and longitudinal layers generally, plus an inner oblique layer in the stomach); and (4) Serosa (visceral peritoneum reducing friction and protecting organs). Unidirectional transit and compartmentalization are regulated by key GIT Sphincters: Upper Esophageal Sphincter (cricopharyngeus muscle), Lower Esophageal (Cardiac) Sphincter, Pyloric Sphincter (controlling stomach-to-duodenum emptying), Sphincter of Oddi (at the hepatopancreatic ampulla/ampulla of Vater controlling bile and pancreatic juice entry), Ileocecal Valve (junction of ileum and cecum), and the Internal (involuntary) and External (voluntary) Anal Sphincters."
+    },
+    {
+      "heading": "Structure-Function Relationships: Oral Cavity, Esophagus, Stomach, and Intestines",
+      "body": "In the Oral Cavity, teeth (composed of crown, neck, root, enamel, dentin, vascular/innervated pulp, and cementum) perform mechanical processing via specialized types: Incisors (cutting), Canines (tearing), Premolars (crushing), and Molars (grinding). The Tongue (tip, body, root with papillae, taste buds, and lingual nerve) mixes food with saliva, senses taste, aids speech, and propels the bolus for swallowing. Three paired Salivary Glands—Parotid (largest, serous watery secretion), Submandibular, and Sublingual (richer in protein/mucus, more viscous)—moisten food, cleanse the mouth, and initiate starch digestion. The Esophagus is a muscular tube traversing the thorax behind the trachea and through the diaphragm to transport food to the stomach via peristalsis. The J-shaped Stomach divides functionally into Cardia, Fundus, Body (Corpus), and Pyloric Antrum/Pylorus, lined internally by rugae and deep gastric glands containing specialized cells: Mucous Neck Cells (mucus and bicarbonate protecting the lining), Parietal/Oxyntic Cells (hydrochloric acid [HCl] and intrinsic factor), Chief/Peptic/Zymogen Cells (pepsinogen and gastric lipase), Enterochromaffin-like (ECL) Cells (histamine stimulating acid), G Cells (gastrin stimulating acid), and D Cells (somatostatin inhibiting acid). The stomach temporarily stores food, destroys ingested microbes via HCl, churns food mechanically with three smooth muscle layers into chyme, and initiates protein digestion. The Small Intestine (duodenum receiving bile and pancreatic juice, jejunum, and ileum supported by mesentery) completes most digestion and absorbs nutrients across an amplified surface area created by circular folds, finger-like Villi (containing blood capillaries and central lymphatic lacteals), and Microvilli. The Large Intestine (featuring haustra, taenia coli, hepatic and splenic flexures, NO villi, abundant straight Crypts of Lieberkuhn, numerous mucus-secreting goblet cells, and lamina propria immune cells) absorbs water and electrolytes, houses beneficial microflora, and forms, stores, and eliminates feces."
+    },
+    {
+      "heading": "Accessory Organs: Liver, Gallbladder, and Pancreas",
+      "body": "The Liver (divided externally into larger right and smaller left lobes by the falciform ligament, plus posterior caudate and quadrate lobes) receives dual blood supply from the hepatic artery (oxygenated arterial blood) and hepatic portal vein (nutrient-rich venous blood from digestive organs), draining via hepatic veins into the inferior vena cava. Microscopically, hepatic lobules consist of radiating cords of Hepatocytes separated by blood Sinusoids (lined by phagocytic Kupffer cells and adjacent to the Space of Disse) converging toward a central vein, bordered by Portal Triads (branches of bile duct, hepatic artery, and hepatic portal vein). Key liver functions include producing bile for fat digestion, metabolizing carbohydrates and lipids, storing glycogen, vitamins, and iron, detoxifying poisons/drugs, and destroying old blood cells. The Gallbladder (fundus, body, neck connecting via the cystic duct to the common hepatic duct to form the common bile duct, joining the pancreatic duct at the ampulla of Vater/major duodenal papilla) stores, concentrates, and releases bile into the duodenum. The Pancreas (head nestled in the duodenum, body, and tail) is a dual gland: exocrine acinar and ductal cells secrete digestive enzymes (for proteins, fats, carbohydrates, and nucleic acids) and acid-neutralizing bicarbonate, while endocrine Islets of Langerhans secrete insulin, glucagon, somatostatin, and pancreatic polypeptide to regulate blood glucose."
+    },
+    {
+      "heading": "Basic vs. Functional GIT Movements: Mastication, Peristalsis, Deglutition, and Gastric Motility",
+      "body": "GIT motility is categorized into Basic Movements (occurring along the tract intrinsically—Peristalsis and Deglutition/Swallowing) and Functional Movements (triggered by food presence—Mastication/Chewing, Gastric Motility [propulsion and retropulsion], and Gastric Emptying). Mastication is driven by the brainstem-coordinated Chewing Reflex: jaw opening stretches jaw muscles to trigger reflex contraction of the masseter, medial pterygoid, and temporalis (closing the jaw); food contact with buccal receptors then triggers reflex contraction of the digastric and lateral pterygoid muscles (re-opening the jaw), repeating cyclically to reduce food size, rupture indigestible plant cellulose walls, increase enzyme surface area, mix food with salivary amylase and lingual lipase into a lubricated bolus, and stimulate taste and olfactory receptors. Peristalsis is a stretch-initiated progressive wave of proximal smooth muscle contraction coupled with distal relaxation that propels contents along the pharynx, esophagus, stomach, bile ducts, glandular ducts, and ureters. Deglutition (Swallowing), triggered via trigeminal (CN V), glossopharyngeal (CN IX), and vagus (CN X) afferents, proceeds through three phases: (1) Oral Phase (voluntary—tongue pushes bolus up and back against hard palate), (2) Pharyngeal Phase (involuntary, coordinated by medulla and lower pons; lasts 1–2 seconds with temporary inhibition of respiration as pharyngeal peristalsis pushes the bolus past the open upper esophageal sphincter), and (3) Esophageal Phase (involuntary—Primary esophageal peristalsis initiated by swallowing, and Secondary esophageal peristalsis initiated by residual food distending the esophagus, with force proportional to bolus size). Gastric Motility achieves storage via Receptive Relaxation of the fundus and thorough chyme mixing via peristaltic waves (originating near the fundal-corpus border) and Retropulsion (back-and-forth churning as chyme hits the closed pyloric sphincter). Gastric Emptying proceeds at a rate proportional to chyme volume and fluidity, stimulated primarily by vagal/distension nerve impulses and gastric gastrin."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Distinguish between basic movements and functional movements of the gastrointestinal tract with two examples of each.",
+      "answer": "Basic movements occur along the GIT intrinsically (e.g., peristalsis and deglutition/swallowing), whereas functional movements are elicited by the presence of food in the tract (e.g., mastication/chewing, gastric motility [propulsion and retropulsion], and gastric emptying)."
+    },
+    {
+      "question": "Which gastric gland cells secrete hydrochloric acid and intrinsic factor, which secrete pepsinogen, and which secrete somatostatin to inhibit acid?",
+      "answer": "Parietal (oxyntic) cells secrete HCl and intrinsic factor; Chief (peptic/zymogen) cells secrete pepsinogen (and gastric lipase); D cells secrete somatostatin."
+    },
+    {
+      "question": "What anatomical structures make up a hepatic Portal Triad, and what is the function of Kupffer cells?",
+      "answer": "A portal triad consists of a branch of the bile duct, a branch of the hepatic artery, and a branch of the hepatic portal vein. Kupffer cells are macrophages lining liver sinusoids that phagocytose debris and old blood cells."
+    },
+    {
+      "question": "What distinguishes Primary esophageal peristalsis from Secondary esophageal peristalsis?",
+      "answer": "Primary esophageal peristalsis is initiated by the act of swallowing as food enters the esophagus, whereas Secondary esophageal peristalsis is initiated locally by the continued presence/distension of food remaining in the esophagus."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "List the four histological layers of the gastrointestinal tract wall from innermost to outermost and state one key structural or functional feature of each.",
+      "answer": "1. Mucosa (epithelium, lamina propria, muscularis mucosae—secretes mucus, acid, and enzymes and absorbs nutrients); 2. Submucosa (connective tissue housing blood vessels, lymphatics, nerves, and submucosal glands supporting mucosa); 3. Muscularis Externa (circular and longitudinal smooth muscle—plus inner oblique in stomach—driving mixing and propulsion); 4. Serosa (visceral peritoneum reducing friction and protecting organs)."
+    },
+    {
+      "id": "1.2",
+      "question": "Compare the mucosal adaptations of the small intestine versus the large intestine in relation to their primary functions.",
+      "answer": "The small intestine features circular folds, finger-like villi (with blood capillaries and lacteals), and microvilli to maximize surface area for nutrient digestion and absorption. The large intestine has NO villi, instead featuring abundant straight tubular Crypts of Lieberkuhn, numerous mucus-secreting goblet cells for lubrication/protection, immune cells in the lamina propria, haustra, and taenia coli for water/electrolyte absorption and feces formation."
+    },
+    {
+      "id": "1.3",
+      "question": "List the six major sphincters/valves of the gastrointestinal tract and state the physiological role of each.",
+      "answer": "1. Upper Esophageal Sphincter (controls bolus entry from pharynx to esophagus); 2. Lower Esophageal/Cardiac Sphincter (prevents gastric acid reflux into esophagus); 3. Pyloric Sphincter (regulates chyme emptying from stomach to duodenum); 4. Sphincter of Oddi (controls bile and pancreatic juice entry into duodenum); 5. Ileocecal Valve (regulates transit from ileum to cecum and prevents backflow); 6. Internal and External Anal Sphincters (control fecal continence and defecation)."
+    },
+    {
+      "id": "1.4",
+      "question": "Describe the chewing reflex and list four physiological functions of mastication.",
+      "answer": "Opening the jaw stretches jaw muscles, triggering reflex contraction of masseter, medial pterygoid, and temporalis (closing jaw); food touching buccal receptors then triggers reflex contraction of digastric and lateral pterygoid (re-opening jaw). Four functions: reduces food into swallowable pieces, breaks indigestible plant cellulose walls to boost enzyme surface area, mixes food with salivary amylase/lingual lipase into a lubricated bolus, and stimulates taste and olfactory receptors."
+    },
+    {
+      "id": "1.5",
+      "question": "Explain the three phases of deglutition (swallowing) and distinguish receptive relaxation from retropulsion in gastric motility.",
+      "answer": "Deglutition: (1) Oral phase (voluntary—tongue forces bolus back against hard palate), (2) Pharyngeal phase (involuntary, 1–2s, medulla/lower pons, inhibits breathing while pushing bolus past open UES), (3) Esophageal phase (involuntary primary/secondary peristalsis to stomach). Receptive relaxation is fundal enlargement accommodating incoming food for storage, whereas retropulsion is the back-and-forth churning of chyme propelled against the closed pyloric sphincter."
+    }
+  ]
+}

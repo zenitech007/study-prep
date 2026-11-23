@@ -1,0 +1,75 @@
+{
+  "id": 4,
+  "title": "Reproductive Physiology I: Anatomy, Puberty, Gametogenesis, Menstrual Cycle and Coitus",
+  "introduction": "Human reproductive physiology is orchestrated by the hypothalamic-pituitary-gonadal (HPG) axis, driving pubertal maturation, continuous spermatogenesis in males, cyclic oogenesis and endometrial preparation in females, and the neurovascular events of human sexual response. Mastering these endocrine feedback loops clarifies normal reproductive milestones from menarche through menopause and andropause.",
+  "learningOutcomes": [
+    "4.1 Identify essential (gonads) and accessory reproductive structures in males and females and explain the hypothalamic-pituitary-gonadal (HPG) feedback axis.",
+    "4.2 Describe the hormonal triggers and sequential physical milestones of puberty in females (growth spurt, thelarche, adrenarche, menarche) and males, plus menopause and andropause.",
+    "4.3 Compare spermatogenesis (including sperm anatomy) with oogenesis across fetal, postnatal, pre-pubertal, and pubertal stages.",
+    "4.4 Integrate the ovarian cycle (follicular, ovulation/LH surge, luteal) and uterine menstrual cycle (menses, proliferative, secretory) with hormonal curves and basal body temperature.",
+    "4.5 Explain the sources and physiological actions of major reproductive hormones and the four phases of male and female sexual response (coitus)."
+  ],
+  "content": [
+    {
+      "heading": "Reproductive Organs and the Hypothalamic-Pituitary-Gonadal (HPG) Axis",
+      "body": "Reproductive systems divide into essential organs (Gonads: Testes in males, Ovaries in females) and accessory ducts, glands, and external genitalia. The Male system includes testes (producing spermatozoa and testosterone), ductal system (epididymis, vas deferens, ejaculatory duct, urethra), supportive sex glands (seminal vesicles, prostate, bulbourethral/Cowper's glands), and external genitalia (scrotum and penis containing paired corpora cavernosa, corpus spongiosum, glans, and prepuce). The Female system comprises ovaries (producing ova, estrogen, and progesterone), fallopian tubes with fimbriae, uterus (fundus, body, cervix with cervical canal; endometrium, myometrium, perimetrium), vagina, external genitalia (mons pubis, labia majora/minora, clitoris, vestibule, hymen), and mammary glands (lobes, secretory alveoli surrounded by contractile myoepithelial cells, lactiferous ducts/sinuses, nipple, areola). Both sexes are governed by the HPG Axis: hypothalamic Gonadotropin-Releasing Hormone (GnRH) stimulates the anterior pituitary to secrete Follicle-Stimulating Hormone (FSH) and Luteinizing Hormone (LH). In males, LH stimulates testicular Leydig cells to secrete Testosterone (providing negative feedback to hypothalamus/pituitary), while FSH and testosterone act on Sertoli cells to drive spermatogenesis and secrete Inhibin (selective negative feedback on FSH). In females, FSH and LH drive ovarian folliculogenesis, ovulation, and estrogen/progesterone secretion via long-loop negative (and mid-cycle positive) feedback."
+    },
+    {
+      "heading": "Puberty, Reproductive Hormones, Menopause, and Andropause",
+      "body": "Puberty—the transition to reproductive maturity starting around age 8 as hypothalamic-pituitary sensitivity to negative sex-steroid feedback decreases and sleep-entrained pulsatile GnRH-LH release emerges—also features Adrenarche (growth of adrenal zona reticularis elevating adrenal androgens DHEA, DHEA-S, and androstenedione). Female Puberty (ages 8–14) unfolds in four stages: (1) Accelerated growth spurt (up to ~8 cm/yr, widening pelvis, increased adiposity and ligamentous laxity), (2) Thelarche (breast development, ages 8–9), (3) Adrenarche (pubic/axillary hair, body odour, acne, ages 9–11), and (4) Menarche (first menses, ages 10–14; early cycles often irregular/anovulatory; risk of anaemia). Male Puberty starts with testicular enlargement and Leydig-cell testosterone surge, driving penile growth/erections, sperm production/first ejaculation, growth spurt (up to ~10 cm/yr), increased lean muscle mass and haematocrit, decreased adiposity, broadened shoulders, facial/body/pubic hair, and voice deepening (laryngeal enlargement/vocal cord thickening). Key Reproductive Hormones include Testosterone (male secondary traits, accessory organs, protein anabolism, spermatogenesis with FSH), Estrogens (estradiol, weaker estrone, weakest estriol—female pubertal traits, uterine/breast duct growth, water balance, lowered cholesterol, FSH inhibition, oxytocin synergy in labour), Progesterone (endometrial/decidual maintenance, breast alveoli), Oxytocin (synthesized in hypothalamic paraventricular nuclei, stored in posterior pituitary; released via cholinergic/areolar/genital stimulation, inhibited by sympathetic catecholamines; drives milk let-down, coital sperm transport, and labour contractions), and Prolactin (anterior pituitary lactogenic hormone stimulated by suckling, inhibited by PIF/dopamine and bromocriptine; stimulates milk production and suppresses LH/ovulation causing lactational amenorrhoea). Reproductive ageing leads in females (~age 50–51) to Menopause (primary ovarian follicle depletion -> falling estrogen, elevated gonadotropins especially FSH, menstrual cessation, uterine/tubal shrinkage, vaginal thinning/dryness), and in males (from ~age 50) to Andropause (gradual testosterone decline—not total cessation—with smaller testicular mass, decreased ejaculate, erectile changes, and possible benign prostatic hypertrophy)."
+    },
+    {
+      "heading": "Gametogenesis (Spermatogenesis & Oogenesis) and the Menstrual Cycle",
+      "body": "Spermatogenesis continuously converts diploid spermatogonia -> diploid primary spermatocytes (46) -> haploid secondary spermatocytes (23) -> four haploid spermatids (23) -> mature spermatozoa throughout adult male life. A mature Sperm comprises a Head (haploid chromosome nucleus + enzyme-packed acrosome), Middle Piece (dense mitochondria generating ATP for swimming), and Tail (plasma membrane + ATP-driven axial filament for motility). Unlike continuous male spermatogenesis, female Oogenesis establishes a finite declining oocyte pool: Fetal oogenesis (starting ~15 wks gestation, peaking at 6–7 million germ cells at 5 months, declining to ~2 million by term); Postnatal oogenesis (all oogonia converted to primary oocytes arrested in meiotic prophase I diplotene by 6th gestational month, falling to ~400,000 by puberty); Pre-pubertal oogenesis (ages 5–11: zona pellucida + 6–9 granulosa layers); and Pubertal oogenesis (cyclic maturation yielding 1 large secondary oocyte + 1st polar body at Meiosis I, and 1 ovum + 2nd polar body only upon fertilization). The typical 25–30 day (28-day reference) Ovarian and Uterine Menstrual Cycle begins on Day 1 of menstrual shedding (stratum functionalis sloughs while stratum basalis remains) and spans three phases: (1) Pre-Ovulatory / Follicular / Estrogenic Phase (~days 1–14; FSH recruits primordial -> primary -> secondary -> mature Graafian follicle; rising estradiol drives endometrial Proliferative phase regenerating stratum functionalis); (2) Ovulation (~day 14–15; triggered 24–36 hours after a sharp anterior pituitary LH surge following peak estrogen, extruding the haploid secondary oocyte while estrogen briefly dips and ruptured follicle undergoes vascularization/luteinization); and (3) Post-Ovulatory / Luteal / Progestational Phase (fixed ~13–14 days; LH maintains the yellowish Corpus Luteum secreting abundant Progesterone plus estrogen, driving the Secretory endometrial phase and raising basal body temperature from ~36.4°C to ~36.7°C; absent fertilization, the corpus luteum regresses into the Corpus Albicans, progesterone/estrogen plummet, and menstruation restarts)."
+    },
+    {
+      "heading": "Physiology of Sexual Intercourse (Coitus)",
+      "body": "Sexual arousal varies by individual and sex (often visual, olfactory, auditory, or tactile in males; strongly tactile, verbal, and olfactory in females). Male Sexual Response centres on: (1) Erection—triggered by sacral parasympathetic efferents causing penile arteriolar vasodilation and high-pressure engorgement of erectile venous sinuses/spongiosa, paired with clear lubricating pre-ejaculatory secretion; (2) Orgasm—intense 3–4 second peak of arousal with involuntary rhythmic contractions and tension release; and (3) Ejaculation—3–4 seconds of 3–6 spasmodic expulsive contractions at the penile base propelling semen high into the vagina, followed by brief glans tenderness, relaxation/sleep, and detumescence (erection latency lengthens with age). Female Sexual Response unfolds across four phases: (1) Excitement/Arousal (generally slower onset, cycle-dependent; nipple erection and areolar duskiness, clitoral widening, labial vasocongestion, and vaginal wall lubrication); (2) Plateau (receptive readiness with direct clitoral stimulation); (3) Orgasm (intense pleasure differing from males by absence of ejaculation, expressed by rhythmic contractions of deep pelvic and vaginal muscles); and (4) Resolution (5–10 minutes of pelvic fluid drainage and relaxation without glans tenderness, enabling faster potential re-arousal than males)."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "In the male HPG axis, which testicular cells respond to LH, which respond to FSH, and what hormone provides selective negative feedback on FSH?",
+      "answer": "Leydig cells respond to LH by secreting testosterone; Sertoli cells respond to FSH (and testosterone) to support spermatogenesis and secrete Inhibin, which provides selective negative feedback on FSH."
+    },
+    {
+      "question": "Name the four sequential physical stages of female puberty in order and state the typical age range for menarche.",
+      "answer": "Accelerated growth spurt -> Thelarche (breast development, 8–9 yrs) -> Adrenarche (pubic/axillary hair, 9–11 yrs) -> Menarche (onset of menstruation, 10–14 yrs)."
+    },
+    {
+      "question": "What hormonal event triggers ovulation 24–36 hours before follicle rupture, and what endocrine gland forms afterward to drive the secretory phase?",
+      "answer": "A rapid mid-cycle Luteinizing Hormone (LH) surge from the anterior pituitary triggers ovulation; afterward, luteinized granulosa and theca cells form the Corpus Luteum, secreting abundant progesterone (and estrogen)."
+    },
+    {
+      "question": "Which autonomic nerves mediate penile erection, and what is the primary difference between female and male orgasm?",
+      "answer": "Sacral parasympathetic nerves mediate arteriolar vasodilation and engorgement causing erection. Female orgasm involves rhythmic contractions of deep pelvic and vaginal muscles without ejaculation, and women can often be re-aroused after a shorter refractory interval."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "4.1",
+      "question": "Explain the hormonal regulation of puberty through the HPG axis and distinguish adrenarche from thelarche and menarche.",
+      "answer": "Around age 8, hypothalamic/pituitary sensitivity to negative feedback from low sex steroids decreases, allowing increased pulsatile GnRH release -> higher LH/FSH -> elevated testosterone (testes) or estrogen (ovaries) driving secondary sex traits and gametogenesis. Adrenarche is pubic/axillary hair appearance driven by adrenal zona reticularis androgens (9–11 yrs); Thelarche is breast development (8–9 yrs); Menarche is the first menstrual period (10–14 yrs)."
+    },
+    {
+      "id": "4.2",
+      "question": "Compare spermatogenesis and oogenesis with respect to timing, germ cell yield, and lifetime duration, and label the three parts of a mature sperm.",
+      "answer": "Spermatogenesis runs continuously from puberty onward, producing 4 haploid sperm per primary spermatocyte. Oogenesis begins in fetal life (peaking at 6–7M germ cells at 5 mos, 2M at birth, 400k at puberty), arrests in prophase I until ovulation, produces 1 functional ovum + polar bodies per oocyte, and ends at menopause. Mature sperm parts: Head (haploid nucleus + acrosome), Middle piece (mitochondria/ATP), and Tail (axial filament/motility)."
+    },
+    {
+      "id": "4.3",
+      "question": "Correlate the three phases of the ovarian cycle with endometrial changes, hormone dominance, and basal body temperature across a 28-day cycle.",
+      "answer": "Pre-ovulatory/Follicular (days 1–14): FSH + rising estradiol mature one Graafian follicle while endometrium sheds (menses) then rebuilds (proliferative phase); temp ~36.4°C. Ovulation (~day 14–15): peak estrogen triggers LH surge -> secondary oocyte extruded 24–36 hrs later. Post-ovulatory/Luteal (days 15–28): LH maintains corpus luteum secreting progesterone + estrogen -> secretory endometrium prepared for implantation; temp rises to ~36.7°C."
+    },
+    {
+      "id": "4.4",
+      "question": "State the source, stimulus for release, inhibitor, and three physiological actions of Oxytocin, and compare it with Prolactin.",
+      "answer": "Oxytocin is made in hypothalamic paraventricular nuclei and stored in the posterior pituitary; stimulated by cholinergic, areolar tactile, and genital tract signals; inhibited by sympathetic catecholamines; acts in milk let-down, uterine contractions aiding coital sperm transport, and fetal expulsion during labour. Prolactin is made by the anterior pituitary, stimulated by nipple suckling, inhibited by PIF and bromocriptine, promotes milk production, and suppresses LH/ovulation (lactational amenorrhoea)."
+    },
+    {
+      "id": "4.5",
+      "question": "Compare Menopause and Andropause in terms of hormonal basis and anatomical tract changes.",
+      "answer": "Menopause (~age 50–51) results from depleted ovarian follicles causing low estrogen, high FSH/LH, menstrual cessation, uterine/tubal shrinkage, and thin/dry vaginal mucosa risking tears/infection. Andropause (starting ~age 50) is a gradual decline (not cessation) in testosterone from testicular vascular ageing, causing reduced testicular mass, lower sperm/ejaculate volume, erectile dysfunction, and potential benign prostatic hypertrophy."
+    }
+  ]
+}

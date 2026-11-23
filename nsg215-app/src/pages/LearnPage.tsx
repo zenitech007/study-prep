@@ -20,6 +20,9 @@ import {
 import type { StudySessionContent, InTextQuestion, SAQuestion } from '../types';
 import TTSButton from '../components/common/TTSButton';
 import { useAppStore } from '../store/useAppStore';
+import { formatMathText } from '../utils/math';
+import { getCourse } from '../data/courses';
+import LockedCourseView from '../components/common/LockedCourseView';
 
 export default function LearnPage() {
   const { courseId: paramCourseId } = useParams<{ courseId?: string }>();
@@ -27,12 +30,19 @@ export default function LearnPage() {
   const currentCourseId = useAppStore((s) => s.currentCourseId);
   const setCurrentCourse = useAppStore((s) => s.setCurrentCourse);
 
-  const activeCourseId = (paramCourseId || currentCourseId || 'nsg215').toLowerCase();
+  const activeCourseId = (paramCourseId || currentCourseId || 'gce204').toLowerCase();
+  const activeCourse = getCourse(activeCourseId);
 
   // Sync active course if navigated via route
   useEffect(() => {
-    setCurrentCourse(activeCourseId);
-  }, [paramCourseId, currentCourseId, setCurrentCourse]);
+    if (activeCourse && activeCourse.status === 'active') {
+      setCurrentCourse(activeCourseId);
+    }
+  }, [activeCourse, activeCourseId, setCurrentCourse]);
+
+  if (activeCourse && activeCourse.status === 'locked') {
+    return <LockedCourseView course={activeCourse} />;
+  }
 
   const [activeSessions, setActiveSessions] = useState<StudySessionContent[]>([]);
   const [loadState, setLoadState] = useState<'loading' | 'ready' | 'error'>('loading');
@@ -44,6 +54,20 @@ export default function LearnPage() {
         ? import('../data/gce204').then((data) => data.loadGce204Sessions())
       : activeCourseId === 'nsg222'
         ? import('../data/nsg222').then((data) => data.loadNsg222Sessions())
+      : activeCourseId === 'nsg223'
+        ? import('../data/nsg223').then((data) => data.loadNsg223Sessions())
+      : activeCourseId === 'nsg225'
+        ? import('../data/nsg225').then((data) => data.loadNsg225Sessions())
+      : activeCourseId === 'nsg229'
+        ? import('../data/nsg229').then((data) => data.loadNsg229Sessions())
+      : activeCourseId === 'nsg232'
+        ? import('../data/nsg232').then((data) => data.loadNsg232Sessions())
+      : activeCourseId === 'pio206'
+        ? import('../data/pio206').then((data) => data.loadPio206Sessions())
+      : activeCourseId === 'psy205'
+        ? import('../data/psy205').then((data) => data.loadPsy205Sessions())
+      : activeCourseId === 'psm201'
+        ? import('../data/psm201').then((data) => data.loadPsm201Sessions())
       : activeCourseId === 'ana213'
         ? import('../data/ana213Content').then((data) => data.ana213Sessions)
         : import('../data/learnContent').then((data) => data.studySessions);
@@ -195,7 +219,7 @@ export default function LearnPage() {
  */
 function cleanText(text?: string): string {
   if (!text) return '';
-  return text.replace(/\[cite:\s*\d+\]/g, '').replace(/\s{2,}/g, ' ').trim();
+  return formatMathText(text.replace(/\[cite:\s*\d+\]/g, '').replace(/\s{2,}/g, ' ').trim());
 }
 
 /**

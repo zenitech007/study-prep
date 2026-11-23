@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Sun, Moon, Type } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
+import { getCourse } from '../../data/courses';
 import type { FontSize } from '../../types';
 
 const fontSizeLabels: Record<FontSize, string> = {
@@ -12,7 +13,9 @@ const fontSizeLabels: Record<FontSize, string> = {
 const fontSizeCycle: FontSize[] = ['small', 'medium', 'large'];
 
 export default function Header() {
-  const currentCourseId = useAppStore((s) => s.currentCourseId || 'nsg215');
+  const storeCourseId = useAppStore((s) => s.currentCourseId);
+  const currentCourse = getCourse(storeCourseId || '');
+  const activeCourseId = (currentCourse && currentCourse.status === 'active') ? currentCourse.id : 'gce204';
   const theme = useAppStore((s) => s.theme);
   const fontSize = useAppStore((s) => s.fontSize);
   const setTheme = useAppStore((s) => s.setTheme);
@@ -20,10 +23,10 @@ export default function Header() {
 
   const navLinks = [
     { to: '/', label: 'Courses', icon: '📚' },
-    { to: currentCourseId === 'nsg215' ? '/learn' : `/course/${currentCourseId}/learn`, label: 'Learn', icon: '📖' },
-    { to: currentCourseId === 'nsg215' ? '/concepts' : `/course/${currentCourseId}/concepts`, label: 'Quick-Prep', icon: '⚡' },
-    { to: currentCourseId === 'nsg215' ? '/drill' : `/course/${currentCourseId}/drill`, label: 'Drill', icon: '🎯' },
-    { to: currentCourseId === 'nsg215' ? '/tracker' : `/course/${currentCourseId}/tracker`, label: 'Tracker', icon: '📊' },
+    { to: `/course/${activeCourseId}/learn`, label: 'Learn', icon: '📖' },
+    { to: `/course/${activeCourseId}/concepts`, label: 'Quick-Prep', icon: '⚡' },
+    { to: `/course/${activeCourseId}/drill`, label: 'Drill', icon: '🎯' },
+    { to: `/course/${activeCourseId}/tracker`, label: 'Tracker', icon: '📊' },
   ];
 
   const toggleTheme = () => {

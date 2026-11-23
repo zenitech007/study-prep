@@ -1,0 +1,71 @@
+{
+  "id": 8,
+  "title": "Introduction to Correlation and Simple Linear Regression",
+  "introduction": "When both exposure and outcome are continuous quantitative measurements—such as maternal weight and birth weight, BMI and blood pressure, or age and CD4 count—biostatisticians use correlation to measure linear association strength and simple linear regression to model the relationship mathematically and predict unknown outcomes.",
+  "learningOutcomes": [
+    "8.1 Distinguish between correlation analysis and regression analysis and explain the role and limitation of scatter diagrams.",
+    "8.2 Interpret both the magnitude and sign of a correlation coefficient ($-1 \\le r \\le +1$).",
+    "8.3 Compare Pearson's product-moment correlation coefficient ($r$) with Spearman's rank-order correlation coefficient, including formulas, assumptions, and limitations.",
+    "8.4 State the five foundational assumptions of Simple Linear Regression and write the best-fit line equation ($\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x$).",
+    "8.5 Compute and interpret the regression intercept ($\\hat{\\beta}_0$) and slope ($\\hat{\\beta}_1$) and use a regression model to predict clinical outcomes."
+  ],
+  "content": [
+    {
+      "heading": "Correlation Analysis, Scatter Diagrams, and Interpreting the Correlation Coefficient",
+      "body": "Correlation quantifies the strength and direction of a linear relationship between two existing quantitative variables $X$ and $Y$ (supporting causal hypotheses and identifying redundant highly correlated predictors), whereas Regression fits a mathematical equation to predict an unknown dependent variable $Y$ from an independent variable $X$. Plotting a Scatter Diagram (each paired observation plotted on $X$–$Y$ axes) is normally the first step in both analyses to visualize direction (upward slope = positive; downward slope = negative) and linear strength—though scatter plots become cluttered in very large samples. The population correlation coefficient is denoted $\\rho$ (rho) and its sample estimate is $r$, always bounded between $-1$ and $+1$ ($-1 \\le r \\le +1$). Interpreting $r$ requires checking two features: (1) Value (Magnitude)—values closer to $+1$ or $-1$ show stronger linear association ($r = +1$ perfect positive; $r = -1$ perfect negative; $r = 0$ zero LINEAR correlation, though a non-linear relationship could still exist); and (2) Sign (Direction)—positive $r$ indicates direct association ($X$ and $Y$ move in the same direction), while negative $r$ indicates inverse association ($Y$ decreases as $X$ increases)."
+    },
+    {
+      "heading": "Pearson's Product-Moment vs. Spearman's Rank-Order Correlation",
+      "body": "Karl Pearson's Product-Moment Correlation Coefficient ($r$) measures linear association between two continuous variables via $r = \\frac{n\\sum xy - (\\sum x)(\\sum y)}{\\sqrt{[n\\sum x^2 - (\\sum x)^2][n\\sum y^2 - (\\sum y)^2]}}$. Applying Pearson's $r$ requires three assumptions: (1) both $X$ and $Y$ are random variables, (2) both are normally distributed, and (3) their relationship follows a linear pattern. Its four limitations are undue distortion by outliers, unequal variances, non-normality, and non-linearity. When Pearson's assumptions fail (e.g., skewed data, outliers, or ordinal ranks), Spearman's Rank-Order Correlation Coefficient ($r_s$) is used instead—evaluating linear correlation between the RANKS of $X$ and $Y$ via $r_s = 1 - \\frac{6\\sum d_i^2}{n(n^2 - 1)}$, where $d_i$ is the difference between paired ranks and $n$ is the number of pairs (e.g., in 10 accident victims comparing age vs. bleeding cessation time, Pearson yields $r = -0.62$ and Spearman yields $r_s = -0.64$, showing a moderate inverse relationship)."
+    },
+    {
+      "heading": "Simple Linear Regression: Assumptions, Equation, Interpretation, and Prediction",
+      "body": "Simple Linear Regression fits a single 'best-fit' straight line modeling one continuous dependent outcome ($Y$) from one continuous independent predictor ($X$). Applying linear regression requires five assumptions: (1) pairs of $(X, Y)$ observations are independent, (2) variables are normally distributed, (3) the true relationship between $Y$ and $X$ is linear, (4) for any given $X$, $Y$ is normally distributed with constant variance (homoscedasticity), and (5) $Y$ is a random variable while $X$ is measured with zero or minimal error. The fitted best-fit equation is $\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x$, where the Slope (regression coefficient) is $\\hat{\\beta}_1 = \\frac{n\\sum xy - (\\sum x)(\\sum y)}{n\\sum x^2 - (\\sum x)^2}$ and the Intercept is $\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}$. Interpretation: $\\hat{\\beta}_0$ is the expected value of $Y$ when $X = 0$, while $\\hat{\\beta}_1$ represents the average change in $Y$ for every 1-unit increase in $X$ ($\\hat{\\beta}_1 = 0$ means no linear association and the model collapses to $\\bar{y}$; $\\hat{\\beta}_1 > 0$ direct/positive association; $\\hat{\\beta}_1 < 0$ inverse/negative association). Clinically, regressing systolic blood pressure ($Y$) on diastolic blood pressure ($X$) across 10 patients yields $\\text{SBP} = 25.38 + 1.285(\\text{DBP})$—meaning every $1\\text{ mmHg}$ rise in DBP corresponds on average to a $1.285\\text{ mmHg}$ rise in SBP, predicting $\\text{SBP} = 25.38 + 1.285(100) = 153.9\\text{ mmHg}$ when $\\text{DBP} = 100\\text{ mmHg}$."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What does a Pearson correlation coefficient of $r = 0$ imply—does it prove there is no relationship at all between $X$ and $Y$?",
+      "answer": "$r = 0$ implies there is no LINEAR relationship between $X$ and $Y$, but a non-linear relationship could still exist."
+    },
+    {
+      "question": "When should a biostatistician choose Spearman's rank correlation over Pearson's product-moment correlation?",
+      "answer": "When the assumptions of Pearson's correlation are violated—such as non-normal distributions, presence of outliers, unequal variances, or ordinal/ranked data."
+    },
+    {
+      "question": "In the regression equation $\\text{SBP} = 25.38 + 1.285(\\text{DBP})$, interpret the slope $1.285$ and predict SBP when $\\text{DBP} = 100\\text{ mmHg}$.",
+      "answer": "For every $1\\text{ mmHg}$ increase in diastolic blood pressure, systolic blood pressure increases by $1.285\\text{ mmHg}$ on average. Predicted $\\text{SBP} = 25.38 + 1.285(100) = 153.9\\text{ mmHg}$."
+    },
+    {
+      "question": "In simple linear regression, what happens to the equation $\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x$ if the slope $\\hat{\\beta}_1 = 0$?",
+      "answer": "There is no linear association between $X$ and $Y$, and the regression equation reduces simply to $\\hat{\\beta}_0 = \\bar{y}$ (the mean of $Y$)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "8.1",
+      "question": "Define correlation coefficient, explain two reasons correlation coefficients are useful in health research, and state the role and limitation of a scatter diagram.",
+      "answer": "Correlation coefficient numerically measures the strength and direction of a linear relationship between two quantitative variables. Uses: (1) supports hypotheses regarding cause-effect relationships, and (2) detects highly correlated redundant predictor variables. A scatter diagram visually displays direction and strength as a first analytical step, but becomes cluttered and hard to read for large sample sizes."
+    },
+    {
+      "id": "8.2",
+      "question": "State the three assumptions and four limitations of Pearson's product-moment correlation coefficient ($r$), and write its formula.",
+      "answer": "Assumptions: both $X$ and $Y$ are random, normally distributed, and linearly related. Limitations: distorted by outliers, unequal variances, non-normality, and non-linearity. Formula: $r = \\frac{n\\sum xy - (\\sum x)(\\sum y)}{\\sqrt{[n\\sum x^2 - (\\sum x)^2][n\\sum y^2 - (\\sum y)^2]}}$."
+    },
+    {
+      "id": "8.3",
+      "question": "Explain Spearman's rank-order correlation coefficient, write its formula, and interpret a result of $r_s = -0.64$ between patient age and bleeding cessation time.",
+      "answer": "Spearman's rank correlation assesses linear association using the ranks of $X$ and $Y$ rather than raw values, reducing distortion from outliers and non-normality: $r_s = 1 - \\frac{6\\sum d_i^2}{n(n^2 - 1)}$. A value of $-0.64$ indicates a moderate inverse (negative) relationship—as age increases, bleeding cessation time tends to decrease."
+    },
+    {
+      "id": "8.4",
+      "question": "Define Simple Linear Regression and list all five foundational assumptions of the linear regression model.",
+      "answer": "Simple Linear Regression fits a best-fit straight line using one continuous predictor ($X$) to explain and predict one continuous outcome ($Y$). Five assumptions: (1) independent $(X, Y)$ pairs, (2) normal distribution, (3) truly linear relationship, (4) constant variance of $Y$ across all values of $X$, and (5) $Y$ is random while $X$ is measured with zero or minimal error."
+    },
+    {
+      "id": "8.5",
+      "question": "Write the simple linear regression equation and formulas for $\\hat{\\beta}_1$ and $\\hat{\\beta}_0$, and state what $\\hat{\\beta}_1 = 0$, $\\hat{\\beta}_1 > 0$, and $\\hat{\\beta}_1 < 0$ mean.",
+      "answer": "Equation: $\\hat{y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 x$, where $\\hat{\\beta}_1 = \\frac{n\\sum xy - (\\sum x)(\\sum y)}{n\\sum x^2 - (\\sum x)^2}$ and $\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}$. $\\hat{\\beta}_1 = 0$: no linear association; $\\hat{\\beta}_1 > 0$: direct/positive association; $\\hat{\\beta}_1 < 0$: inverse/negative association."
+    }
+  ]
+}

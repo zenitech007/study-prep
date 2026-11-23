@@ -1,0 +1,71 @@
+{
+  "id": 5,
+  "title": "Basic Probability Theory and Laws of Probability",
+  "introduction": "Medical diagnosis, treatment selection, and prognosis all unfold under uncertainty. Probability theory translates clinical uncertainty into rigorous numbers between 0 and 1, providing the foundational rules—complement, addition, multiplication, and conditional probability—that power diagnostic testing and inferential biostatistics.",
+  "learningOutcomes": [
+    "5.1 Define probability, state its core mathematical properties ($0 \\le P(E) \\le 1$), explain its clinical rationale in health sciences, and contrast classical, frequentist, and subjective approaches.",
+    "5.2 Define fundamental probability terms (experiment, trial, outcome, sample space, equally likely, simple/compound, mutually exclusive, independent, and complementary events).",
+    "5.3 Differentiate marginal, joint, and conditional probabilities and compute them from clinical $2 \\times 2$ contingency tables.",
+    "5.4 Apply the General and Special Addition Rules and General and Special Multiplication Rules of probability to biomedical problems.",
+    "5.5 Test statistically whether two categorical clinical characteristics (such as age and sex) are independent using conditional probabilities."
+  ],
+  "content": [
+    {
+      "heading": "Meaning, Properties, Clinical Rationale, and Approaches to Probability",
+      "body": "Probability is the likelihood or chance that a specific event will occur, quantifying uncertainty to guide evidence-based medical decisions (diagnosis, treatment, prognosis, survival analysis) rather than unreliable intuition. Core mathematical properties: probability is always non-negative and bounded between $0$ and $1$ inclusive ($0 \\le P(E) \\le 1$), where $P(E) = 0$ signifies an impossible event, $P(E) = 1$ signifies absolute certainty, and $0.5$ indicates fair/even chance. The Complement of event $A$ (denoted $A'$ or $A^c$) occurs when and only when $A$ does not occur (e.g., survival vs. death; success vs. failure; male vs. female in a single birth), satisfying $P(A) + P(A') = 1$ or $p + q = 1$. Three conceptual approaches define probability: (1) Classical Approach—ratio of favourable outcomes to total equally likely possible outcomes, $P(A) = n(A)/n$ (e.g., assuming 4 blood groups are equally likely gives $P(A) = 1/4 = 0.25$); (2) Frequentist Approach—long-run relative frequency across repeated identical trials, $P(A) = m/n$ (e.g., 22 of 50 patients having blood group A yields $P(A) = 22/50 = 0.44$); and (3) Subjective Approach—based on an individual's personal degree of belief."
+    },
+    {
+      "heading": "Key Terms, Types of Events, and Types of Probability",
+      "body": "Essential probability terminology includes: Experiment (any repeatable process generating observed results, not necessarily lab-based, e.g., tossing a coin or balloting), Trial (a single performance of an experiment), Outcome (result of a trial), Sample Space $S$ (set of ALL possible outcomes), Equally Likely (all outcomes share identical chance), and Event (subset of a sample space defined by a rule). Events are classified into: Simple Event (only one outcome of interest), Compound Event (more than one outcome of interest), Mutually Exclusive Events (cannot occur simultaneously, e.g., delivering a male prevents delivering a female in a single birth, or belonging to both Nursing and Human Nutrition departments simultaneously—so $P(A \\cap B) = 0$), and Independent Events (occurrence of one does NOT influence the probability of the other). Three fundamental probability types are computed from datasets: (1) Marginal Probability—unconditional probability of a single event, $P(A)$ or $P(B)$; (2) Joint Probability—probability that both $A$ and $B$ occur simultaneously, $P(A \\cap B) = P(A \\text{ and } B)$ (equals $0$ if mutually exclusive); and (3) Conditional Probability—probability that $A$ occurs GIVEN that $B$ has already occurred, $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$ (equals $0$ if mutually exclusive; equals $P(A)$ if $A$ and $B$ are independent). For instance, in a diagnostic test table where 40/100 patients test positive and 30 of those truly have the disease, $P(\\text{Disease} \\mid \\text{Test}+) = 30/40 = 0.75$ (positive predictive value), while overall disease prevalence is $P(\\text{Disease}) = 40/100 = 0.40$."
+    },
+    {
+      "heading": "Addition Rule, Multiplication Rule, and Testing Independence",
+      "body": "Two fundamental laws govern compound probabilities: (1) Addition Rule (for 'OR' / Union $A \\cup B$): General Rule for non-mutually exclusive events is $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ (subtracting the overlap so shared cases are not double-counted; e.g., in an STD clinic with 5 Chlamydia-only, 3 Gonorrhoea-only, and 2 co-infected out of 10 girls, $P(CT) = 0.7$, $P(GN) = 0.5$, $P(CT \\cap GN) = 0.2$, so $P(CT \\cup GN) = 0.7 + 0.5 - 0.2 = 1.0$). Special Addition Rule for mutually exclusive events simplifies to $P(A \\cup B) = P(A) + P(B)$ (and the sum of all exhaustive mutually exclusive events equals $1$). (2) Multiplication Rule (for 'AND' / Intersection $A \\cap B$): General Rule is $P(A \\cap B) = P(A) \\times P(B \\mid A) = P(B) \\times P(A \\mid B)$. Special Multiplication Rule for independent events simplifies to $P(A \\cap B) = P(A) \\times P(B)$ (e.g., if mother's survival is $4/5$ and daughter's independent survival is $2/7$, joint survival is $8/35$, and probability at least one survives is $4/5 + 2/7 - 8/35 = 30/35 = 6/7$). To test Independence in a contingency table (e.g., 200 diabetic patients cross-tabulated by Sex and Age), compare conditional and marginal probabilities: $P(\\text{Older} \\mid \\text{Male}) = 20/50 = 0.40$, $P(\\text{Older} \\mid \\text{Female}) = 110/150 = 0.73$, and $P(\\text{Older}) = 130/200 = 0.65$. Because $P(\\text{Older} \\mid \\text{Male}) \\ne P(\\text{Older} \\mid \\text{Female}) \\ne P(\\text{Older})$, age and sex are NOT independent in that sample."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "If two events $A$ and $B$ are mutually exclusive, what are the values of $P(A \\cap B)$ and $P(A \\mid B)$?",
+      "answer": "Both $P(A \\cap B) = 0$ and $P(A \\mid B) = 0$, because mutually exclusive events cannot occur together."
+    },
+    {
+      "question": "In a $2 \\times 2$ diagnostic table of 100 people, 30 are Disease+/Test+, 10 are Disease-/Test+, 10 are Disease+/Test-, and 50 are Disease-/Test-. What is $P(\\text{Disease}+ \\mid \\text{Test}+)$?",
+      "answer": "$P(\\text{Disease}+ \\mid \\text{Test}+) = \\frac{P(\\text{Disease}+ \\cap \\text{Test}+)}{P(\\text{Test}+)} = \\frac{30/100}{40/100} = \\frac{30}{40} = 0.75$."
+    },
+    {
+      "question": "A mother and daughter enter labour with independent survival probabilities of $4/5$ and $2/7$. What is the probability that at least one survives?",
+      "answer": "$P(A \\cup B) = P(A) + P(B) - P(A)P(B) = \\frac{4}{5} + \\frac{2}{7} - \\frac{8}{35} = \\frac{28 + 10 - 8}{35} = \\frac{30}{35} = \\frac{6}{7}$."
+    },
+    {
+      "question": "How do you verify using conditional probability whether two events $A$ and $B$ are statistically independent?",
+      "answer": "Check whether $P(A \\mid B) = P(A)$ (equivalently $P(B \\mid A) = P(B)$ or $P(A \\cap B) = P(A)P(B)$). If they are unequal, the events are dependent."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "5.1",
+      "question": "Define probability, state its four core numerical properties, and distinguish the classical, frequentist, and subjective approaches to defining probability.",
+      "answer": "Probability is the likelihood/chance an event will occur. Properties: non-negative, $0 \\le P(E) \\le 1$, $P(E) = 0$ (impossible), $P(E) = 1$ (certain), and $P(A) + P(A') = 1$. Classical uses $n(A)/n$ assuming equally likely outcomes; Frequentist uses long-run relative frequency $m/n$ over repeated trials; Subjective reflects personal degree of belief."
+    },
+    {
+      "id": "5.2",
+      "question": "Define experiment, trial, outcome, sample space, mutually exclusive events, independent events, and complement of an event.",
+      "answer": "Experiment: repeatable process producing observations; Trial: single execution; Outcome: result of a trial; Sample space: set of all possible outcomes; Mutually exclusive: cannot occur together ($P(A \\cap B)=0$); Independent: occurrence of one does not affect the other; Complement ($A'$): occurs if and only if $A$ fails ($P(A') = 1 - P(A)$)."
+    },
+    {
+      "id": "5.3",
+      "question": "Write both the General and Special forms of the Addition Rule and the Multiplication Rule of probability, explaining when each special case applies.",
+      "answer": "Addition: General $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$; Special (mutually exclusive events, $P(A \\cap B) = 0$): $P(A \\cup B) = P(A) + P(B)$. Multiplication: General $P(A \\cap B) = P(A)P(B \\mid A)$; Special (independent events, $P(B \\mid A) = P(B)$): $P(A \\cap B) = P(A)P(B)$."
+    },
+    {
+      "id": "5.4",
+      "question": "In a clinic of 200 diabetic patients, 150 are female, 130 are older, and 110 are both female and older. Calculate the marginal probability of being female, the joint probability of being female and older, and the probability of selecting a patient who is female OR older.",
+      "answer": "$P(\\text{Female}) = 150/200 = 0.75$; $P(\\text{Female} \\cap \\text{Older}) = 110/200 = 0.55$; $P(\\text{Female} \\cup \\text{Older}) = 150/200 + 130/200 - 110/200 = 170/200 = 0.85$."
+    },
+    {
+      "id": "5.5",
+      "question": "Explain why probability theory is indispensable in clinical medicine and health sciences.",
+      "answer": "Clinicians routinely face uncertainty in diagnosis, treatment selection, and prognosis while integrating history, physical exam, lab tests, radiology, and ECGs. Probability quantifies that uncertainty, evaluates diagnostic tests, models survival patterns, and provides the mathematical foundation for statistical inference."
+    }
+  ]
+}

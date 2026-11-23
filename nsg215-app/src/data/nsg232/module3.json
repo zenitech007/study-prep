@@ -1,0 +1,71 @@
+{
+  "id": 3,
+  "title": "Therapeutic Positioning in Nursing",
+  "introduction": "Therapeutic positioning places a client in proper anatomical alignment to maximize comfort, safeguard respiratory and circulatory function, enable examinations or surgery, and prevent contractures and immobility complications. Mastering general positioning principles, supportive devices, and the eight core nursing positions is foundational to safe bedside practice.",
+  "learningOutcomes": [
+    "3.1 Define therapeutic positioning, state its four core rationales, and outline the eight general principles of safe patient positioning.",
+    "3.2 Identify the twelve standard bed accessories and supportive articles used to maintain anatomical alignment.",
+    "3.3 Differentiate Fowler's (semi, standard, high), Supine, Prone, and Lateral positions—including clinical indications and pillow/roll rationales.",
+    "3.4 Differentiate Sims's, Lithotomy, Trendelenburg, and Genupectoral (knee-chest) positions with their specific diagnostic, surgical, and emergency indications.",
+    "3.5 Match specific clinical conditions (e.g., dyspnoea, ARDS, post-op aspiration risk, hypotension, cord prolapse) to their correct therapeutic position."
+  ],
+  "content": [
+    {
+      "heading": "Definition, Rationales, General Principles, and Positioning Equipment",
+      "body": "Positioning in nursing is the strategic placement of a patient in good body alignment as needed therapeutically—not merely as the patient casually prefers. Positioning serves four essential rationales: (1) promoting patient comfort, (2) preventing complications of immobility (such as pressure sores, contractures, and foot drop), (3) stimulating circulation, and (4) promoting normal physiological functions. Eight general principles govern every position change: maintain good body mechanics, obtain assistance whenever required, ensure the mattress is firm and the bed is raised to working height, keep bed sheets clean and dry, avoid placing one body part directly over another to prevent pressure, establish a regular 24-hour position-change schedule, ensure patient comfort, and perform hand hygiene before and after the procedure. Twelve essential supportive articles facilitate safe alignment: a clean dry firm bed, specialized mattresses, bed board, pillows, footboard or foot boot, sand bags, hand rolls, trochanter rolls, bed blocks, overbed table, additional sheets, and a trapeze bar."
+    },
+    {
+      "heading": "Fowler's, Supine, Prone, and Lateral (Side-Lying) Positions",
+      "body": "(1) Fowler's Position elevates the head of the bed across three ranges—Semi-Fowler's (15°–45°), Fowler's (45°–90°), and High Fowler's (>90°)—to relieve dyspnoea and reduce tension on abdominal sutures. Key supports: small head pillow (prevents cervical flexion contractures), arm pillows (prevents shoulder dislocation and arm/wrist flexion contractures while aiding circulation), small lower-back pillow (supports lumbar spine), thigh roll (prevents knee hyperextension and popliteal artery occlusion), ankle pillow (relieves heel pressure), and footboard (maintains dorsiflexion, preventing foot drop). (2) Supine (Dorsal Recumbent) Position places the client flat on their back with a small rolled lumbar towel, pillow under head/neck/upper shoulders (prevents cervical flexion/hyperextension), trochanter rolls or sandbags parallel to the lateral thighs (reduces external hip rotation), small thigh and ankle pillows, footboard (prevents plantar flexion/foot drop), pillow under pronated arms, and hand rolls for paralyzed patients (prevents finger extension/thumb abduction, keeping thumb in slight adduction and opposition). (3) Prone Position places the client flat face-down on the abdomen—boosting oxygenation in acute respiratory distress syndrome (ARDS) and indicated for back pressure sores/burns/injuries/surgeries, >24 hours post-lower-limb amputation, and renal biopsy. Support with head turned to one side on a small pillow, a small pillow under the abdomen below the diaphragm (reduces lumbar hyperextension and pressure on female breasts/male genitals), flexed arms at shoulder level (prevents shoulder dislocation), and a lower-leg pillow elevating toes off the mattress. (4) Lateral (Side-Lying) Position is used for periodic turning of bedridden patients and immediate post-operative aspiration prevention (EXCEPT after spinal or epidural anaesthesia): lower the head of bed, roll safely onto the side, bring the lower shoulder blade forward (off the shoulder joint), support head/neck, flex both arms with a pillow under the uppermost arm (prevents shoulder internal rotation and improves chest expansion), tuck a lengthwise-folded pillow behind the back, place a pillow from groin to foot under the semi-flexed upper leg, and place a sandbag against the dependent foot's plantar surface."
+    },
+    {
+      "heading": "Sims's, Lithotomy, Trendelenburg, and Genupectoral (Knee-Chest) Positions",
+      "body": "(5) Sims's (Semi-Prone) Position turns a supine patient into a lateral posture lying partially on the abdomen with the head of bed flat—indicated for vaginal and rectal examinations, administering enemas and suppositories, and sigmoidoscopy/proctoscopy. Support with small head/neck pillow, pillow under the flexed upper arm at shoulder level (prevents shoulder internal rotation), pillow under the flexed upper leg at hip level (prevents internal hip rotation), and a sandbag parallel to the dependent foot (prevents plantar flexion). (6) Lithotomy Position places the supine patient with head/neck pillowed and both hips and knees flexed at 90° with legs supported in stirrups—indicated for vaginal delivery, vaginal examination, vaginal hysterectomy, and rectal surgeries (haemorrhoidectomy, fissurotomy). (7) Trendelenburg Position tilts the entire supine bed frame head-down (using a bed key or bed blocks under the foot end)—indicated for postural drainage, management of hypotension and shock, and deep vein thrombosis (DVT). (8) Genupectoral (Knee-Chest) Position has the client kneel with weight supported on the knees and upper chest, arms extended beyond the head, elbows flexed, and head turned to one side on a pillow (optional small chest pillow)—indicated for rectal examination, administering enemas or rectal suppositories, and managing specific obstetric emergencies such as umbilical cord prolapse."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "What are the head-of-bed elevation angles for Semi-Fowler's, standard Fowler's, and High Fowler's positions?",
+      "answer": "Semi-Fowler's: 15° to 45°; Fowler's: 45° to 90°; High Fowler's: greater than 90°."
+    },
+    {
+      "question": "Why are trochanter rolls or sandbags placed parallel to the lateral thighs in the supine position, and why is a small pillow placed under the abdomen below the diaphragm in the prone position?",
+      "answer": "Trochanter rolls reduce external rotation of the hips in the supine position. A small pillow under the abdomen below the diaphragm in the prone position reduces lumbar hyperextension/lower-back strain and relieves pressure on female breasts and male genitals."
+    },
+    {
+      "question": "Which position is indicated for an immediate post-operative patient to prevent aspiration—and under what anaesthetic conditions is it excepted?",
+      "answer": "Lateral (side-lying) position, except following spinal and epidural anaesthesia."
+    },
+    {
+      "question": "Which position is used for an obstetric emergency such as umbilical cord prolapse, and which position is indicated for renal biopsy?",
+      "answer": "Genupectoral (knee-chest) position is used for umbilical cord prolapse; Prone position is used for renal biopsy."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "3.1",
+      "question": "Define positioning in nursing, state its four rationales, and list six general principles nurses must follow when positioning a patient.",
+      "answer": "Positioning is placing a patient in good body alignment as needed therapeutically. Four rationales: promote comfort, prevent immobility complications, stimulate circulation, promote normal physiological functions. Six general principles: maintain good body mechanics, obtain assistance as needed, ensure firm mattress at working height, keep sheets clean/dry, avoid resting one body part over another, plan a 24-hour turning schedule (plus ensure comfort and wash hands before/after)."
+    },
+    {
+      "id": "3.2",
+      "question": "State the two main purposes of Fowler's position and explain the anatomical rationale for using a thigh roll, arm pillows, ankle pillow, and footboard.",
+      "answer": "Purposes: relieve/minimize dyspnoea and relieve tension on abdominal sutures. Rationales: thigh roll prevents knee hyperextension and popliteal artery occlusion; arm pillows prevent shoulder dislocation and arm/wrist flexion contractures; ankle pillow prevents heel pressure; footboard maintains dorsiflexion and prevents foot drop."
+    },
+    {
+      "id": "3.3",
+      "question": "Compare the indications for Prone, Lateral, Sims's, and Lithotomy positions.",
+      "answer": "Prone: back burns/sores/surgeries, >24 hrs post-lower-limb amputation, renal biopsy, improving oxygenation in ARDS. Lateral: periodic turning of bedridden clients and immediate post-op aspiration prevention (excluding spinal/epidural anaesthesia). Sims's: vaginal/rectal exam, enema/suppository, sigmoidoscopy/proctoscopy. Lithotomy: vaginal delivery/exam, vaginal hysterectomy, haemorrhoidectomy/fissurotomy."
+    },
+    {
+      "id": "3.4",
+      "question": "Explain how to place a patient in Trendelenburg and Genupectoral positions and list three indications for each.",
+      "answer": "Trendelenburg: place patient supine and tilt the entire bed frame head-down using a bed key or bed blocks at the foot end (Indications: postural drainage, hypotension/shock, DVT). Genupectoral: instruct client to kneel supporting weight on knees and chest with arms extended past head and head turned on a pillow (Indications: rectal exam, enema/suppository administration, obstetric cord prolapse)."
+    },
+    {
+      "id": "3.5",
+      "question": "List eight supportive articles used in patient positioning and state the role of hand rolls for a paralyzed patient in the supine position.",
+      "answer": "Eight articles: bed board, pillows, footboard/foot boot, sand bags, hand rolls, trochanter rolls, bed blocks, trapeze bar (others: firm bed, specialized mattresses, overbed table, sheets). Hand rolls reduce finger extension and thumb abduction, maintaining the thumb in slight adduction and opposition."
+    }
+  ]
+}

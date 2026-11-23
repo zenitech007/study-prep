@@ -41,14 +41,14 @@ const DEFAULT_PROGRESS: ProgressData = {
 
 export const useAppStore = create<AppState>((set, get) => ({
   // ── Initial state ───────────────────────────────────────────
-  currentCourseId: 'nsg215',
+  currentCourseId: 'gce204',
   theme: storage.getTheme(),
   fontSize: storage.getFontSize(),
   questions: [],
   questionsLoaded: false,
   courseLoadError: null,
   activeQuiz: null,
-  progress: storage.getProgress('nsg215'),
+  progress: storage.getProgress('gce204'),
 
   // ── Course Management ───────────────────────────────────────
   setCurrentCourse: (courseId: string) => {
@@ -95,6 +95,55 @@ export const useAppStore = create<AppState>((set, get) => ({
         const { loadNsg222Sessions, getNsg222DrillQuestions } = await import('../data/nsg222');
         const sessions = await loadNsg222Sessions();
         const questions = await getNsg222DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'nsg223') {
+        const { loadNsg223Sessions, getNsg223DrillQuestions } = await import('../data/nsg223');
+        const sessions = await loadNsg223Sessions();
+        const questions = await getNsg223DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'nsg225') {
+        const { loadNsg225Sessions, getNsg225DrillQuestions } = await import('../data/nsg225');
+        const sessions = await loadNsg225Sessions();
+        const questions = await getNsg225DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'nsg229') {
+        const { loadNsg229Sessions, getNsg229DrillQuestions } = await import('../data/nsg229');
+        const sessions = await loadNsg229Sessions();
+        const questions = await getNsg229DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'nsg232') {
+        const { loadNsg232Sessions, getNsg232DrillQuestions } = await import('../data/nsg232');
+        const sessions = await loadNsg232Sessions();
+        const questions = await getNsg232DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'pio206') {
+        const { loadPio206Sessions, getPio206DrillQuestions } = await import('../data/pio206');
+        const sessions = await loadPio206Sessions();
+        const questions = await getPio206DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'psy205') {
+        const { loadPsy205Sessions, getPsy205DrillQuestions } = await import('../data/psy205');
+        const sessions = await loadPsy205Sessions();
+        const questions = await getPsy205DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'psm201') {
+        const { loadPsm201Sessions, getPsm201DrillQuestions } = await import('../data/psm201');
+        const sessions = await loadPsm201Sessions();
+        const questions = await getPsm201DrillQuestions(sessions);
         if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
         return;
       }
@@ -337,7 +386,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     };
 
     storage.saveProgress(updatedProgress, courseId);
-    if (courseId === 'ana214' || courseId === 'gce204' || courseId === 'nsg222') storage.saveStudiedSessions(updatedSessions, courseId);
+    if (courseId === 'ana214' || courseId === 'gce204' || courseId === 'nsg222' || courseId === 'nsg223' || courseId === 'nsg225' || courseId === 'nsg229' || courseId === 'nsg232' || courseId === 'pio206' || courseId === 'psy205' || courseId === 'psm201') storage.saveStudiedSessions(updatedSessions, courseId);
     set({ progress: updatedProgress });
   },
 

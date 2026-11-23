@@ -1,0 +1,75 @@
+{
+  "id": 2,
+  "title": "Sources of Health Data, Variable Types and Sampling Techniques",
+  "introduction": "Valid biostatistical conclusions depend on accurate data collection and representative sampling. Distinguishing routine secondary records from ad-hoc primary data, classifying qualitative/quantitative and predictor/outcome variables, and selecting appropriate probability or non-probability sampling designs minimize bias and maximize study efficiency.",
+  "learningOutcomes": [
+    "2.1 Differentiate routine (regular/secondary) health data sources from ad-hoc (non-routine/primary) sources and list primary data collection methods.",
+    "2.2 Classify variables into qualitative (binary/polytomous) versus quantitative (discrete/continuous) and independent (predictor) versus dependent (outcome) variables.",
+    "2.3 Compare census (complete enumeration) with sampling, define twelve core sampling terms, and explain the three dimensions and three factors of sample representativity.",
+    "2.4 Explain all five probability sampling methods (simple random, systematic, stratified, one- and two-stage cluster, multistage) with procedures, advantages, and disadvantages.",
+    "2.5 Explain all four non-probability sampling methods (convenience, quota, purposive/judgmental, snowball) with applications and limitations."
+  ],
+  "content": [
+    {
+      "heading": "Sources of Health Data and Classification of Variables",
+      "body": "Inaccurate data collection leads directly to invalid study results. Health data originate from two broad sources: (1) Routine / Regular Sources (Secondary Data)—established systems continuously collecting data for administrative or clinical purposes rather than research (e.g., census, vital registration systems, hospital records, disease surveillance and notification registers); and (2) Ad-Hoc / Non-Routine Sources (Primary Data)—specially designed systems gathering data unavailable in routine records to meet specific research objectives within a timeframe (e.g., Nigeria Demographic and Health Survey [NDHS], National Integrated Household Survey [NIHS], and investigator-designed surveys or experiments). Primary data collection methods include observation (participant or non-participant), experimentation, questionnaires (postal, phone, face-to-face), and direct measurement. Variables are classified by measurement scale into: Qualitative (Categorical) Variables (nominal or ordinal, lacking numerical magnitude—Binary/Dichotomous with two categories like sex or disease presence, or Polytomous like blood group/marital status) and Quantitative (Numerical) Variables (at least interval scale), subdivided into Discrete Variables (whole integer counts only, e.g., parity, Apgar score, number of doctors or malaria episodes) and Continuous Variables (any real-number decimal value, e.g., height, weight, skin-fold thickness). By causal/research role, variables are either Independent (Predictor / Explanatory—the risk factor or manipulated exposure, e.g., maternal smoking, multiple sexual partners, poor ARV compliance) or Dependent (Outcome / Response—the observed effect, e.g., low birth weight, HIV infection, opportunistic infections)."
+    },
+    {
+      "heading": "Census vs. Sampling, Sampling Terminologies, and Representativity",
+      "body": "Populations may be studied via Census (complete enumeration of every unit) or Sampling (selecting representative members of a population). Sampling is favoured in health sciences due to lower cost, faster turnaround, greater precision/accuracy (avoiding prolonged-collection errors), feasibility when studying huge heterogeneous populations, and expanded scope. Twelve core sampling terms govern research design: (1) Sample (subset of population); (2) Statistic vs. Parameter; (3) Target Population (entire aggregate to which findings apply); (4) Study Population (accessible population from which data are actually collected); (5) Sampling Error (unavoidable difference between sample statistic and true population parameter); (6) Response Rate (percentage of selected units who actually participate); (7) Sample Size ($n$); (8) Sampling Fraction (proportion of population sampled, $n/N$, e.g., $250/1000 = 1/4$); (9) Sampling Frame (complete list of all population units, e.g., class roster or exam register); (10) Sampling Unit (smallest unit selected); (11) Unit of Enquiry (unit about which information is collected); and (12) Representative / Probability Sample (adequately mirrors population characteristics across Time [seasonality, day, hour], Place [urban/rural], and Person [age, sex, demographics]—governed by three basic factors: sampling procedure, sample size, and participation/response rate)."
+    },
+    {
+      "heading": "Probability (Random) Sampling Methods",
+      "body": "Probability sampling ensures every population element has a known, non-zero chance of selection, eliminating selection bias and enabling formal statistical inference: (1) Simple Random Sampling (SRS)—every unit in a readily available sampling frame has an equal, independent chance of selection (via lottery, random number table, or computer); best for small finite homogeneous populations; equitable, easy to compute, high precision, and satisfies statistical assumptions, BUT requires a complete frame, ignores population structure, and may under-represent minority subgroups; (2) Systematic Sampling—computes sampling interval $k = N/n$, selects a random start between $1$ and $k$ (NEVER automatically #1), and picks every $k$-th unit thereafter (e.g., $k=10$, random start $5 \\rightarrow 5, 15, 25, \\dots$); easy and evenly spread across the frame, BUT biased if hidden periodicity/cycles coincide with $k$, not strictly equal probability after start, and precision is hard to assess from one survey; (3) Stratified Random Sampling—divides a heterogeneous population into mutually exclusive homogeneous strata (e.g., 75% female, 25% male), draws independent random samples from each stratum (ideally via Proportional Allocation, e.g., 75 females and 25 males for $n=100$), and combines them; boosts representativeness and precision and lowers sampling error, BUT requires separate frames per stratum and loses precision if stratum samples are tiny; (4) Cluster Random Sampling—randomly selects intact geographical/organizational groups ('clusters' like schools, classrooms, streets, rural areas lacking individual lists) in stage 1; One-Stage Cluster Sampling studies 100% of units in selected clusters, whereas Two-Stage Cluster Sampling randomly samples individuals within selected clusters; slashes frame-preparation and travel costs, BUT lowers precision (large design effect if clusters are internally homogeneous); and (5) Multistage Sampling—extends random selection across three or more hierarchical stages."
+    },
+    {
+      "heading": "Non-Probability (Non-Random) Sampling Methods",
+      "body": "Non-probability sampling selects units without known selection probabilities—excluding unknown segments of the population so sampling error/bias cannot be quantified and generalization beyond the sample is unjustified. Four main techniques are used: (1) Convenience ('Accidental' / 'Haphazard') Sampling—recruits whoever is most readily available (e.g., friends, neighbours, clinic walk-ins); very cheap, fast, and widely understood, BUT representativeness cannot be assessed; (2) Quota Sampling—segments the population into demographic subgroups (like stratified sampling) and sets fixed target numbers (e.g., 25 Yoruba males, 25 Hausa males, 25 Yoruba females, 25 Hausa females), then fills quotas via convenience/judgment without a sampling frame; budget-friendly, BUT biased toward accessible participants and time-consuming for reluctant groups; (3) Purposive / Judgmental Sampling—researcher uses expert judgment to select individuals meeting strict inclusion criteria (e.g., men aged 15–59 or domain experts); ensures relevant targeted responses when probability sampling is prohibitive, BUT risks researcher selection bias and is time-consuming; and (4) Snowball Sampling—a response-driven chain-referral method starting with a key informant who introduces subsequent eligible participants; low cost and uniquely valuable for locating rare or hard-to-reach populations, BUT observations are non-independent and cannot be generalized."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Classify hospital medical records and disease notification registers versus questionnaires and experiments as primary or secondary data sources.",
+      "answer": "Hospital records and disease notification registers are Routine/Secondary data sources (not originally collected for research); questionnaires, direct observation, and experiments are Ad-hoc/Primary data sources."
+    },
+    {
+      "question": "If a population has $N = 1,000$ people and a researcher selects $n = 250$, what is the sampling fraction and what is the systematic sampling interval $k$?",
+      "answer": "Sampling fraction $= n/N = 250/1000 = 1/4$ (or $0.25$). Systematic sampling interval $k = N/n = 1000/250 = 4$."
+    },
+    {
+      "question": "How does One-Stage Cluster Sampling differ from Two-Stage Cluster Sampling?",
+      "answer": "In One-Stage Cluster Sampling, all (100%) individuals inside each randomly selected cluster are studied; in Two-Stage Cluster Sampling, a random subsample of individuals is drawn within each selected cluster."
+    },
+    {
+      "question": "Which non-probability sampling technique is specifically suited for locating rare or hard-to-reach populations?",
+      "answer": "Snowball sampling (a response-driven chain-referral method)."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "2.1",
+      "question": "Distinguish between routine (secondary) and ad-hoc (primary) health data sources with two Nigerian or clinical examples of each, and list four primary collection methods.",
+      "answer": "Routine/secondary sources continuously collect non-research administrative/clinical data (e.g., hospital records, vital registration, census, disease notification systems). Ad-hoc/primary sources are specially designed for specific research objectives (e.g., NDHS, NIHS, researcher surveys/experiments). Four primary methods: observation, experimentation, questionnaires, and direct measurement."
+    },
+    {
+      "id": "2.2",
+      "question": "Differentiate discrete from continuous quantitative variables and identify the independent and dependent variables in the statement: 'Poor ARV compliance results in opportunistic infections among HIV patients.'",
+      "answer": "Discrete variables take only whole integer counts (e.g., parity, Apgar score, malaria episodes), whereas continuous variables can assume decimal values along the real number line (e.g., height, weight). Independent (predictor) variable: poor ARV compliance; Dependent (outcome) variable: opportunistic infections."
+    },
+    {
+      "id": "2.3",
+      "question": "Define target population, study population, sampling frame, sampling unit, sampling error, and response rate, and state the three factors influencing sample representativity.",
+      "answer": "Target population: full aggregate to which findings apply. Study population: accessible group from which data are collected. Sampling frame: complete list of population units. Sampling unit: smallest unit selected. Sampling error: difference between sample statistic and true population parameter. Response rate: percentage of selected units participating. Three representativity factors: sampling procedure, sample size, and participation (response)."
+    },
+    {
+      "id": "2.4",
+      "question": "Explain the procedures, one advantage, and one disadvantage of Simple Random, Systematic, Stratified, and Cluster sampling.",
+      "answer": "SRS: equal random draw from frame (Adv: unbiased/high precision; Disadv: needs complete frame, may miss subgroups). Systematic: random start $1..k$ then every $k$-th unit (Adv: evenly spread/easy; Disadv: periodicity bias). Stratified: random draw per homogeneous stratum with proportional allocation (Adv: represents subgroups/high precision; Disadv: separate frames needed). Cluster: random draw of intact groups (Adv: no individual frame/low travel cost; Disadv: lower precision/design effect)."
+    },
+    {
+      "id": "2.5",
+      "question": "Compare Convenience, Quota, Purposive, and Snowball sampling, explaining why non-probability samples cannot justify statistical generalization.",
+      "answer": "Convenience recruits accessible people; Quota sets subgroup targets filled by convenience; Purposive uses expert judgment to match inclusion criteria; Snowball uses chain referrals for hard-to-reach populations. Because selection probabilities are unknown and parts of the population have zero chance of selection, sampling bias/error cannot be measured and projecting results to the full population is unjustified."
+    }
+  ]
+}

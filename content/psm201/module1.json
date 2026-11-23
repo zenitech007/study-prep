@@ -1,0 +1,75 @@
+{
+  "id": 1,
+  "title": "Fundamentals of Biostatistics, Health Measurements, Scales and Sources of Variation",
+  "introduction": "Biostatistics applies statistical science to biological, medical, and public health data so clinicians and researchers can handle ever-present biological and measurement variation objectively. Mastering core statistical terminology, sample-versus-population notation, measurement instruments, the four scales of measurement, and sources of variation lays the groundwork for every analytical procedure in health research.",
+  "learningOutcomes": [
+    "1.1 Define statistics, mathematical vs. applied statistics, biostatistics, and distinguish descriptive from inferential statistics.",
+    "1.2 Explain six major uses of biostatistics in evidence-based clinical practice and health research, and outline the six-step data treatment workflow.",
+    "1.3 Define core statistical terminologies (data, variable, population, sample, parameter, statistic) and match standard sample-statistic versus population-parameter notations.",
+    "1.4 Describe physical and non-physical health measurement instruments, the three purposes of measurement, and the five sources and two types of variation (random vs. systematic).",
+    "1.5 Classify variables across the four scales of measurement (Nominal, Ordinal, Interval, Ratio) and identify valid arithmetic and summary operations for each scale."
+  ],
+  "content": [
+    {
+      "heading": "Definitions, Dimensions, Uses of Biostatistics, and Data Treatment Workflow",
+      "body": "In plural everyday usage, 'statistics' refers to numerical or non-numerical health facts (e.g., hourly/weekly clinic sex and age records). As a singular scientific discipline, Statistics is the science of collecting, organizing, summarizing, presenting, analyzing, and drawing conclusions from data—divided into Mathematical Statistics (developing theories) and Applied Statistics (solving real-world problems). Biostatistics is the branch of applied statistics developing and applying statistical methods to biological sciences, health, and medicine. Statistics has two broad dimensions: (1) Descriptive Statistics—summarizing and presenting characteristics of a finite dataset using tables, graphs/charts, or summary numbers without generalizing beyond the data; and (2) Inferential Statistics—using probability laws to draw conclusions about a wider population from a sample via Estimation (confidence intervals) and Hypothesis Testing. Biostatistics is indispensable in medicine for six key uses: (1) evaluating peer-reviewed medical literature and clinical trials, (2) applying study findings to patient care, (3) understanding epidemiological problems, (4) using diagnostic procedures, (5) participating in or directing research projects (study design, randomization, sample size, software analysis), and (6) decision-making, forecasting, and sorting out biological variation. Standard treatment of health data follows six sequential stages: Data Cleaning -> Data Organization -> Data Analysis -> Tests of Hypothesis -> Data Interpretation -> Decision Making."
+    },
+    {
+      "heading": "Basic Statistical Terminologies and Population vs. Sample Notation",
+      "body": "Core biostatistical concepts include: Data (measurements or counts from a sample/population providing information, e.g., 70 kg, 35 °C, or 20 ward patients); Variable (a characteristic of interest taking different values across units—like a lamp holder holding different bulbs—e.g., age, sex, weight, PCV); Population (the total collection of entities/units of interest); Sample (a fractional subset drawn from the population); Parameter (a numerical measure calculated using ALL data values in a population); and Statistic (a numerical measure calculated from a sample). Standard mathematical shorthand distinguishes sample statistics (Roman letters) from population parameters (Greek letters): Mean ($\\bar{x}$ vs. $\\mu$), Standard Deviation ($s$ vs. $\\sigma$), Correlation Coefficient ($r$ vs. $\\rho$), and Proportion ($p$ vs. $\\pi$ or $\\Pi$), with algebraic letters denoting variables, Arabic subscripts denoting observation positions ($x_1, x_2, \\dots, x_n$), and $\\Sigma$ indicating summation."
+    },
+    {
+      "heading": "Measurement in Health Sciences, Sources of Variation, and Types of Variation",
+      "body": "Measurement is the expression of any medical phenomenon in numbers or categories obtained through physical or non-physical instruments: questionnaires, laboratory equipment, human senses, clinical/bedside instruments, radiological equipment, direct observations, medical histories, and computed health indices. Measurement serves three primary functions: providing magnitude/size/extent of a phenomenon, aiding clinical diagnosis, and providing an objective basis for comparison (always requiring valid and reliable instruments). Health data inevitably exhibit variation arising from five sources: (1) Inherent biological differences among individuals, (2) Instruments used, (3) Observers, (4) Subjects, and (5) Environment. These variations fall into two categories: Random (Inherent) Variation—natural biological fluctuation that CANNOT be controlled completely, though it can be reduced (e.g., by larger samples)—and Systematic (Measurement) Variation—man-made bias/instrument/observer error that CAN be controlled."
+    },
+    {
+      "heading": "The Four Scales (Levels) of Measurement",
+      "body": "Measurement scales determine both data type and valid statistical procedures: (1) Nominal Scale (lowest level)—merely classifies units into unordered, mutually exclusive named categories with no numerical magnitude or 'more/less' order (even numerical codes carry no arithmetic meaning; summarized via counts, proportions, rates, percentages). Examples include Binary/Dichotomous variables (sex: male/female; disease status: present/absent; response: yes/no; patient ID numbers) and Polytomous variables (blood group A/B/AB/O, tribe, marital status, treatment arm); (2) Ordinal Scale—possesses nominal properties PLUS natural ranking/ordering ('more than' or 'less than'), though intervals between ranks cannot be quantified meaningfully (arithmetic operations invalid; summarized by mode or median). Examples include pain severity (none, mild, moderate, severe), patient improvement (worse, none, some, cured), education level (none, primary, secondary, tertiary), and Likert agreement ratings; (3) Interval Scale—numerical measurements with equal, meaningful distances between values and units of measurement, but an ARBITRARY starting point with NO true zero indicating complete absence (addition and subtraction are valid, ratios are NOT). Examples include temperature in Celsius or Fahrenheit, psychiatric diagnostic scales, quality-of-life scores, and Apgar scores; and (4) Ratio Scale (highest level)—possesses nominal, ordinal, and interval properties PLUS a TRUE ZERO point signifying complete absence of the attribute, making ratios and ALL arithmetic operations meaningful. Examples include height, weight, age, haemoglobin level, blood pressure, and pulse rate. Higher-level data can be transformed down to lower levels (e.g., age into age groups) for simplicity, but arbitrary downgrading sacrifices valuable detail about population variation."
+    }
+  ],
+  "inTextQuestions": [
+    {
+      "question": "Distinguish between a Parameter and a Statistic, and give the standard symbols for mean and standard deviation in a sample versus a population.",
+      "answer": "A Parameter is calculated from all data values in a population, whereas a Statistic is calculated from a sample. Mean: $\\bar{x}$ (sample) vs. $\\mu$ (population); Standard Deviation: $s$ (sample) vs. $\\sigma$ (population)."
+    },
+    {
+      "question": "What distinguishes Random (inherent) variation from Systematic (measurement) variation in health data?",
+      "answer": "Random (inherent) variation cannot be controlled (only reduced), whereas Systematic (measurement) variation is man-made and can be controlled."
+    },
+    {
+      "question": "Classify each of the following variables by measurement scale: (a) patient ID number, (b) body temperature in Celsius, (c) level of education, and (d) under-five child weight.",
+      "answer": "(a) Nominal, (b) Interval, (c) Ordinal, and (d) Ratio."
+    },
+    {
+      "question": "Why should data measured on a higher scale (such as ratio) not be arbitrarily converted to a lower scale (such as ordinal)?",
+      "answer": "Although downgrading can aid summarization, arbitrary transformation causes loss of vital details about data variations that provide deeper insight into the study population."
+    }
+  ],
+  "saqs": [
+    {
+      "id": "1.1",
+      "question": "Define Biostatistics, differentiate Descriptive Statistics from Inferential Statistics, and list six major uses of statistics in medicine and nursing.",
+      "answer": "Biostatistics is the branch of applied statistics applying statistical methods to biological sciences, health, and medicine. Descriptive statistics summarizes finite data via tables, charts, or numbers, whereas Inferential statistics generalizes from sample data to populations via estimation and hypothesis testing. Six uses: evaluating medical literature, applying study results to patient care, understanding epidemiological problems, using diagnostic procedures, conducting/directing research, and decision-making/forecasting."
+    },
+    {
+      "id": "1.2",
+      "question": "Define data, variable, population, sample, parameter, and statistic, and write the six sequential steps in the treatment of health data.",
+      "answer": "Data: numerical/categorical measurements or counts. Variable: characteristic taking varying values across units. Population: total collection of entities of interest. Sample: fractional subset of the population. Parameter: numerical measure from the entire population. Statistic: measure from a sample. Six steps: Data Cleaning -> Data Organization -> Data Analysis -> Tests of Hypothesis -> Data Interpretation -> Decision Making."
+    },
+    {
+      "id": "1.3",
+      "question": "List seven physical or non-physical instruments used to obtain health measurements and state the three primary purposes of measurement.",
+      "answer": "Instruments: questionnaires, laboratory equipment, senses, clinical/bedside instruments, radiological equipment, direct observations, and other clinical devices. Three purposes: provide magnitude/size/extent of a phenomenon, aid in clinical diagnosis, and provide a basis for comparison."
+    },
+    {
+      "id": "1.4",
+      "question": "Compare Nominal, Ordinal, Interval, and Ratio scales of measurement with respect to ordering, true zero, permissible arithmetic operations, and two clinical examples each.",
+      "answer": "Nominal: unordered categories, no true zero, no arithmetic (sex, blood group). Ordinal: ranked categories, unequal intervals, no arithmetic (pain severity, education level). Interval: equal numerical intervals, arbitrary zero, addition/subtraction only (Celsius temperature, Apgar/psychiatric scores). Ratio: equal intervals with true zero, all arithmetic/ratios valid (weight, blood pressure, age, haemoglobin)."
+    },
+    {
+      "id": "1.5",
+      "question": "Identify the five sources of variation in health data and differentiate random from systematic variation.",
+      "answer": "Five sources: inherent biological differences, instruments used, observers, subjects, and environment. Random variation is inherent biological variability that cannot be controlled (though reducible), whereas systematic variation is man-made measurement error that can be controlled."
+    }
+  ]
+}
