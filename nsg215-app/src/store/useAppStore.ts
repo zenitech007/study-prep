@@ -87,7 +87,14 @@ export const useAppStore = create<AppState>((set, get) => ({
       if (normalized === 'gce204') {
         const { loadGce204Sessions, getGce204DrillQuestions } = await import('../data/gce204');
         const sessions = await loadGce204Sessions();
-        const questions = getGce204DrillQuestions(sessions);
+        const questions = await getGce204DrillQuestions(sessions);
+        if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
+        return;
+      }
+      if (normalized === 'nsg222') {
+        const { loadNsg222Sessions, getNsg222DrillQuestions } = await import('../data/nsg222');
+        const sessions = await loadNsg222Sessions();
+        const questions = await getNsg222DrillQuestions(sessions);
         if (get().currentCourseId === normalized) set({ questions, questionsLoaded: true });
         return;
       }
@@ -330,7 +337,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     };
 
     storage.saveProgress(updatedProgress, courseId);
-    if (courseId === 'ana214' || courseId === 'gce204') storage.saveStudiedSessions(updatedSessions, courseId);
+    if (courseId === 'ana214' || courseId === 'gce204' || courseId === 'nsg222') storage.saveStudiedSessions(updatedSessions, courseId);
     set({ progress: updatedProgress });
   },
 

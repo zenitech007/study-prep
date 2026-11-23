@@ -3,11 +3,17 @@ import type { StudySessionContent, Question } from '../../types';
 export type StudySession = Required<Pick<StudySessionContent,
   'id' | 'title' | 'introduction' | 'learningOutcomes' | 'content' | 'inTextQuestions' | 'saqs'>>;
 
+export type Gce204Question = Question & { moduleId: number };
+
 const modules = [
-  () => import('./module1.json'), () => import('./module2.json'),
-  () => import('./module3.json'), () => import('./module4.json'),
-  () => import('./module5.json'), () => import('./module6.json'),
-  () => import('./module7.json'), () => import('./module8.json'),
+  () => import('./module1.json'),
+  () => import('./module2.json'),
+  () => import('./module3.json'),
+  () => import('./module4.json'),
+  () => import('./module5.json'),
+  () => import('./module6.json'),
+  () => import('./module7.json'),
+  () => import('./module8.json'),
 ];
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -38,26 +44,38 @@ export async function loadGce204Sessions(): Promise<StudySession[]> {
   });
 }
 
-export function getGce204DrillQuestions(sessions: StudySession[]): Question[] {
-  const prompts = sessions.flatMap((session) => [
-    ...session.inTextQuestions.map((item, index) => ({ ...item, moduleId: session.id,
-      topic: session.title, id: `gce204-itq-m${session.id}-${index + 1}`, type: 'recall' as const })),
-    ...session.saqs.map((item, index) => ({ ...item, moduleId: session.id,
-      topic: session.title, id: `gce204-saq-m${session.id}-${index + 1}`, type: 'scenario' as const })),
-  ]);
-  return prompts.flatMap((item, index): Question[] => {
-    const distractors = prompts.filter((other) => other.id !== item.id && other.answer !== item.answer)
-      .slice(0, 3).map((other) => other.answer);
-    if (!item.question.trim() || !item.answer.trim() || distractors.length < 3) return [];
-    const correctIndex = index % 4;
-    const options = [...distractors];
-    options.splice(correctIndex, 0, item.answer);
-    return [{ id: item.id, moduleId: item.moduleId, topic: item.topic,
-      subtopic: item.type === 'recall' ? 'In-Text Self-Check' : 'Self-Assessment',
-      difficulty: item.type === 'recall' ? 'beginner' : 'intermediate',
-      type: item.type, stem: item.question, options, correctIndex,
-      explanation: { correct: item.answer,
-        distractors: distractors.map(() => 'This answer belongs to another course question.') },
-      sourceTag: 'manual' }];
-  });
+function isGce204Question(value: unknown): value is Gce204Question {
+  if (!isRecord(value)) return false;
+  return typeof value.id === 'string' && value.id.startsWith('gce204-')
+    && Number.isInteger(value.moduleId) && Number(value.moduleId) >= 1 && Number(value.moduleId) <= 8
+    && typeof value.stem === 'string' && value.stem.length > 0
+    && Array.isArray(value.options) && value.options.length === 4
+    && value.options.every((option) => typeof option === 'string' && option.length > 0)
+    && typeof value.correctIndex === 'number' && value.correctIndex >= 0 && value.correctIndex < 4
+    && typeof value.explanation === 'object' && value.explanation !== null;
+}
+
+export async function getGce204DrillQuestions(sessions: StudySession[]): Promise<Gce204Question[]> {
+  const { default: raw } = await import('./questions.json');
+  const items: unknown = raw;
+  if (!Array.isArray(items) || items.length !== 300 || !items.every(isGce204Question)) {
+    throw new Error('GCE 204 question bank is incomplete or invalid.');
+  }
+  const questions: Gce204Question[] = items;
+  if (
+    new Set(questions.map((question) => question.id)).size !== 300 ||
+    new Set(questions.map((question) => question.stem.toLowerCase())).size !== 300
+  ) {
+    throw new Error('GCE 204 question bank contains duplicate questions.');
+  }
+  for (const session of sessions) {
+    const extracted = questions.filter((question) => question.moduleId === session.id);
+    if (
+      extracted.filter((question) => question.id.startsWith('gce204-itq-')).length !== session.inTextQuestions.length ||
+      extracted.filter((question) => question.id.startsWith('gce204-saq-')).length !== session.saqs.length
+    ) {
+      throw new Error(`GCE 204 module ${session.id} practice questions do not match the source.`);
+    }
+  }
+  return questions;
 }

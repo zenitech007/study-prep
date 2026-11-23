@@ -39,14 +39,18 @@ test('GCE 204 card, module Action Zone, and Tracker persist across reload', { ti
     const first = page.getByRole('button', { name: /Study Session 1:/ });
     if (await first.getAttribute('aria-expanded') === 'false') await first.click();
     const cardBody = first.locator('..');
-    await cardBody.getByText('Content for this module is pending.').waitFor();
-    await cardBody.getByRole('button', { name: /Practice ITQs \(0\)/ }).click();
+    const itqButton = cardBody.getByRole('button', { name: /Practice ITQs/ });
+    await itqButton.waitFor();
+    await itqButton.click();
     const dialog = page.getByRole('dialog', { name: /In-Text Self-Check Questions/ });
-    await dialog.getByText('Questions for this module are pending.').waitFor();
+    await dialog.waitFor();
     await page.keyboard.press('Escape');
     assert.equal(await dialog.count(), 0);
-    await cardBody.getByRole('button', { name: /Drill SAQs \(0\)/ }).click();
-    await page.getByRole('dialog', { name: /Self-Assessment Questions/ }).getByText('Questions for this module are pending.').waitFor();
+    const saqButton = cardBody.getByRole('button', { name: /Drill SAQs/ });
+    await saqButton.waitFor();
+    await saqButton.click();
+    const saqDialog = page.getByRole('dialog', { name: /Self-Assessment Questions/ });
+    await saqDialog.waitFor();
     await page.keyboard.press('Escape');
     await cardBody.getByRole('button', { name: 'Mark as Studied' }).click();
     assert.deepEqual(await page.evaluate(() => JSON.parse(localStorage.getItem('studyprep_gce204_studied_sessions') || '[]')), [1]);
@@ -58,7 +62,8 @@ test('GCE 204 card, module Action Zone, and Tracker persist across reload', { ti
     await page.waitForURL('**/course/gce204/tracker');
     assert.ok((await page.evaluate(() => JSON.parse(localStorage.getItem('studyprep_gce204_progress') || '{}'))).completedSessions.includes(1));
     await page.getByRole('link', { name: /Drill/ }).first().click();
-    await page.getByText('Drill questions are pending').waitFor();
+    await page.waitForURL('**/course/gce204/drill');
+    await page.getByRole('heading', { name: /Configure Drill/i }).waitFor();
   } finally { await page.close(); }
 });
 
@@ -105,7 +110,7 @@ test('GCE 204 corrupt local progress shows a recoverable inline error', { timeou
     await alert.getByRole('button', { name: 'Retry' }).waitFor();
     await page.evaluate(() => localStorage.removeItem('studyprep_gce204_progress'));
     await alert.getByRole('button', { name: 'Retry' }).click();
-    await page.getByText('Practice questions are pending').waitFor();
+    await page.getByRole('heading', { name: /GCE 204/ }).waitFor();
   } finally { await page.close(); }
 });
 

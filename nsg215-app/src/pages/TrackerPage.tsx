@@ -15,6 +15,9 @@ export default function TrackerPage() {
   useEffect(() => {
     setCurrentCourse((paramCourseId || currentCourseId || 'nsg215').toLowerCase());
   }, [paramCourseId, currentCourseId, setCurrentCourse]);
+  const activeCourseId = (paramCourseId || currentCourseId || 'nsg215').toLowerCase();
+  const isPendingCourse = activeCourseId === 'gce204' || activeCourseId === 'nsg222';
+
   return (
     <div className="space-y-6 animate-fade-in">
       <div>
@@ -24,8 +27,8 @@ export default function TrackerPage() {
         </p>
       </div>
 
-      {(paramCourseId || currentCourseId) === 'gce204' && progress.totalAttempted === 0 && !progress.completedSessions?.length && (
-        <div className="card p-5" role="status"><p className="font-semibold text-main">No GCE 204 progress yet</p><p className="text-sm text-sub mt-1">Study a module to begin tracking progress. Course questions are pending.</p><Link to="/" className="btn btn-primary inline-flex min-h-11 items-center mt-3">Back to Course Library</Link></div>
+      {isPendingCourse && progress.totalAttempted === 0 && !progress.completedSessions?.length && (
+        <div className="card p-5" role="status"><p className="font-semibold text-main">No {activeCourseId.toUpperCase()} progress yet</p><p className="text-sm text-sub mt-1">Study a module to begin tracking progress. Course questions are pending.</p><Link to="/" className="btn btn-primary inline-flex min-h-11 items-center mt-3">Back to Course Library</Link></div>
       )}
 
       <OverviewStats />

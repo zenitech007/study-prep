@@ -42,6 +42,8 @@ export default function LearnPage() {
       ? import('../data/ana214').then((data) => data.loadAna214Sessions())
       : activeCourseId === 'gce204'
         ? import('../data/gce204').then((data) => data.loadGce204Sessions())
+      : activeCourseId === 'nsg222'
+        ? import('../data/nsg222').then((data) => data.loadNsg222Sessions())
       : activeCourseId === 'ana213'
         ? import('../data/ana213Content').then((data) => data.ana213Sessions)
         : import('../data/learnContent').then((data) => data.studySessions);

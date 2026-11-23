@@ -94,10 +94,10 @@ export default function CourseDashboardPage() {
         </p>
       </section>
 
-      {course.id === 'gce204' && questions.length === 0 && (
+      {(course.id === 'gce204' || course.id === 'nsg222') && questions.length === 0 && (
         <div className="card p-5 border border-amber-500" role="status">
           <p className="font-semibold text-main">Practice questions are pending</p>
-          <p className="text-sm text-sub mt-1">The GCE 204 question bank has not been added yet. You can browse the module framework.</p>
+          <p className="text-sm text-sub mt-1">The {course.code} question bank has not been added yet. You can browse the module framework.</p>
           <Link to="/" className="btn btn-primary inline-flex min-h-11 items-center mt-3">Back to Course Library</Link>
         </div>
       )}
@@ -146,7 +146,7 @@ export default function CourseDashboardPage() {
           <div className="text-2xl font-bold" style={{ color: 'var(--color-accent)' }}>
             {course.sessionCount}
           </div>
-          <div className="text-xs text-muted mt-1">{course.id.startsWith('ana') || course.id === 'gce204' ? 'Modules' : 'Study Sessions'}</div>
+          <div className="text-xs text-muted mt-1">{course.id.startsWith('ana') || course.id === 'gce204' || course.id === 'nsg222' ? 'Modules' : 'Study Sessions'}</div>
         </div>
         <div className="card p-4 text-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--color-success)' }}>
@@ -167,14 +167,14 @@ export default function CourseDashboardPage() {
         <button
           onClick={() => navigate(`/course/${course.id}/learn`)}
           className="card p-5 text-left transition-all hover:scale-[1.02] cursor-pointer"
-          style={{ borderLeft: course.accentColor === 'emerald' ? '4px solid #10b981' : '4px solid var(--color-primary)' }}
+          style={{ borderLeft: course.accentColor === 'teal' ? '4px solid #0f766e' : course.accentColor === 'emerald' ? '4px solid #10b981' : '4px solid var(--color-primary)' }}
         >
           <div className="flex items-center gap-3 mb-2">
-            <BookOpen size={22} className={course.accentColor === 'emerald' ? 'text-emerald-500' : 'text-blue-500'} />
+            <BookOpen size={22} className={course.accentColor === 'teal' ? 'text-teal-600 dark:text-teal-400' : course.accentColor === 'emerald' ? 'text-emerald-500' : 'text-blue-500'} />
             <h3 className="text-base font-semibold text-main">Study Manual</h3>
           </div>
           <p className="text-xs text-sub leading-relaxed">
-            Read all {course.sessionCount} {course.id.startsWith('ana') || course.id === 'gce204' ? 'modules' : 'sessions'} with learning outcomes, section summaries, ITQs, and SAQs.
+            Read all {course.sessionCount} {course.id.startsWith('ana') || course.id === 'gce204' || course.id === 'nsg222' ? 'modules' : 'sessions'} with learning outcomes, section summaries, ITQs, and SAQs.
           </p>
         </button>
 

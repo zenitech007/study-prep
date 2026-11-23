@@ -15,7 +15,8 @@ export default function ConceptsPage() {
   );
   const printRef = useRef<HTMLDivElement>(null);
   useEffect(() => { setCurrentCourse((courseId || currentCourseId || 'nsg215').toLowerCase()); }, [courseId, currentCourseId, setCurrentCourse]);
-  if (courseId === 'ana214' || courseId === 'gce204') return <section className="card p-8"><h1 className="text-xl font-bold">Quick-Prep</h1><p className="mt-3 text-sub">{courseId.toUpperCase()} flash facts are pending.</p><Link className="btn btn-primary inline-flex items-center min-h-11 mt-4" to="/">Back to Course Library</Link></section>;
+  const activeCourse = (courseId || currentCourseId || 'nsg215').toLowerCase();
+  if (activeCourse === 'ana214' || activeCourse === 'gce204' || activeCourse === 'nsg222') return <section className="card p-8"><h1 className="text-xl font-bold">Quick-Prep</h1><p className="mt-3 text-sub">{activeCourse.toUpperCase()} flash facts are pending.</p><Link className="btn btn-primary inline-flex items-center min-h-11 mt-4" to="/">Back to Course Library</Link></section>;
 
   const toggleCategory = (category: string) => {
     setExpandedCategories((prev) => {

@@ -99,6 +99,7 @@ function CourseCard({
   const isEmerald = course.accentColor === 'emerald';
   const isAmber = course.accentColor === 'amber';
   const isRose = course.accentColor === 'rose';
+  const isTeal = course.accentColor === 'teal' || course.accentToken === 'teal';
 
   if (!isActive) {
     return (
@@ -137,31 +138,52 @@ function CourseCard({
   // Accent styles based on course accentColor
   const badgeGradient = isRose ? 'bg-rose-700 dark:bg-rose-400 text-white dark:text-slate-950'
     : isAmber ? 'bg-amber-700 dark:bg-amber-500 text-white dark:text-slate-950'
+    : isTeal ? 'bg-teal-700 dark:bg-teal-400 text-white dark:text-slate-950 shadow-md shadow-teal-500/25'
     : isEmerald
     ? 'bg-gradient-to-br from-emerald-600 to-teal-500 text-white shadow-md shadow-emerald-500/25'
     : 'bg-gradient-to-br from-blue-600 to-cyan-500 text-white shadow-md shadow-blue-500/25';
 
-  const cardBorderHover = isRose ? 'hover:border-rose-700 dark:hover:border-rose-400' : isAmber ? 'hover:border-amber-700 dark:hover:border-amber-400' : isEmerald
+  const cardBorderHover = isRose ? 'hover:border-rose-700 dark:hover:border-rose-400'
+    : isAmber ? 'hover:border-amber-700 dark:hover:border-amber-400'
+    : isTeal ? 'hover:border-teal-700 dark:hover:border-teal-400'
+    : isEmerald
     ? 'hover:border-emerald-500/40 dark:hover:border-emerald-400/40'
     : 'hover:border-cyan-500/40 dark:hover:border-cyan-400/40';
 
-  const enterButtonClass = isRose ? 'bg-rose-700 hover:bg-rose-800 text-white dark:bg-rose-400 dark:hover:bg-rose-300 dark:text-slate-950' : isAmber ? 'bg-amber-700 hover:bg-amber-800 text-white dark:bg-amber-400 dark:hover:bg-amber-300 dark:text-slate-950' : isEmerald
+  const enterButtonClass = isRose ? 'bg-rose-700 hover:bg-rose-800 text-white dark:bg-rose-400 dark:hover:bg-rose-300 dark:text-slate-950'
+    : isAmber ? 'bg-amber-700 hover:bg-amber-800 text-white dark:bg-amber-400 dark:hover:bg-amber-300 dark:text-slate-950'
+    : isTeal ? 'bg-teal-700 hover:bg-teal-800 text-white dark:bg-teal-400 dark:hover:bg-teal-300 dark:text-slate-950 shadow-md shadow-teal-700/20 hover:shadow-lg hover:shadow-teal-700/35'
+    : isEmerald
     ? 'bg-emerald-400 hover:bg-emerald-300 text-slate-950 shadow-md shadow-emerald-400/20 hover:shadow-lg hover:shadow-emerald-400/35'
     : 'bg-cyan-400 hover:bg-cyan-300 text-slate-950 shadow-md shadow-cyan-400/20 hover:shadow-lg hover:shadow-cyan-400/35';
 
-  const readinessTextColor = isRose ? 'text-rose-700 dark:text-rose-300' : isAmber ? 'text-amber-800 dark:text-amber-300' : isEmerald
+  const enterButtonRing = isRose ? 'focus-visible:ring-rose-700 dark:focus-visible:ring-rose-300'
+    : isAmber ? 'focus-visible:ring-amber-700 dark:focus-visible:ring-amber-300'
+    : isTeal ? 'focus-visible:ring-teal-700 dark:focus-visible:ring-teal-300'
+    : 'focus-visible:ring-cyan-600 dark:focus-visible:ring-cyan-300';
+
+  const readinessTextColor = isRose ? 'text-rose-700 dark:text-rose-300'
+    : isAmber ? 'text-amber-800 dark:text-amber-300'
+    : isTeal ? 'text-teal-700 dark:text-teal-300'
+    : isEmerald
     ? 'text-emerald-600 dark:text-emerald-400'
     : 'text-cyan-600 dark:text-cyan-400';
 
-  const progressBarGradient = isRose ? 'bg-rose-600 dark:bg-rose-400' : isAmber ? 'bg-amber-500' : isEmerald
+  const progressBarGradient = isRose ? 'bg-rose-600 dark:bg-rose-400'
+    : isAmber ? 'bg-amber-500'
+    : isTeal ? 'bg-teal-600 dark:bg-teal-400'
+    : isEmerald
     ? 'bg-gradient-to-r from-emerald-500 to-teal-400'
     : 'bg-gradient-to-r from-blue-500 to-cyan-400';
 
-  const drillButtonClass = isRose ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 border-rose-300 dark:border-rose-700' : isAmber ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700' : isEmerald
+  const drillButtonClass = isRose ? 'bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 border-rose-300 dark:border-rose-700'
+    : isAmber ? 'bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700'
+    : isTeal ? 'bg-teal-50 dark:bg-teal-950/40 text-teal-900 dark:text-teal-200 border-teal-300 dark:border-teal-700'
+    : isEmerald
     ? 'bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border-emerald-200/80 dark:border-emerald-700/60'
     : 'bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/40 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 border-blue-200/80 dark:border-blue-700/60';
 
-  const moduleMetricText = course.id.startsWith('ana') || course.id === 'gce204' ? `${course.sessionCount} Modules` : `${course.sessionCount} Sessions`;
+  const moduleMetricText = course.id.startsWith('ana') || course.id === 'gce204' || course.id === 'nsg222' ? `${course.sessionCount} Modules` : `${course.sessionCount} Sessions`;
 
   return (
     <div className={`card-glass rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/90 dark:border-white/10 shadow-xl dark:shadow-2xl dark:shadow-black/60 ${cardBorderHover} transition-all duration-300`}>
@@ -190,7 +212,7 @@ function CourseCard({
         {/* Vibrant Primary Action Button with Hover Lift Effect */}
         <button
           onClick={onSelect}
-          className={`inline-flex min-h-11 items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-extrabold ${enterButtonClass} focus-visible:outline-none focus-visible:ring-4 ${isRose ? 'focus-visible:ring-rose-700 dark:focus-visible:ring-rose-300' : 'focus-visible:ring-amber-700 dark:focus-visible:ring-amber-300'} hover:-translate-y-1 active:translate-y-0 motion-reduce:transform-none transition-all duration-200 cursor-pointer shrink-0 self-start sm:self-center`}
+          className={`inline-flex min-h-11 items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm sm:text-base font-extrabold ${enterButtonClass} focus-visible:outline-none focus-visible:ring-4 ${enterButtonRing} hover:-translate-y-1 active:translate-y-0 motion-reduce:transform-none transition-all duration-200 cursor-pointer shrink-0 self-start sm:self-center`}
         >
           <span>🚀 Enter Course</span>
           <ChevronRight size={18} className="stroke-[2.5]" />

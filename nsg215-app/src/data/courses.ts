@@ -2,7 +2,7 @@ export interface CourseConfig {
   id: string; // e.g. 'nsg215'
   slug?: string;
   shortDescription?: string;
-  accentToken?: 'amber' | 'rose';
+  accentToken?: 'amber' | 'rose' | 'teal' | 'sky' | 'fuchsia';
   targetQuestions?: number;
   moduleCount?: number;
   code: string; // e.g. 'NSG 215'
@@ -16,7 +16,7 @@ export interface CourseConfig {
   questionCount: number;
   status: 'active' | 'coming_soon';
   tags: string[];
-  accentColor: string; // e.g. 'blue' | 'purple' | 'emerald'
+  accentColor: string; // e.g. 'blue' | 'purple' | 'emerald' | 'rose' | 'amber' | 'teal'
   route: string;
 }
 export type Course = CourseConfig;
@@ -43,6 +43,27 @@ export const COURSES: CourseConfig[] = [
     sessionCount: 7, moduleCount: 7, questionCount: 300, targetQuestions: 300,
     status: 'active', tags: ['Upper Limb', 'Lower Limb', 'Thorax'],
     accentColor: 'amber', accentToken: 'amber', route: '/course/ana214',
+  },
+  {
+    id: 'nsg222',
+    slug: 'nsg222',
+    code: 'NSG 222',
+    title: 'Basic Concepts in Medical-Surgical Nursing',
+    department: 'Department of Nursing Science',
+    credits: '3 Units',
+    level: '200-Level; Second Semester',
+    aim: 'Master clinical pathophysiology and nursing management across pain, fatigue, inflammation, immunity, fluid-electrolyte balance, shock, and oncology.',
+    description: 'Master clinical pathophysiology and nursing management across pain, fatigue, inflammation, immunity, fluid-electrolyte balance, shock, and oncology with 300 practice questions.',
+    shortDescription: 'Master clinical pathophysiology and nursing management across pain, fatigue, inflammation, immunity, fluid-electrolyte balance, shock, and oncology with 300 practice questions.',
+    sessionCount: 8,
+    moduleCount: 8,
+    questionCount: 300,
+    targetQuestions: 300,
+    status: 'active',
+    tags: ['Pain & Fatigue', 'Inflammation & Healing', 'Immunity & Autoimmunity', 'Fluid & Electrolyte Balance', 'Shock States', 'Oncology & Neoplasms'],
+    accentColor: 'teal',
+    accentToken: 'teal',
+    route: '/course/nsg222',
   },
   {
     id: 'nsg215',
@@ -75,22 +96,6 @@ export const COURSES: CourseConfig[] = [
     tags: ['Gross Anatomy', 'Embryology', 'Gametogenesis', 'Germ Layers', 'Organogenesis'],
     accentColor: 'emerald',
     route: '/course/ana213',
-  },
-  {
-    id: 'nsg216',
-    code: 'NSG 216',
-    title: 'Medical-Surgical Nursing I',
-    department: 'Department of Nursing Science',
-    credits: '4 Units',
-    level: '200-Level; Second Semester',
-    aim: 'Foundational nursing management of adult clients experiencing physiological alterations in respiratory, cardiovascular, and fluid/electrolyte balance.',
-    description: 'In-depth clinical pathologies, perioperative care, emergency nursing interventions, and pathophysiology drills.',
-    sessionCount: 10,
-    questionCount: 120,
-    status: 'coming_soon',
-    tags: ['Perioperative Nursing', 'Cardiovascular Disorders', 'Fluid & Electrolytes', 'Respiratory Management'],
-    accentColor: 'purple',
-    route: '/course/nsg216',
   },
   {
     id: 'nsg217',
